@@ -1,0 +1,120 @@
+\documentclass[letterpaper,twocolumn,openany,nodeprecatedcode]{dndbook}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage{listings}
+\usepackage{shortvrb}
+\usepackage{stfloats}
+
+\usepackage{incgraph,tikz}
+\usepackage{float}           % Stricter control on figure placement
+\usepackage{tipa}            % IPA characters
+\usepackage{lineno}          % line numbers
+\usepackage{hyperref}        % hyperlinks
+\hypersetup{
+    colorlinks=true,
+    urlcolor=red      % TODO: Choose dark red as color, similar to titles.
+}
+
+\captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
+
+\MakeShortVerb{|}
+
+\lstset{%
+    basicstyle=\ttfamily,
+    language=[LaTeX]{TeX},
+    breaklines=true,
+}
+
+\title{Yuadrem \\
+\large Essential Handbook}
+\author{}
+\date{}
+
+\begin{document}
+    \frontmatter
+    \pagenumbering{gobble}
+    \maketitle
+    \pagenumbering{roman}
+    \justifying
+
+    \incgraph[documentpaper,][width=\paperwidth,height=\paperheight]{00world_map/L.png}
+    \newpage~
+    \incgraph[documentpaper,][width=\paperwidth,height=\paperheight]{00world_map/R.png}
+    \newpage~\newpage~
+
+    \section*{Credits}
+
+    \tableofcontents
+
+    % TODO: CHANGE ALL INSTANCES OF WHYTLANDE TO GRONSELAR
+    % TODO: CHANGE ALL INSTANCES OF "THE FORBIDDEN LANDS" TO "THE DEAD SEA"
+    % TODO: CHANGE TALL ONES TO ETS
+    % TODO: CHANGE "NAENK TRIBES" TO "NAENK CIRCLES"
+    % TODO: CHANGE COLDBLOOD BEASTS TO BLUEBLOOD BEASTS. All foreigner kins have blue blood btw.
+    % TODO: CHANGE BOGGARTS AND FROSTBURN UMANS TO BE MORE GOBLINOID IN NATURE - THEY WERE ONCE LOST ONES, RECOVERED BY THE UMANS.
+    % TODO: REMOVE A LINE OF VEGETATION SOUTH OF BYUREV - THEY CUT A TON OF TREES IN PREPARATION OF ISKEN'S INVASION.
+    % TODO: Make a list of how to write each country and its people. As in: Kaldrathal - Kaldrathian
+    % TODO: Update the colors I'm using for the tides to fit better with the colors in the document
+    % TODO: MAKE SURE THAT I ALWAYS WROTE DRATL IRD. I THINK I USED THE TERM "ZSEK IRD" MORE THAN ONCE FUCK FUCK FUCK
+    % TODO: Change all instances of "Thul'kraka" irds to "Thulkraka".
+
+    % NOTE: Hulnar's long lineage of kings supposedly came from the tall kin, and are named using jantherlin names.
+    % NOTE: After the schism, many of the peoples from the immigrant kins couldn't find qualia, and each of the three species were divided into two, the "normal" ones and the lost ones:
+    % umans - goblinoids
+    % tortles - ???
+    % grungs - slaadi
+    % NOTE: Current year: 673 AS.
+    % NOTE: Tortle and grung blood work for spellcasting just as umans blood, but it is much less effective. Blood sold by umans that travel with grungs and tortles tends to have lower values due to this.
+    % NOTE: Fucking penguins as a subrace sounds pretty interesting.
+
+    \pagenumbering{arabic}
+    \mainmatter%
+
+    % qulbaba irds hate marsets because the latter was created to fulfill the task that the former failed in.
+    % background has two steps, profession/lifestyle similar to normal D&D, and nation.
+    % NATIONS OF YUADREM:
+    % * Mountain irds of Krugghom and polar region, harsh society. Great smiths and hunters. Friendly to gats.
+    % * Gat traditionalist nation. Capital is the Gateless City. Used to be grand, but they took the schism hard due to being so close the the spire during the schism, and is now having a little trouble keeping up. Constrained to the area north of the forbidden lands.
+    % * Mold kin of Drejkru. Constrained to Drejeck due to their biology, but at war with the ird of Qul'ekk.
+    % * Qul'ekk and the surrounding isles. Warring ird that has conquered all the coasts of the Beryl sea but the fog coast. At peace with the gat of Scorchfountain and the tortles of Wyverntail and Greencoast as long as they pay tribute. Wanna enslave the marsets of Do Baabaa.
+    % special trees grow in areas from the southern ocean with VERY curved trunks, with others being very close to the ground.
+    % * Grung from Om and surrounding territories. Have conquered pretty much all of the chirping wilds. The marsets that inhabit the areas have been displaced, where their only communities that remain are scattered, but revel against the grung. Urro is the last remaining ird settlement in the area.
+
+    % explain the more "fun" mechanics, like bar stuff, whack, card games, general games, stuff to do in the city, etc.
+    % Huathem: a set of cards used for reading the future, similar to tarot. There are 16 major cards and 40 minor cards (1 to 8 for each tide). The cards were created by the Zaloth.
+    % Blue, the scholar.
+    % Gold, the altruist.
+    % Indigo, the equalist.
+    % Red, the zealous.
+    % Silver, the star.
+    % Blue-Gold, the teacher.
+    % Blue-Indigo, the judge.
+    % Blue-Red, the expeditioner.
+    % Blue-Silver, the communicator.
+    % Gold-Indigo, the partisan.
+    % Gold-Red, the martyr.
+    % Gold-Silver, the philanthropist*.
+    % Indigo-Red, the hero.
+    % Indigo-Silver, the leader.
+    % Red-Silver, the performer.
+    % Unaligned, the observer.
+
+    \DndSetThemeColor[DmgLavender]
+    \input{01intro/00index}
+    % \DndSetThemeColor[DmgCoral]
+    \input{02kins/00index}
+    % \input{04background/00index}
+    % \input{05classless/00index}
+    % \input{06equipment/00index}
+    % \DndSetThemeColor[DmgSlateGray]
+    % \input{07bleakwilderness/00index}
+    % \input{08lushtowns/00index}
+    % \input{09spellcasting/00index}
+    % \input{10spells/00index}
+    % \DndSetThemeColor[DmgLilac]
+    \input{addendums/00index}
+
+    % TODO: Make a custom character sheet.
+\end{document}
