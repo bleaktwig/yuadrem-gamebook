@@ -1,25 +1,5 @@
+% !TEX root = ../main.tex
 \section{Talents}
-
-% UNLESS STATED OTHERWISE, RANKS WITH SIMILAR EFFECTS STACK.
-% AT SOME POINT I HAVE TO FIGURE OUT WHERE TO LEAVE ABILITY BONUSES HERE.
-% A PC should be able to increase any ability score by at most 4 points by selecting specific talents:
-% STR :
-%   * Heavily Armored 3
-%   * Crusher 3
-%   * Moderately Armored 3 (I)
-%   * Piercer 3 (I)
-%   * Slasher 3 (I)
-% DEX :
-%   * Lightly Armored 3
-%   * Shooter 3
-%   * Moderately Armored 3 (I)
-%   * Piercer 3 (I)
-%   * Slasher 3 (I)
-% CON : 
-% INT : IIIII
-% WIS : IIIII
-% CHA : IIIII
-
 % I'm referring to the talent in page \pageref{tal::survivalist}!
 
 \subsubsection{Talent Name}
@@ -29,9 +9,6 @@
 Description.
 \paragraph{REQUIREMENTS} Other ranks that need to be attained before attaining this one.
 Left blank if talent doesn't require anything.
-\paragraph{RANK 1} First rank boon(s).
-\paragraph{RANK 2} Second rank boon(s).
-\paragraph{RANK 3} Third rank boon(s).
 
 \begin{table*}[b]%
     \begin{DndTable}[width=\linewidth, header=General Talents]{clXX} \label{tal::generaltalents}
@@ -55,7 +32,7 @@ Left blank if talent doesn't require anything.
     \end{DndTable}
 \end{table*}
 
-\begin{table*}[b]% 
+\begin{table*}[b]%
     \begin{DndTable}[width=\linewidth, header=Artisan Talents]{clXX}
         \textbf{Page} & \textbf{Name} & \textbf{Tags} & \textbf{Requirements} \\
     \end{DndTable}
@@ -63,7 +40,7 @@ Left blank if talent doesn't require anything.
 \end{table*}
 
 \begin{table*}[b]%
-    \begin{DndTable}[width=\linewidth, header=Heroic Talents]{clXX} \label{tal::heroictalents}
+    \begin{DndTable}[width=\linewidth, header=Injury Talents]{clXX} \label{tal::injurytalents}
         \textbf{Page} & \textbf{Name} & \textbf{Tags} & \textbf{Requirements} \\
     \end{DndTable}
 \end{table*}
@@ -112,10 +89,10 @@ Left blank if talent doesn't require anything.
 
 % \normalsize
 % Description.
-% \paragraph{REQUIREMENTS} 
-% \paragraph{RANK 1} 
-% \paragraph{RANK 2} 
-% \paragraph{RANK 3} 
+% \paragraph{REQUIREMENTS}
+% \paragraph{RANK 1}
+% \paragraph{RANK 2}
+% \paragraph{RANK 3}
 
 % % ============================================================================== %
 % === ARMOR ==================================================================== %
@@ -127,7 +104,7 @@ You know how best to hide, and use your dyed light armor to benefit your stealth
 \paragraph{REQUIREMENTS} Lightly Armored 2 and Sly 2.
 \paragraph{RANK 1} You can take the Hide action as a bonus action on each of your turns.
 \paragraph{RANK 2} If you are hidden, you can move up to 3 meters in the open without revealing yourself if you end the move in a position where you're not clearly visible.
-\paragraph{RANK 3} 
+\paragraph{RANK 3}
 
 \subsubsection{Imposing Figure} \label{tal::imposingfigure}
 \small{\textcolor{gray}{Intimidation}}
@@ -135,9 +112,9 @@ You know how best to hide, and use your dyed light armor to benefit your stealth
 \normalsize
 Description.
 \paragraph{REQUIREMENTS} Menacing 2 and Heavily Armored 2.
-\paragraph{RANK 1} 
-\paragraph{RANK 2} 
-\paragraph{RANK 3} 
+\paragraph{RANK 1}
+\paragraph{RANK 2}
+\paragraph{RANK 3}
 
 % ============================================================================== %
 % === WEAPONS ================================================================== %
@@ -150,7 +127,7 @@ Description.
 % \normalsize
 % Description.
 % \paragraph{REQUIREMENTS} Flail Adept 2 and Acrobat 2.
-% \paragraph{RANK 1} 
+% \paragraph{RANK 1}
 % \paragraph{RANK 2} extra damage
 % \paragraph{RANK 3} ADVANCED TECHNIQUE
 
@@ -163,10 +140,10 @@ Description.
 
 \normalsize
 Your heavy experience in manual labor or melee combat has granted you an increased resilience against strikes of all kind.
-\paragraph{REQUIREMENTS} Constitution 13. 
-\paragraph{RANK 1} 
-\paragraph{RANK 2} 
-\paragraph{RANK 3} 
+\paragraph{REQUIREMENTS} Constitution 13.
+\paragraph{RANK 1}
+\paragraph{RANK 2}
+\paragraph{RANK 3}
 
 % ============================================================================== %
 \subsubsection{Desensitized Combatant} \label{tal::desensitizedcombatant}
@@ -230,8 +207,8 @@ Description.
 \normalsize
 Description.
 \paragraph{REQUIREMENTS} Charisma 13. Armed Fighter 2.
-\paragraph{RANK 1} 
-\paragraph{RANK 2} 
+\paragraph{RANK 1}
+\paragraph{RANK 2}
 \paragraph{RANK 3} TECHNIQUE
 
 % ============================================================================== %
@@ -297,18 +274,18 @@ Description.
 Description.
 \paragraph{REQUIREMENTS} Educated 2.
 \paragraph{RANK 1} You are proficient with Drer's fire-breathers.
-\paragraph{RANK 2} 
-\paragraph{RANK 3} 
+\paragraph{RANK 2}
+\paragraph{RANK 3}
 
 % ============================================================================== %
-\subsubsection{Drunken Brawler} \label{tal::drunkenbrawler} % 
+\subsubsection{Drunken Brawler} \label{tal::drunkenbrawler} %
 \small{\textcolor{gray}{}}
 % Skills emulating drunken fighting AND actual bonus when drunk.
 
 \normalsize
 Description.
-\paragraph{REQUIREMENTS} 
-\paragraph{RANK 1} 
+\paragraph{REQUIREMENTS}
+\paragraph{RANK 1}
 \paragraph{RANK 2} When you suffer from the effects of drunkenness, you have advantage on Constitution and Strength saving throws.
 \paragraph{RANK 3} You learn the Careless Deflect technique.
 
@@ -337,7 +314,7 @@ An able physician, you are able to quickly mend wounds and get your allies back 
 \paragraph{REQUIREMENTS} Mender 2.
 \paragraph{RANK 1} You gain proficiency with the healer's kit.
 \paragraph{RANK 2} You learn the Heal technique.
-\paragraph{RANK 3} 
+\paragraph{RANK 3}
 
 % ============================================================================== %
 \subsubsection{Master of Disguise} \label{tal::masterofdisguise}
@@ -347,7 +324,7 @@ An able physician, you are able to quickly mend wounds and get your allies back 
 Description.
 \paragraph{REQUIREMENTS} Performer 2.
 \paragraph{RANK 1} You gain proficiency with the disguise kit.
-\paragraph{RANK 2} 
+\paragraph{RANK 2}
 \paragraph{RANK 3} If you spend one hour observing a creature, you can then spend a long rest crafting a disguise you can quickly don to mimic that creature.
 Making the disguise requires a disguise kit.
 You must make checks as normal to disguise yourself, but you can assume the disguise as an action.
@@ -372,7 +349,7 @@ Additionally, you can coat a weapon in poison as a bonus action, instead of an a
 Description.
 \paragraph{REQUIREMENTS} Quick Fingers 2.
 \paragraph{RANK 1} You gain proficiency with thieves' tools.
-\paragraph{RANK 2} 
+\paragraph{RANK 2}
 \paragraph{RANK 3} You can use your thieves' tools to disarm a trap or open a lock as a bonus action.
 
 % ============================================================================== %
@@ -383,8 +360,8 @@ Description.
 Description.
 \paragraph{REQUIREMENTS} Educated 2.
 \paragraph{RANK 1} You gain proficiency with tinker's tools.
-\paragraph{RANK 2} 
-\paragraph{RANK 3} 
+\paragraph{RANK 2}
+\paragraph{RANK 3}
 
 % ============================================================================== %
 \subsubsection{Weaver} \label{tal::weaver}
@@ -393,8 +370,8 @@ Description.
 \normalsize
 Description.
 \paragraph{RANK 1} You gain proficiency with weaver's tools.
-\paragraph{RANK 2} 
-\paragraph{RANK 3} 
+\paragraph{RANK 2}
+\paragraph{RANK 3}
 
 % ============================================================================== %
 % LANGUAGES
@@ -416,7 +393,7 @@ Description.
 
 \normalsize
 Description.
-\paragraph{RANK 1} 
-\paragraph{RANK 2} 
+\paragraph{RANK 1}
+\paragraph{RANK 2}
 \paragraph{RANK 3} A true master of the mind, you are able to retain your sentience without a qualar.
 You are immune to the effects of dementia.
