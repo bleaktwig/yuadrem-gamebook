@@ -12,67 +12,374 @@ Introducing a series of critical hit charts that vary based on the damage type o
         \item Traits and feats like Savage Attacks and Brutal Critical continue to work as written.
     \end{itemize}
 
-\subsubsection{Injuries \& Insanity}
-    Critical hits can cause minor and major injuries.
-    When a creature suffers a minor injury it can be healed by someone competent with a healer's kit over the course of a long rest.
-
-    Major injuries and Insanities will not heal on their own, and count as a new Flaw (see page \pageref{ssec::flaws}) when they are applied.
-    The text of certain injuries will specify other ways this injuries might resolve.
-
 \subsubsection{Damage Charts}
     \begin{DndTable}[width=\linewidth, header=Bludgeoning]{cX}
         \textbf{d20} & \textbf{Effect} \\
-                   1 & No extra effect. \\
-                 2-4 & Until the start of your next turn, the next attack against the creature has advantage. \\
-                 5-8 & Push the creature up to 15 feet in any direction. \\
-                9-12 & The creature is knocked prone. \\
-               13-16 & Push the creature up to 15 feet away.
-                       The creature is knocked prone. \\
-               17-18 & Roll on the minor injury chart.
-                       If the creature is wearing heavy armor, roll on the major injury chart instead. \\
-                  19 & Roll on the major injury chart. \\
-                  20 & The creature is stunned until the end of your next turn.
-                       Roll on the major injury chart.
+        1     & Roll damage as normal. \\
+        2-3   & The next attack against the creature has advantage. \\
+        4-6   & Push the creature up to 1.5 meters in any direction. \\
+        7-8   & Push the creature up to 4.5 meters in any direction. \\
+        9-11  & Attacks against the creature are made with advantage until the start of your next turn. \\
+        12-13 & The creature is knocked prone. \\
+        14-16 & Push the creature up to 4.5 meters away, and the creature is knocked prone. \\
+        17-18 & Roll on the Minor Injury chart.
+        If the creature is wearing heavy armor roll on the Major Injury chart instead. \\
+        19    & Deal the twice maximum result of your damage dice and roll on the major injury chart. \\
+        20    & Deal the maximum result of your damage dice twice, the creature is stunned until the end of your next turn, and roll on the major injury chart.
     \end{DndTable}
 
     \begin{DndTable}[width=\linewidth, header=Piercing]{cX}
         \textbf{d20} & \textbf{Effect} \\
-                   1 & No extra effect. \\
-                 2-4 & Until the start of your next turn, the creature's attack rolls are made with disadvantage. \\
-                 5-8 & Do not roll your damage dice, instead deal the maximum result possible with those dice. \\
-                9-12 & Roll on the minor injury chart with disadvantage. \\
-               13-16 & Roll on the minor injury chart. \\
-               17-18 & Roll on the major injury chart with disadvantage. \\
-                  19 & Roll on the major injury chart. \\
-                  20 & Roll once on the minor injury chart and once on the major injurt chart.
+        1     & Roll damage as normal. \\
+        2-3   & The creature may only move half its movement speed on its next turn. \\
+        4-6   & Roll damage dice twice and use the higher result. \\
+        7-8   & The creature's movement speed is zero until the end of its next turn. \\
+        9-11  & You can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit. \\
+        12-13 & Roll on the minor injury chart with disadvantage. \\
+        14-16 & Roll on the minor injury chart. \\
+        17-18 & Roll on the major injury chart. \\
+        19    & Roll on the major injury chart. \\
+        20    & Roll on the minor injury chart, and roll on the major injury chart.
     \end{DndTable}
 
     \begin{DndTable}[width=\linewidth, header=Slashing]{cX}
         \textbf{d20} & \textbf{Effect} \\
-                   1 & No extra effect. \\
-                 2-4 & The creature loses 1d6 hit points at the start of its next turn. \\
-                 5-8 & The creature is bleeding.
-                       For the next minute the creature loses 1d4 damage at the start of each of its turns until it uses an action to staunch this wound. \\
-                9-12 & The creature is bleeding.
-                       For the next minute the creature loses 1d8 hit points at the start of each of its turns until it uses an action to staunch this wound. \\
-               13-16 & The creature is bleeding.
-                       For the next minute the creature loses 1d12 hit points at the start of each of its turns until it uses an action to staunch this wound. \\
-               17-18 & Roll on the minor injury chart.
-                       If the creature is wearing light or no armor, roll on the major injury chart instead \\
-                  19 & Roll on the major injury chart. \\
-                  20 & Roll on the major injury chart.
-                       The creature is bleeding.
-                       For the next minute the creature loses 2d8 hit points at the start of each of its turns until it uses an action to staunch this wound.
+        1     & Roll damage as normal. \\
+        2-3   & The creature loses 1d6 hit points at the start of its next turn. \\
+        4-6   & Choose one of the creature's arms or legs.
+        If you slash one of its legs, its movement speed is halved until the end of its next turn.
+        If you slash one of its arms, its attack rolls are made with disadvantage until the end of its next turn. \\
+        7-8   & The creature is bleeding.
+        For the next minute the creature loses 1d4 damage at the start of each of its turns until it uses two actions to staunch this wound. \\
+        9-11  & Wounded, the creature has disadvantage on weapon attack rolls for a minute.
+        The creature can roll a Constitution saving throw (DC 15) at the end of each of its turns.
+        On a success, it ends this effect. \\
+        12-13 & The creature is bleeding.
+        For the next minute the creature loses 1d8 hit points at the start of each of its turns until it uses two actions to staunch this wound. \\
+        14-16 & The creature is bleeding.
+        For the next minute the creature loses 1d12 hit points at the start of each of its turns until it uses two actions to staunch this wound. \\
+        17-18 & Roll on the minor injury chart.
+        If the creature is wearing light or no armor roll on the major injury chart instead. \\
+        19    & Roll on the major injury chart. \\
+        20    & Roll on the major injury chart, and the creature is bleeding.
+        For the next minute the creature loses 2d8 hit points at the start of each of its turns until it uses two actions to staunch this wound.
     \end{DndTable}
 
-    \begin{DndTable}[width=\linewidth, header=Slashing]{cX}
+    \begin{DndTable}[width=\linewidth, header=Acid]{cX}
         \textbf{d20} & \textbf{Effect} \\
-                   1 &  \\
-                 2-4 &  \\
-                 5-8 &  \\
-                9-12 &  \\
-               13-16 &  \\
-               17-18 &  \\
-                  19 &  \\
-                  20 &
+        1     & Roll damage as normal. \\
+        2-3   & You induce temporary anosmia on the creature.
+        While in this state, the creature has disadvantage on all Wisdom (Perception) checks that rely on smell.
+        This counts as a minor injury. \\
+        4-6   & The creature is scarred.
+        While scarred the creature has disadvantage on all Charisma ability checks except Charisma (Intimidation).
+        This counts as a minor injury. \\
+        7-8   & You induce anosmia on the creature.
+        While in this state, the creature automatically fails on all Wisdom (Perception) checks that rely on smell.
+        Additionally, the creature has disadvantage on checks with Cooking Utensils.
+        This counts as a major injury. \\
+        9-11  & The creature is disfigured.
+        While disfigured the creature has disadvantage on all Charisma ability checks except Charisma (Intimidation).
+        This counts as a major injury. \\
+        12-13 & The creature's AC is reduced by 1.
+        If the creature is wearing armor, it must be repaired for 1/4th of the price of a new armor of the same type to regain its AC modifier.
+        If not, this counts as a minor injury. \\
+        14-16 & Roll on the minor injury chart.
+        Additionally, the creature is disfigured.
+        While disfigured the creature has disadvantage on all Charisma ability checks except Charisma (Intimidation).
+        This counts as a major injury. \\
+        17-18 & The creature's AC is reduced by 2.
+        If the creature is wearing armor, it must be repaired for half of the price of a new armor of the same type to regain its AC modifier.
+        If not, this counts as a minor injury. \\
+        19    & Roll on the major injury chart. \\
+        20    & If the creature is wearing armor, the armor is destroyed and roll on the major injury chart.
+        If the creature is not wearing armor, roll on the major injury chart and the creature is disfigured.
+        While disfigured the creature has disadvantage on all Charisma ability checks except Charisma (Intimidation).
+        This counts as a major injury.
     \end{DndTable}
+
+    \begin{DndTable}[width=\linewidth, header=Cold]{cX}
+        \textbf{d20} & \textbf{Effect} \\
+        1     & Roll damage as normal. \\
+        2-3   & The creature may only move half its movement speed on its next turn. \\
+        4-6   & The creature has disadvantage on attack rolls until the end of its next turn. \\
+        7-8   & The creature’s movement speed is 0 until the end of its next turn. \\
+        9-11  & The creature gains vulnerability to bludgeoning damage for a minute. \\
+        12-13 & The creature is paralyzed until the end of its next turn. \\
+        14-16 & The creature is paralyzed until the end of its next turn.
+        If the creature takes damage before the end of its next turn, roll on the minor injury chart. \\
+        17-18 & The creature is paralyzed until the end of its next turn and rolls on the minor injury chart. \\
+        19    & Roll on the major injury chart. \\
+        20    & Roll on the major injury chart, and the creature is paralyzed for the next minute.
+        The creature may attempt a Constitution saving throw at the end of each of its turns (DC 15) to end this effect.
+        If it fails this saving throw three times it is frozen solid and becomes petrified, but frozen solid rather than turned to stone.
+    \end{DndTable}
+
+    \begin{DndTable}[width=\linewidth, header=Fire]{cX}
+        \textbf{d20} & \textbf{Effect} \\
+        1     & Roll damage as normal. \\
+        2-3   & Attack rolls for attacks that deal fire damage have advantage against the creature until the end of its next turn. \\
+        4-6   & You burn the creature's hands.
+        The creature drops any objects it is holding. \\
+        7-8   & The creature is on fire.
+        While the creature is on fire it takes 2d4 fire damage at the start of each of its turns.
+        The creature can end this condition by dropping prone and using 1.5 meters of movement to roll on the ground. \\
+        9-11  &  \\
+        12-13 & The creature is on fire.
+        While the creature is on fire it takes 2d6 fire damage at the start of each of its turns.
+        The creature can end this condition by dropping prone and using 1.5 meters of movement to roll on the ground. \\
+        14-16 & The creature is charred.
+        If the creature has resistance to fire, it loses that resistance.
+        If the creature does not have resistance to fire, it gains vulnerability to fire.
+        Both of these effects are considered a minor injury. \\
+        17-18 & Roll on the minor injury chart.
+        Additionally, the creature is on fire.
+        While on fire it takes 2d6 fire damage at the start of each of its turns.
+        The creature can end this condition by dropping prone and using 1.5 meters of movement to roll on the ground. \\
+        19    & Roll on the major injury chart. \\
+        20    & Roll on the major injury chart.
+        Additionally, the creature is on fire.
+        While the creature is on fire it takes 2d8 fire damage at the start of each of its turns.
+        The creature can end this condition by dropping prone and using 1.5 meters of movement to roll on the ground.
+    \end{DndTable}
+
+    \begin{DndTable}[width=\linewidth, header=Force]{cX}
+        % TODO: Check back here after done with spells. Dunno if we're keeping Force damage.
+        \textbf{d20} & \textbf{Effect} \\
+        1     & Roll damage as normal. \\
+        2-3   & The creature has disadvantage on saving throws against spells until the end of its next turn. \\
+        4-6   & The creature is pushed 4.5 meters away from you. \\
+        7-8   & Spell attack rolls against the creature have advantage until the end of its next turn. \\
+        9-11  & The creature is knocked prone. \\
+        12-13 & The creature is spellbound until the end of its next turn.
+        While spellbound it makes saving throws against spells with disadvantage and spell attack rolls against it have advantage. \\
+        14-16 & The creature is spellbound for the next minute.
+        While spellbound it makes saving throws against spells with disadvantage and spell attack rolls against it have advantage.
+        At the end of each of the creature’s turns it can make an Intelligence saving throw (DC 12) to end this effect. \\
+        17-18 & Roll on the minor injury chart.
+        Additionally, the creature is spellbound for the next minute.
+        While spellbound it makes saving throws against spells with disadvantage and spell attack rolls against it have advantage.
+        At the end of each of the creature’s turns it can make an Intelligence saving throw (DC 15) to end this effect. \\
+        19    & Roll on the major injury chart. \\
+        20    & Roll on the major injury chart.
+        Additionally, the creature is spellbound for the next minute.
+        While spellbound it makes saving throws against spells with disadvantage and spell attack rolls against it have advantage.
+        At the end of each of the creature’s turns it can make an Intelligence saving throw (DC 18) to end this effect.
+    \end{DndTable}
+
+    \begin{DndTable}[width=\linewidth, header=Lightning]{cX}
+        \textbf{d20} & \textbf{Effect} \\
+        1     & Roll damage as normal. \\
+        2-3   & The creature cannot use reactions until the end of its next turn. \\
+        4-6   & If the creature willingly moves before the start of your next turn, it takes 1d8 lightning damage. \\
+        7-8   & You may choose one other creature within 4.5 m. of the victim.
+        That creature must succeed on a Dexterity saving throw (DC 12) or take half as much damage. \\
+        9-11  & The creature is paralyzed until the start of your next turn. \\
+        12-13 & You may choose one other creature within 4.5 m. of the victim.
+        That creature must succeed on a Dexterity saving throw (DC 15) or take half as much damage. \\
+        14-16 & Roll on the minor injury chart.
+        If the creature is wearing metal armor roll on the major injury chart instead. \\
+        17-18 & The creature and all creatures within 4.5 m. of it cannot take reactions until the end of their next turn.
+        Then roll on the minor injury chart. \\
+        19    & Roll on the major injury chart. \\
+        20    & All creatures within 4.5 m. of the victim must succeed on a Dexterity saving throw (DC 18) or take half as much damage.
+        Then roll on the major injury chart.
+    \end{DndTable}
+
+    \begin{DndTable}[width=\linewidth, header=Necrotic]{cX}
+        \textbf{d20} & \textbf{Effect} \\
+        1     & Roll damage as normal. \\
+        2-3   & The creature cannot regain hit points until the end of its next turn. \\
+        4-6   & Choose an ability.
+        The creature has disadvantage on ability checks made with the chosen ability for a minute. \\
+        7-8   & The creature’s maximum hit points are reduced by an amount equal to the damage dealt.
+        This lasts until the creature takes a short rest. \\
+        9-11  & You heal yourself an amount equal to half of the damage dealt. \\
+        12-13 & The creature’s maximum hit points are reduced by an amount equal to the damage dealt.
+        This is considered a minor injury. \\
+        14-16 & The creature cannot regain hit points for the next minute.
+        It may make a Constitution saving throw (DC 15) at the end of each of its turns to end this effect. \\
+        17-18 & The creature’s maximum hit points are reduced by an amount equal to the damage dealt.
+        This is considered a major injury.
+        Then roll on the minor injury chart. \\
+        19    & Roll on the major injury chart. \\
+        20    & The creature cannot regain hit points for the next minute.
+        It may make a Constitution saving throw (DC 18) at the end of each of its turns to end this effect.
+        Then roll on the major injury chart.
+    \end{DndTable}
+
+    \begin{DndTable}[width=\linewidth, header=Poison]{cX}
+        \textbf{d20} & \textbf{Effect} \\
+        1     & Roll damage as normal. \\
+        2-3   & The creature has disadvantage on its next ability check, attack roll, or saving throw. \\
+        4-6   & The creature stinks.
+        It has disadvantage on all Charisma checks except Charisma (Intimidation) and Perception checks that rely on smell.
+        This lasts until the creature bathes. \\
+        7-8   & The creature has disadvantage on all ability checks, attack rolls, and saving throws until the end of its next turn. \\
+        9-11  & Any creature in a radius of 3 meters around the target must roll a Constitution saving throw.
+        On a failure, they take half the damage dealt. \\
+        12-13 & The creature is poisoned for the next minute.
+        The creature may attempt a Constitution saving throw at the end of each of its turns (DC 12) to end this effect. \\
+        14-16 & The creature is poisoned for the next minute.
+        The creature may attempt a Constitution saving throw at the end of each of its turns (DC 15) to end this effect. \\
+        17-18 & Roll on the minor injury chart and the creature is poisoned for the next minute.
+        The creature may attempt a Constitution saving throw at the end of each of its turns (DC 18) to end this effect. \\
+        19    & Roll on the major injury chart. \\
+        20    & Roll on the major injury chart, and the creature is poisoned for the next minute.
+        The creature may attempt a saving throw at the end of each of its turns (DC 18) to end this effect.
+    \end{DndTable}
+
+    \begin{DndTable}[width=\linewidth, header=Psychic]{cX}
+        \textbf{d20} & \textbf{Effect} \\
+        1     & Roll damage as normal. \\
+        2-3   & You control the creature’s movement on its next turn. \\
+        4-6   & The creature cannot differentiate friend from foe until the end of its next turn. \\
+        7-8   & Attacks against the creature are made with advantage until the start of your next turn. \\
+        9-11  & You control the creature’s actions on its next turn. \\
+        12-13 & The creature's mind is broken.
+        If the creature has resistance to psychic damage, it loses that resistance.
+        If the creature does not have resistance to psychic damage, it gains vulnerability to it.
+        Both of these effects are considered a minor injury. \\
+        14-16 & You control the creature during its next turn. \\
+        17-18 & Roll on the Insanity chart with disadvantage. \\
+        19    & Roll on the Insanity chart. \\
+        20    & Roll on the Insanity chart with advantage.
+    \end{DndTable}
+
+    \begin{DndTable}[width=\linewidth, header=Radiant]{cX}
+        \textbf{d20} & \textbf{Effect} \\
+        1     & Roll damage as normal. \\
+        2-3   & The has disadvantage on any Perception checks that rely on sight.
+        This is considered a minor injury. \\
+        4-6   & The creature's attack rolls are made with disadvantage. \\
+        7-8   & The creature is blinded until the end of its next turn. \\
+        9-11  & The creature is blinded for a minute.
+        It can make a Constitution saving throw (DC 12) at the end of each of its turns to end this effect. \\
+        12-13 & The creature glows for the next minute.
+        While glowing it produces bright light up 3 meters and dim light up to 9 meters and all successful attacks against the creature deal an additional 1 radiant damage. \\
+        14-16 & The creature is frightened of you for the next minute.
+        It can make a Wisdom saving throw (DC 15) at the end of each of its turns to end this effect. \\
+        17-18 & Roll on the minor injury chart.
+        Additionally, the creature glows for the next minute.
+        While glowing it produces bright light up 3 meters and dim light up to 9 meters and all successful attacks against the creature deal an additional 1d4 radiant damage. \\
+        19    & Roll on the major injury chart. \\
+        20    & Roll on the major injury chart.
+        Additionally, the creature glows for the next minute.
+        While glowing it produces bright light up 3 meters and dim light up to 9 meters and all successful attacks against the creature deal an additional 1d6 radiant damage.
+    \end{DndTable}
+
+    \begin{DndTable}[width=\linewidth, header=Thunder]{cX}
+        \textbf{d20} & \textbf{Effect} \\
+        1     & Roll damage as normal. \\
+        2-3   & The creature has disadvantage on any Perception checks that rely on hearing.
+        This is considered a minor injury. \\
+        4-6   & The creature is deafened until the end of its next turn. \\
+        7-8   & The creature is confused until the end of its next turn.
+        While confused, the creature moves in a random direction determined by the DM. \\
+        9-11  & The creature is deafened for one minute. \\
+        12-13 & The creature is stunned until the start of its next turn and is deafened for one minute. \\
+        14-16 & The creature is deafened permanently.
+        This is considered a major injury. \\
+        17-18 & The creature is stunned until the end of its next turn and is deafened for one minute.
+        Then roll on the minor injury chart. \\
+        19    & Roll on the major injury chart. \\
+        20    & The creature is stunned until the end of its next round and is deafened for one minute.
+        Then roll on the major injury chart.
+    \end{DndTable}
+
+\subsubsection{Injuries \& Insanity}
+    Critical hits can cause minor and major injuries.
+    When a creature suffers a minor injury it can be healed by someone competent with a healer's kit over the course of a long rest.
+
+    Major injuries and Insanities require assistance from a dedicated healer, or someone with the relevant feat (see page \pageref{feat::physician} and \pageref{feat::therapist}).
+    Alternatively, you can decide to keep a major injury or insanity as a new Flaw (see page \pageref{ssec::flaws}) during a short rest after it is applied.
+    % The text of certain injuries will specify other ways this injuries might resolve.
+
+    \begin{DndTable}[width=\linewidth, header=Minor and Major Injuries]{cXX}
+        \textbf{d20} & \textbf{Minor Injury} & \textbf{Major Injury} \\
+        1-3 &
+        \textbf{Injured leg}.
+        The creature’s movement speed is reduced by 3 meters. &
+        \textbf{Crippled leg}.
+        The creature’s movement speed is reduced by 3 meters and it has disadvantage on Dexterity saving throws. \\
+        4-8 &
+        \textbf{Injured arm}.
+        Randomly determine one of the creature’s arms.
+        That arm cannot be used to hold a shield and the creature has disadvantage on any rolls involving the use of that arm. &
+        \textbf{Crippled arm}.
+        Randomly determine one of the creature’s arms.
+        That arm cannot be used to hold an item and any ability check requiring that arm automatically fails or has disadvantage (DM’s choice). \\
+        9-11 &
+        \textbf{Multiple injuries}.
+        The creature’s maximum hitpoints are reduced by an amount equivalent to half of the damage dealt by the attack. &
+        \textbf{Severely wounded}.
+        The creature’s maximum hit points are reduced by an amount equivalent to the damage dealt by the attack. \\
+        12-16 &
+        \textbf{Badly beaten}.
+        The creature has disadvantage on Constitution saving throws. &
+        \textbf{Edge of death}.
+        The creature has disadvantage on Constitution and death saving throws. \\
+        17-19 &
+        \textbf{Ringing blow}.
+        The creature is stunned until the end of its next turn and deafened until it completes a short rest. &
+        \textbf{Blinding blow}.
+        The creature is blinded. \\
+        20    &
+        \textbf{Blow to the head}
+        The creature is unconscious for 2d12 hours. &
+        \textbf{Decapitated}.
+        The creature is dead.
+    \end{DndTable}
+
+    \begin{table*}[t]
+        \begin{DndTable}[width=\linewidth, header=Insanity]{cX}
+            \textbf{d20} & \textbf{Insanity} \\
+            1  & \textbf{Synesthesia}.
+            You can hear colors, smell sounds, or taste textures. Regardless of the specific manifestation, you have disadvantage on all Perception and Investigation skill checks. \\
+            2  & \textbf{Kleptomania}.
+            Once per day when you are in a personal residence or marketplace, the DM can call on you to succeed on a Wisdom saving throw (DC 12) or attempt to steal an item of insignificant practical and monetary value. \\
+            3  & \textbf{Paranoia}.
+            Once per day following an interaction with another creature (including other PCs) the DM can call on you to succeed on a Wisdom saving throw (DC 12) or you suspect that creature is secretly plotting against you. \\
+            4  & \textbf{Obsession}.
+            Choose a person or personal interest you are obsessed with. Once per day, when you are presented with an opportunity to interact with or learn more about the subject of your obsession the DM can call on you to succeed on a Wisdom saving throw (DC 14) or ignore everything else to obsess over the object of your fascination. \\
+            5  & \textbf{Addiction}.
+            Choose a behavior or substance you have used. Once per day, when you are presented with an opportunity to do the behavior or use the substance the DM can call on you to succeed on a Wisdom saving throw (DC 14) or ignore everything else to indulge in your vice. \\
+            6  & \textbf{Odd Thinking}.
+            Once per day when you hear a rational explanation for an event or occurrence, your DM may call on you to succeed on a Wisdom saving throw (DC 12) or you reject the rational explanation for a conspiratorial or fantastical explanation. \\
+            7  & \textbf{Narcissism}.
+            When you take an action or series of action that doesn’t directly benefit you, you must pass a Wisdom saving throw (DC 11) or you can’t take that action / series of actions.
+            If any self-sacrifice on your part would be required the DC of the saving throw is increased to 16. \\
+            8  & \textbf{Delusional}.
+            When you gain this insanity the DM will tell you a belief that you have. No matter what evidence is presented to the contrary so long as you have this insanity you cannot be persuaded that this belief is not true. \\
+            9  & \textbf{Pica}.
+            Once per day the DM can call on you to pass a Wisdom saving throw (DC 14) or immediately eat one non-food object (such as dirt, napkins, or a small piece of jewelry) of the DM’s choice. \\
+            10 & \textbf{Retrograde amnesia}.
+            You forget everything about your personal life prior to the moment you received this insanity. \\
+            11 & \textbf{Overwhelmed}.
+            If you do not have immunity or resistance to psychic damage, you gain vulnerability to psychic damage.
+            If you have resistance to psychic damage, you lose it.
+            If you have immunity to psychic damage, you lose it but gain resistance to psychic damage. \\
+            12 & \textbf{Anterograde amnesia}.
+            Whenever you try to recall a fact you learned since you received this insanity, make a Wisdom saving throw (DC 12).
+            If you fail you cannot recall the fact. \\
+            13 & \textbf{Dependence}.
+            You must pass a Wisdom saving throw (DC 14) to take an action that one or more of your allies disapprove of. \\
+            14 & \textbf{Anxious}.
+            You have disadvantage on saving throws against being frightened. Additionally, once per day the DM can call on you to succeed a Wisdom saving throw (DC 14) or be frightened by a creature of the DM’s choosing for the next minute. \\
+            15 & \textbf{Mute}.
+            Whenever you wish to speak allowed (including casting a spell that has verbal components) you must succeed on a Wisdom saving throw (DC 13) to do so. \\
+            16 & \textbf{Narcolepsy}.
+            You have disadvantage on saving throws against sleeping or unconsciousness.
+            Once per day the DM may call on you to succeed on a Constitution saving throw (DC 12) or fall unconscious for one minute or until you take damage or another creature spends their action trying to rouse you. \\
+            17 & \textbf{Insomnia}.
+            You cannot take long rests and your short rests take 8 hours to complete. \\
+            18 & \textbf{Homicidal}.
+            After each long rest you must pass a Wisdom saving throw (DC 14) or be overcome with the urge to end the life of a humanoid creature and you cannot benefit from another long rest until you do so. \\
+            19 & \textbf{Suicidal}.
+            After each long rest you must pass a Wisdom saving throw (DC 12) or make an attempt to end your own life. \\
+            20 & \textbf{Catatonia}.
+            You are unconscious for 10d10 years.
+        \end{DndTable}
+    \end{table*}
+
+\newpage
