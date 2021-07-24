@@ -1,6 +1,5 @@
 % !TEX root = ../main.tex
 \section{Optional Rules} \label{sec::optionalrules}
-
 \subsection*{Equipment Properties} \label{ssec::equipmentproperties1}
     Apart from their weight class, armors have specific properties.
     These carry with them beneficial and detrimental effects.
@@ -19,17 +18,29 @@
 % NOTE: We can stay with vanilla's system, it's good enough tbh.
 
 \subsection*{Flaws} \label{ssec::flaws}
-    \textbf{TODO.}
+    As you travel through treacherous lands and fight dangerous creatures, it is natural to acquire permanent wounds or fears.
+    These new flaws don't need to be entirely bad --- they reflect a changing point in your life, and can be beneficial in their own way.
 
-\subsection*{Hunger and Thirst} \label{ssec::hungerandthirst}
-    \textbf{TODO.}
+    When you suffer a major injury, fear, or insanity, you can choose to accept this effect as a flaw.
+    When you do so, it becomes permanent.
+    For example, a crippled arm might need to be severed off, or your character might get used to their insanity and learn to live with it instead of treating it.
+
+    While this effect may prove as a permanent hindrance to you, you are rewarded with FP for taking it.
+    This extra FP does not count towards your number of hit dice.
+    The number of FP awarded by effects is specified in the effects' description.
+
+% \subsection*{Hunger and Thirst} \label{ssec::hungerandthirst}
+%     \textbf{TODO.}
+% NOTE: We can stay with vanilla's system, it's good enough tbh.
 
 \subsection*{Injuries \& Insanity} \label{ssec::injuriesandinsanity}
     Critical hits or especially severe events can cause injuries or insanity.
     When a creature suffers a minor injury it can be healed by someone competent with a healer's kit over the course of a long rest.
-
     Major injuries and Insanities require assistance from a dedicated healer, or someone with the relevant feat (see page \pageref{feat::physician} and \pageref{feat::therapist}).
-    Alternatively, you can decide to keep a major injury or insanity as a new Flaw (see page \pageref{ssec::flaws}) during a short rest after it is applied.
+
+    Alternatively, you can decide to keep an injury or insanity as a new Flaw (see page \pageref{ssec::flaws}) during a short rest after it is applied.
+    Minor injuries and insanities award you 2 FP, while major injuries reward you with 3 FP.
+    Acquiring a flaw from a major injury related to a minor injury you already have (such as Crippled Leg and Injured Leg) only awards 1 FP --- one more than what you already had gained.
     % The text of certain injuries will specify other ways this injuries might resolve.
 
     \begin{DndTable}[width=\linewidth, header=Minor and Major Injuries]{cXX}
@@ -58,7 +69,7 @@
         The creature has disadvantage on Constitution and death saving throws. \\
         17-19 &
         \textbf{Ringing blow}.
-        The creature is stunned until the end of its next turn and deafened until it completes a short rest. &
+        The creature is stunned until the end of its next turn and deafened. &
         \textbf{Blinding blow}.
         The creature is blinded. \\
         20    &
@@ -97,12 +108,13 @@
         If you have resistance to psychic damage, you lose it.
         If you have immunity to psychic damage, you lose it but gain resistance to psychic damage. \\
         12 & \textbf{Anterograde amnesia}.
-        Whenever you try to recall a fact you learned since you received this insanity, make a Wisdom saving throw (DC 12).
+        Whenever you try to recall a fact you learned since you received this insanity, make a Intelligence saving throw (DC 12).
         If you fail you cannot recall the fact. \\
         13 & \textbf{Dependence}.
         You must pass a Wisdom saving throw (DC 14) to take an action that one or more of your allies disapprove of. \\
         14 & \textbf{Anxious}.
-        You have disadvantage on saving throws against being frightened. Additionally, once per day the DM can call on you to succeed a Wisdom saving throw (DC 14) or be frightened by a creature of the DM’s choosing for the next minute. \\
+        You have disadvantage on saving throws against being frightened.
+        Additionally, once per day the DM can call on you to succeed a Wisdom saving throw (DC 14) or be frightened by a creature of the DM’s choosing for the next minute. \\
         15 & \textbf{Mute}.
         Whenever you wish to speak allowed (including casting a spell that has verbal components) you must succeed on a Wisdom saving throw (DC 13) to do so. \\
         16 & \textbf{Narcolepsy}.
@@ -142,4 +154,67 @@
     You can avoid opportunity attacks during your turn by taking the Disengage action.
 
 \subsection*{Short and Long Rests} \label{ssec::shortandlongrests}
-    \textbf{TODO.}
+    The gritty campaigns in Yuadrem benefit from longer rest times.
+    Short rests last for 8 hours, and long rests for 6 days --- a week in the Fagalian calendar.
+    This puts the brakes on the campaign, requiring the players to carefully judge the benefits and drawbacks of combat.
+    Characters can't afford to engage in too many battles in a row, and all adventuring requires careful planning.
+
+    Complementing this optional rule is the fact that all spell slots are recovered during short rests.
+    Additionally, all the systems in this book are designed with this optional rule in mind, so some things need to be re-balanced if a group is to play without this rule.
+
+\subsection*{Stress} \label{ssec::stress}
+    Adventuring is dangerous, and no matter the amount of heroic deeds in your past you are bound to accumulate stress over time.
+    As a mechanic, stress adds long-term consequences to traumatic experiences and tense situations.
+
+    Whenever you drop to 0 hit points, add a point to your stress meter.
+    % Some specific attacks directly produce stress on a creature.
+    When you reach 4 stress points, you roll on the Afflictions table and acquire the specified affliction, reducing your stress meter back to 2.
+    Afflictions are detrimental conditions that have short or long-term consequences for you.
+
+    Taking a long rest and engaging in downtime activities reduces your stress meter by 1.
+    Additionally, some feats like \pageref{feat::entertainer} and \pageref{feat::reliever} add the capacity to reduce stress in different scenarios.
+
+    \begin{table*}[t]
+    \begin{DndTable}[width=\linewidth, header=Affliction]{cX}
+        \textbf{d20} & \textbf{Affliction} \\
+        1     & \textbf{Insanity}.
+        Your mind collapses and you fall into insanity.
+        Roll on the Insanity table (see page \pageref{ssec::injuriesandinsanity}) and acquire the rolled insanity. \\
+        2-5   & \textbf{Phobia}.
+        Powerless at the face of death, you can only watch as your foe strikes its final blow against you.
+        You add to your flaws the phobia of the type of creature who put you unconscious.
+        Any time you encounter this type of creature, roll a DC 16 Wisdom saving throw at the beginning of each of your turns.
+        On a failure, you become frightened of the creature.
+        This flaw is permanent, and awards you 1 FP. \\
+        6-7   & \textbf{Fearful}.
+        % Scared of death, you become fearful and meek.
+        Whenever you take damage, roll a DC 12 Wisdom saving throw.
+        On a failure, you become frightened of the attacking creature.
+        You can repeat this saving throw at the end of each turn.
+        This effect lasts until you finish a short rest. \\
+        8-9   & \textbf{Paranoid}.
+        Whenever you are targetted by a friendly creature for any effect, roll a DC 12 Wisdom saving throw.
+        On a failure, you refuse what your ally is offering, be it healing, aid, etc.
+        If you ally spent any resource or action on this effect, they are spent anyway.
+        This effect lasts until you finish a short rest. \\
+        10-11 & \textbf{Selfish}.
+        You cannot heal or aid an ally in any way.
+        This effect lasts until you finish a short rest. \\
+        12-13 & \textbf{Masochistic}.
+        Your AC is reduced by 2, and you cannot take the Dodge or Disengage actions.
+        This effect lasts until you finish a short rest. \\
+        14-15 & \textbf{Abusive}.
+        You cannot heal or aid an ally in any way, and you refuse to receive any healing or aid from any creature.
+        This effect lasts until you finish a short rest. \\
+        16-17 & \textbf{Hopeless}.
+        Attacks against you are made with advantage, and you roll saving throws with disadvantage.
+        This effect lasts until you finish a short rest. \\
+        18-19 & \textbf{Irrational}.
+        At the beginning of each of your turns, roll a DC 15 Wisdom saving throw.
+        On a failure, you cannot take any action during your turn. \\
+        20    & \textbf{Virtuous}.
+        Stalwart against adversity, your time at death's door only enhances your resolution.
+        Your stress meter is reduced to 0, and any ally that can see or hear you has their stress meter reduced by 1.
+        Additionally, you have advantage on attack rolls and saving throws for one hour.
+    \end{DndTable}
+    \end{table*}
