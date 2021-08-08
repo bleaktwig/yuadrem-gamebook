@@ -495,166 +495,146 @@ During a long rest, you and your allies reduce stress by one additional point.
 % ========================================================================== %
 
 \subsection*{Background Feats} % Once I'm finished with backgrounds sort and rethink this!
-ACOLYTE 0/4
+ACOLYTE 0/6
     \subsubsection{NAME} \label{feat::NAME}
-    \small{\textcolor{gray}{SKILL}}
-
-    \normalsize
     DESCRIPTION
     \paragraph{REQUIREMENTS}
     % ========================================================================== %
 
     \subsubsection{NAME} \label{feat::NAME}
-    \small{\textcolor{gray}{SKILL}}
-
-    \normalsize
     DESCRIPTION
     \paragraph{REQUIREMENTS}
     % ========================================================================== %
 
     \subsubsection{NAME} \label{feat::NAME}
-    \small{\textcolor{gray}{SKILL}}
-
-    \normalsize
     DESCRIPTION
     \paragraph{REQUIREMENTS}
     % ========================================================================== %
 
     \subsubsection{NAME} \label{feat::NAME}
-    \small{\textcolor{gray}{SKILL}}
-
-    \normalsize
     DESCRIPTION
     \paragraph{REQUIREMENTS}
     % ========================================================================== %
 
-SCHOLAR 4?/4
-    \subsubsection{Scholar: Library Access} \label{feat::libraryaccess}
-    \small{\textcolor{gray}{History}}
-
-    \normalsize
-    You are a well-known scholar (or good enough at pretending to be one), and have free and easy access to the majority of libraries.
-    This doesn't give you access to repositories of lore that are too valuable or secret to permit anyone immediate access.
-
-    Additionally, you are likely to gain preferential treatment at libraries and universities accross Yuadrem, as professional courtesy to a fellow scholar.
-    \paragraph{REQUIREMENTS} Scholar background.
-    % ========================================================================== %
-
-    \subsubsection{Scholar: Adept Linguist} \label{feat::adeptlinguist}
-    \small{\textcolor{gray}{History}}
-
-    \normalsize
-    You can communicate with people who don't speak any language you know.
-    You must observe the people interacting with one another for at least 1 day, after which you learn a handful of important words, expressions, and gestures --- enough to communicate on a rudimentary level.
-    \paragraph{REQUIREMENTS} Scholar background.
-    % ========================================================================== %
-
-    \subsubsection{Scholar: Historical Knowledge} \label{feat::historicalknowledge}
-    \small{\textcolor{gray}{History}}
-
-    \normalsize
-    When you enter a ruin or dungeon, you can correctly ascertain its original purpose and determine its builders, whether those were gats, oths, ets, thri-kreen, or some other known kin.
-    In addition, you can determine the monetary value of art objects more than a century old.
-    \paragraph{REQUIREMENTS} Scholar background.
-    % ========================================================================== %
-
-    \subsubsection{Scholar: Legalese} \label{feat::legalese}
-    \small{\textcolor{gray}{History or Persuasion}}
-
-    \normalsize
-    Your experience with your local legal system has given you a firm knowledge of the ins and outs of that system.
-    Even when the law is not on your side, you can use complex terms like ``ex injuria jus non oritur'' and ``cogitationis poenam nemo patitur'' to frighten people into thinking you know what you're talking about.
-    With common folks who don't know any better, you might be able to intimidate or deceive to get favors or special treatment.
-    \paragraph{REQUIREMENTS} Merchant or Scholar background.
-    % ========================================================================== %
-
-ARTISAN 2/4
-    \subsubsection{Artisan: Urban Infrastructure} \label{feat::urbaninfrastructure}
-    \small{\textcolor{gray}{?}}
-
-    \normalsize
+ARTISAN 2/6
+    \subsubsection{Urban Infrastructure} \label{feat::urbaninfrastructure}
     You have a basic knowledge of the structure of buildings, including the stuff behind the walls.
     You can also find blueprints of a specific building in order to learn the details of its construction.
     Such blueprints might provide knowledge of entry points, structural weaknesses, or secret spaces.
-    Your access to such information isn't unlimited.
-    If obtaining or using the information gets you in trouble with the law, your guild can't shield you from the repercussions.
-    \paragraph{REQUIREMENTS} Artisan background.
+    Your access to such information isn't unlimited, and obtaining it can sometimes get you in trouble with the law.
+    % If obtaining or using the information gets you in trouble with the law, your guild can't shield you from the repercussions.
+    \paragraph{REQUIREMENTS} Artisan or Criminal background.
     % ========================================================================== %
 
-    \subsubsection{Artisan: } \label{feat::NAME}
-    \small{\textcolor{gray}{?}}
-
-    \normalsize
+    \subsubsection{} \label{feat::NAME}
     DESCRIPTION
     \paragraph{REQUIREMENTS} Artisan background.
     % ========================================================================== %
 
-    \subsubsection{Artisan: } \label{feat::NAME}
-    \small{\textcolor{gray}{?}}
-
-    \normalsize
+    \subsubsection{} \label{feat::NAME}
     DESCRIPTION
     \paragraph{REQUIREMENTS} Artisan background.
     % ========================================================================== %
 
-CRIMINAL 1/4
-    \subsubsection{Criminal: } \label{feat::NAME}
-    \small{\textcolor{gray}{?}}
+CRIMINAL 4/6
+    \subsubsection{Dual Personalities (2 TP)} \label{feat::dualpersonalities}
+    As the years have passed, you have managed to create a persona.
+    Roll on the Faceless Persona table to determine your persona, or work with the DM to create a persona that's unique to your character and suits the tone of your game.
 
-    \normalsize
-    DESCRIPTION
+    \begin{DndTable}[width=\linewidth, header=Persona]{cX}
+        \textbf{d20} & \textbf{Faceless Persona}                \\
+        1  & A flamboyant spy or brigand.                       \\
+        2  & The incarnation of a nation or people.             \\
+        3  & A scoundrel with a masked guise.                   \\
+        4  & A vengeful spirit.                                 \\
+        5  & The manifestation of a deity or your faith.        \\
+        6  & One whose beauty is greatly accented using makeup. \\
+        7  & An impersonation of another hero.                  \\
+        8  & The embodiment of a school of magic.               \\
+        9  & A warrior with distinctive armor.                  \\
+        10 & A disguise with animalistic or monstrous characteristics, meant to inspire fear.
+    \end{DndTable}
+
+    Most of the world know you as your persona.
+    Those who seek to learn more about you --- your weaknesses, your origins, your purpose --- find themselves stymied by your disguise.
+    Upon donning a disguise and behaving as your persona, you are unidentifiable as your true self.
+    By removing your disguise and revealing your true face, you are no longer identifiable as your persona.
+    This allows you to change appearances between your two personalities as often as you wish, using one to hide the other or serve as convenient camouflage.
+    However, should someone realize the connection between your persona and your true self, your deception might lose its effectiveness.
+    \paragraph{REQUIREMENTS} Criminal or Entertainer background.
+    % ========================================================================== %
+
+    \subsubsection{City Secrets} \label{feat::citysecrets}
+    You know the secret patterns and flow to cities and can find passages through the urban sprawl that others would miss.
+    When you are not in combat, you and companions you lead can travel between any two locations in the city twice as fast as your speed would normally allow.
     \paragraph{REQUIREMENTS} Criminal background.
     % ========================================================================== %
 
-    \subsubsection{Criminal: } \label{feat::NAME}
-    \small{\textcolor{gray}{?}}
-
-    \normalsize
-    DESCRIPTION
-    \paragraph{REQUIREMENTS} Criminal background.
+ENTERTAINER 3/6
+    \subsubsection{Courtier} \label{feat::courtier}
+    Your knowledge of how bureaucracies function lets you gain access to the records and inner workings of any noble court or government you encounter.
+    You know who the movers and shakers are, whom to go to for the favors you seek, and what the current intrigues of interest in the group are.
+    When encountering a new court, you need to spend a long rest among their dwellings to map their inner workings.
+    \paragraph{REQUIREMENTS} Entertainer or Noble background.
     % ========================================================================== %
 
-    \subsubsection{Criminal: } \label{feat::NAME}
-    \small{\textcolor{gray}{?}}
-
-    \normalsize
-    DESCRIPTION
-    \paragraph{REQUIREMENTS} Criminal background.
+    \subsubsection{Rustic Hospitality} \label{feat::rustichospitality}
+    You've spent your life entertaining the masses, and the common folk thank you for it.
+    You can find a place to hide, rest, or recuperate among other commoners, unless you have shown yourself to be a danger to them.
+    They will shield you from the law or anyone else searching for you, though they will not risk their lives for you.
+    For this feat to work, you need to have performed in a settlement at least once.
+    \paragraph{REQUIREMENTS} Entertainer background.
     % ========================================================================== %
 
-    \subsubsection{Criminal: } \label{feat::NAME}
-    \small{\textcolor{gray}{?}}
-
-    \normalsize
+    \subsubsection{} \label{feat::NAME}
     DESCRIPTION
-    \paragraph{REQUIREMENTS} Criminal background.
+    \paragraph{REQUIREMENTS} Entertainer background.
     % ========================================================================== %
 
-MERCHANT 1/4
-    \subsubsection{Merchant: } \label{feat::NAME}
-    \small{\textcolor{gray}{Persuasion}}
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Entertainer background.
+    % ========================================================================== %
 
-    \normalsize
+LABORER 0/6
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Laborer background.
+    % ========================================================================== %
+
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Laborer background.
+    % ========================================================================== %
+
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Laborer background.
+    % ========================================================================== %
+
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Laborer background.
+    % ========================================================================== %
+
+MERCHANT 3/6
+    \subsubsection{} \label{feat::NAME}
     DESCRIPTION
     \paragraph{REQUIREMENTS} Merchant background.
     % ========================================================================== %
 
-    \subsubsection{Merchant: Down Low} \label{feat::downlow}
-    \small{\textcolor{gray}{Persuasion}}
-
-    \normalsize
+    \subsubsection{Down Low} \label{feat::downlow}
     You are acquainted with a network of smugglers who are willing to help you out of tight situations.
-    While in a particular town, city, or other similarly sized community (DM's discretion), you and your companions can stay for free in safe houses.
+    While in a town or larger community, you and your companions can stay for free in safe houses.
     Safe houses provide a poor lifestyle.
     While staying at a safe house, you can choose to keep your presence (and that of your companions) a secret.
+    For this feat to work, you need to have spent at least one short rest in the settlement.
     \paragraph{REQUIREMENTS} Criminal or Merchant background.
     % ========================================================================== %
 
-    \subsubsection{Merchant: Guild Membership} \label{feat::guildmembership}
-    \small{\textcolor{gray}{Persuasion}}
-
-    \normalsize
-    As an established and respected member of a guild, you can rely on certain benefits that membership provides.
+    \subsubsection{Guild Membership} \label{feat::guildmembership}
+    As an known figure of your trade, it is easy for you to become a member of a guild relevant to this trade.
+    This membership provides you with certain benefits.
     Your fellow guild members will provide you with lodging and food if necessary, and pay for your funeral if needed.
     In some cities and towns, a guildhall offers a central place to meet other members of your profession, which can be a good place to meet potential patrons, allies, or hirelings.
 
@@ -666,6 +646,123 @@ MERCHANT 1/4
     You must pay dues of 5 agnomas per month to the guild.
     If you miss payments, you must make up back dues to remain in the guild's good graces.
     \paragraph{REQUIREMENTS} Artisan or Merchant background.
+    % ========================================================================== %
+
+NOBLE 1/6
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Noble background.
+    % ========================================================================== %
+
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Noble background.
+    % ========================================================================== %
+
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Noble background.
+    % ========================================================================== %
+
+SAILOR 0/6
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Sailor background.
+    % ========================================================================== %
+
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Sailor background.
+    % ========================================================================== %
+
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Sailor background.
+    % ========================================================================== %
+
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Sailor background.
+    % ========================================================================== %
+
+SCHOLAR 4?/6
+    \subsubsection{Library Access} \label{feat::libraryaccess}
+    You are a well-known scholar (or good enough at pretending to be one), and have free and easy access to the majority of libraries.
+    This doesn't give you access to repositories of lore that are too valuable or secret to permit anyone immediate access.
+
+    Additionally, you are likely to gain preferential treatment at libraries and universities accross Yuadrem, as professional courtesy to a fellow scholar.
+    \paragraph{REQUIREMENTS} Scholar background.
+    % ========================================================================== %
+
+    \subsubsection{Adept Linguist} \label{feat::adeptlinguist}
+    You can communicate with people who don't speak any language you know.
+    You must observe the people interacting with one another for at least 1 day, after which you learn a handful of important words, expressions, and gestures --- enough to communicate on a rudimentary level.
+    \paragraph{REQUIREMENTS} Scholar background.
+    % ========================================================================== %
+
+    \subsubsection{Historical Knowledge} \label{feat::historicalknowledge}
+    When you enter a ruin or dungeon, you can correctly ascertain its original purpose and determine its builders, whether those were gats, oths, ets, thri-kreen, or some other known kin.
+    In addition, you can determine the monetary value of art objects more than a century old.
+    \paragraph{REQUIREMENTS} Scholar background.
+    % ========================================================================== %
+
+    \subsubsection{Legalese} \label{feat::legalese}
+    Your experience with your local legal system has given you a firm knowledge of the ins and outs of that system.
+    Even when the law is not on your side, you can use complex terms like ``ex injuria jus non oritur'' and ``cogitationis poenam nemo patitur'' to frighten people into thinking you know what you're talking about.
+    With common folks who don't know any better, you might be able to intimidate or deceive to get favors or special treatment.
+    \paragraph{REQUIREMENTS} Merchant or Scholar background.
+    % ========================================================================== %
+
+SOLDIER 0/6
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Soldier background.
+    % ========================================================================== %
+
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Soldier background.
+    % ========================================================================== %
+
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Soldier background.
+    % ========================================================================== %
+
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Soldier background.
+    % ========================================================================== %
+
+OUTLANDER 1/6
+    \subsubsection{All Eyes on You} \label{feat::alleyesonyou}
+    Your accent, mannerisms, figures of speech, and perhaps even your appearance all mark you as foreign.
+    You gain the friendly interest of scholars and others intrigued by far-removed lands, to say nothing of everyday folk who are eager to hear stories of your origin.
+
+    You can parley this attention into access to people and places you might not otherwise have, for you and your traveling companions.
+    Noble lords, scholars, and merchant princes, to name a few, might be interested in hearing about your homeland.
+    \paragraph{REQUIREMENTS} Outlander background.
+    % ========================================================================== %
+
+    \subsubsection{Nature's Heritage} \label{feat::naturesheritage}
+    You are familiar enough with any wilderness area that you can find twice as much food and water as you normally would when you forage there.
+    \paragraph{REQUIREMENTS} Outlander background.
+    % ========================================================================== %
+
+    \subsubsection{Discovery} \label{feat::discovery} % NOTE: Not sure 'bout this one b0ss.
+    The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery.
+    It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature.
+    It could be a site that no one else has ever seen.
+    You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history.
+    It might be information that would be damaging to the people who or consigned you to exile, and hence the reason for your return to society.
+
+    Work with your DM to determine the details of your discovery and its impact on the campaign.
+    \paragraph{REQUIREMENTS} Outlander background.
+    % ========================================================================== %
+
+    \subsubsection{} \label{feat::NAME}
+    DESCRIPTION
+    \paragraph{REQUIREMENTS} Outlander background.
     % ========================================================================== %
 
 % === SKILLS =================================================================== %
