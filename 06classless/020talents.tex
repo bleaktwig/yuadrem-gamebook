@@ -5,6 +5,8 @@
 %       This would give more relevance to the skill in classes that don't actively use it.
 %       Discuss with Hernán.
 
+% TODO: Add the explanation: ``unless specified otherwise, a feat can only be learned once''.
+
 \subsubsection{Feat Name}
 \small{\textcolor{gray}{Relevant Ability Score or Skill}}
 
@@ -498,7 +500,7 @@ During a long rest, you and your allies reduce stress by one additional point.
 % Each background has 6 feats associated to it.
 % One is related to their initial feat, usually related to acquiring shelter from their people, extra food from the wilds, etc.
 % At least one is useful in combat.
-% One is upgradeable, related to a DC --- 12, 15, and 18.
+% One is upgradeable. If related to a DC, use 12, 15, and 18.
 % One required 2 TP, and is a lv 6 ability from a related class.
 % Two are shared with other classes, and are considered outside of the rules previously mentioned, but must only need 1 TP.
 \subsection*{Background Feats}
@@ -529,7 +531,7 @@ ACOLYTE 4/4, 1/2
         As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 9 meters of you must succeed on a Wisdom saving throw of DC 12 or be charmed by you until the end of your next turn or until the charmed creature takes any damage.
         You can also cause any of the charmed creatures to drop what they are holding when they fail the saving throw.
 
-        You can use this ability a number of times per short rest equal to your level divided by 6 (rounded up).
+        You can use this ability a number of times per short rest equal to your Wisdom modifier (Minimum of one).
 
         You can learn this feat a total of three times, increasing the DC to 15 the second time and to 18 the third.
         \paragraph{REQUIREMENTS} Acolyte background
@@ -659,52 +661,55 @@ ARTISAN 4/4, 2/2
         \paragraph{REQUIREMENTS} Artisan or Scholar background.
     % ========================================================================== %
 
-
-CRIMINAL 0/4, 0/2
-    \subsubsection{Dual Personalities (2 TP)} \label{feat::dualpersonalities}
-    As the years have passed, you have managed to create a persona.
-    Roll on the Faceless Persona table to determine your persona, or work with the DM to create a persona that's unique to your character and suits the tone of your game.
-
-    \begin{DndTable}[width=\linewidth, header=Persona]{cX}
-        \textbf{d20} & \textbf{Faceless Persona}                \\
-        1  & A flamboyant spy or brigand.                       \\
-        2  & The incarnation of a nation or people.             \\
-        3  & A scoundrel with a masked guise.                   \\
-        4  & A vengeful spirit.                                 \\
-        5  & The manifestation of a deity or your faith.        \\
-        6  & One whose beauty is greatly accented using makeup. \\
-        7  & An impersonation of another hero.                  \\
-        8  & The embodiment of a school of magic.               \\
-        9  & A warrior with distinctive armor.                  \\
-        10 & A disguise with animalistic or monstrous characteristics, meant to inspire fear.
-    \end{DndTable}
-
-    Most of the world know you as your persona.
-    Those who seek to learn more about you --- your weaknesses, your origins, your purpose --- find themselves stymied by your disguise.
-    Upon donning a disguise and behaving as your persona, you are unidentifiable as your true self.
-    By removing your disguise and revealing your true face, you are no longer identifiable as your persona.
-    This allows you to change appearances between your two personalities as often as you wish, using one to hide the other or serve as convenient camouflage.
-    However, should someone realize the connection between your persona and your true self, your deception might lose its effectiveness.
-    \paragraph{REQUIREMENTS} Criminal or Entertainer background.
-    % ========================================================================== %
-
-    \subsubsection{City Secrets} \label{feat::citysecrets}
-    You know the secret patterns and flow to cities and can find passages through the urban sprawl that others would miss.
-    When you are not in combat, you and companions you lead can travel between any two locations in the city twice as fast as your speed would normally allow.
-    \paragraph{REQUIREMENTS} Criminal background.
-    % ========================================================================== %
-
-    \subsubsection{False Identity} \label{feat::falseidentity}
-    You have created a second identity that includes documentation, established acquaintances, and disguises that allow you to assume that persona.
-    Additionally, you can forge documents including official papers and personal letters, as long as you have seen an example of the kind of document or the handwriting you are trying to copy.
-    \paragraph{REQUIREMENTS} Criminal background.
+CRIMINAL 4/4, 2/2
+    \subsubsection{Criminal Contact} \label{feat::criminalcontact}
+        Based on your connections, you can gain a criminal contact in a settlement as part of a long rest.
+        This contact is reliable and trustworthy, and acts as your liaison to a network of other criminals.
+        You know how to get messages to and from your contacts, even over great distances; specifically, you know the local messengers, corrupt caravan masters, and seedy sailors who can deliver messages for you.
+        \paragraph{REQUIREMENTS} Criminal background.
     % ========================================================================== %
 
     \subsubsection{Undercity Paths} \label{feat::undercitypaths}
-    You know hidden, underground pathways that you can use to bypass crowds, obstacles, and observation as you move through the city.
-    When you aren't in combat, you and companions you lead can travel between any two locations in the city twice as fast as your speed would normally allow.
-    The paths of the undercity are haunted by dangers that rarely brave the light of the surface world, so your journey isn't guaranteed to be safe.
-    \paragraph{REQUIREMENTS} Criminal background.
+        You know hidden, underground pathways that you can use to bypass crowds, obstacles, and observation as you move through the city.
+        When you aren't in combat, you and companions you lead can travel between any two locations in the city twice as fast as your speed would normally allow.
+        The paths of the undercity are haunted by dangers that rarely brave the light of the surface world, so your journey isn't guaranteed to be safe.
+        \paragraph{REQUIREMENTS} Criminal background.
+    % ========================================================================== %
+
+    \subsubsection{Cunning Action} \label{feat::cunningaction}
+        Your quick thinking and agility allow you to move and act quickly.
+        Choose an action between Dash, Disengage, or Hide.
+        The chosen action only costs you one action to perform instead of two.
+
+        You can take this feat up to three times, selecting a different action each time.
+        \paragraph{REQUIREMENTS} Criminal background.
+    % ========================================================================== %
+
+    \subsubsection{Dual Personalities (2 TP)} \label{feat::dualpersonalities}
+        By carefully managing your connections and your appearance, you have effectively created a second persona for yourself.
+        Roll on the Faceless Persona table to determine your persona, or work with the DM to create a persona that's unique to your character and suits the tone of your game.
+
+        \begin{DndTable}[width=\linewidth, header=Persona]{cX}
+            \textbf{d20} & \textbf{Faceless Persona}                \\
+            1  & A flamboyant spy or brigand.                       \\
+            2  & The incarnation of a nation or people.             \\
+            3  & A scoundrel with a masked guise.                   \\
+            4  & A vengeful spirit.                                 \\
+            5  & The manifestation of a deity or your faith.        \\
+            6  & One whose beauty is greatly accented using makeup. \\
+            7  & An impersonation of another hero.                  \\
+            8  & The embodiment of a school of magic.               \\
+            9  & A warrior with distinctive armor.                  \\
+            10 & A disguise with animalistic or monstrous characteristics, meant to inspire fear.
+        \end{DndTable}
+
+        Most of the people who know you do so as your persona.
+        Those who seek to learn more about you --- your weaknesses, your origins, your purpose --- find themselves stymied by your disguise.
+        Upon donning a disguise and behaving as your persona, you are unidentifiable as your true self.
+        By removing your disguise and revealing your true face, you are no longer identifiable as your persona.
+        This allows you to change appearances between your two personalities as often as you wish, using one to hide the other or serve as convenient camouflage.
+        However, should someone realize the connection between your persona and your true self, your deception might lose its effectiveness.
+        \paragraph{REQUIREMENTS} Criminal background.
     % ========================================================================== %
 
     \subsubsection{Urban Infrastructure} \label{feat::urbaninfrastructure}
@@ -715,39 +720,53 @@ CRIMINAL 0/4, 0/2
         \paragraph{REQUIREMENTS} Criminal or Laborer background.
     % ========================================================================== %
 
-ENTERTAINER 0/4, 0/2
+ENTERTAINER 4/4, 2/2
+    \subsubsection{Rakish Audacity} \label{feat::rakishaudacity}
+        Your confidence propels you into battle.
+        You can give yourself a bonus to your initiative rolls equal to your Charisma modifier.
+        \paragraph{REQUIREMENTS} Entertainer background.
+    % ========================================================================== %
+
+    \subsubsection{Bardic Inspiration} \label{feat::bardicinspiration}
+        You can inspire others through stirring words, actions, or music.
+        To do so, you use an action on your turn to choose one creature other than yourself within 18 meters of you who can hear you.
+        That creature gains one Bardic Inspiration die, a d6.
+
+        Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes.
+        The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails.
+        Once the Bardic Inspiration die is rolled, it is lost.
+        A creature can have only one Bardic Inspiration die at a time.
+
+        You can use this feature a number of times equal to your Charisma modifier (a minimum of once).
+        You regain any expended uses when you finish a short rest.
+
+        You can take this feat additional times to improve your Bardic Inspiration die.
+        On a second time it becomes a d8, on a third a d10, and on a fourth a d12.
+
+        \paragraph{REQUIREMENTS} Entertainer background.
+    % ========================================================================== %
+
+    \subsubsection{Song of Rest} \label{feat::songofrest}
+        You can use soothing music, oration, or a performance to help revitalize your wounded allies during a short rest.
+        If you or any friendly creatures who can see or hear your performance regain hit points by spending Hit Dice at the end of the short rest, each of those creatures regains an extra 1d6 hit points.
+
+        The extra hit points increase when you reach certain levels: to 1d8 at 6th level, to 1d10 at 11th level, and to 1d12 at 16th level.
+        \paragraph{REQUIREMENTS} Entertainer background.
+    % ========================================================================== %
+
+    \subsubsection{Jack of All Trades (2 TP)} \label{feat::jackofalltrades}
+        You can add a bonus equal to 1/5 of your level, rounded up, to any ability check with which you are not already proficient.
+        \paragraph{REQUIREMENTS} Entertainer background.
+    % ========================================================================== %
+
     \subsubsection{Courtier} \label{feat::courtier}
-    Your knowledge of how bureaucracies function lets you gain access to the records and inner workings of any noble court or government you encounter.
-    You know who the movers and shakers are, whom to go to for the favors you seek, and what the current intrigues of interest in the group are.
-    When encountering a new court, you need to spend a long rest among their dwellings to map their inner workings.
-    \paragraph{REQUIREMENTS} Entertainer or Noble background.
+        Your knowledge of how bureaucracies function lets you gain access to the records and inner workings of any noble court or government you encounter.
+        You know who the movers and shakers are, whom to go to for the favors you seek, and what the current intrigues of interest in the group are.
+        When encountering a new court, you need to spend at least a short rest among their ranks to map their inner workings, which you may do by performing for them or using your status to gain an invitation to their dwellings.
+        \paragraph{REQUIREMENTS} Entertainer or Noble background.
     % ========================================================================== %
 
-    \subsubsection{Rustic Hospitality} \label{feat::rustichospitality}
-    You've spent your life in company of the masses, and the common folk thank you for it.
-    You can find a place to hide, rest, or recuperate among other commoners, unless you have shown yourself to be a danger to them.
-    They will shield you from the law or anyone else searching for you, though they will not risk their lives for you.
-    For this feat to work, you need to have worked or performed in a settlement at least once.
-    \paragraph{REQUIREMENTS} Entertainer or Laborer background.
-    % ========================================================================== %
-
-    \subsubsection{Echoes of Fame} \label{feat::echoesoffame}
-    You have attracted admiration among spectators who've been blessed by your performances.
-    When visiting any settlemnt within 150 kilometers of where you've performed, there is a 50 percent chance you can find someone who admires you and is willing to provide information or temporary shelter.
-    \paragraph{REQUIREMENTS} Entertainer background.
-    % ========================================================================== %
-
-    \subsubsection{} \label{feat::NAME}
-    DESCRIPTION
-    \paragraph{REQUIREMENTS} Entertainer background.
-    % ========================================================================== %
-
-LABORER 0/4, 0/2
-    \subsubsection{Steady} \label{feat::steady}
-    You can move twice the normal amount of time (up to 16 hours) each day before being subject to the effect of a forced march (see "Travel Pace" in chapter 8 of the Player's Handbook).
-    \paragraph{REQUIREMENTS} Laborer or Soldier background.
-    % ========================================================================== %
-
+LABORER 0/4, 2/2
     \subsubsection{Deep Miner} \label{feat::deepminer}
     You are used to navigating the deep places of the earth.
     You never get lost in caves or mines if you have either seen an accurate map of them or have been through them before.
@@ -765,35 +784,42 @@ LABORER 0/4, 0/2
     \paragraph{REQUIREMENTS} Laborer background.
     % ========================================================================== %
 
-MERCHANT 0/4, 1/2
+    \subsubsection{Rustic Hospitality} \label{feat::rustichospitality}
+        You've spent your life in company of the masses, and the common folk thank you for it.
+        You can find a place to hide, rest, or recuperate among other commoners, unless you have shown yourself to be a danger to them.
+        They will shield you from the law or anyone else searching for you, though they will not risk their lives for you.
+        For this feat to work, you need to have worked or performed in the settlement at least once.
+        \paragraph{REQUIREMENTS} Entertainer or Laborer background.
+    % ========================================================================== %
+
+MERCHANT 0/4, 2/2
     \subsubsection{} \label{feat::NAME}
     DESCRIPTION
     \paragraph{REQUIREMENTS} Merchant background.
     % ========================================================================== %
 
     \subsubsection{Down Low} \label{feat::downlow}
-    You are acquainted with a network of smugglers who are willing to help you out of tight situations.
-    While in a town or larger community, you and your companions can stay for free in safe houses.
-    Safe houses provide a poor lifestyle.
-    While staying at a safe house, you can choose to keep your presence (and that of your companions) a secret.
-    For this feat to work, you need to have spent at least one short rest in the settlement.
-    \paragraph{REQUIREMENTS} Criminal or Merchant background.
+        After spending a short rest in a settlement, you acquaint yourself with a network of smugglers who are willing to help you out of tight situations.
+        While in a town or larger community, you and your companions can stay for free in safe houses.
+        Safe houses provide a poor lifestyle.
+        While staying at a safe house, you can choose to keep your presence (and that of your companions) a secret.
+        \paragraph{REQUIREMENTS} Criminal or Merchant background.
     % ========================================================================== %
 
     \subsubsection{Guild Membership} \label{feat::guildmembership}
-    As an known figure of your trade, you can become a member of a guild associated to it.
-    This membership provides you with certain benefits.
-    Your fellow guild members will provide you with lodging and food if necessary, and pay for your funeral if needed.
-    In some cities and towns, a guildhall offers a central place to meet other members of your profession, which can be a good place to meet potential patrons, allies, or hirelings.
+        As an known figure of your trade, you can become a member of a guild associated to it.
+        This membership provides you with certain benefits.
+        Your fellow guild members will provide you with lodging and food if necessary, and pay for your funeral if needed.
+        In some cities and towns, a guildhall offers a central place to meet other members of your profession, which can be a good place to meet potential patrons, allies, or hirelings.
 
-    Guilds often wield tremendous political power.
-    If you are accused of a crime, your guild will support you if a good case can be made for your innocence or the crime is justifiable.
-    You can also gain access to powerful political figures through the guild, if you are a member in good standing.
-    Such connections might require the donation to the guild's coffers.
+        Guilds often wield tremendous political power.
+        If you are accused of a crime, your guild will support you if a good case can be made for your innocence or the crime is justifiable.
+        You can also gain access to powerful political figures through the guild, if you are a member in good standing.
+        Such connections might require the donation to the guild's coffers.
 
-    To maintain your membership, you must pay dues of 5 agnomas per month to the guild.
-    If you miss payments, you must make up back dues to remain in the guild's good graces.
-    \paragraph{REQUIREMENTS} Artisan or Merchant background.
+        To maintain your membership, you must pay dues of 5 agnomas per month to the guild.
+        If you miss payments, you must make up back dues to remain in the guild's good graces.
+        \paragraph{REQUIREMENTS} Artisan or Merchant background.
     % ========================================================================== %
 
 NOBLE 0/4, 0/2
@@ -929,6 +955,11 @@ SOLDIER 0/4, 1/2
     \subsubsection{} \label{feat::NAME}
     DESCRIPTION
     \paragraph{REQUIREMENTS} Soldier background.
+    % ========================================================================== %
+
+    \subsubsection{Steady} \label{feat::steady}
+    You can move twice the normal amount of time (up to 16 hours) each day before being subject to the effect of a forced march (see "Travel Pace" in chapter 8 of the Player's Handbook).
+    \paragraph{REQUIREMENTS} Outlander or Soldier background.
     % ========================================================================== %
 
 OUTLANDER 0/4, 0/2
