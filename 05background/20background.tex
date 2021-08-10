@@ -17,27 +17,29 @@ These are not complete lists by any means, but rather the most common in the civ
 \textbf{TODO: EXPLAIN THE MECHANICS}
 % TODO: Add available feats at the end of each subsection, it will make life easier to the player.
 
-% TEMPLATE:
-% \subsection*{NAME} \label{ssec::name}
-%     DESCRIPTION
-%     \subparagraph{Competences} A, plus your choice of one from among B, C, or D.
-%     \subparagraph{Equipment}
-%     \subsubsection{FEATURE}
-
 \subsection*{Acolyte} \label{ssec::acolyte}
     Clerics, cultists, fanatics, and priests all share a devotion to something larger than themselves.
     Acolytes are shaped by their experience in temples or other religious communities.
     Their study of the history and tenets of their faith and their relationships to temples, shrines, or hierarchies affect their mannerisms and ideals.
-    \subparagraph{Competences} Religion, plus your choice of two from among History, Insight, Persuasion, or a language of your choice.
+    \subparagraph{Competences} Religion, plus your choice of two from among History, Performance, Persuasion, and a language of your choice.
     \subparagraph{Equipment} A holy symbol representative of your religion, a prayer book or prayer wheel, 5 sticks of incense, vestments, and a set of common clothes.
-    \subsubsection{Shelter of the Faithful} \label{feat::shelterofthefaithful}
-        You command the respect of those who share your faith, and you can perform the religious ceremonies of your deity.
-        You and your companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells.
-        Those who share your religion will support you (but only you) at a modest lifestyle.
 
-        You might also have ties to a specific temple dedicated to your chosen deity or pantheon, and you have a residence there.
-        This could be the temple where you used to serve, if you remain on good terms with it, or a temple where you have found a new home.
-        While near your temple, you can call upon the priests for assistance, provided the assistance you ask for is not hazardous and you remain in good standing with your temple.
+    The feats available to you are
+    \textbf{Divine Healing} (page \pageref{feat::divinehealing}),
+    \textbf{Divine Inspiration} (page \pageref{feat::divineinspiration}),
+    \textbf{Incite Respect} (page \pageref{feat::inciterespect}),
+    \textbf{Inspiring Leader} (page \pageref{feat::inspiringleader}), and
+    \textbf{Shelter of the Faithful} (page \pageref{feat::shelterofthefaithful}).
+
+    \subsubsection{Voice of your God} \label{feat::voiceofyourgod}
+        You are capable of performing any religious ceremony associated to your deity.
+        You can do this in any established temple, improvised altar, or public plaza, and can expect to at least gather the attention of those around you.
+
+        If you spend at least an hour performing this activity, you can choose to roll a Charisma (Performance) check contested against a target's --- or targets' --- Wisdom (Insight).
+        On a success, they are charmed by you for 1d4 hours.
+        This charm ends if you or one of your companions harms the creature.
+
+        Additionally, you might receive a small donation for your performance at the DM's discretion.
     % ========================================================================== %
 
 \subsection*{Artisan} \label{ssec::artisan}
@@ -45,12 +47,20 @@ These are not complete lists by any means, but rather the most common in the civ
     You are a member of an artisan's guild, skilled in a particular field and closely associated with other artisans.
     You are a well-established part of the mercantile world, freed by talent and wealth from the constraints of a feudal social order.
     You learned your skills as an apprentice to a master artisan, under the sponsorship of your guild, until you became a master in your own right.
-    \subparagraph{Competences} A set of artisan's tools of your choice, plus your choice of two from among Insight, Perception, Sleight of Hand, or another set of artisan's tools.
+    \subparagraph{Competences} A set of artisan's tools of your choice, plus your choice of two from among Insight, Perception, Sleight of Hand, and another set of artisan's tools.
     \subparagraph{Equipment} A set of artisan's tools with which you are proficient, a maker's mark chisel used to mark your handiwork with the symbol of your guild, and a set of traveler's clothes.
-    \subsubsection{Experienced Crafter} \label{feat::experiencedcrafter}
-        Knowing the local trade like the back of your hand, you know where to find the best ingredients for the cheapest prices in a settlement in which you are familiar.
-        You can buy components and ingredients related to your craft for half their normal price, and they are always of at least fine quality.
-        You gain familiarity with a settlement as part of a long rest.
+
+    The feats available to you are
+    \textbf{Artificer's Infusions} (page \pageref{feat::artificersinfusion}),
+    \textbf{Beyond Mastery} (page \pageref{feat::beyondmastery}),
+    \textbf{Flash of Genius} (page \pageref{feat::flashofgenius}),
+    \textbf{Guild Membership} (page \pageref{feat::guildmembership}),
+    \textbf{Known Crafter} (page \pageref{feat::knowncrafter}), and
+    \textbf{The Right Tool for the Job} (page \pageref{feat::therighttoolforthejob}).
+
+    \subsubsection{Cunning Artisan} \label{feat::cunningartisan}
+        As part of a short rest, you can harvest materials from the wilds, the city, or a slain beast of size small or larger to create one of the following items: a shield, a club, a javelin, or 1d4 darts or blowgun needles.
+        To use this trait, you need a blade, such as a dagger, or appropiate artisan's tools, such as leatherworker's tools.
     % ========================================================================== %
 
 \subsection*{Criminal} \label{ssec::criminal}
@@ -192,14 +202,14 @@ These are not complete lists by any means, but rather the most common in the civ
 %     !1 Religion
 % Wisdom
 %     .2 Animal Handling
-%     .3 Insight
+%     .2 Insight
 %     .1 Medicine
 %     .2 Perception
 %     !2 Survival
 % Charisma
 %     !1 Deception
 %     .2 Intimidation
-%     !0 Performance
+%     !1 Performance
 %     !2 Persuasion
 % !0 Weapon
 % .1 Armor
