@@ -537,7 +537,7 @@ ACOLYTE 4/4, 1/2
         \paragraph{REQUIREMENTS} Acolyte background
     % ========================================================================== %
 
-    \subsubsection{Divine Healing (2 TP)} \label{feat::divinehealing}
+    \subsubsection{Divine Healing (2 FP)} \label{feat::divinehealing}
         When you roll a 1 or 2 on a die related to healing or giving temporary hit points to one or more creatures, you can reroll the die and must use the new roll, even if the new is a 1 or a 2.
         Additionally, whenever you heal a creature (including yourself) you heal yourself by 1.
         \paragraph{REQUIREMENTS} Acolyte background.
@@ -646,7 +646,7 @@ ARTISAN 4/4, 2/2
         \end{table*}
     % ========================================================================== %
 
-    \subsubsection{Beyond Mastery (2 TP)} \label{feat::beyondmastery}
+    \subsubsection{Beyond Mastery (2 FP)} \label{feat::beyondmastery}
         Practicing for your whole life, you can take your skill as an artisan further than most mortals.
         You increase your proficiency with a set of artisan's tools from Expert to Master, increasing your proficiency bonus to +9.
         \paragraph{REQUIREMENTS} Artisan background, Expert proficiency with a set of artisan's tools.
@@ -685,7 +685,7 @@ CRIMINAL 4/4, 2/2
         \paragraph{REQUIREMENTS} Criminal background.
     % ========================================================================== %
 
-    \subsubsection{Dual Personalities (2 TP)} \label{feat::dualpersonalities}
+    \subsubsection{Dual Personalities (2 FP)} \label{feat::dualpersonalities}
         By carefully managing your connections and your appearance, you have effectively created a second persona for yourself.
         Roll on the Faceless Persona table to determine your persona, or work with the DM to create a persona that's unique to your character and suits the tone of your game.
 
@@ -754,8 +754,8 @@ ENTERTAINER 4/4, 2/2
         \paragraph{REQUIREMENTS} Entertainer background.
     % ========================================================================== %
 
-    \subsubsection{Jack of All Trades (2 TP)} \label{feat::jackofalltrades}
-        You can add a bonus equal to 1/5 of your level, rounded up, to any ability check with which you are not already proficient.
+    \subsubsection{Jack of All Trades (2 FP)} \label{feat::jackofalltrades}
+        You can add a bonus equal to 1/10th of your level, rounded up, to any ability check with which you are not already proficient.
         \paragraph{REQUIREMENTS} Entertainer background.
     % ========================================================================== %
 
@@ -766,22 +766,32 @@ ENTERTAINER 4/4, 2/2
         \paragraph{REQUIREMENTS} Entertainer or Noble background.
     % ========================================================================== %
 
-LABORER 0/4, 2/2
+LABORER 4/4, 2/2
     \subsubsection{Deep Miner} \label{feat::deepminer}
-    You are used to navigating the deep places of the earth.
-    You never get lost in caves or mines if you have either seen an accurate map of them or have been through them before.
-    Furthermore, you are able to scrounge fresh water and food for yourself and as many as five other people each day if you are in a mine or natural caves.
-    \paragraph{REQUIREMENTS} Laborer background.
+        You are used to navigating the deep places of the earth.
+        You never get lost in caves or mines if you have either seen an accurate map of them or have been through them before.
+        Furthermore, you are able to scrounge fresh water and food for yourself and as many as five other people each day if you are in a mine or natural caves.
+        \paragraph{REQUIREMENTS} Laborer background.
     % ========================================================================== %
 
-    \subsubsection{} \label{feat::NAME}
-    DESCRIPTION
-    \paragraph{REQUIREMENTS} Laborer background.
+    \subsubsection{Resilient} \label{feat::resilient}
+        Stout beyond belief, you are living proof of the hardiness of the common folk.
+        Choose an ability score.
+        You gain competence in saving throws using the chosen ability.
+
+        You can take this feat 3 times, improving your proficiency level with the saving throws of the chosen ability each time.
+        \paragraph{REQUIREMENTS} Laborer background.
     % ========================================================================== %
 
-    \subsubsection{} \label{feat::NAME}
-    DESCRIPTION
-    \paragraph{REQUIREMENTS} Laborer background.
+    \subsubsection{Powerful Build} \label{feat::powerfulbuild}
+        Hardened by work, you count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.
+        \paragraph{REQUIREMENTS} Laborer background.
+    % ========================================================================== %
+
+    \subsubsection{Commoner's Toughness (2 FP)} \label{feat::commonerstoughness}
+        Your hit point maximum increases by an amount equal to your level when you gain this feat.
+        Whenever you gain a level thereafter, your hit point maximum increases by an additional hit point.
+        \paragraph{REQUIREMENTS} Laborer background.
     % ========================================================================== %
 
     \subsubsection{Rustic Hospitality} \label{feat::rustichospitality}
@@ -792,10 +802,39 @@ LABORER 0/4, 2/2
         \paragraph{REQUIREMENTS} Entertainer or Laborer background.
     % ========================================================================== %
 
-MERCHANT 0/4, 2/2
-    \subsubsection{} \label{feat::NAME}
-    DESCRIPTION
-    \paragraph{REQUIREMENTS} Merchant background.
+MERCHANT 4/4, 2/2
+    \subsubsection{Never Tell Me the Odds} \label{feat::nevertellmetheodds}
+        Odds and probability are your bread and butter.
+        During downtime activities that involve games of chance or figuring odds on the best plan, you can get a solid sense of which choice is likely the best one and which opportunities seem too good to be true, at the DM's determination.
+        \paragraph{REQUIREMENTS} Merchant background.
+    % ========================================================================== %
+
+    \subsubsection{Silver Tongue} \label{feat::silvertongue}
+        You are a master at saying the right thing at the right time.
+        When you make a Charisma (Persuasion) or Charisma (Deception) check, you can treat a d20 roll of 9 or lower as a 10.
+        \paragraph{REQUIREMENTS} Merchant background.
+    % ========================================================================== %
+
+    \subsubsection{Unsettling Words} \label{feat::unsettlingwords}
+        You can spin words laced with malice that unsettle a creature and cause it to doubt itself.
+        Using one action, you can choose one creature you can see within 18 meters of you.
+        Roll a d6.
+        The creature must subtract the number rolled from the next saving throw it makes before the start of your next turn.
+        A creature can only be affected by this once per round.
+
+        You can use this feature a number of times equal to your Charisma modifier (a minimum of once).
+        You regain any expended uses when you finish a short rest.
+
+        You can take this feat additional times to improve the die.
+        On a second time it becomes a d8, on a third a d10, and on a fourth a d12.
+        \paragraph{REQUIREMENTS} Merchant background.
+    % ========================================================================== %
+
+    \subsubsection{Master Negotiator (2 TP)} \label{feat::masternegotiator}
+        An expert trader, haggling is your second nature.
+        When you interact with a fellow merchant, you can roll a Charisma (Persuasion) check contested by the merchant's Charisma (Persuasion).
+        If you succeed, the price for any item you buy from them is reduced by 25\%.
+        \paragraph{REQUIREMENTS} Merchant background.
     % ========================================================================== %
 
     \subsubsection{Down Low} \label{feat::downlow}
@@ -822,7 +861,7 @@ MERCHANT 0/4, 2/2
         \paragraph{REQUIREMENTS} Artisan or Merchant background.
     % ========================================================================== %
 
-NOBLE 0/4, 0/2
+NOBLE 0/4, 1/2
     \subsubsection{Inheritance} \label{feat::inheritance}
     Choose or randomly determine your inheritance from the possibilities in the table below.
     Work with your Dungeon Master to come up with details: Why is your inheritance so important, and what is its full story?
