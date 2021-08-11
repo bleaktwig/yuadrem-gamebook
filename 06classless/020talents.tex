@@ -8,7 +8,8 @@
 % TODO: Add the explanation: ``unless specified otherwise, a feat can only be learned once''.
 
 % TODO: Write list of Fighting Styles and ``Casting Styles'' (Based on this: https://standsinthefire.com/2016/05/31/dd-5e-magical-styles/).
-
+% TODO: Combat maneuvers, metamagic options and other **don't have a point system associated to them**. They simply add effects to attacks or spellcasting by using one additional action!
+% TODO: Write Combat Maneuvers section.
 % TODO: Write list of Metamagic Options.
 
 \subsubsection{Feat Name}
@@ -541,7 +542,7 @@ ACOLYTE 5/5, 1/1
     % ========================================================================== %
 
     \subsubsection{Incite Respect} \label{feat::inciterespect}
-        As an action, you present your holy symbol, and each creature of your choice that can see or hear you within 9 meters of you must succeed on a Wisdom saving throw of DC 12 or be charmed by you until the end of your next turn or until the charmed creature takes any damage.
+        Using two actions, you present your holy symbol, and each creature of your choice that can see or hear you within 9 meters of you must succeed on a Wisdom saving throw of DC 12 or be charmed by you until the end of your next turn or until the charmed creature takes any damage.
         You can also cause any of the charmed creatures to drop what they are holding when they fail the saving throw.
 
         You can use this ability a number of times per short rest equal to your Wisdom modifier (Minimum of one).
@@ -667,7 +668,7 @@ ARTISAN 4/4, 2/2
 
     \subsubsection{Flash of Genius} \label{feat::flashofgenius}
         You gain the ability to come up with solutions under pressure.
-        When you or another creature you can see within 9 meters of you makes an ability check or a saving throw, you can use your reaction to add your Intelligence modifier to the roll.
+        When you or another creature you can see within 9 meters of you makes an ability check or a saving throw, you can use an action or your reaction to add your Intelligence modifier to the roll.
 
         You can use this feature a number of times equal to your Intelligence modifier (minimum of once).
         You regain all expended uses when you finish a short rest.
@@ -920,7 +921,7 @@ NOBLE 4/4, 2/2
     % ========================================================================== %
 
     \subsubsection{Promise of Status} \label{feat::promiseofstatus}
-        As an action, you shout your family name to inspire fear from your enemies.
+        Using two actions, you shout your family name to inspire fear from your enemies.
         Each creature that can hear and understand you within 9 meters of you must succeed on a DC 12 Charisma saving throw.
         On a failure, the creature is frightened of you until the end of your next turn.
         At the DM's discretion, a creature might alternatively cease fighting altogether or even join your cause, expecting retribution from your family afterwards.
@@ -1010,13 +1011,11 @@ SCHOLAR 4/4, 2/2
     % ========================================================================== %
 
     \subsubsection{Metamagic Adept} \label{feat::metamagicadept}
-        By understanding the relation between a variety of doctrines, you've learned how to exert your will on your spells to alter how they function:
-        \begin{itemize}
-            \item You learn one metamagic option of your choice (see page \pageref{ssec::metamagic}).
-            You can use only one metamagic option on a spell when you cast it, unless the option says otherwise.
-            \item You gain 2 metamagic points to spend on Metamagic (these points are added to any metamagic points you have from another source but can be used only on Metamagic).
-            You regain all spent metamagic points when you finish a short rest.
-        \end{itemize}
+        By understanding the relation between a variety of doctrines, you've learned how to exert your will on your spells to alter how they function.
+        You learn one metamagic option of your choice (see page \pageref{ssec::metamagic}).
+        You can use only one metamagic option on a spell when you cast it, unless the option says otherwise.
+        % You gain 2 metamagic points to spend on Metamagic (these points are added to any metamagic points you have from another source but can be used only on Metamagic).
+        % You regain all spent metamagic points when you finish a short rest.
 
         You can take this feat 3 times, learning a new metamagic option the second and third time.
         \paragraph{REQUIREMENTS} Scholar background and Spellcasting feat.
@@ -1038,21 +1037,20 @@ SCHOLAR 4/4, 2/2
         \paragraph{REQUIREMENTS} Noble or Scholar background.
     % ========================================================================== %
 
-inspiringleader steady
-SOLDIER 0/4, 2/2
-    \subsubsection{Warrior's Life} \label{feat::warriorslife}
-        You know local mercenaries as only someone who has worked with them can.
-        You are able to identify mercenary companies by their emblems, and you know a little about any such company, including who has hired them recently.
-        You can find the taverns and festhalls where mercenaries abide in any area, as long as you speak the language.
-        You can find mercenary work between adventures sufficient to maintain a comfortable lifestyle.
-        \paragraph{REQUIREMENTS} Soldier background.
-    % ========================================================================== %
+SOLDIER 4/4, 2/2
+    % \subsubsection{Mercenary Life} \label{feat::mercenarylife}
+    %     You know local mercenaries as only someone who has worked with them can.
+    %     You are able to identify mercenary companies by their emblems, and you know a little about any such company, including who has hired them recently.
+    %     You can find the taverns and festhalls where mercenaries abide in any area, as long as you speak the language.
+    %     You can find mercenary work between adventures sufficient to maintain a comfortable lifestyle.
+    %     \paragraph{REQUIREMENTS} Soldier background.
+    % % ========================================================================== %
 
-    \subsubsection{Watcher's Eye} \label{feat::watcherseye}
-        Your experience in enforcing the law, and dealing with lawbreakers, gives you a feel for local laws and criminals.
-        You can easily find the local outpost of the watch or a similar organization, and just as easily pick out the dens of criminal activity in a community, although you're more likely to be welcome in the former locations rather than the latter.
-        \paragraph{REQUIREMENTS} Soldier background.
-    % ========================================================================== %
+    % \subsubsection{Watcher's Eye} \label{feat::watcherseye}
+    %     Your experience in enforcing the law, and dealing with lawbreakers, gives you a feel for local laws and criminals.
+    %     You can easily find the local outpost of the watch or a similar organization, and just as easily pick out the dens of criminal activity in a community, although you're more likely to be welcome in the former locations rather than the latter.
+    %     \paragraph{REQUIREMENTS} Soldier background.
+    % % ========================================================================== %
 
     \subsubsection{Official Inquiry} \label{feat::officialinquiry}
         You're experienced at gaining access to people and places to get the information you need.
@@ -1061,8 +1059,37 @@ SOLDIER 0/4, 2/2
         \paragraph{REQUIREMENTS} Soldier background.
     % ========================================================================== %
 
-    \subsubsection{} \label{feat::NAME}
-        DESCRIPTION
+    \subsubsection{Martial Adept} \label{feat::martialadept}
+        You have martial training that allows you to perform special combat maneuvers.
+        You learn one maneuver of your choice from among those available in the Combat Maneuvers section (see page \pageref{ssec::combatmaneuvers}).
+        If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + twice your Strength or Dexterity modifier (your choice).
+
+        % You gain two maneuver points, which are added to any maneuver points you have from other sources.
+        % These are used to fuel maneuvers, and are expended when you use one.
+        % You regain your expended maneuver points when you finish a short rest.
+
+        You can take this feat 3 times, learning a new maneuver the second and third time.
+        \paragraph{REQUIREMENTS} Soldier background.
+    % ========================================================================== %
+
+    \subsubsection{Know your Enemy} \label{feat::knowyourenemy}
+        If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn certain information about its capabilities compared to your own.
+        The DM tells you if the creature is your equal, superior, or inferior in regard to two of the following characteristics of your choice:
+        \begin{itemize}
+            \item Strength score
+            \item Dexterity score
+            \item Constitution score
+            \item Armor Class
+            \item Current hit points
+            \item Total levels
+        \end{itemize}
+
+        \paragraph{REQUIREMENTS} Soldier background.
+    % ========================================================================== %
+
+    \subsubsection{Soldier's Fortitude (2 FP)} \label{feat::soldiersfortitude}
+        Whenever you take the Dodge action in combat, you can spend one hit die to heal yourself.
+        Roll the die, add your Constitution modifier, and regain a number of hit points equal to the total (minimum of 1).
         \paragraph{REQUIREMENTS} Soldier background.
     % ========================================================================== %
 
@@ -1071,8 +1098,7 @@ SOLDIER 0/4, 2/2
         \paragraph{REQUIREMENTS} Outlander or Soldier background.
     % ========================================================================== %
 
-steady wisdomofthewilds
-OUTLANDER 0/4, 2/2
+OUTLANDER 4/4, 2/2
     \subsubsection{All Eyes on You} \label{feat::alleyesonyou}
         Your accent, mannerisms, figures of speech, and perhaps even your appearance all mark you as foreign.
         You gain the friendly interest of scholars and others intrigued by far-removed lands, to say nothing of everyday folk who are eager to hear stories of your origin.
@@ -1083,23 +1109,27 @@ OUTLANDER 0/4, 2/2
     % ========================================================================== %
 
     \subsubsection{Nature's Heritage} \label{feat::naturesheritage}
-        You are familiar enough with any wilderness area that you can find twice as much food and water as you normally would when you forage there.
+        You are familiar enough with any wilderness area that you can find twice as much food and water as you normally would when you forage.
         \paragraph{REQUIREMENTS} Outlander background.
     % ========================================================================== %
 
-    \subsubsection{Discovery} \label{feat::discovery} % NOTE: Not sure 'bout this one b0ss.
-        The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery.
-        It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature.
-        It could be a site that no one else has ever seen.
-        You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history.
-        It might be information that would be damaging to the people who or consigned you to exile, and hence the reason for your return to society.
-
-        Work with your DM to determine the details of your discovery and its impact on the campaign.
+    \subsubsection{Roving} \label{feat::roving}
+        A deft explorer, your movement is unimpeded by water or mountain.
+        You can take this feat three times, gaining different abilities each time:
+        \begin{itemize}
+            \item The first time, you gain a swimming speed equal to your walking speed.
+            \item The second time, you can a climbing speed equal to your walking speed.
+            \item The third time, your walking speed is increased by 5.
+        \end{itemize}
+        After gaining the first or second abilities from this feat, Any effect that increases your movement speed also increases your swimming and climbing speed by the same amount.
         \paragraph{REQUIREMENTS} Outlander background.
     % ========================================================================== %
 
-    \subsubsection{} \label{feat::NAME}
-        DESCRIPTION
+    \subsubsection{Land's Stride (2 FP)} \label{feat::landsstride}
+        Moving through difficult terrain costs you no extra movement.
+        You can also pass through plants without being slowed by them and without taking damage from them if they have thorns, spines, or a similar hazard.
+
+        In addition, you have advantage on saving throws against plants that are magically created or manipulated to impede movement, such those created by the entangle spell.
         \paragraph{REQUIREMENTS} Outlander background.
     % ========================================================================== %
 
