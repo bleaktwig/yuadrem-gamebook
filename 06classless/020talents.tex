@@ -7,6 +7,8 @@
 
 % TODO: Add the explanation: ``unless specified otherwise, a feat can only be learned once''.
 
+% TODO: Write list of Fighting Styles and ``Casting Styles'' (Based on this: https://standsinthefire.com/2016/05/31/dd-5e-magical-styles/).
+
 \subsubsection{Feat Name}
 \small{\textcolor{gray}{Relevant Ability Score or Skill}}
 
@@ -100,7 +102,7 @@ Left blank if feat doesn't require anything.
         \paragraph{REQUIREMENTS} Kin: Gat.
 
         % ========================================================================== %
-        \subsubsection{Gat Resilience (2 TP)} \label{feat::gatresilience}
+        \subsubsection{Gat Resilience (2 FP)} \label{feat::gatresilience}
         \small{\textcolor{gray}{Constitution}}
 
         \normalsize
@@ -109,7 +111,7 @@ Left blank if feat doesn't require anything.
         \paragraph{REQUIREMENTS} Kin: Gat.
 
         % ========================================================================== %
-        \subsubsection{Legendary Craftsgat (3 TP)} \label{feat::legendarycraftsgat}
+        \subsubsection{Legendary Craftsgat (3 FP)} \label{feat::legendarycraftsgat}
         \small{\textcolor{gray}{Set of artisan's tools}}
 
         \normalsize
@@ -243,7 +245,7 @@ Left blank if feat doesn't require anything.
     \paragraph{REQUIREMENTS} Kin: Naenk.
 
     % ========================================================================== %
-    \subsubsection{Cellular Regeneration (2 TP)} \label{feat::cellularregeneration}
+    \subsubsection{Cellular Regeneration (2 FP)} \label{feat::cellularregeneration}
     \small{\textcolor{gray}{Constitution}}
 
     \normalsize
@@ -255,7 +257,7 @@ Left blank if feat doesn't require anything.
     \paragraph{REQUIREMENTS} Kin: Naenk.
 
     % ========================================================================== %
-    \subsubsection{Improved Nuen (2 TP)} \label{feat::improvednuen}
+    \subsubsection{Improved Nuen (2 FP)} \label{feat::improvednuen}
     \small{\textcolor{gray}{Medicine}}
 
     \normalsize
@@ -275,7 +277,7 @@ Left blank if feat doesn't require anything.
 
     % ========================================================================== %
 \subsection*{Tsanek Feats}
-    \subsubsection{Improved Spores (2 TP)} \label{feat::improvedspores}
+    \subsubsection{Improved Spores (2 FP)} \label{feat::improvedspores}
     \small{\textcolor{gray}{Constitution}}
 
     \normalsize
@@ -305,7 +307,7 @@ Left blank if feat doesn't require anything.
     \paragraph{REQUIREMENTS} Kin: Tortle.
 
     % ========================================================================== %
-    \subsubsection{Steam Breath (3 TP)} \label{feat::steambreath}
+    \subsubsection{Steam Breath (3 FP)} \label{feat::steambreath}
     \small{\textcolor{gray}{Constitution}}
 
     \normalsize
@@ -321,7 +323,7 @@ Left blank if feat doesn't require anything.
 
     % ========================================================================== %
 \subsection*{Grung Feats}
-    \subsubsection{Poison Immunity (2 TP)} \label{feat::poisonimmunity}
+    \subsubsection{Poison Immunity (2 FP)} \label{feat::poisonimmunity}
     \small{\textcolor{gray}{Constitution}}
 
     \normalsize
@@ -373,7 +375,7 @@ Left blank if feat doesn't require anything.
     \paragraph{REQUIREMENTS} Kin: Quies.
 
     % ========================================================================== %
-    \subsubsection{Long-Limbed (2 TP)} \label{feat::longlimbed}
+    \subsubsection{Long-Limbed (2 FP)} \label{feat::longlimbed}
     \small{\textcolor{gray}{Athletics}}
 
     \normalsize
@@ -382,7 +384,7 @@ Left blank if feat doesn't require anything.
     \paragraph{REQUIREMENTS} Kin: Quies.
 
     % ========================================================================== %
-    \subsubsection{Designed with a Purpose (3 TP)} \label{feat::designedwithapurpose}
+    \subsubsection{Designed with a Purpose (3 FP)} \label{feat::designedwithapurpose}
     \small{\textcolor{gray}{Relevant Skill}}
 
     \normalsize
@@ -501,10 +503,10 @@ During a long rest, you and your allies reduce stress by one additional point.
 % One is related to their initial feat, usually related to acquiring shelter from their people, extra food from the wilds, etc.
 % At least one is useful in combat.
 % One is upgradeable. If related to a DC, use 12, 15, and 18.
-% One required 2 TP, and is a lv 6 ability from a related class.
-% Two are shared with other classes, and are considered outside of the rules previously mentioned, but must only need 1 TP.
+% One required 2 FP, and is a lv 6 ability from a related class.
+% Two are shared with other classes, and are considered outside of the rules previously mentioned, but must only need 1 FP.
 \subsection*{Background Feats}
-ACOLYTE 4/4, 1/2
+ACOLYTE 5/5, 1/1
     \subsubsection{Shelter of the Faithful} \label{feat::shelterofthefaithful}
         Your piety inspires the respect of those who share your faith.
         After performing a religious ceremony of your deity, you and your companions can expect to receive free healing and care at a temple, shrine, or other established presence of your faith, though you must provide any material components needed for spells.
@@ -525,6 +527,15 @@ ACOLYTE 4/4, 1/2
         As an action, you can touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than 1/5th your level, rounded up.
         You can use this feat once per short rest.
         \paragraph{REQUIREMENTS} Acolyte background.
+    % ========================================================================== %
+
+    \subsubsection{Guidance} \label{feat::guidance}
+        As an action, you give words of encouragement to one willing creature.
+        Once during the next minute, the target can roll a d4 and add the number rolled to one ability check of its choice.
+        It can roll the die before or after making the ability check.
+
+        Only one creature can be affected by this ability at a time.
+        \paragraph{REQUIREMENTS} Acolyte background
     % ========================================================================== %
 
     \subsubsection{Incite Respect} \label{feat::inciterespect}
@@ -789,8 +800,8 @@ LABORER 4/4, 2/2
     % ========================================================================== %
 
     \subsubsection{Commoner's Toughness (2 FP)} \label{feat::commonerstoughness}
-        Your hit point maximum increases by an amount equal to your level when you gain this feat.
-        Whenever you gain a level thereafter, your hit point maximum increases by an additional hit point.
+        Your hit point maximum increases by an amount equal to half your level (rounded up) when you gain this feat.
+        Whenever you gain an odd level thereafter, your hit point maximum increases by an additional hit point.
         \paragraph{REQUIREMENTS} Laborer background.
     % ========================================================================== %
 
@@ -830,7 +841,7 @@ MERCHANT 4/4, 2/2
         \paragraph{REQUIREMENTS} Merchant background.
     % ========================================================================== %
 
-    \subsubsection{Master Negotiator (2 TP)} \label{feat::masternegotiator}
+    \subsubsection{Master Negotiator (2 FP)} \label{feat::masternegotiator}
         An expert trader, haggling is your second nature.
         When you interact with a fellow merchant, you can roll a Charisma (Persuasion) check contested by the merchant's Charisma (Persuasion).
         If you succeed, the price for any item you buy from them is reduced by 25\%.
@@ -861,175 +872,212 @@ MERCHANT 4/4, 2/2
         \paragraph{REQUIREMENTS} Artisan or Merchant background.
     % ========================================================================== %
 
-NOBLE 0/4, 1/2
-    \subsubsection{Inheritance} \label{feat::inheritance}
-    Choose or randomly determine your inheritance from the possibilities in the table below.
-    Work with your Dungeon Master to come up with details: Why is your inheritance so important, and what is its full story?
-    You might prefer for the DM to invent these details as part of the game, allowing you to learn more about your inheritance as your character does.
-
-    The Dungeon Master is free to use your inheritance as a story hook, sending you on quests to learn more about its history or true nature, or confronting you with foes who want to claim it for themselves or prevent you from learning what you seek.
-    The DM also determines the properties of your inheritance and how they figure into the item's history and importance.
-    For instance, the object might be a minor magic item, or one that begins with a modest ability and increases in potency with the passage of time.
-    Or, the true nature of your inheritance might not be apparent at first and is revealed only when certain conditions are met.
-
-    You can decide whether or when to tell your companions about your inheritance.
-    Rather than attracting attention to yourself, you might want to keep your inheritance a secret until you learn more about what it means to you and what it can do for you.
-
-    \begin{DndTable}[width=\linewidth, header=Inheritance]{cX}
-        \textbf{d8} & \textbf{Object or item}                                  \\
-        1   & A document such as a map, a letter, or a journal                 \\
-        2-3 & a trinket (see "Trinkets" in chapter 5 of the Player's Handbook) \\
-        4   & an article of clothing                                           \\
-        5   & a piece of jewelry                                               \\
-        6   & an arcane book or formulary                                      \\
-        7   & a written story, song, poem, or secret                           \\
-        8   & a tattoo or other body marking
-    \end{DndTable}
-    \paragraph{REQUIREMENTS} Noble background.
-    % ========================================================================== %
+NOBLE 4/4, 2/2
+    % \subsubsection{Inheritance} \label{feat::inheritance}
+    %     Choose or randomly determine your inheritance from the possibilities in the table below.
+    %     Work with your Dungeon Master to come up with details: Why is your inheritance so important, and what is its full story?
+    %     You might prefer for the DM to invent these details as part of the game, allowing you to learn more about your inheritance as your character does.
+    %
+    %     The Dungeon Master is free to use your inheritance as a story hook, sending you on quests to learn more about its history or true nature, or confronting you with foes who want to claim it for themselves or prevent you from learning what you seek.
+    %     The DM also determines the properties of your inheritance and how they figure into the item's history and importance.
+    %     For instance, the object might be a minor magic item, or one that begins with a modest ability and increases in potency with the passage of time.
+    %     Or, the true nature of your inheritance might not be apparent at first and is revealed only when certain conditions are met.
+    %
+    %     You can decide whether or when to tell your companions about your inheritance.
+    %     Rather than attracting attention to yourself, you might want to keep your inheritance a secret until you learn more about what it means to you and what it can do for you.
+    %
+    %     \begin{DndTable}[width=\linewidth, header=Inheritance]{cX}
+    %         \textbf{d8} & \textbf{Object or item}                                  \\
+    %         1   & A document such as a map, a letter, or a journal                 \\
+    %         2-3 & a trinket (see "Trinkets" in chapter 5 of the Player's Handbook) \\
+    %         4   & an article of clothing                                           \\
+    %         5   & a piece of jewelry                                               \\
+    %         6   & an arcane book or formulary                                      \\
+    %         7   & a written story, song, poem, or secret                           \\
+    %         8   & a tattoo or other body marking
+    %     \end{DndTable}
+    %     \paragraph{REQUIREMENTS} Noble background.
+    % % ========================================================================== %
 
     \subsubsection{Retainers} \label{feat::retainers}
-    You gain the service of three retainers loyal to your family.
-    These retainers can be attendants or messengers, and one might be a majordomo.
-    One of your retainers can serve as your squire, aiding you in exchange for training on their own path to knighthood.
-    Another retainer might be a groom to care for your horse or a servant who polishes your armor and helps you put it on.
+        You gain the service of three retainers loyal to your family.
+        These retainers can be attendants or messengers, and one might be a majordomo.
+        One of your retainers can serve as your squire, aiding you in exchange for training on their own path to knighthood.
+        Another retainer might be a groom to care for your horse or a servant who polishes your armor and helps you put it on.
 
-    Your retainers can perform mundane tasks for you, but they do not fight for you, will not follow you into obviously dangerous areas (such as dungeons), and will leave if they are frequently endangered or abused.
-    \paragraph{REQUIREMENTS} Noble background.
+        Your retainers can perform mundane tasks for you, but they do not fight for you, follow you into obviously dangerous areas (such as dungeons).
+        Your retainers will leave if they are frequently endangered or abused, and it will take your family 1d6 weeks to send you a new group.
+        \paragraph{REQUIREMENTS} Noble background.
     % ========================================================================== %
 
-    \subsubsection{Leverage} \label{feat::leverage}
-    You can exert leverage over one or more individuals below you in the social hierarchy and demand their help as needs warrant.
-    For example, you can have a message carried across a neighborhood, procure a short carriage ride without paying, or have others clean up a bloody mess you left in an alley.
-    The DM decides if your demands are reasonable and if there are people available and willing to fulfill them.
-    As your social status improves, you gain influence over more people, including ones in greater positions of power.
-    \paragraph{REQUIREMENTS} Noble background.
+    \subsubsection{Early Training} \label{feat::earlytraining}
+        From an early age, your family procured only the best education for you.
+        You learn one Fighting Style (see page \pageref{ssec::fightingstyles}) or one Casting Style (see page \pageref{ssec::castingstyle}) of your choice.
+        If you already have a style, the one you choose must be different.
+        \paragraph{REQUIREMENTS} Noble background.
     % ========================================================================== %
 
-    \subsubsection{Kept in Style} \label{feat::keptinstyle}
-    Your family is known across the realm, and your attitude reflects this.
-    Your name and signet are sufficient to cover most of your expenses; the inns, taverns, and festhalls you frequent are glad to record your debt and send an accounting to your family's estate to settle what you owe.
+    \subsubsection{Promise of Status} \label{feat::promiseofstatus}
+        As an action, you shout your family name to inspire fear from your enemies.
+        Each creature that can hear and understand you within 9 meters of you must succeed on a DC 12 Charisma saving throw.
+        On a failure, the creature is frightened of you until the end of your next turn.
+        At the DM's discretion, a creature might alternatively cease fighting altogether or even join your cause, expecting retribution from your family afterwards.
 
-    This advantage enables you to live a comfortable lifestyle without having to pay 2 agnoma a day for it, or reduces the cost of a wealthy or aristocratic lifestyle by that amount.
-    You may not maintain a less affluent lifestyle and use the difference as income --- the benefit is a line of credit, not an actual monetary reward.
-    \paragraph{REQUIREMENTS} Noble background.
+        You can use this ability a number of times per short rest equal to your Charisma modifier (Minimum of one).
+
+        You can learn this feat a total of three times, increasing the DC to 15 the second time and to 18 the third.
+        \paragraph{REQUIREMENTS} Noble background
     % ========================================================================== %
 
-SAILOR 0/4, 0/2
-    \subsubsection{I'll Path It!} \label{feat::illpatchit}
-    Provided you have carpenter's tools and wood, you can perform repairs on a water vehicle.
-    You don't need to be competent with carpenter's tools to gain this feat.
-    When you use this ability, you restore a number of hit points to the hull of a water vehicle equal to twice your number of hit dice.
-    A vehicle cannot be patched by you in this way again until after it has been pulled ashore and fully repaired.
-    \paragraph{REQUIREMENTS} Sailor background.
+    \subsubsection{Kept in Style (2 FP)} \label{feat::keptinstyle}
+        Your family is known across the realm, and your attitude reflects this.
+        Your name and signet are sufficient to cover most of your expenses, since everyone would prefer to be in your family's good graces.
+
+        This advantage enables you and your companions to receive most services for free, as long as the cost doesn't rise above 10 agnomas.
+        For services up to 50 agnomas, roll a Charisma (Persuasion) check contested by the target's Wisdom (Insight).
+        On a success, you can enjoy the service for free.
+
+        At the DM discretion, this feat may be used for more expensive or rarer services, perhaps with disadvantage on the roll or by promising a reward to the service provider.
+        \paragraph{REQUIREMENTS} Noble background.
+    % ========================================================================== %
+
+SAILOR 5/5, 1/1
+    \subsubsection{I'll Patch It!} \label{feat::illpatchit}
+        Provided you have carpenter's tools and wood, you can perform repairs on a water vehicle.
+        You don't need to be competent with carpenter's tools to gain this feat.
+        When you use this ability, you restore a number of hit points to the hull of a water vehicle equal to twice your level.
+        A vehicle cannot be patched by you in this way again until you finish a short rest.
+        \paragraph{REQUIREMENTS} Sailor background.
     % ========================================================================== %
 
     \subsubsection{Harvest the Water} \label{feat::harvestthewater}
-    You gain advantage on ability checks made using fishing tackle.
-    If you have access to a body of water that sustains marine life, you can maintain a moderate lifestyle while working as a fisher, and you can catch enough food to feed yourself and up to ten other people each day.
-    \paragraph{REQUIREMENTS} Sailor background.
+        You gain advantage on ability checks made using fishing tackle.
+        If you have access to a body of water that sustains marine life, you can maintain a moderate lifestyle while working as a fisher, and you can catch enough food to feed yourself and up to ten other people each day.
+        \paragraph{REQUIREMENTS} Sailor background.
     % ========================================================================== %
 
-    \subsubsection{} \label{feat::NAME}
-    DESCRIPTION
-    \paragraph{REQUIREMENTS} Sailor background.
+    \subsubsection{Sailor's Balance} \label{feat::sailorsbalance}
+        Used to the ever-present swing of a ship, you have advantage on any ability checks and saving throws made to avoid being moved or being knocked prone.
+        \paragraph{REQUIREMENTS} Sailor background.
     % ========================================================================== %
 
-    \subsubsection{} \label{feat::NAME}
-    DESCRIPTION
-    \paragraph{REQUIREMENTS} Sailor background.
+    \subsubsection{Expert Stirrer} \label{feat::expertstirrer}
+        Years of arguing and interacting at seas have made your insults extraordinarily effective.
+        As an action, you can hurl a terrible insult to a creature within 18 meters of you who can hear and understand your language.
+        The creature must roll a DC 12 Wisdom saving throw.
+        On a failure, the creature has disadvantage on attack rolls against targets other than you and can't make opportunity attacks against targets other than you.
+        This effect lasts for 1 minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 18 meters apart.
+
+        You can use this ability a number of times per short rest equal to your Charisma modifier (Minimum of one).
+
+        You can learn this feat a total of three times, increasing the DC to 15 the second time and to 18 the third.
+        \paragraph{REQUIREMENTS} Sailor background.
     % ========================================================================== %
 
-SCHOLAR 0/4, 1/2
+    \subsubsection{Drunken Resilience (2 FP)} \label{feat::drunkenresilience}
+        You can drink enough alcohol to knock an elephant.
+        You have advantage on saving throws against poison, and you have resistance against poison damage.
+        \paragraph{REQUIREMENTS} Sailor background.
+    % ========================================================================== %
+
+    \subsubsection{Wisdom of the Wilds} \label{feat::wisdomofthewilds}
+        Your extended travels have given you a special appreciation for the stillness of the world.
+        After finishing a short rest, you gain temporary hit points equal to your level + your Wisdom modifier, and you have advantage on the first ability check you make during the day.
+        \paragraph{REQUIREMENTS} Sailor or Outlander background.
+    % ========================================================================== %
+
+flashofgenius legalese
+SCHOLAR 0/4, 2/2
     \subsubsection{Library Access} \label{feat::libraryaccess}
-    You are a well-known scholar (or good enough at pretending to be one), and have free and easy access to the majority of libraries.
-    This doesn't give you access to repositories of lore that are too valuable or secret to permit anyone immediate access.
+        You are a well-known scholar (or good enough at pretending to be one), and have free and easy access to the majority of libraries.
+        This doesn't give you access to repositories of lore that are too valuable or secret to permit anyone immediate access.
 
-    Additionally, you are likely to gain preferential treatment at libraries and universities accross Yuadrem, as professional courtesy to a fellow scholar.
-    \paragraph{REQUIREMENTS} Scholar background.
+        Additionally, you are likely to gain preferential treatment at libraries and universities accross Yuadrem, as professional courtesy to a fellow scholar.
+        \paragraph{REQUIREMENTS} Scholar background.
     % ========================================================================== %
 
     \subsubsection{Adept Linguist} \label{feat::adeptlinguist}
-    You can communicate with people who don't speak any language you know.
-    You must observe the people interacting with one another for at least 1 day, after which you learn a handful of important words, expressions, and gestures --- enough to communicate on a rudimentary level.
+        You can communicate with people who don't speak any language you know.
+        You must observe the people interacting with one another for at least 1 day, after which you learn a handful of important words, expressions, and gestures --- enough to communicate on a rudimentary level.
     \paragraph{REQUIREMENTS} Scholar background.
     % ========================================================================== %
 
     \subsubsection{Historical Knowledge} \label{feat::historicalknowledge}
-    When you enter a ruin or dungeon, you can correctly ascertain its original purpose and determine its builders, whether those were gats, oths, ets, thri-kreen, or some other known kin.
-    In addition, you can determine the monetary value of art objects more than a century old.
-    \paragraph{REQUIREMENTS} Scholar background.
+        When you enter a ruin or dungeon, you can correctly ascertain its original purpose and determine its builders, whether those were gats, oths, ets, thri-kreen, or some other known kin.
+        In addition, you can determine the monetary value of art objects more than a century old.
+        \paragraph{REQUIREMENTS} Scholar background.
     % ========================================================================== %
 
     \subsubsection{Legalese} \label{feat::legalese}
-    Your experience with your local legal system has given you a firm knowledge of the ins and outs of that system.
-    Even when the law is not on your side, you can use complex terms like ``ex injuria jus non oritur'' and ``cogitationis poenam nemo patitur'' to frighten people into thinking you know what you're talking about.
-    With common folks who don't know any better, you might be able to intimidate or deceive to get favors or special treatment.
-    \paragraph{REQUIREMENTS} Merchant or Scholar background.
+        Your experience with your local legal system has given you a firm knowledge of the ins and outs of that system.
+        Even when the law is not on your side, you can use complex terms like ``ex injuria jus non oritur'' and ``cogitationis poenam nemo patitur'' to frighten people into thinking you know what you're talking about.
+        With common folks who don't know any better, you might be able to intimidate or deceive to get favors or special treatment.
+        \paragraph{REQUIREMENTS} Noble or Scholar background.
     % ========================================================================== %
 
-SOLDIER 0/4, 1/2
+inspiringleader steady
+SOLDIER 0/4, 2/2
     \subsubsection{Warrior's Life} \label{feat::warriorslife}
-    You know local mercenaries as only someone who has worked with them can.
-    You are able to identify mercenary companies by their emblems, and you know a little about any such company, including who has hired them recently.
-    You can find the taverns and festhalls where mercenaries abide in any area, as long as you speak the language.
-    You can find mercenary work between adventures sufficient to maintain a comfortable lifestyle.
-    \paragraph{REQUIREMENTS} Soldier background.
+        You know local mercenaries as only someone who has worked with them can.
+        You are able to identify mercenary companies by their emblems, and you know a little about any such company, including who has hired them recently.
+        You can find the taverns and festhalls where mercenaries abide in any area, as long as you speak the language.
+        You can find mercenary work between adventures sufficient to maintain a comfortable lifestyle.
+        \paragraph{REQUIREMENTS} Soldier background.
     % ========================================================================== %
 
     \subsubsection{Watcher's Eye} \label{feat::watcherseye}
-    Your experience in enforcing the law, and dealing with lawbreakers, gives you a feel for local laws and criminals.
-    You can easily find the local outpost of the watch or a similar organization, and just as easily pick out the dens of criminal activity in a community, although you're more likely to be welcome in the former locations rather than the latter.
-
-    \paragraph{REQUIREMENTS} Soldier background.
+        Your experience in enforcing the law, and dealing with lawbreakers, gives you a feel for local laws and criminals.
+        You can easily find the local outpost of the watch or a similar organization, and just as easily pick out the dens of criminal activity in a community, although you're more likely to be welcome in the former locations rather than the latter.
+        \paragraph{REQUIREMENTS} Soldier background.
     % ========================================================================== %
 
     \subsubsection{Official Inquiry} \label{feat::officialinquiry}
-    You're experienced at gaining access to people and places to get the information you need.
-    Through a combination of fast-talking, determination, and official-looking documentation, you can gain access to a place or an individual related to a something you're investigating.
-    Those who aren't involved in your investigation avoid impeding you or pass along your requests.
-    \paragraph{REQUIREMENTS} Soldier background.
+        You're experienced at gaining access to people and places to get the information you need.
+        Through a combination of fast-talking, determination, and official-looking documentation, you can gain access to a place or an individual related to a something you're investigating.
+        Those who aren't involved in your investigation avoid impeding you or pass along your requests.
+        \paragraph{REQUIREMENTS} Soldier background.
     % ========================================================================== %
 
     \subsubsection{} \label{feat::NAME}
-    DESCRIPTION
-    \paragraph{REQUIREMENTS} Soldier background.
+        DESCRIPTION
+        \paragraph{REQUIREMENTS} Soldier background.
     % ========================================================================== %
 
     \subsubsection{Steady} \label{feat::steady}
-    You can move twice the normal amount of time (up to 16 hours) each day before being subject to the effect of a forced march (see "Travel Pace" in chapter 8 of the Player's Handbook).
-    \paragraph{REQUIREMENTS} Outlander or Soldier background.
+        You can move twice the normal amount of time (up to 16 hours) each day before being subject to the effect of a forced march (see ``Travel Pace'' in chapter 8 of the Player's Handbook).
+        \paragraph{REQUIREMENTS} Outlander or Soldier background.
     % ========================================================================== %
 
-OUTLANDER 0/4, 0/2
+steady wisdomofthewilds
+OUTLANDER 0/4, 2/2
     \subsubsection{All Eyes on You} \label{feat::alleyesonyou}
-    Your accent, mannerisms, figures of speech, and perhaps even your appearance all mark you as foreign.
-    You gain the friendly interest of scholars and others intrigued by far-removed lands, to say nothing of everyday folk who are eager to hear stories of your origin.
+        Your accent, mannerisms, figures of speech, and perhaps even your appearance all mark you as foreign.
+        You gain the friendly interest of scholars and others intrigued by far-removed lands, to say nothing of everyday folk who are eager to hear stories of your origin.
 
-    You can parley this attention into access to people and places you might not otherwise have, for you and your traveling companions.
-    Noble lords, scholars, and merchant princes, to name a few, might be interested in hearing about your homeland.
-    \paragraph{REQUIREMENTS} Outlander background.
+        You can parley this attention into access to people and places you might not otherwise have, for you and your traveling companions.
+        Noble lords, scholars, and merchant princes, to name a few, might be interested in hearing about your homeland.
+        \paragraph{REQUIREMENTS} Outlander background.
     % ========================================================================== %
 
     \subsubsection{Nature's Heritage} \label{feat::naturesheritage}
-    You are familiar enough with any wilderness area that you can find twice as much food and water as you normally would when you forage there.
-    \paragraph{REQUIREMENTS} Outlander background.
+        You are familiar enough with any wilderness area that you can find twice as much food and water as you normally would when you forage there.
+        \paragraph{REQUIREMENTS} Outlander background.
     % ========================================================================== %
 
     \subsubsection{Discovery} \label{feat::discovery} % NOTE: Not sure 'bout this one b0ss.
-    The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery.
-    It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature.
-    It could be a site that no one else has ever seen.
-    You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history.
-    It might be information that would be damaging to the people who or consigned you to exile, and hence the reason for your return to society.
+        The quiet seclusion of your extended hermitage gave you access to a unique and powerful discovery.
+        It might be a great truth about the cosmos, the deities, the powerful beings of the outer planes, or the forces of nature.
+        It could be a site that no one else has ever seen.
+        You might have uncovered a fact that has long been forgotten, or unearthed some relic of the past that could rewrite history.
+        It might be information that would be damaging to the people who or consigned you to exile, and hence the reason for your return to society.
 
-    Work with your DM to determine the details of your discovery and its impact on the campaign.
-    \paragraph{REQUIREMENTS} Outlander background.
+        Work with your DM to determine the details of your discovery and its impact on the campaign.
+        \paragraph{REQUIREMENTS} Outlander background.
     % ========================================================================== %
 
     \subsubsection{} \label{feat::NAME}
-    DESCRIPTION
-    \paragraph{REQUIREMENTS} Outlander background.
+        DESCRIPTION
+        \paragraph{REQUIREMENTS} Outlander background.
     % ========================================================================== %
 
 % === SKILLS =================================================================== %
