@@ -1,6 +1,5 @@
 % !TEX root = ../main.tex
-\section{Origins}
-
+\section{Origins} % NOTE: Rework this section.
 \DndDropCapLine{I}{n Yuadrem, your character's mother}
 language and some common characteristics may be defined by their country of origin.
 While not too much detail is given per country, you are welcome to speak with your DM (or the book's author!) if you need more information about a specific one.
@@ -10,18 +9,25 @@ The table lists all countries with their common kins, common languages, and some
 
 The \textbf{common kin(s)} column simply represents the kin of the people you're most likely to come into when in a city, but is not an exhaustive list.
 
-\begin{table*}[b]%
-    \begin{DndTable}[width=\linewidth]{X}
-        \centering
-        \includegraphics[width=0.95\textwidth]{05background/img/king_of_the_gray_sands_trebos.jpg} \
-        \centering \large{\textbf{Trebos, King of the Gray Sands}}
-    \end{DndTable}
-\end{table*}
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=south, yshift=-0.10cm] at (current page.south) {\includegraphics[width=\pdfpagewidth]{05background/img/30king_of_the_gray_sands_trebos}};
+\end{tikzpicture}
+
+% \begin{table*}[b]%
+%     \begin{DndTable}[width=\linewidth]{X}
+%         \centering
+%         \includegraphics[width=0.95\textwidth]{05background/img/king_of_the_gray_sands_trebos.jpg} \
+%         \centering \large{\textbf{Trebos, King of the Gray Sands}}
+%     \end{DndTable}
+% \end{table*}
 
 Then, the \textbf{common language(s)} column represents the most spoken (or official) language in the country, while the second or third languages in the column are commonly heard tongues among the people.
 
 Finally, the \textbf{cultural mannerisms} column is a list of common stereotypes associated to the people of a country.
 While they are not necessarily true for each particular person, your character might pride themselves or react in a certain manner to the specific characteristics attributed to their country of origin.
+
+\newpage
 
 It's worth noting that there are six areas shown in the political map and described in the table are not exactly countries in a traditional sense, but are well-defined regions of land where for one reason or another no culture has declared their own.
 
@@ -40,10 +46,12 @@ The first table in the list represents the dice rolls, in a d6,d20 format.
 If the d6 lands on a 6 and the d20 on a 18, 19, or 20, you can always make your character be a late arrival.
 Late arrivals can either be umans, tortles, or grungs ``coming late'' from the Sizzling Gate, or zaloth and quies that for any reason didn't join their kin after the schism.
 
-\incgraph[documentpaper,][width=\paperwidth,height=\paperheight]{05background/img/political_map.png}
+\newpage
+
+\incgraph[documentpaper,][width=\paperwidth,height=\paperheight]{05background/img/30political_map.png}
 
 \begin{table*}[!ht]%
-    \begin{DndTable}[width=\linewidth, header=Country List]{p{0.65cm}p{3cm}XXX}
+    \begin{DndTable}[width=\linewidth, header=Country List]{p{0.65cm}p{3.0cm}XXX}
         \textbf{Die} & \textbf{Country}           & \textbf{Common kin(s)}               & \textbf{Common Language(s)}  & \textbf{Cultural Mannerism(s)}  \\
         1, 1             & \textbf{Abababa}           & marset                               & Babazano                     & distrustful                     \\
         1, 2             & \textbf{Abipolash}         & moonborn \& chu’ash oth              & Shamabic, Fruenese           & resentful, careful              \\
@@ -76,7 +84,7 @@ Late arrivals can either be umans, tortles, or grungs ``coming late'' from the S
         2, 9             & \textbf{Gethog}            & bughna gat, oth                      & Fruenese, Avshenese          & defensive, resentful            \\
         2, 10            & \textbf{Giothal}           & thulkraka ird, common uman           & Shanise, Odhualen            & progressive, friendly           \\
         2, 11            & \textbf{Glameas}           & moonborn oth                         & Shamabic                     & organized, competitive          \\
-        2, 12            & \textbf{Gronselar}         & thulkraka ird, moonborn oth, tortle  & Harualish                    & proud, defensive                \\
+        2, 12            & \textbf{Gronselar}         & thulkraka ird, oth, tortle           & Harualish                    & proud, defensive                \\
         2, 13            & \textbf{Guadol}            & zsek ird                             & Zsekian                      & conniving, unrelenting          \\
         2, 14            & \textbf{Harual}            & qulbaba ird, marset                  & Harualish, Babazano          & traditionalist, protective      \\
         2, 15            & \textbf{Hianish}           & zsek ird                             & Zsekian                      & secretive, strategic            \\

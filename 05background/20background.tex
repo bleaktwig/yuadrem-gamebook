@@ -1,22 +1,14 @@
 % !TEX root = ../main.tex
-\section{Background}
-Due to the open-endedness of characters in Yuadrem (see page \pageref{sec::classlessdnd} for more details), backgrounds as they are defined in the official D\&D5e books are not compatible with this book.
-An alternative is proposed, where your character's background complements their kin, giving them a unique feat, and benefits when learning feats related to their background.
+\section{Background} \label{sec::background}
+% NOTE: Consider giving PCs the possibility of learning feats from other background, with the restriction that it needs one additional FP. This plays into the dynamism in Yuadrem.
+Due to the open-endedness of characters in Yuadrem (see page \pageref{sec::classlessdnd} for more details), small changes are applied to the backgrounds in the official books.
+Apart from providing a set of competences, equipment and an initial unique trait, each background has set of associated feats that can be learned at higher levels.
 
 To choose religions and learned languages, refer to their respective sections in pages \pageref{ssec::religions} and \pageref{ssec::languages}.
-These are not complete lists by any means, but rather the most common in the civilized world. %, and you are welcome to talk with your DM about including religions and languages as they may seem fit in your campaign.
+These are not complete lists by any means, but rather the most common in the civilized world.
+You are welcome to talk with your DM about including religions and languages as they may seem fit in your campaign.
 
-\pagebreak
-
-% For your character's background, you can choose any from some of the official D\&D5e books which fit best with your character.
-% The specific books from which you are welcome to pick a background are Acquisitions Incorporated, Ghosts of Saltmarsh, the Player's Handbook, Mythic Odysseys of Theros, and Tomb of Annihilation.
-
-% The only change you need to apply is to convert any initial money to the local currency of the region where you're playing.
-% To do this, convert the GP to the local currency using the currencies table in page \pageref{sec::currency} using the selling value.
-
-\textbf{TODO: EXPLAIN THE MECHANICS}
-% TODO: Consider giving PCs the possibility of learning feats from other background, with the restriction that it needs one additional FP. This plays into the dynamism in Yuadrem.
-% TODO: For bonds, flaws, etc., check the PHB.
+For personality traits, ideals, bonds, and flaws, check the official books.
 
 \subsection*{Acolyte} \label{ssec::acolyte}
     Clerics, cultists, fanatics, and priests all share a devotion to something larger to themselves.
@@ -56,6 +48,8 @@ These are not complete lists by any means, but rather the most common in the civ
         Additionally, you might receive a small donation for your performance at the DM's discretion.
     % ========================================================================== %
 
+\pagebreak
+
 \subsection*{Artisan} \label{ssec::artisan}
     Crafters, guild artisans, inventors, and engineers all fall into this category.
     Either as part of a guild or a working solo, you are skilled in a particular field and are closely associated with other artisans.
@@ -76,8 +70,15 @@ These are not complete lists by any means, but rather the most common in the civ
 
     \subsubsection{Cunning Artisan} \label{feat::cunningartisan}
         As part of a short rest, you can harvest materials from the wilds, the city, or a slain beast of size small or larger to create one of the following items: a shield, a club, a javelin, or 1d4 darts or blowgun needles.
-        To use this trait, you need a blade, such as a dagger, or appropiate artisan's tools, such as leatherworker's tools.
+        To use this trait, you need a blade, such as a dagger.%, or appropiate artisan's tools, such as leatherworker's tools.
     % ========================================================================== %
+
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=south east, xshift=0.10cm, yshift=-0.10cm] at (current page.south east) {\includegraphics[width=0.50\pdfpagewidth]{05background/img/20treb_gat}};
+\end{tikzpicture}
+
+\newpage
 
 \subsection*{Criminal} \label{ssec::criminal}
     Bandits, pirates, spies, and thieves all share a penchant for crime.
@@ -140,7 +141,7 @@ These are not complete lists by any means, but rather the most common in the civ
     You adapt as is required, with a sharp nose for coin.
 
     You have dirt under your fingernails and never shy away from a little hard work.
-    Most of your time is filled in back-breaking labor, the type of work that keeps merchants and mine owners in business even as it makes you just enough money to get by.
+    Most of your time is filled in back-breaking labor, the type of work that keeps merchants and mine owners in business.% even as it makes you just enough money to get by.
     It’s a hard life, but it’s toughened you and made you confident in your abilities.
 
     \subparagraph{Competences} Athletics, plus your choice of two from among Animal Handling, Survival, land vehicles, or a set of artisan's tools of your choice.
@@ -212,7 +213,7 @@ These are not complete lists by any means, but rather the most common in the civ
         You can exert leverage over one or more individuals below you in the social hierarchy and demand their help as needs warrant.
         For example, you can have a message carried across a neighborhood, procure a short carriage ride without paying, or have others clean up a bloody mess you left in an alley.
         The DM decides if your demands are reasonable and if there are people available and willing to fulfill them.
-        As your social status improves, you gain influence over more people, including ones in greater positions of power.
+        % As your social status improves, you gain influence over more people, including ones in greater positions of power.
     % ========================================================================== %
 
 \subsection*{Sailor} \label{ssec::sailor}
@@ -270,13 +271,20 @@ These are not complete lists by any means, but rather the most common in the civ
         Your DM might rule that the knowledge you seek is secreted away in an almost inaccessible place, or that it simply cannot be found.
     % ========================================================================== %
 
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+    \node[anchor=south west, xshift=-0.10cm, yshift=-0.10cm] at (current page.south west) {\includegraphics[width=0.52\pdfpagewidth]{05background/img/20tortle_mycolomancer}};
+\end{tikzpicture}
+
 \subsection*{Soldier} \label{ssec::soldier}
-    You trained as a youth, studied the use of weapons and armor, learned basic survival techniques, including how to stay alive on the battlefield.
+    You trained as a youth, studied the use of weapons and armor, learned basic survival techniques. %, including how to stay alive on the battlefield.
     You might have been part of a standing army or a mercenary company, or perhaps a member of a local militia who rose to prominence during a recent war.
 
-    When you choose this background, work with your DM to determine which military organization you were a part of, how far through its ranks you progressed, and what kind of experiences you had during your military career.
-    Was it a standing army, a town guard, or a village militia?
-    Or it might have been a noble's order of knights, a merchant's private army, or a mercenary company.
+    \newpage
+
+    When you choose this background, work with your DM to determine which organization you were a part of, how far through its ranks you progressed, and what kind of experiences you had during your career.
+    % Was it a standing army, a town guard, or a village militia?
+    % Or it might have been a noble's order of knights, a merchant's private army, or a mercenary company.
 
     \subparagraph{Competences} Competence with a weapon type of your choice, plus your choice of two from among Athletics, Intimidation, an armor type of your choice, or land vehicles.
 
@@ -301,11 +309,11 @@ These are not complete lists by any means, but rather the most common in the civ
     Either by choice or by birthright, you have spent much of your life in the wilds, far from the comforts of civilization.
     You've witnessed the migration of herds larger than forests, survived weather more extreme than any city-dweller could comprehend, and enjoyed the solitude of being the only thinking creature for miles in any direction.
     The wilds are in your blood, whether you were a nomad, an explorer, a recluse, a hunter-gatherer, or a hermit.
-    Even in places where you don't know the specific features of the terrain, you know the ways of the wild.
+    % Even in places where you don't know the specific features of the terrain, you know the ways of the wild.
 
     \subparagraph{Competences} Survival, plus your choice of two from among Animal Handling, Athletics, Nature, or a musical instrument.
 
-    \subparagraph{Equipment} A staff, a hunting trap, a trophy from an animal you killed, and a set of traveler's clothes.
+    \subparagraph{Equipment} A staff, a hunting trap, a trophy from nature, and a set of traveler's clothes.
 
     \subparagraph{Feats} From your background, the feats available to you are
     \textbf{All Eyes on You} (page \pageref{feat::alleyesonyou}),
@@ -316,9 +324,12 @@ These are not complete lists by any means, but rather the most common in the civ
     \textbf{Wisdom of the Wilds} (page \pageref{feat::wisdomofthewilds}).
 
     \subsubsection{Wanderer}
-        You have an excellent memory for maps and geography, and you can always recall the general layout of terrain, settlements, and other features around you.
+        % You have an excellent memory for maps and geography, and you can always recall the general layout of terrain, settlements, and other features around you.
+        You can always recall the general layout of terrain, settlements, and other features around you.
         In addition, you can find food and fresh water for yourself and up to five other people each day, provided that the land offers berries, small game, water, and so forth.
     % ========================================================================== %
+
+\newpage
 
 % Strength
 %     !3 Athletics
