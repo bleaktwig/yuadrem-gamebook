@@ -6,6 +6,9 @@
     You can plant yourself in place with all your weight, making you very difficult to move.
     As long as your feet are on the ground, you have advantage on any ability checks or saving throws made to move you or force you to fall prone.
     \paragraph{Requirements} Gat or Quies kin.
+\subsubsection{Powerful Build} \label{feat::powerfulbuild}
+    You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.
+    \paragraph{Requirements} Gat or Tortle kin.
 \subsubsection{Goat's Strength} \label{feat::goatsstrength}
     You complement your natural strengths with hard training.
     The saving throw related to the Push technique gains a +2 bonus for you.
@@ -16,29 +19,61 @@
 \subsubsection{Efficient Craftsgat} \label{feat::efficientcraftsgat}
     They say that a gat is born with tools in their hands.
     Crafting times with the artisan's tools related to your craftgatship trait are halved for you.
-    \paragraph{Requirements} Kin: Gat.
+    \paragraph{Requirements} Gat kin.
+\subsubsection{Relentless Endurance} \label{feat::relentlessendurance}
+    When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.
+    You can't use this feature again until you finish a long rest.
+    \paragraph{Requirements} Gat kin.
+\subsubsection{Stonecutting} \label{feat::stonecutting}
+    Originally designed as miners, all gats have a history in stonecutting.
+    Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered of Legendary proficiency in the History skill, adding a proficiency bonus of +12 to the check instead of your normal proficiency bonus in the skill.
 \subsubsection{Legendary Craftsgat (2 FP)} \label{feat::legendarycraftsgat}
     Above the average gat, you are legendary at the use of your tools.
     Your proficiency with the artisan's tools related to your craftgatship trait is increased to Legendary, incresing your proficiency bonus to +12 with them.
     \paragraph{Requirements} Gat kin. Expert proficiency with a set of artisan's tools.
+% NOVES GAT
 \subsubsection{Mountain Born} \label{feat::mountainborn}
     You are acclimated to high altitude.
     You don't suffer the effects associated to the cold or lack of oxygen of any elevation up to 10,000 meters.
     You also have a climbing speed of 6 meters.
     \paragraph{Requirements} Noves Gat or Thulkraka Ird kin.
+\subsubsection{Stone's Endurance} \label{feat::stonesendurance}
+    You can focus yourself to occasionally shrug off injury.
+    When you take damage, you can use your reaction to roll a d12.
+    Add your Constitution modifier to the number rolled, and reduce the damage by that total.
+    After you use this trait, you can't use it again until you finish a short rest.
+    \paragraph{Requirements} Noves Gat or Juggernaut Quies kin.
 \subsubsection{Gat Resilience (2 FP)} \label{feat::gatresilience}
     The horned kin possesses an almost otherwordly hardiness.
     You have advantage on saving throws against poison and are resistant against poison damage.
     \paragraph{Requirements} Noves Gat kin.
+% BUGHNA GAT
 \subsubsection{Hardy} \label{feat::hardy}
     Resilience comes as natural to you as breathing.
-    As long as you are not already a master, you increase your proficiency in the Survival skill.
+    As long as you are not already an expert, you increase your proficiency in the Survival skill.
     Additionally, you can choose to add your Constitution modifier to Survival ability checks instead of your Wisdom modifier.
     \paragraph{Requirements} Bughna Gat or Gannagian Warrior kin.
+\subsubsection{Mirthful Leaps} \label{feat::mirthfulleaps}
+    Whenever you make a long or high jump, you can roll a d4 and add the number rolled to the number of meters you cover, even when making a standing jump.
+    This extra distance costs movement as normal.
+    \paragraph{Requirements} Bughna Gat or Grung kin.
+\subsubsection{Exercised Mind (2 FP)} \label{feat::exercisedmind}
+    Generational learning has taught you that a qualar is only as strong as your will is.
+    You are naturally good staving off dementia.
+    You can choose to change the Demetia saving throw (see page \pageref{ssec::dementia}) from Intelligence to Wisdom, and its DC is 12 for you.
+    Additionally, if you succeed on the saving throw, you reduce your dementia level by 1.
+    \paragraph{Requirements} Bughna Gat kin.
+% TREB GAT
 \subsubsection{Relentless Striker} \label{feat::relentlessstriker}
     Your hammering horns are your most valuable weapons, and you are trained to use them as a normal part of your arsenal.
     Melee attack rolls made with your horns don't add to your multiple attack penalty.
-    \paragraph{Requirements} Kin: Treb Gat.
+    \paragraph{Requirements} Treb Gat kin.
+\subsubsection{Goring Rush} \label{feat::goringrush}
+    If you move at least 6 meters towards a creature, you can make one melee attack or use the Push feat with your horns against the creature as a free action.
+    \paragraph{Requirements} Treb Gat kin.
+\subsubsection{Imposing Presence (2 FP)} \label{feat::imposingpresence}
+    You increase your proficiency level in Intimidation or Persuasion to Legendary, increasing your proficiency bonus to +12.
+    \paragraph{Requirements} Treb Gat or Cursed Uman kin. Expert proficiency in the chosen skill.
 
 % IRD
 \subsubsection{Perfect Landing} \label{feat::perfectlanding}
@@ -51,8 +86,10 @@
     \paragraph{Requirements} Qulbaba Ird or Marset kin.
 \subsubsection{Thulkraka Steel} \label{feat::thulkrakasteel}
     You are specially skilled with a set of smith's tools.
-    You can craft any metal item for half the normal cost, as long as you have access to a forge at an altitude of at least 3,000 meters to use the special quench-hardening technique unique to your people.
-    \paragraph{Requirements} Kin: Thulkraka Ird.
+    You can craft any metal item for half the normal cost.
+
+    Additionally, if you have access to a forge at an altitude of at least 3,000 meters, you can use the quench-hardening technique unique to your people and craft the item for a quarter its normal cost.
+    \paragraph{Requirements} Thulkraka Ird kin.
 
 % MARSET
 \subsubsection{Born Climber} \label{feat::bornclimber}
@@ -100,7 +137,7 @@
 \subsubsection{Improved Nuen (2 FP)} \label{feat::improvednuen}
     Your nuens are stronger than average, and you do not half the creature's hit points or hit dice when you raise one.
     % Additionally, your nuen grows a thick layer of thorns, gaining the \textbf{Natural Defense} trait (page \pageref{trait::naturaldefense}).
-    \paragraph{Requirements} Kin: Gannagian Warrior.
+    \paragraph{Requirements} Gannagian Warrior kin.
 \subsubsection{Smell the Danger} \label{feat::smellthedanger}
     % As long as you are not already a master, you increase your proficiency with the herbalism kit.
     You do not need to roll anything to tell if a plant is poisonous, even if you've never encountered it before.
@@ -133,6 +170,10 @@
 
     You can take this feat 3 additional times, increasing the DC by 2 each time.
     \paragraph{Requirements} Tortle kin.
+\subsubsection{Reveler (2 FP)} \label{feat::reveler}
+    You increase your proficiency level in Performance or Persuasion to Legendary, increasing your proficiency bonus to +12.
+    \paragraph{Requirements} Tortle kin. Expert proficiency in the chosen skill.
+% Cast spells while hidden in shell (2 FP)
 
 % GRUNG
 \subsubsection{Poison Immunity} \label{feat::poisonimmunity}
@@ -144,11 +185,23 @@
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION
     \paragraph{Requirements} Uman kin.
+\subsubsection{Savage Attacks} \label{feat::savageattacks}
+    When you score a critical hit with a melee weapon attack or unarmed strike, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit.
+    \paragraph{Requirements} Cursed Uman or Dratl Ird kin.
+\subsubsection{Horned Fury} \label{feat::hornedfury}
+    Your fury burns tirelessly.
+    You gain the following benefits:
+    \begin{itemize}
+        \item When you hit with an attack using a melee weapon or unarmed strike, you can roll one of the weapon's damage dice an additional time and add it as extra damage of the weapon's damage type.
+        Once you use this ability, you can't use it again until you finish a short rest.
+        \item Immediately after you use your Relentless Endurance trait, you can use your reaction to make one weapon attack.
+    \end{itemize}
+    \paragraph{Requirements} Cursed Uman kin.
 
 % ZALOTH
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION
-    \paragraph{Requirements} Zaloth kin.
+    \paragraph{Requirements} Cursed Uman kin.
 
 % QUIES
 \subsubsection{Integrated Weapon} \label{feat::integratedweapon}
