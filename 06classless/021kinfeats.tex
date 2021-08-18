@@ -1,4 +1,4 @@
-subrace% !TEX root = ../main.tex
+% !TEX root = ../main.tex
 \subsection*{Kin Feats}
 
 % GAT
@@ -134,7 +134,7 @@ subrace% !TEX root = ../main.tex
 \subsubsection{Deadly Precision (2 FP)} \label{feat::deadlyprecision}
     Whenever you have advantage on an attack roll using Dexterity, Intelligence, Wisdom, or Charisma, you can reroll one of the dice once.
     Additionally, you learn the Aim action.
-    \paragraph{Requirements} Dratl Ird subrace.
+    \paragraph{Requirements} Dratl Ird or Sunstruck Oth subrace.
 
 % MARSET
 \subsubsection{Born Climber} \label{feat::bornclimber}
@@ -186,14 +186,88 @@ subrace% !TEX root = ../main.tex
 
 % OTH
 \subsubsection{Silent Speech} \label{feat::silentspeech}
-    You can communicate with other oths and some insectoids using Silent Speech.
+    You can communicate with other oths, thri-kreen, and other insectoids using Silent Speech.
     This language can only communicate simple ideas, and it does so via a combination of pheromones and thrumming sounds made with antennae.
     \paragraph{Requirements} Oth kin.
 \subsubsection{Silk Spinning} \label{feat::silkspinning}
     Dust kin's silk is known for its beauty and strength, and oth's know how to craft clothes and various items with it.
-    Your silk counts as a cloth material, and armor made with it has a +1 bonus.
-    You can produce up to one kg of silk per long rest, which can be stored for future use.
-    \paragraph{Requirements} Oth kin. Competent proficiency with weaver's tools.
+    Your silk counts as a cloth material, and armor made with it has a +1 bonus to its AC.
+    You can produce up to one kg of silk per long rest, which you can store for future use.
+    \paragraph{Requirements} Oth kin. At least Untrained proficiency with weaver's tools.
+\subsubsection{Keen Mind} \label{feat::keenmind}
+    You always know which way is north, and you can always know the number of hours left before the next sunrise or sunset.
+    \paragraph{Requirements} Oth kin.
+\subsubsection{Predestined} \label{feat::predenstined}
+    Once per day you can choose to reroll an attack, skill check, or saving throw.
+    You can decide to do this after the roll, but before the outcome of the roll has been determined.
+    If you are a Chu'ash oth, consider your Fated trait as one additional use of this feat.
+
+    You can learn this trait 3 times, increasing the number of times you can use this feat per day by one each time.
+    On the third time, you gain the ability to use this trait to force an enemy to reroll an attack roll made against you.
+    \paragraph{Requirements} Oth kin.
+\subsubsection{Third Weapon (2 FP)} \label{feat::thirdweapon}
+    You can use your two extra arms to hold a weapon with the light property.
+    You can attack with this weapon as a free action after you make a melee weapon attack, reducing the attack roll by the apropiate multiple attack penalty.
+    \paragraph{Requirements} Oth kin.
+\subsubsection{Born Grappler} \label{feat::borngrappler}
+    You don't need to have a hand free to grapple, using both your extra arms to do so.
+    If you do have a free arm, you roll for the grapple check with advantage.
+    You cannot use this feat if you are holding something in one or both of your extra arms.
+    \paragraph{Requirements} Oth kin.
+% MOONBORN
+\subsubsection{Observant} \label{feat::observant}
+    You gain a +5 bonus to your passive Wisdom (Perception) and passive Intelligence (Investigation) scores.
+    \paragraph{Requirements} Moonborn Oth or Na'anian Tsanek subrace.
+\subsubsection{Linguist} \label{feat::linguist}
+    You have studied languages and codes, gaining the following benefits:
+    \begin{itemize}
+        \item You learn a language of your choice.
+        \item You can ably create written ciphers.
+        Others can't decipher a code you create unless you teach them, they succeed on an Intelligence check (DC equal to 6 + your Intelligence score), or they use magic to decipher it. % TODO: Figure out what spell (probably from Dremshamad) would be able to do this.
+    \end{itemize}
+    \paragraph{Requirements} Moonborn Oth subrace.
+\subsubsection{Magic Initiate (2 FP)} \label{feat::magicinitiate}
+    Your learn two cantrips of your choice from one spellcasting doctrine of your choice.
+    In addition, choose one 1st-level spell from the same doctrine.
+    You learn that spell and can cast it at its lowest level.
+    Once you cast it, you must finish a long rest before you can cast it again using this feat.
+    Your spellcasting ability for these spells is Intelligence.
+    \paragraph{Requirements} Moonborn Oth subrace.
+% CHU'ASH
+\subsubsection{Fey Touched} \label{feat::feytouched}
+    You learn the misty step (see page \pageref{spell:mistystep}) and one 1st-level spell of your choice.
+    The spell must be from the Sympathy doctrine.
+    You can cast each of these spells without expending a spell slot.
+    Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a short rest.
+    You can also cast these spells using spell slots you have of the appropriate level.
+    The spells' spellcasting ability is Intelligence.
+    \paragraph{Requirements} Chu'ash Oth subrace.
+\subsubsection{Bountiful Luck (2 FP)} \label{feat::bountifulluck}
+    Your people have extraordinary luck, which you have learned to lend to your companions when you see them falter.
+    You're not sure how you do it; you just wish it, and it happens.
+    Surely a sign of fortune's favor!
+
+    When an ally you can see within 9 meters of you rolls a 1 on the d20 for an attack roll, an ability check, or a saving throw, you can use your reaction to let the ally reroll the die.
+    The ally must use the new roll.
+
+    When you use this ability, you can't use your Fated trait before the end of your next turn.
+    \paragraph{Requirements} Chu'ash Oth subrace.
+\subsubsection{Lucky} \label{feat::lucky}
+    When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.
+    This doesn't count as a use of your Fated trait.
+    \paragraph{Requirements} Chu'ash Oth subrace.
+% SUNSTRUCK
+\subsubsection{Sun-powered} \label{feat::sunpowered}
+    By reabsorbing your sweat and taking in dew, you do not need to drink water to survive.
+    You gain full sustenance when you use your Photosynthesis trait, including both food and water.
+    Additionally, you only need to keep your hindwings for one hour exposed to sunlight or two hours exposed to moonlight to be properly well fed.
+    \paragraph{Requirements} Sunstruck Oth subrace.
+\subsubsection{Bone Breaker} \label{feat::bonebreaker}
+    While gliding, you can attempt to attack a creature with an eviscerating attack.
+    Using two actions, you can swoop down up to your movement speed towards a creature you can see, and make a melee weapon attack roll against it.
+    If the attack hits, it's a critical hit.
+    The attack is tiring, and you can use this feat only once per combat encounter.
+    \paragraph{Requirements} Sunstruck Oth subrace.
 
 % NAENK
 \subsubsection{Moss Armor} \label{feat::mossarmor}
@@ -210,7 +284,7 @@ subrace% !TEX root = ../main.tex
     \paragraph{Requirements} Naenk kin.
 \subsubsection{Improved Nuen (2 FP)} \label{feat::improvednuen}
     Your nuens are stronger than average, and you do not half the creature's hit points or hit dice when you raise one.
-    % Additionally, your nuen grows a thick layer of thorns, gaining the \textbf{Natural Defense} trait (page \pageref{trait::naturaldefense}).
+    Additionally, your nuen grows a thick layer of thorns, gaining the \textbf{Impaling Carapace} feat (see page \pageref{feat::impalingcarapace}).
     \paragraph{Requirements} Gannagian Warrior subrace.
 \subsubsection{Smell the Danger} \label{feat::smellthedanger}
     % As long as you are not already a master, you increase your proficiency with the herbalism kit.
@@ -221,12 +295,29 @@ subrace% !TEX root = ../main.tex
     \paragraph{Requirements} Gannagian Gatherer subrace. Expert proficiency with a herbalism kit.
 
 % TSANEK
-\subsubsection{Improved Spores} \label{feat::improvedspores}
-    You can add a +2 bonuns to all of your spore effects' spell save DC.
+\subsubsection{Enhanced Spores} \label{feat::enhancedspores}
+    You can add a +2 bonus to all of your spore effects' spell save DC.
     % Alternatively, you can add your spellcasting modifier if you have one.
 
     You can take this feat three times.
     \paragraph{Requirements} Tsanek kin.
+\subsubsection{Mycelium Connection} \label{feat::myceliumconnection}
+    As an action, you can establish a connection with a creature within 9 meters of you.
+    Roll a Wisdom (Insight) check contested by the creature's Wisdom (Insight).
+    The creature can choose to fail on this save on purpose.
+    If you succeed, you know the location of the creature and can telepathically communicate with it for 24 hours.
+    The creature knows that it is connected to you, as it feels your presence pulsating in its head, but it cannot end this connection.
+
+    This ability only works while the creature is touching the ground.
+    \paragraph{Requirements} Tsanek kin.
+\subsubsection{Telepathic} \label{feat::telepathic}
+    You can speak telepathically to any creature you can see within 18 meters of you.
+    Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language.
+    Your communication doesn't give the creature the ability to respond to you telepathically.
+
+    Additionally, you can cast the detect thoughts (see page \pageref{spell::detectthoughts}) spell, requiring no spell slot or components, and you must finish a short rest before you can cast it this way again.
+    Your spellcasting ability for the spell is your choice between Intelligence and Wisdom.
+    \paragraph{Requirements} Tsanek or Zaloth kin.
 
 % TORTLE
 \subsubsection{Reptile Claws} \label{feat::reptileclaws}
@@ -273,6 +364,20 @@ subrace% !TEX root = ../main.tex
     \paragraph{Requirements} Cursed Uman subrace.
 
 % ZALOTH
+\subsubsection{Telekinetic} \label{feat::telekinetic}
+    You learn the mage hand (see page \pageref{spell:magehand}) cantrip.
+    You can cast it without verbal or somatic components, and you can make the spectral hand invisible.
+    If you already know this spell, its range increases by 9 meters when you cast it.
+    Its spellcasting ability is the ability increased by this feat.
+
+    You can use the Disarm, Grapple, Help, Search, Shove, and Use Object actions using the hand.
+    For the Disarm and Shove actions, you roll Intelligence (Arcana) instead of Strength (Athletics) for the contest.
+
+    You can learn this feat two additional times.
+    The second time allows you to use the Grapple action with the hand, rolling Intelligence (Arcana) instead of Strength (Athletics).
+    The third time allows you to use the Attack action with the hand, using your Arcana skill as your attack bonus.
+    On a hit, the hand's damage is 1d4 + your Intelligence modifier force damage, and this attack is affected from all the normal effects of a melee attack.
+    \paragraph{Requirements} Zaloth kin.
 \subsubsection{Zaloth Cunning (2 FP)} \label{feat::zalothcunning}
     You have advantage on Intelligence, Wisdom, and Charisma saving throws against magic.
     \paragraph{Requirements} Zaloth kin.
