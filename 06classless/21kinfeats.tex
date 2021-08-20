@@ -102,7 +102,7 @@
     \paragraph{Requirements} Ird kin.
 \subsubsection{Nimble Step} \label{feat::nimblestep}
     Opportunity attacks made against you are rolled with disadvantage.
-    \paragraph{Requirements} Ird or Zaloth kin.
+    \paragraph{Requirements} Ird Kin or Gale Zaloth subrace.
 \subsubsection{Graceful Pass} \label{feat::gracefulpass}
     Using your wings to aid your movement, difficult terrain doesn't cost you extra movement.
     \paragraph{Requirements} Ird or Oth kin.
@@ -236,7 +236,7 @@
     \paragraph{Requirements} Moonborn Oth subrace.
 % CHU'ASH
 \subsubsection{Fey Touched} \label{feat::feytouched}
-    You learn the misty step (see page \pageref{spell:mistystep}) and one 1st-level spell of your choice.
+    You learn the misty step (see page \pageref{spell::mistystep}) and one 1st-level spell of your choice.
     The spell must be from the Sympathy doctrine.
     You can cast each of these spells without expending a spell slot.
     Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a short rest.
@@ -378,7 +378,7 @@
 
     This ability only works while the creature is touching the ground.
     \paragraph{Requirements} Tsanek kin.
-\subsubsection{Telepathic} \label{feat::telepathic}
+\subsubsection{Strong Telepathy} \label{feat::strongtelepathy}
     You can speak telepathically to any creature you can see within 18 meters of you.
     Your telepathic utterances are in a language you know, and the creature understands you only if it knows that language.
     Your communication doesn't give the creature the ability to respond to you telepathically.
@@ -492,9 +492,11 @@
     You are immune to poison damage and the poisoned condition.
     \paragraph{Requirements} Grung kin.
 
-% UMAN
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+% UMAN dangersense
+\subsubsection{Danger Sense} \label{feat::dangersense}
+    Accustomed to being hunted, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger.
+    You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells.
+    To gain this benefit, you can't be blinded, deafened, or incapacitated.
     \paragraph{Requirements} Uman kin.
 % COMMON UMAN
 % FROSTBURNED
@@ -539,6 +541,14 @@
     The third time allows you to use the Attack action with the hand, using your Arcana skill as your attack bonus.
     On a hit, the hand's damage is 1d4 + your Intelligence modifier force damage, and this attack is affected from all the normal effects of a melee attack.
     \paragraph{Requirements} Zaloth kin.
+\subsubsection{Shadow Touched} \label{feat::shadowtouched}
+    You learn the invisibility (see page \pageref{spell::invisibility}) spell and and once 1st-level spell of your choice.
+    The spell must be from the Uldammy doctrine.
+    You can cast each of these spells without expending a spell slot.
+    Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a short rest.
+    You can also cast these spells using spell slots you have of the appropriate level.
+    The spells' spellcasting ability is Charisma.
+    \paragraph{Requirements} Zaloth kin.
 \subsubsection{Starry Form} \label{feat::starryform}
     As an action, you take on a starry form.
     While in this form, your body becomes luminous and your joints glimmer like stars.
@@ -549,17 +559,65 @@
 \subsubsection{Zaloth Cunning (2 FP)} \label{feat::zalothcunning}
     You have advantage on Intelligence, Wisdom, and Charisma saving throws against magic.
     \paragraph{Requirements} Zaloth kin.
-% GALE ZALOTH
+% GALE ZALOTH.
+\subsubsection{One with the Wind (2 FP)} \label{feat::onewiththewind}
+    You increase your movement speed by 3 meters.
+    Additionally, you double your movement speed when moving in the direction of a spell that controls wind, such a \textbf{Gale}.
+    \paragraph{Requirements} Gale Zaloth subrace.
 % THUNDER ZALOTH
+\subsubsection{Displace Teleportation} \label{feat::displaceteleportation}
+    As a reaction, when a creature within 18 meters of you attempts to teleport, you can foil the teleportation attempt.
+    The target reappears in an empty space within 1.5 meters of your, and takes 1d12 thunder damage.
+    \paragraph{Requirements} Thunder Zaloth subrace.
 \subsubsection{Fast as Lightning} \label{feat::fastaslightning}
     As an action on your turn, you can teleport up to 18 meters to an unoccupied space you can see.
     Alternatively, you can use this action to teleport one willing creature you touch up to 9 meters to an unoccupied space you can see.
-    This movement is accompanied by a roaring sound of thunder that can be heard up to a distance of 36 meters.
+    This movement is accompanied by the roaring sound of thunder that can be heard up to a distance of 36 meters.
 
     You can use this feature a number of times equal to your Charisma modifier (Minimum of once), and you regain all expended uses of it when you finish a short rest.
     \paragraph{Requirements} Thunder Zaloth subrace.
+\subsubsection{Supercharged (2 FP)} \label{feat::supercharged}
+    You are immune to lightning damage.
+    In addition, when you receive an attack that would have dealt lightning damage, you can use your \textbf{Instant Step} trait without consuming an use of the trait as a reaction.
+    \paragraph{Requirements} Thunder Zaloth subrace.
 % ASH ZALOTH
+\subsubsection{Flames of Tizerus} \label{feat::flamesoftizerus}
+    % NOTE: Tizerus is the ``hellish'' plane of Nyx.
+    When you roll fire damage for a spell you cast, you can reroll any roll of 1 on the fire damage dice, but you must use the new roll, even if it is another 1.
+
+    In addition, whenever you cast a spell that deals fire damage, you can cause flames to wreathe you until the end of your next turn.
+    The flames don't harm you or your possessions, and they shed bright light out to 9 meters and dim light for an additional 9 meters.
+    While the flames are present, any creature within 1.5 meters of you that hits you with a melee attack takes 1d4 fire damage.
+    \paragraph{Requirements} Ash Zaloth subrace.
+\subsubsection{Fade Out} \label{feat::fadeout}
+    As an action or reaction, you can disperse into a 1.5-meter cloud of smoke until the end of your next turn.
+    While in this form you cannot take damage, and the only action you can take is to move up to your moving speed.
+    You can pass through creatures while in this shape, and if you do so the creature must succeed on a DC 12 Constitution saving throw, becoming incapacitated until the end of their next turn on a failure.
+
+    While in this shape, you are forced to move with the wind, and any spell that controls it (such as \textbf{Gust of Wind}) can move you against your will.
+
+    Once you use this ability, you cannot use it again until you finish a short rest.
+    \paragraph{Requirements} Gale Zaloth or Ash Zaloth subrace.
+\subsubsection{Superheated (2 FP)} \label{feat::superheated}
+    You are immune to fire damage.
+    In addition, after receiving an attack that would have dealt fire damage, the damage die of your \textbf{Storm Conduit} trait increases to a d8, and you can use the trait any number of times until the end of your next turn.
+    \paragraph{Requirements} Ash Zaloth subrace.
 % HAIL ZALOTH
+\subsubsection{Gelid Aura} \label{feat::gelidaura}
+    As an action, you can choose to activate a gelid aura around you, replacing your natural radiance for a minute or until you decide to end the effect as an action.
+    At the end of each of your turns for that duration, each creature within 1.5 meters of you takes cold damage equal to 1d6 + half your level (rounded down).
+    \paragraph{Requirements} Hail Zaloth subrace.
+\subsubsection{Depths of Nerono} \label{feat::depthsofnerono}
+    % NOTE: Nerono is the ``ocean'' plane of Nyx.
+    When you roll cold damage for a spell you cast, you can reroll any roll of 1 on the cold damage dice, but you must use the new roll, even if it is another 1.
+
+    In addition, whenever you cast a spell that deals cold damage, you can cause ice to envelop you until the end of your next turn.
+    While the ice is present, you gain a +2 bonus to AC.
+    \paragraph{Requirements} Hail Zaloth subrace.
+\subsubsection{Arctic Temperature (2 FP)} \label{feat::arctictemperature}
+    You are immune to cold damage.
+    In addition, after receiving an attack that would have dealt cold damage you can use your \textbf{Cryogenic Stillness} trait without expending a use as a reaction, but you can only remain cold until the end of your next turn.
+    \paragraph{Requirements} Hail Zaloth subrace.
 
 % QUIES
 \subsubsection{Integrated Weapon} \label{feat::integratedweapon}
@@ -583,16 +641,19 @@
     You harness your inherited adaptability, learning how to alter your proportions at will.
     When you make a melee attack on your turn, your reach for it is 1.5 meters greater than normal.
     \paragraph{Requirements} Quies kin.
+% QUIES OPERATIVE
 \subsubsection{Designed with a Purpose (2 FP)} \label{feat::designedwithapurpose}
     Following your creator's design, your competence at a particular skill is unparalleled.
     Your proficiency with a skill is increased to Legendary, increasing your proficiency bonus to +12 with it.
     \paragraph{Requirements} Quies Operative subrace. Expert proficiency with a skill.
+% QUIES JUGGERNAUT
 \subsubsection{Thermal Manipulation} \label{feat::thermalmanipulation}
     The years of hard work have taught you how to manipulate your obsidian extensions, modifying their hardness and properties at will.
     The damage die of your unarmed strikes is increased to a d6.
     Additionally, you can change their damage type to bludgeoning, slashing, fire, or cold as a free action.
     \paragraph{Requirements} Quies Juggernaut subrace.
+% QUIES SLAG WORKER
 \subsubsection{Rugged Aspect} \label{feat::ruggedaspect}
     By manipulating the composition of your natural armor, you are able to better shift into specific environments.
     You have advantage on Stealth checks made to hide in rocky and similar terrain.
-    \paragraph{Requirements} Quies Slag Worker kin.
+    \paragraph{Requirements} Quies Slag Worker subrace.
