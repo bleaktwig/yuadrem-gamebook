@@ -23,7 +23,7 @@
 \subsubsection{Relentless Endurance} \label{feat::relentlessendurance}
     When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead.
     You can't use this feature again until you finish a long rest.
-    \paragraph{Requirements} Gat kin.
+    \paragraph{Requirements} Gat or Quies kin.
 \subsubsection{Stonecutting} \label{feat::stonecutting}
     Originally designed as miners, all gats have a history in stonecutting.
     Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered of Legendary proficiency in the History skill, adding a proficiency bonus of +12 to the check instead of your normal proficiency bonus in the skill.
@@ -42,7 +42,7 @@
     When you take damage, you can use your reaction to roll a d12.
     Add your Constitution modifier to the number rolled, and reduce the damage by that total.
     After you use this trait, you can't use it again until you finish a short rest.
-    \paragraph{Requirements} Noves Gat or Juggernaut Quies subrace.
+    \paragraph{Requirements} Noves Gat or Quies Juggernaut subrace.
 \subsubsection{Gat Resilience (2 FP)} \label{feat::gatresilience}
     The horned kin possesses an almost otherwordly hardiness.
     You have advantage on saving throws against poison and disease.
@@ -260,7 +260,7 @@
 % SUNSTRUCK
 \subsubsection{Sun-powered} \label{feat::sunpowered}
     By reabsorbing your sweat and taking in dew, you do not need to drink water to survive.
-    You gain full sustenance when you use your Photosynthesis trait, including both food and water.
+    You gain full sustenance when you use your \textbf{Photosynthesis} trait, including both food and water.
     Additionally, you only need to keep your hindwings for one hour exposed to sunlight or two hours exposed to moonlight to be properly well fed.
     \paragraph{Requirements} Sunstruck Oth subrace.
 \subsubsection{Bone Breaker} \label{feat::bonebreaker}
@@ -534,10 +534,8 @@
     To gain this benefit, you can't be blinded, deafened, or incapacitated.
     \paragraph{Requirements} Uman kin.
 \subsubsection{Last Resort} \label{feat::lastresort}
-    When you hit with an attack using a simple or martial weapon, you can roll one of the weapon's damage dice an additional time and add it as extra damage of the weapon's damage type.
-    Once you use this ability, you can't use it again until you finish a short rest.
-
-    In addition, immediately after you use your \textbf{Relentless Endurance} trait, you can use your reaction to make one weapon attack.
+    Immediately after you use your \textbf{Relentless Endurance} trait, you can use your reaction to move up to your movement speed in a mad rush for survival.
+    This movement doesn't provoke opportunity attacks.
     \paragraph{Requirements} Uman kin.
 \subsubsection{Alert} \label{feat::alert}
     Always in the lookout for danger, you gain a +5 bonus to initiative and you can't be surprised while conscious.
@@ -553,10 +551,10 @@
 % COMMON UMAN
 \subsubsection{Adaptable} \label{feat::adaptable}
     You gain one feat that costs 1 FP from any background.
-    \paragraph{Requirements} Common Uman subrace.
+    \paragraph{Requirements} Quies kin or Common Uman subrace.
 \subsubsection{Deft Hands} \label{feat::defthands}
     Any Dexterity (Sleight of Hand) check or check with any set of tools you make gains a +1 bonus.
-    \paragraph{Requirements} Common Uman subrace.
+    \paragraph{Requirements} Common Uman or Quies Operative subrace.
 \subsubsection{Prodigy (2 FP)} \label{feat::prodigy}
     Choose one skill in which you are an Expert.
     You increase your proficiency in that skill to Legendary, increasing your proficiency bonus to +12.
@@ -699,17 +697,21 @@
     You can take this feat two additional times.
     The second time gives you a +1 bonus to damage rolls made with the weapon.
     The third time allows you to make a melee attack as part of the free action used to equip your weapon.
-    This attack doesn't cause a multiple attack penalty.
+    This attack increases the multiple attack penalty as normal.
     \paragraph{Requirements} Quies kin.
 \subsubsection{Immutable Form} \label{feat::immutableform}
     Embracing your origin, you become protected by the strange designs of the tall kin.
     You are immune to any effect that would alter your form.
     \paragraph{Requirements} Quies kin.
+\subsubsection{Automatic Cleansing} \label{feat::automaticcleansing}
+    Your body automatically processes the harshest of poisons.
+    You are immune to poison damage and the poisoned condition.
+    \paragraph{Requirements} Quies kin.
 \subsubsection{Long-Limbed (2 FP)} \label{feat::longlimbed}
     You harness your inherited adaptability, learning how to alter your proportions at will.
     When you make a melee attack on your turn, your reach for it is 1.5 meters greater than normal.
     \paragraph{Requirements} Quies kin.
-% QUIES OPERATIVE designedwithapurpose fleetoffoot
+% QUIES OPERATIVE
 \subsubsection{Designed with a Purpose (2 FP)} \label{feat::designedwithapurpose}
     Following your creator's design, your competence at a particular skill is unparalleled.
     Your proficiency with a skill is increased to Legendary, increasing your proficiency bonus to +12 with it.
@@ -720,8 +722,19 @@
     The damage die of your unarmed strikes is increased to a d6.
     Additionally, you can change their damage type to bludgeoning, slashing, fire, or cold as a free action.
     \paragraph{Requirements} Quies Juggernaut subrace.
-% QUIES SLAG WORKER flamesoftizerus ruggedaspect
+\subsubsection{Overpressure (2 FP)} \label{feat::overpressure}
+    You gain immunity to fire damage and vulnerability to cold damage.
+    Using two actions, you can switch these, gaining immunity to cold damage and vulnerability to fire damage or the other way around.
+    \paragraph{Requirements} Quies Juggernaut subrace.
+% QUIES SLAG WORKER
 \subsubsection{Rugged Aspect} \label{feat::ruggedaspect}
     By manipulating the composition of your natural armor, you are able to better shift into specific environments.
     You have advantage on Stealth checks made to hide in rocky and similar terrain.
+    \paragraph{Requirements} Quies Slag Worker subrace.
+\subsubsection{Overheating (2 FP)} \label{feat::overheating}
+    You are immune to fire damage.
+    Additionally, You can radiate excess heat around you as an action.
+    For 1 minute, all creature that start their turn within 1.5 meters of you take 1d6 fire damage from this heat.
+
+    You can use this ability a number of times equal to your Constitution modifier (minimum of 1), and regain all expended uses on a short rest.
     \paragraph{Requirements} Quies Slag Worker subrace.
