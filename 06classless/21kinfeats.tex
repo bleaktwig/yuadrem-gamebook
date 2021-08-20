@@ -147,7 +147,7 @@
     When you grapple a creature, the target takes 3 piercing damage if your grapple check succeeds.
     If another creature grapples you, it takes 3 piercing damage.
     If you start your turn grappling or being grappled by a creature, it takes 3 piercing damage.
-    \paragraph{Requirements} Marset or Tortle kin.
+    \paragraph{Requirements} Marset or Tortle kin or Frostburn Nomad subrace.
 \subsubsection{Lip Reading} \label{feat::lipreading}
     If you can see a creature's mouth while it is speaking a language you understand, you can understand what it's saying by reading its lips.
     \paragraph{Requirements} Marset kin.
@@ -171,7 +171,7 @@
     You can use two actions to spit a 1.5 by 9 meters line of acid.
     Every target in the area must make a Dexterity saving throw, with a DC of 8 + your Constitution modifier.
     A creature takes 2d6 acid damage on a failed save, or half as much damage on a successful one.
-    The acid damage increases to 3d6 with your 6th hit die, 4d6 with your 11th, and 5d6 with your 16th.
+    The acid damage increases to 3d6 with your 6th level, 4d6 with your 11th, and 5d6 with your 16th.
     You can use this trait a number of times equal to your Constitution modifier (Minimum of 1) per short rest.
 
     You can take this feat three additional times, increasing the DC by 2 each time.
@@ -337,7 +337,7 @@
     You can use this ability a number of times equal to your level, and you regain all expended uses when you finish a long rest.
 
     In addition, you can decrease one level of exhaustion by resting for an hour.
-    \paragraph{Requirements} Gannagian Hunter or Common Uman subrace.
+    \paragraph{Requirements} Gannagian Hunter subrace or Uman kin.
 % GANNAGIAN GATHERER
 \subsubsection{Smell the Danger} \label{feat::smellthedanger}
     % As long as you are not already a master, you increase your proficiency with the herbalism kit.
@@ -469,7 +469,7 @@
     You can use two actions to exhale a 6 meter cone of scalding steam.
     Every target in the area must make a Dexterity saving throw, with a DC of 8 + your Constitution modifier.
     A creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.
-    The fire damage increases to 3d6 with your 6th hit die, 4d6 with your 11th, and 5d6 with your 16th.
+    The fire damage increases to 3d6 with your 6th level, 4d6 with your 11th, and 5d6 with your 16th.
     You can use this trait a number of times equal to your Constitution modifier (Minimum of 1) per short rest.
     Being underwater doesn't grant resistance to this damage.
 
@@ -527,14 +527,47 @@
     You can use this ability a number of times equal to your Constitution modifier (minimum of 1), and recover all expended uses at the end of a short rest.
     \paragraph{Requirements} Grung kin.
 
-% UMAN dangersense
+% UMAN
 \subsubsection{Danger Sense} \label{feat::dangersense}
     Accustomed to being hunted, you gain an uncanny sense of when things nearby aren't as they should be, giving you an edge when you dodge away from danger.
     You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells.
     To gain this benefit, you can't be blinded, deafened, or incapacitated.
     \paragraph{Requirements} Uman kin.
+\subsubsection{Last Resort} \label{feat::lastresort}
+    When you hit with an attack using a simple or martial weapon, you can roll one of the weapon's damage dice an additional time and add it as extra damage of the weapon's damage type.
+    Once you use this ability, you can't use it again until you finish a short rest.
+
+    In addition, immediately after you use your \textbf{Relentless Endurance} trait, you can use your reaction to make one weapon attack.
+    \paragraph{Requirements} Uman kin.
+\subsubsection{Alert} \label{feat::alert}
+    Always in the lookout for danger, you gain a +5 bonus to initiative and you can't be surprised while conscious.
+    \paragraph{Requirements} Uman kin.
+\subsubsection{Uman Determination} \label{feat::umandetermination}
+    Once per short rest you can give yourself advantage on an attack roll, ability check, or saving throw.
+
+    You can take this feat three times, increasing the number of times you can use this ability by 1 each time.
+    \paragraph{Requirements} Uman kin.
+\subsubsection{Fleet of Foot} \label{feat::fleetoffoot}
+    Your base walking speed increases by 1.5 meters.
+    \paragraph{Requirements} Uman kin or Quies Operative subrace.
 % COMMON UMAN
-% FROSTBURNED
+\subsubsection{Adaptable} \label{feat::adaptable}
+    You gain one feat that costs 1 FP from any background.
+    \paragraph{Requirements} Common Uman subrace.
+\subsubsection{Deft Hands} \label{feat::defthands}
+    Any Dexterity (Sleight of Hand) check or check with any set of tools you make gains a +1 bonus.
+    \paragraph{Requirements} Common Uman subrace.
+\subsubsection{Prodigy (2 FP)} \label{feat::prodigy}
+    Choose one skill in which you are an Expert.
+    You increase your proficiency in that skill to Legendary, increasing your proficiency bonus to +12.
+    \paragraph{Requirements} Common Uman subrace. Expert proficiency in the selected skill.
+% FROSTBURN
+\subsubsection{Thicker Skin (2 FP)} \label{feat::thickerskin}
+    Your skin grows thicker than what is average for your subrace.
+    You are naturally acclimated to cold environments and don't need sources of heat to survive in the cold.
+    In addition, you are immune to cold damage.
+
+    \paragraph{Requirements} Frostburn Nomad subrace.
 % BOGGART
 % CURSED UMAN
 \subsubsection{Savage Attacks} \label{feat::savageattacks}
@@ -583,7 +616,7 @@
     Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a short rest.
     You can also cast these spells using spell slots you have of the appropriate level.
     The spells' spellcasting ability is Charisma.
-    \paragraph{Requirements} Zaloth kin.
+    \paragraph{Requirements} Uman or Zaloth kin.
 \subsubsection{Starry Form} \label{feat::starryform}
     As an action, you take on a starry form.
     While in this form, your body becomes luminous and your joints glimmer like stars.
@@ -623,7 +656,7 @@
     In addition, whenever you cast a spell that deals fire damage, you can cause flames to wreathe you until the end of your next turn.
     The flames don't harm you or your possessions, and they shed bright light out to 9 meters and dim light for an additional 9 meters.
     While the flames are present, any creature within 1.5 meters of you that hits you with a melee attack takes 1d4 fire damage.
-    \paragraph{Requirements} Ash Zaloth subrace.
+    \paragraph{Requirements} Ash Zaloth or Quies Slag Worker subrace.
 \subsubsection{Fade Out} \label{feat::fadeout}
     As an action or reaction, you can disperse into a 1.5-meter cloud of smoke until the end of your next turn.
     While in this form you cannot take damage, and the only action you can take is to move up to your moving speed.
@@ -647,8 +680,8 @@
     When you roll cold damage for a spell you cast, you can reroll any roll of 1 on the cold damage dice, but you must use the new roll, even if it is another 1.
 
     In addition, whenever you cast a spell that deals cold damage, you can cause ice to envelop you until the end of your next turn.
-    While the ice is present, you gain a +2 bonus to AC, and creatures within 1.5 meters of you are affected by the \textbf{Slow} spell.
-    \paragraph{Requirements} Hail Zaloth subrace.
+    While the ice is present, you gain a +2 bonus to AC, and creatures within 1.5 meters of you (including you) are affected by the \textbf{Slow} spell.
+    \paragraph{Requirements} Frostburn Nomad or Hail Zaloth subrace.
 \subsubsection{Arctic Temperature (2 FP)} \label{feat::arctictemperature}
     You are immune to cold damage.
     In addition, after receiving an attack that would have dealt cold damage you can use your \textbf{Cryogenic Stillness} trait without expending a use as a reaction, but you can only remain cold until the end of your next turn.
@@ -676,7 +709,7 @@
     You harness your inherited adaptability, learning how to alter your proportions at will.
     When you make a melee attack on your turn, your reach for it is 1.5 meters greater than normal.
     \paragraph{Requirements} Quies kin.
-% QUIES OPERATIVE
+% QUIES OPERATIVE designedwithapurpose fleetoffoot
 \subsubsection{Designed with a Purpose (2 FP)} \label{feat::designedwithapurpose}
     Following your creator's design, your competence at a particular skill is unparalleled.
     Your proficiency with a skill is increased to Legendary, increasing your proficiency bonus to +12 with it.
@@ -687,7 +720,7 @@
     The damage die of your unarmed strikes is increased to a d6.
     Additionally, you can change their damage type to bludgeoning, slashing, fire, or cold as a free action.
     \paragraph{Requirements} Quies Juggernaut subrace.
-% QUIES SLAG WORKER
+% QUIES SLAG WORKER flamesoftizerus ruggedaspect
 \subsubsection{Rugged Aspect} \label{feat::ruggedaspect}
     By manipulating the composition of your natural armor, you are able to better shift into specific environments.
     You have advantage on Stealth checks made to hide in rocky and similar terrain.
