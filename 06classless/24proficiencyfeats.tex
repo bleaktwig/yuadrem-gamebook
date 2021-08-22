@@ -8,7 +8,7 @@
 %
 % \normalsize
 % An able physician, you are able to quickly mend wounds and get your allies back in the fight.
-% \paragraph{REQUIREMENTS} Mender 2.
+% \paragraph{Requirements} Mender 2.
 % \paragraph{RANK 1} You gain proficiency with the healer's kit.
 % \paragraph{RANK 2} You learn the Heal technique.
 % \paragraph{RANK 3}
@@ -19,7 +19,7 @@
 %
 % \normalsize
 % Description.
-% \paragraph{REQUIREMENTS} Performer 2.
+% \paragraph{Requirements} Performer 2.
 % \paragraph{RANK 1} You gain proficiency with the disguise kit.
 % \paragraph{RANK 2}
 % \paragraph{RANK 3} If you spend one hour observing a creature, you can then spend a long rest crafting a disguise you can quickly don to mimic that creature.
@@ -32,7 +32,7 @@
 %
 % \normalsize
 % Description.
-% \paragraph{REQUIREMENTS} Naturalist 2.
+% \paragraph{Requirements} Naturalist 2.
 % \paragraph{RANK 1} You gain proficiency with the poisoner's kit.
 % \paragraph{RANK 2} When you make a damage roll, you ignore resistance to poison damage.
 % Additionally, you can coat a weapon in poison as a bonus action, instead of an action.
@@ -44,7 +44,7 @@
 %
 % \normalsize
 % Description.
-% \paragraph{REQUIREMENTS} Quick Fingers 2.
+% \paragraph{Requirements} Quick Fingers 2.
 % \paragraph{RANK 1} You gain proficiency with thieves' tools.
 % \paragraph{RANK 2}
 % \paragraph{RANK 3} You can use your thieves' tools to disarm a trap or open a lock as a bonus action.
@@ -55,7 +55,7 @@
 %
 % \normalsize
 % Description.
-% \paragraph{REQUIREMENTS} Educated 2.
+% \paragraph{Requirements} Educated 2.
 % \paragraph{RANK 1} You gain proficiency with tinker's tools.
 % \paragraph{RANK 2}
 % \paragraph{RANK 3}
@@ -72,67 +72,26 @@
 %
 % % ============================================================================== %
 
-\subsection{Proficiency Feats}
-\subsection*{Healer's Kit}
-    \subsubsection{Healer} \label{feat::healer}
-    \small{\textcolor{gray}{Intelligence}} % TODO: Sure?
-
-    \normalsize
+% HEALER'S KIT combatmedic healer physician quickmender travellingdoctor
+\subsubsection{Healer} \label{feat::healer}
     Increase your level of proficiency with the healer's kit.
     This feat can be re-taken until you are a master with the artisan's tools.
-    % ========================================================================== %
-
-    \subsubsection{Quick Mender} \label{feat::quickmender}
-    \small{\textcolor{gray}{Prof w/ Healer's Kit}}
-
-    \normalsize
+\subsubsection{Quick Mender} \label{feat::quickmender}
     Used to working in the field, you can heal minor injuries as part of a short rest expending one use of your healer's kit.
     A creature healed with this feat also gains a number of temporary hit points equal to its Constitution modifier.
-    \paragraph{REQUIREMENTS} Competent with healer's kit.
-    % ========================================================================== %
-
-    \subsubsection{Resuscitator} \label{feat::resuscitator}
-    \small{\textcolor{gray}{Prof w/ Healer's Kit}}
-
-    \normalsize
-    When you use a healer's kit to stabilize a dying creature, that creature ealso regains 1 hit point.
-    \paragraph{REQUIREMENTS} Competent with healer's kit.
-    % ========================================================================== %
-
-    \subsubsection{Physician} \label{feat::physician}
-    \small{\textcolor{gray}{Prof w/ Healer's Kit}}
-
-    \normalsize
+    \paragraph{Requirements} Competent proficiency with healer's kit.
+\subsubsection{Physician} \label{feat::physician}
     As an avid physician, you can expend 3 uses of a healer's kit to heal a major injury as part of a long rest.
-    The creature must succeed on a DC 12 Constitution check for the treatment to work.
-    \paragraph{REQUIREMENTS} Expert with healer's kit.
-    % ========================================================================== %
-
-    \subsubsection{Combat Medic} \label{feat::combatmedic}
-    \small{\textcolor{gray}{Prof w/ Healer's Kit}}
-
-    \normalsize
+    The creature must succeed on a DC 12 Constitution saving throw for the treatment to work.
+    \paragraph{Requirements} Skilled proficiency with healer's kit.
+\subsubsection{Combat Medic} \label{feat::combatmedic}
     You are able to mend wounds quickly and get your allies back in the fight.
     Using two actions, you can spend one use of a healer's kit to tend to a creature and restore 1d6 + your proficiency modifier with the healer's kit hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice.
     The creature can't regain hit points from this feat again until it finishes a short rest.
-    \paragraph{REQUIREMENTS} Expert with Healer's kit.
-    % ========================================================================== %
 
-    \subsubsection{Travelling Doctor} \label{feat::travellingdoctor}
-    \small{\textcolor{gray}{Prof w/ Healer's Kit}}
-
-    \normalsize
+    You can take this feat two additional times, increasing the die to a d8 the second time and to a d10 the third.
+    \paragraph{Requirements} Skilled proficiency with Healer's kit.
+\subsubsection{Travelling Doctor (2 FP)} \label{feat::travellingdoctor}
     You keep your allies in top shape during your travels.
-    The minimum number of hit points you and your allies regain from a Hit Die roll is equal to your Constitution modifier (minimum of 2).
-    This effect is only valid if the Hit Die is rolled as part of a short rest.
-    \paragraph{REQUIREMENTS} Master with Healer's kit.
-    % ========================================================================== %
-
-    \subsubsection{Therapist} \label{feat::therapist}
-    \small{\textcolor{gray}{Prof in Persuation}}
-
-    \normalsize
-    A keen healer and convincing persuader, you can heal a creature's insanity as part of a long rest.
-    The creature must succeed on a DC 12 Intelligence check for the treatment to work.
-    \paragraph{REQUIREMENTS} Expert in the Persuasion skill and competent with Healer's kit.
-    % ========================================================================== %
+    The minimum number of hit points you and your allies regain from a hit die roll is equal to their Constitution modifier (minimum of 2).
+    \paragraph{Requirements} Expert proficiency with Healer's kit.
