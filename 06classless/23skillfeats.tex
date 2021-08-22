@@ -99,6 +99,7 @@
     You can take this feat three times, increasing your speed by the same amount each time.
 
     The second time you take this feat you also gain a swimming speed equal to your moving speed.
+
     The third time you gain the ability to move twice the normal amount of time (up to 16 hours) each day before being subject to the effect of a forced march (see ``Travel Pace'' in chapter 8 of the Player's Handbook).
     \paragraph{Requirements} Skilled proficiency in the Athletics skill.
 \subsubsection{Robust (2 FP)} \label{feat::robust}
@@ -121,6 +122,7 @@
     You can take this feat three times, increasing your speed by the same amount each time.
 
     The second time you take this feat you also gain a climbing speed equal to your moving speed.
+
     The third time you gain the ability to run along vertical surfaces, falling to the ground if you don't finish your move in a horizontal surface.
     \paragraph{Requirements} Skilled proficiency in the Acrobatics skill.
 \subsubsection{Fleet-Footed (2 FP)} \label{feat::fleetfooted}
@@ -140,10 +142,12 @@
     You learn the Steal action (see page \pageref{act::steal}).
     \paragraph{Requirements} Skilled proficiency in the Sleight of Hand skill.
 \subsubsection{Fast Hands} \label{feat::fasthands}
-    You can learn this feat three times.
-    The first, you reduce the action cost of the Use and Object action to one.
-    The second, you reduce the action cost of the Search action to one.
-    The last, you reduce the action cost of the Steal action to one.
+    You can learn this feat three times:
+    \begin{itemize}
+        \item The first, you reduce the action cost of the Use and Object action to one.
+        \item The second, you reduce the action cost of the Search action to one.
+        \item The last, you reduce the action cost of the Steal action to one.
+    \end{itemize}
     \paragraph{Requirements} Skilled proficiency in the Sleight of Hand skill.
 \subsubsection{Phantom (2 FP)} \label{feat::phantom} % NOTE: Consider renaming at some point.
     You have taken the time to hone your larcenous skills, making you an accomplished thief.
@@ -174,7 +178,7 @@
     If you win, the attack doesn't immediately reveal your position.
     \paragraph{Requirements} Expert proficiency in the Stealth skill.
 % ARCANA
-\subsubsection{Arcana Proficiency} \label{feat::arcanaprof}
+\subsubsection{Arcanist} \label{feat::arcanist}
     You increase your proficiency level in the Arcana skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
 \subsubsection{NAME} \label{feat::name}
@@ -204,7 +208,7 @@
     You can take this feat three times, obtaining different effects each time:
     \begin{itemize}
         \item You increase the range of the Help action to 9 meters, but you can only use the action in this way if the creature can hear and understand you.
-        \item When you use the Help action you can make a DC 15 Intelligence (History) check.
+        \item When you use the Help action to aid a creature's attack roll, you can make a DC 15 Intelligence (History) check.
         On a success, the creature gains a bonus on the attack roll equal to your proficiency bonus in History, as you share pertinent advice and historical examples.
         \item Emboldened by your words, the creature also gains a bonus equal to half your proficiency bonus in History (rounded down).
     \end{itemize}
@@ -215,53 +219,102 @@
 
     You can use this ability a number of times equal to your Intelligence modifier (Minimum of one).
     \paragraph{Requirements} Expert proficiency in the History skill.
-% INVESTIGATION
-\subsubsection{Investigation Proficiency} \label{feat::investigationprof}
+% INVESTIGATION detective eyeforweakness inquisitive investigative unerringeye
+\subsubsection{Investigative} \label{feat::investigative}
     You increase your proficiency level in the Investigation skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Inquisitive} \label{feat::inquisitive}
+    No detail can miss your analytical mind.
+    Your extensive experience and awareness means you can always tell when something's amiss.
+
+    Your inquisitiveness allows you to tell when you are missing a detail or clue in a situation, even after a failed roll.
+    This doesn't allow you to roll again, but the lingering uneasiness stays in your mind.
     \paragraph{Requirements} Competent proficiency in the Investigation skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Detective} \label{feat::detective}
+    You reduce the action cost of the Search action to one action.
     \paragraph{Requirements} Skilled proficiency in the Investigation skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Unerring Eye} \label{feat::unerringeye}
+    You excel at rooting out secrets and unraveling mysteries.
+    You can take this feat three times, obtaining different benefits each time:
+    \begin{itemize}
+        \item You have advantage on any Wisdom (Perception) or Intelligence (Investigation) check if you move no more than half your speed on the same turn.
+        \item You gain a +5 bonus to your passive Intelligence (Investigation) score.
+        \item Your senses are almost impossible to foil.
+        You sense the presence of illusions, any creature not in their original form, and other magic designed to deceive the senses within 9 meters of you, provided you aren't blinded or deafened.
+        You sense that an effect is attempting to trick you, but you gain no insight into what is hidden or into its true nature.
+    \end{itemize}
     \paragraph{Requirements} Skilled proficiency in the Investigation skill.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Eye for Weakness (2 FP)} \label{feat::eyeforweakness}
+    You learn to exploit a creature's weaknesses by carefully studying its tactics and movement.
+    You learn the Aim action.
+    When you successfully attack a creature after using this action, you roll the weapon's damage die one additional time.
     \paragraph{Requirements} Expert proficiency in the Investigation skill.
-% NATURE
-\subsubsection{Nature Proficiency} \label{feat::natureprof}
+% NATURE deftexplorer experiencedtraveler hideinplainsight naturalawareness naturalist
+\subsubsection{Naturalist} \label{feat::naturalist}
     You increase your proficiency level in the Nature skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Deft Explorer} \label{feat::deftexplorer}
+    Your appreciation for nature has led you to attain an extensive categorical knowledge of plants and animals, giving you a great feat at recognizing and identifying them.
+
+    Provided you are familiar with the local flora and fauna from experience or a guide, you don't need to make an ability check to identify common plants, fungi, animals, and insects.
+    You gain familiarity with a region by taking a long rest in it.
     \paragraph{Requirements} Competent proficiency in the Nature skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Natural Awareness} \label{feat::naturalawareness}
+    By almost supernatural perception, you can sense the presence of poisons and poisonous creatures within 9 meters of you.
+
     \paragraph{Requirements} Skilled proficiency in the Nature skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Experienced Traveler} \label{feat::experiencedtraveler}
+    You are an unsurpassed explorer, using your uncanny knowledge of nature to understand and survive in any environment.
+    You can take this feat multiple times, obtaining different effects each time:
+    \begin{itemize}
+        \item Difficult Terrain doesn't slow your group's travel.
+        \item When you forage, you find twice as much food as you normally would.
+        \item While tracking down creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.
+    \end{itemize}
     \paragraph{Requirements} Skilled proficiency in the Nature skill.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Hide in Plain Sight (2 FP)} \label{feat::hideinplainsight}
+    While in the wilds, your proficiency bonus with Intelligence (Nature) and Wisdom (Survival) are doubled.
+
+    In addition, you can spend 1 minute creating camouflage for yourself.
+    You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.
+
+    Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are.
+    You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions.
     \paragraph{Requirements} Expert proficiency in the Nature skill.
-% RELIGION
-\subsubsection{Religion Proficiency} \label{feat::religionprof}
+% RELIGION holyfortitude peaceofmind pious studentofthetides theologian
+\subsubsection{Theologian} \label{feat::theologian}
     You increase your proficiency level in the Religion skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Pious} \label{feat::pious}
+    You're a zealot when it comes to your faith.
+    Your devotion has led to an incredible understanding of your religion and its history, and no connoted figure goes unnoticed in your prayers.
+    You can recall the name and description of every deity and important figure related to a religion of your choice without needing to succeed on any ability check.
+
+    In addition, you have advantage on Charisma (Persuasion) and Charisma (Deception) checks against creatures that share your faith.
     \paragraph{Requirements} Competent proficiency in the Religion skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Peace of Mind} \label{feat::peaceofmind}
+    By sharing a prayer with a creature during a minute, you both reduce your stress levels by 1.
+    If you and the creature share the same religion, the stress level reduction is increased to 2.
+    You can use this ability once per short rest.
     \paragraph{Requirements} Skilled proficiency in the Religion skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Student of the Tides} \label{feat::studentofthetides}
+    You can take this feat three times, gaining different benefits each time:
+    \begin{itemize}
+        \item You can make an ability check with your Intelligence (Religion) modifier to tell the tidal alignment of a creature you can see.
+        \item You have advantage on Charisma checks against creatures that shares your tidal alignment, and roll on any attempt made to charm such creature with advantage.
+        You must know the tidal alignment of the creature to get this benefit.
+        \item By knowing its tidal alignment you have a basic understanding of a creature's goals and ideals.
+        As an action, you can roll a Charisma (Persuasion) or Intelligence (Religion) check contested with the creature's Wisdom (Insight).
+        On a failure, the creature is charmed by you for a minute.
+        This charm ends early if you or your companions attack the creature.
+    \end{itemize}
     \paragraph{Requirements} Skilled proficiency in the Religion skill.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Holy Fortitude (2 FP)} \label{feat::holyfortitude}
+    Your piousness provides you with an extreme mental fortitude.
+    You roll Constitution saving throws made to maintain concentration on a spell with advantage.
+
+    In addition, you can naturally tell when you are affected by an illusion, but don't know the exact nature of it.
+    You have advantage on any Intelligence (Investigation) checks made to identify the illusion.
     \paragraph{Requirements} Expert proficiency in the Religion skill.
 % ANIMAL HANDLING
 \subsubsection{Animal Handling Proficiency} \label{feat::animalhandlingprof}
@@ -331,8 +384,8 @@
 \subsubsection{Survival Proficiency} \label{feat::survivalprof}
     You increase your proficiency level in the Survival skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Always on Track} \label{feat::alwaysontrack}
+    You and your group can't become lost except by magical means.
     \paragraph{Requirements} Competent proficiency in the Survival skill.
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION
@@ -472,28 +525,6 @@ Animals are calmer when they're around you, and you yourself get the same feelin
 \paragraph{RANK 3} You learn the Beast Command technique.
 
 % ============================================================================== %
-\subsubsection{Deft Explorer} \label{feat::deftexplorer}
-\small{\textcolor{gray}{Nature}}
-
-\normalsize
-You are an unsurpassed explorer, using your uncanny knowledge of nature to understand and survive in any environment.
-\paragraph{REQUIREMENTS} Naturalist 3.
-\paragraph{RANK 1} You double your proficiency modifier in the Nature skill.
-\paragraph{RANK 2} By almost supernatural perception, you can sense the presence of poisons and poisonous creatures within 9 meters of you.
-\paragraph{RANK 3} Increase your Intelligence score by 1, to a maximum of 20.
-
-% ============================================================================== %
-\subsubsection{Detective} \label{feat::detective}
-\small{\textcolor{gray}{Investigation}}
-
-\normalsize
-You excel at rooting out secrets and unraveling mysteries.
-\paragraph{REQUIREMENTS} Inquisitive 3.
-\paragraph{RANK 1} You double your proficiency modifier in the Investigation skill.
-\paragraph{RANK 2} You have a +5 bonus to your passive intelligence (Investigation) score.
-\paragraph{RANK 3} Increase your Intelligence score by 1, to a maximum of 20.
-
-% ============================================================================== %
 \subsubsection{Educated} \label{feat::educated}
 \small{\textcolor{gray}{Science}}
 
@@ -536,18 +567,6 @@ Your abilities at haggling and persuading are known in your local markets, and y
 \paragraph{RANK 1} You double your proficiency modifier in the Persuasion skill.
 \paragraph{RANK 2} Your well-honed haggling skills allow you to shave off 10\% off the price of anything, even if you fail a Charisma (Persuasion) check.
 \paragraph{RANK 3} Increase your Charisma score by 1, to a maximum of 20.
-
-% ============================================================================== %
-\subsubsection{Inquisitive} \label{feat::inquisitive}
-\small{\textcolor{gray}{Investigation}}
-
-\normalsize
-No detail can miss your analytical mind.
-Your extensive experience and awareness means you can always tell when something's amiss.
-\paragraph{RANK 1} You are proficient with the Investigation skill.
-\paragraph{RANK 2} Your inquisitiveness allows you to tell when you are missing a detail or clue in a situation, even after a failed roll.
-This doesn't allow you to roll again, but the lingering uneasiness stays in your mind.
-\paragraph{RANK 3} You can take the Search action as a bonus action.
 
 % ============================================================================== %
 \subsubsection{Insightful} \label{feat::insightful}
@@ -652,16 +671,6 @@ You are exceptionally speedy and agile.
 \paragraph{RANK 3} Your speed increases by 3 meters.
 
 % ============================================================================== %
-\subsubsection{Naturalist} \label{feat::naturalist}
-\small{\textcolor{gray}{Nature}}
-
-\normalsize
-Your appreciation for nature has led you to attain an extensive categorical knowledge of plants and animals, giving you a great feat at recognizing and identifying them.
-\paragraph{RANK 1} You are proficient with the Nature skill.
-\paragraph{RANK 2} Provided you are familiar with the local flora and fauna from experience or a guide, you don't need to make an ability check to identify common plants, fungi, animals, and insects.
-\paragraph{RANK 3} Your group can't become lost except by magical means.
-
-% ============================================================================== %
 \subsubsection{Observant} \label{feat::observant}
 \small{\textcolor{gray}{Perception}}
 
@@ -704,17 +713,6 @@ A skilled negotiator and a master of diplomacy, you have an easy time convincing
 \paragraph{RANK 3} You learn the Charm technique.
 
 % ============================================================================== %
-\subsubsection{Pious} \label{feat::pious}
-\small{\textcolor{gray}{Religion}}
-
-\normalsize
-You're a zealot when it comes to your faith.
-Your devotion has led to an incredible understanding of your religion and its history, and no connoted figure goes unnoticed in your prayers.
-\paragraph{RANK 1} You are proficient with the Religion skill.
-\paragraph{RANK 2} You can recall the name and description of any deity and important figure related to a religion of your choice without needing to succeed on any ability check.
-\paragraph{RANK 3} You have advantage in Intelligence (Religion) checks made to tell the tide of a creature you can see.
-
-% ============================================================================== %
 \subsubsection{Silver-tongued} \label{feat::silvertongued}
 \small{\textcolor{gray}{Deception}}
 
@@ -734,18 +732,6 @@ Your enviable endurance and experience allows you to be particularly effective a
 \paragraph{RANK 1} You are proficient with the Survival skill.
 \paragraph{RANK 2} When you forage, you find twice as much food as you normally would.
 \paragraph{RANK 3} You have advantage on Wisdom (Survival) checks made to track creatures.
-
-% ============================================================================== %
-\subsubsection{Theologian} \label{feat::theologian}
-\small{\textcolor{gray}{Religion}}
-
-\normalsize
-Your extensive study of religion and the tides rewards you with many benefits.
-\paragraph{REQUIREMENTS} Pious 3.
-\paragraph{RANK 1} You double your proficiency modifier in the Religion skill.
-\paragraph{RANK 2} You have advantage on Charisma (Persuasion) and Charisma (Deception) checks against creatures of your same tide.
-You must know the tide of the creature to get this benefit.
-\paragraph{RANK 3} Increase your Intelligence score by 1, to a maximum of 20.
 
 % ============================================================================== %
 \subsubsection{Tracker} \label{feat::tracker}
