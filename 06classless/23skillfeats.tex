@@ -393,7 +393,7 @@
     When you successfully stabilize a dying creature, that creature also regains 1 hit point.
     \paragraph{Requirements} Competent proficiency in the Medicine skill.
 \subsubsection{Healer's Insight} \label{feat::healersinsight}
-    You can tell when a creature is suffering from a wound or injury without rolling an ability check.
+    You can tell whether a creature is suffering from a wound or injury, where this injury is located, and how severe it is without rolling an ability check.
     \paragraph{Requirements} Skilled proficiency in the Medicine skill.
 \subsubsection{Restoring Rest} \label{feat::restoringrest}
     During a short rest, you can clean and bind the wounds of up to six willing beasts and humanoids (including yourself).
@@ -406,37 +406,58 @@
     You mastered the physician's arts, and are able to heal any wound or bruise with ease.
     When you heal a creature by any means, the creature regains additional hit points equal to your proficiency bonus with the Medicine skill.
     \paragraph{Requirements} Expert proficiency in the Medicine skill.
-% PERCEPTION
+% PERCEPTION blindsense observant perceptive refinedsight reliablesight
 \subsubsection{Perceptive} \label{feat::perceptive}
     You increase your proficiency level in the Perception skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Reliable Sight} \label{feat::reliablesight}
+    Being in a lightly obscured area doesn't impose disadvantage on your Intelligence (Investigation) and Wisdom (Perception) checks if you can see or hear.
     \paragraph{Requirements} Competent proficiency in the Perception skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Observant} \label{feat::observant}
+    Based on memory or description alone, you can easily spot a person in a crowd or an object among many.
     \paragraph{Requirements} Skilled proficiency in the Perception skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Refined Sight} \label{feat::refinedsight}
+    When you focus your mind on something, you are able to quickly perceive even the smallest details and imperfections.
+    You can learn this feat three times, gaining different effects each time:
+    \begin{itemize}
+        \item You have advantage on any Wisdom (Perception) or Intelligence (Investigation) checks made to detect the presence of creatures.
+        \item You gain a +5 bonus to your passive Wisdom (Perception) score.
+        \item You can add half your proficiency bonus in Perception (rounded down) to your initiative.
+    \end{itemize}
     \paragraph{Requirements} Skilled proficiency in the Perception skill.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Blindsense (2 FP)} \label{feat::blindsense}
+    Unnaturally perceptive, you gain tremorsense with a radius of 3 meters and blindsight with a radius of 9 meters.
+    Tremorsense allows you to perceive anything on the ground or below, while blindsight allows you to perceive your surroundings without reyling on sight.
     \paragraph{Requirements} Expert proficiency in the Perception skill.
-% SURVIVAL
-\subsubsection{Survival Proficiency} \label{feat::survivalprof}
+% SURVIVAL alwaysontrack hunterssense survivor trainedbynature tracker
+\subsubsection{Survivor} \label{feat::survivor}
     You increase your proficiency level in the Survival skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
 \subsubsection{Always on Track} \label{feat::alwaysontrack}
     You and your group can't become lost except by magical means.
     \paragraph{Requirements} Competent proficiency in the Survival skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Trained by Nature} \label{feat::trainedbynature}
+    As if raised by wolves, you are a natural survivor in the most harsh of circumstances.
+    Your enviable endurance and experience allows you to be particularly effective at building shelter, purifying water, and foraging food.
+    When you forage, you find twice as much food as you normally would, and you are always able to find a shelter to rest protected from the elements.
     \paragraph{Requirements} Skilled proficiency in the Survival skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Tracker} \label{feat::tracker}
+    You have spent enough time hunting to hone your skill to a venerable level.
+    You can take this feat three times, gaining a different effect each time
+    \begin{itemize}
+        \item You have advantage on Wisdom (Survival) checks made to track creatures.
+        \item You learn the Mark action.
+        \item You increase the duration of the Mark action to 8 hours, and you automatically succeed on Wisdom (Survival) checks made to track the marked creature.
+    \end{itemize}
     \paragraph{Requirements} Skilled proficiency in the Survival skill.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Hunter's Sense (2 FP)} \label{feat::hunterssense}
+    You gain the ability to peer at a creature and discern how best to hurt it.
+    As an action, choose one creature you can see within 18 meters of you.
+    You immediately learn whether the creature has any damage immunities, resistances, or vulnerabilities and what they are.
+    % If the creature is hidden from divination magic, you sense that it has no damage immunities, resistances, or vulnerabilities.
+
+    You can use this ability a number of times equal to your Wisdom modifier (minimum of once)
+     You regain all expended uses of it when you finish a short rest.
     \paragraph{Requirements} Expert proficiency in the Survival skill.
 % DECEPTION
 \subsubsection{Deception Proficiency} \label{feat::deceptionprof}
@@ -471,14 +492,15 @@
     DESCRIPTION
     \paragraph{Requirements} Expert proficiency in the Intimidation skill.
 % PERFORMANCE
-\subsubsection{Performance Proficiency} \label{feat::performanceprof}
+\subsubsection{Performer} \label{feat::performer}
     You increase your proficiency level in the Performance skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION
     \paragraph{Requirements} Competent proficiency in the Performance skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Soothing Presence} \label{feat::soothingpresence}
+    A favorite of the masses, you are an expert at making people laugh and relax.
+    During a long rest, you and your allies reduce their stress by one additional level.
     \paragraph{Requirements} Skilled proficiency in the Performance skill.
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION - UPGRADABLE
@@ -487,52 +509,50 @@
     DESCRIPTION
     \paragraph{Requirements} Expert proficiency in the Performance skill.
 % PERSUASION
-\subsubsection{Persuasion Proficiency} \label{feat::persuasionprof}
+\subsubsection{Persuasive} \label{feat::persuasive}
     You increase your proficiency level in the Persuasion skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Reliever} \label{feat::reliever}
+    You are able to motivate and relieve the most stressed of folks.
+    As part of a short rest, you can reduce an ally's stress by one point.
+    You can only use this feat once per short rest, and cannot reduce your own stress via this manner.
     \paragraph{Requirements} Competent proficiency in the Persuasion skill.
-\subsubsection{Therapist} \label{feat::therapist}
-    A keen healer and convincing persuader, you can heal a creature's insanity as part of a long rest.
-    The creature must succeed on a DC 12 Intelligence saving throw for the treatment to work.
+\subsubsection{Haggler} \label{feat::haggler}
+    Your well-honed haggling skills give you advantage on Charisma (Persuasion) checks made when trading with a creature.
+    In addition, you can always reduce the price of an item by a quarter of its price, even if you fail a Charisma (Persuasion) check.
+    % NOTE: PRICE REDUCTIONS ARE NOT CUMULATIVE!
     \paragraph{Requirements} Skilled proficiency in the Persuasion.
 \subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+    A skilled negotiator and a master of diplomacy, you have an easy time convincing people to do what you need.
+    You can take this feat three times, gaining different benefits each time:
+    \begin{itemize}
+        \item You gain advantage on Charisma (Persuasion) ability checks and contests made against creatures that do not see you as a threat or an enemy in any way.
+        \item If you spend one minute talking to someone who can understand what you say, you can make a Charisma (Persuasion) check contested by the creature's Wisdom (Insight).
+        If you or your companions are fighting the creature, the check automatically fails.
+        If you succeed, the target is charmed by you as long as it remains within 18 meters of you and for 5 minutes thereafter.
+        If you or your companions attack the creature, the charm ends.
+        \item Your otherwordly charisma is hard to forget.
+        Any creature that you have charmed in the past remembers you and can offer you favors as long as they're reasonable.
+    \end{itemize}
     \paragraph{Requirements} Skilled proficiency in the Persuasion skill.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Therapist (2 FP)} \label{feat::therapist}
+    A keen healer and convincing persuader, you can heal a creature's insanity as part of a long rest.
+    The creature must succeed on a DC 12 Intelligence saving throw for the treatment to work.
+
+    Upon losing an insanity, the creature becomes stalwart, giving them advantage on attack rolls and saving throws until they take a short rest.
     \paragraph{Requirements} Expert proficiency in the Persuasion skill.
 
-% \subsubsection{Reliever} \label{feat::reliever}
-% \small{\textcolor{gray}{Prof in Persuasion}}
-%
-% \normalsize
-% You are able to motivate and relieve the most stressed of folks.
-% As part of a short rest, you can reduce an ally's stress by one point.
-% You can only use this feat once per short rest, and cannot reduce your own stress via this manner.
-% \paragraph{REQUIREMENTS} Expert in the Persuasion skill.
-% % ========================================================================== %
-%
-% \subsubsection{Entertainer} \label{feat::entertainer}
-% \small{\textcolor{gray}{Prof in Performance}}
-%
-% \normalsize
-% A favorite of the masses, you are an expert at making people laugh and relax.
-% During a long rest, you and your allies reduce stress by one additional point.
-% \paragraph{REQUIREMENTS} Master in the Performance skill.
-%
-% % === SKILLS =================================================================== %
-% % \subsubsection{Gifted} \label{feat::gifted} %
-% % \small{\textcolor{gray}{Arcana}}
-%
-% % \normalsize
-% % By chance or mysterious circumstance, you've gained a special attunement with the arcane arts of the world.
-% % It's easy for you to perceive when magic is used around you, and your extensive studies allow you to even identify the spells being cast.
-% % \paragraph{RANK 1} You are proficient with the Arcana skill.
-% % \paragraph{RANK 2} You learn one harmless cantrip of your choice that doesn't belong to any magic school.
-% % \paragraph{RANK 3} You double your proficiency modifier in the Arcana skill.
-%
+% === SKILLS =================================================================== %
+\subsubsection{Gifted} \label{feat::gifted}
+\small{\textcolor{gray}{Arcana}}
+
+\normalsize
+By chance or mysterious circumstance, you've gained a special attunement with the arcane arts of the world.
+It's easy for you to perceive when magic is used around you, and your extensive studies allow you to even identify the spells being cast.
+\paragraph{RANK 1} You are proficient with the Arcana skill.
+\paragraph{RANK 2} You learn one harmless cantrip of your choice that doesn't belong to any magic school.
+\paragraph{RANK 3} You double your proficiency modifier in the Arcana skill.
+
 % ============================================================================== %
 \subsubsection{Actor} \label{feat::actor}
 \small{\textcolor{gray}{Performer}}
@@ -543,18 +563,6 @@ You master performance so that you can command any stage.
 \paragraph{RANK 1} You double your proficiency modifier in the Performance skill.
 \paragraph{RANK 2} You have advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a different person.
 \paragraph{RANK 3} Increase your Charisma score by 1, to a maximum of 20.
-
-% ============================================================================== %
-\subsubsection{Aerialist} \label{feat::aerialist}
-\small{\textcolor{gray}{}}
-
-\normalsize
-High above the ground, you defy falls to earth on a daily basis.
-\paragraph{REQUIREMENTS} Acrobat 3.
-\paragraph{RANK 1} You double your proficiency modifier in the Acrobatics skill.
-\paragraph{RANK 2} Your walking speed increases by 1.5 meters.
-Additionally, you gain a climbing speed and a swimming speed equal to your walking speed.
-\paragraph{RANK 3} You learn the Light as a Feather technique.
 
 % ============================================================================== %
 \subsubsection{Educated} \label{feat::educated}
@@ -576,17 +584,6 @@ You become fearsome to others, and people are scared to even talk about you.
 \paragraph{REQUIREMENTS} Menacing 3.
 \paragraph{RANK 1} You double your proficiency modifier in the Intimidation skill.
 \paragraph{RANK 2} You learn the Demoralize technique.
-\paragraph{RANK 3} Increase your Charisma score by 1, to a maximum of 20.
-
-% ============================================================================== %
-\subsubsection{Haggler} \label{feat::haggler}
-\small{\textcolor{gray}{Persuasion}}
-
-\normalsize
-Your abilities at haggling and persuading are known in your local markets, and you are both feared and revered by merchants and traders.
-\paragraph{REQUIREMENTS} Persuasive 3.
-\paragraph{RANK 1} You double your proficiency modifier in the Persuasion skill.
-\paragraph{RANK 2} Your well-honed haggling skills allow you to shave off 10\% off the price of anything, even if you fail a Charisma (Persuasion) check.
 \paragraph{RANK 3} Increase your Charisma score by 1, to a maximum of 20.
 
 % ============================================================================== %
@@ -645,38 +642,6 @@ Your menacing appearance has permitted you to bypass consequence in many situati
 \paragraph{RANK 3} You learn the Taunt technique.
 
 % ============================================================================== %
-\subsubsection{Mobile} \label{feat::mobile}
-\small{\textcolor{gray}{Acrobatics}}
-
-\normalsize
-You are exceptionally speedy and agile.
-\paragraph{REQUIREMENTS} Lightly Armored 2 and Acrobat 2.
-\paragraph{RANK 1} When you use the Dash action, difficult terrain doesn't cost you extra movement.
-\paragraph{RANK 2} When you make a melee attack against a creature, you don't provoke opportunity attacks from that creature for the rest of the turn, whether you hit or not.
-\paragraph{RANK 3} Your speed increases by 3 meters.
-
-% ============================================================================== %
-\subsubsection{Observant} \label{feat::observant}
-\small{\textcolor{gray}{Perception}}
-
-\normalsize
-Easily distracted, you are always attentive of the details in your surroundings.
-\paragraph{RANK 1} You are proficient with the Perception skill.
-\paragraph{RANK 2} You can easily spot a person you know in a crowd or an object you're familiar with among many.
-\paragraph{RANK 3} Being in a lightly obscured area doesn't impose disadvantage on your Wisdom (Perception) checks if you can both see and hear.
-
-% ============================================================================== %
-\subsubsection{Perceptive} \label{feat::perceptive}
-\small{\textcolor{gray}{Perception}}
-
-\normalsize
-When you focus your mind on something, you are able to quickly perceive even the smallest details and imperfections.
-\paragraph{REQUIREMENTS} Observant 3.
-\paragraph{RANK 1} You double your proficiency modifier in the Perception skill.
-\paragraph{RANK 2} You have a +5 bonus to your passive Wisdom (Perception) score.
-\paragraph{RANK 3} Increase your Wisdom score by 1, to a maximum of 20.
-
-% ============================================================================== %
 \subsubsection{Performer} \label{feat::performer}
 \small{\textcolor{gray}{Performance}}
 
@@ -688,16 +653,6 @@ You have an easy time imitating the demeanor of others, especially of those that
 \paragraph{RANK 3} You learn the Distract technique.
 
 % ============================================================================== %
-\subsubsection{Persuasive} \label{feat::persuasive}
-\small{\textcolor{gray}{Persuasion}}
-
-\normalsize
-A skilled negotiator and a master of diplomacy, you have an easy time convincing people to do what you need.
-\paragraph{RANK 1} You are proficient with the Persuasion skill.
-\paragraph{RANK 2} You have advantage on Charisma (Persuasion) checks when trading with a creature.
-\paragraph{RANK 3} You learn the Charm technique.
-
-% ============================================================================== %
 \subsubsection{Silver-tongued} \label{feat::silvertongued}
 \small{\textcolor{gray}{Deception}}
 
@@ -707,24 +662,3 @@ You develop your conversational skill to better deceive others.
 \paragraph{RANK 1} You double your proficiency modifier in the Deception skill.
 \paragraph{RANK 2} You learn the Deceive technique.
 \paragraph{RANK 3} Increase your Charisma score by 1, to a maximum of 20.
-
-\subsubsection{Survivor} \label{feat::survivor}
-\small{\textcolor{gray}{Survival}}
-
-\normalsize
-As if raised by wolves, you are a natural survivor in the most harsh of circumstances.
-Your enviable endurance and experience allows you to be particularly effective at building shelter, purifying water, and foraging food.
-\paragraph{RANK 1} You are proficient with the Survival skill.
-\paragraph{RANK 2} When you forage, you find twice as much food as you normally would.
-\paragraph{RANK 3} You have advantage on Wisdom (Survival) checks made to track creatures.
-
-% ============================================================================== %
-\subsubsection{Tracker} \label{feat::tracker}
-\small{\textcolor{gray}{Survival}}
-
-\normalsize
-You have spent enough time hunting to hone your skill to a venerable level.
-\paragraph{REQUIREMENTS} Survivor 3.
-\paragraph{RANK 1} You double your proficiency modifier in the Survival skill.
-\paragraph{RANK 2} You learn the Mark technique.
-\paragraph{RANK 3} Increase your Wisdom score by 1, to a maximum of 20.
