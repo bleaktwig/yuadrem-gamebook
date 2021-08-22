@@ -38,8 +38,11 @@
     You increase your hit die from a d6 to a d8, a d8 to a d10, or a d10 to a d12.
     Additionally, you gain a number of hit points equal to your level when you take this feat.
     \paragraph{Requirements} Constitution 18.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Cling to Life (2 FP)} \label{feat::clingtolife}
+    Resilient even in the face of death, you roll death saving throws with advantage.
+
+    In addition, if you are attacked while unconscious roll a Constitution saving throw with a DC equal to 10 or half the damage done.
+    If you succeed, you don't suffer a death saving throw failure.
     \paragraph{Requirements} Constitution 21.
 % WISDOM
 \subsubsection{NAME} \label{feat::name}
@@ -86,7 +89,7 @@
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
 \subsubsection{Always Ready} \label{feat::alwaysready}
     Your physical prowess is a marvel to most.
-    When you are prone, standing up uses only 1.5 meters of your movement instead of half of your total, and doesn't provoke attacks of opportunity.
+    When you are prone, standing up doesn't provoke attacks of opportunity.
     \paragraph{Requirements} Competent proficiency in the Athletics skill.
 \subsubsection{Strong Body} \label{feat::strongbody}
     You count as if you were one size larger for the purpose of determining your carrying capacity.
@@ -121,40 +124,54 @@
     The third time you gain the ability to run along vertical surfaces, falling to the ground if you don't finish your move in a horizontal surface.
     \paragraph{Requirements} Skilled proficiency in the Acrobatics skill.
 \subsubsection{Fleet-Footed (2 FP)} \label{feat::fleetfooted}
-    Opportunity attacks made against you are made with disadvantage.
-    In addition, if an attack of opportunity against you misses, you can use your reaction to make a melee attack against the attacker.
+    You reduce the cost of the Disengage action to one action.
+    In addition, opportunity attacks made against you are made with disadvantage.
+    % In addition, if an attack of opportunity against you misses, you can use your reaction to make a melee attack against the attacker.
     \paragraph{Requirements} Expert proficiency in the Acrobatics skill.
-% SLEIGHT OF HAND
-\subsubsection{Sleight of Hand Proficiency} \label{feat::sleightofhandprof}
+% SLEIGHT OF HAND fasthands quickfingers phantom pickpocket thief
+\subsubsection{Quick Fingers} \label{feat::quickfingers}
     You increase your proficiency level in the Sleight of Hand skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Pickpocket} \label{feat::pickpocket}
+    Other creatures have disadvantage on Intelligence (Investigation) and Wisdom (Perception) checks to see you stealing or notice an object you have stolen.
     \paragraph{Requirements} Competent proficiency in the Sleight of Hand skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Thief} \label{feat::thief}
+    While they've given you problems in the past, your quick and sticky fingers have awarded you with many a treasure thorough your life.
+    You learn the Steal action (see page \pageref{act::steal}).
     \paragraph{Requirements} Skilled proficiency in the Sleight of Hand skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Fast Hands} \label{feat::fasthands}
+    You can learn this feat three times.
+    The first, you reduce the action cost of the Use and Object action to one.
+    The second, you reduce the action cost of the Search action to one.
+    The last, you reduce the action cost of the Steal action to one.
     \paragraph{Requirements} Skilled proficiency in the Sleight of Hand skill.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Phantom (2 FP)} \label{feat::phantom} % NOTE: Consider renaming at some point.
+    You have taken the time to hone your larcenous skills, making you an accomplished thief.
+    If you spend at least one minute observing or interacting with another creature outside combat, you learn about anything valuable the creature has that can be stolen.
+    In addition, any Dexterity (Sleight of Hand) checks you make to steal from the creature are made with advantage.
     \paragraph{Requirements} Expert proficiency in the Sleight of Hand skill.
-% STEALTH
-\subsubsection{Stealth Proficiency} \label{feat::stealthprof}
+% STEALTH ghost hiddenstriker skulker sly sneak
+\subsubsection{Sneak} \label{feat::sneak}
     You increase your proficiency level in the Stealth skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Sly} \label{feat::sly}
+    One with shadows, you can always escape from the most unfavorable situations.
+    You have a natural ease melding with the dark, and intuitively know how to avoid making any noise.
+    You have advantage on any Dexterity (Stealth) check if you move no more than half your speed on the same turn.
     \paragraph{Requirements} Competent proficiency in the Stealth skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Skulker} \label{feat::skulker}
+    You are an expert at slinking through shadows.
+    Missing a ranged attack against a target doesn't alert your target.
+    In addition, you can try to hide when you are lightly obscured from the creature from which you are hiding.
     \paragraph{Requirements} Skilled proficiency in the Stealth skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Hidden Striker} \label{feat::hiddenstriker}
+    You learn or improve the Sneak Attack action (see page \pageref{act:sneakattack}).
+    You can take this feat three times, improving the action's damage by a d6 each time.
     \paragraph{Requirements} Skilled proficiency in the Stealth skill.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Ghost (2 FP)} \label{feat::ghost}
+    You reduce the action cost of the Hide action to one action.
+    In addition, when you make a ranged attack against a creature while hidden, roll Dexterity (Stealth) contested against the creaute's Wisdom (Perception).
+    If you win, the attack doesn't immediately reveal your position.
     \paragraph{Requirements} Expert proficiency in the Stealth skill.
 % ARCANA
 \subsubsection{Arcana Proficiency} \label{feat::arcanaprof}
@@ -172,21 +189,31 @@
 \subsubsection{NAME (2 FP)} \label{feat::name}
     DESCRIPTION
     \paragraph{Requirements} Expert proficiency in the Arcana skill.
-% HISTORY
-\subsubsection{History Proficiency} \label{feat::historyprof}
+% HISTORY advisor cognizant historian sharpenedmind wizenedadvice
+\subsubsection{Historian} \label{feat::historian}
     You increase your proficiency level in the History skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Cognizant} \label{feat::cognizant}
+    From background or perchance you've been given a privileged access to books and teaching thorough your life.
+    You have advantage on Intelligence (History) checks to recall any information of your kin and your country of origin.
     \paragraph{Requirements} Competent proficiency in the History skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Sharpened Mind} \label{feat::sharpenedmind}
+    You can accurately recall anything you have seen or heard within the past month.
     \paragraph{Requirements} Skilled proficiency in the History skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Wizened Advice} \label{feat::wizenedadvice}
+    You can take this feat three times, obtaining different effects each time:
+    \begin{itemize}
+        \item You increase the range of the Help action to 9 meters, but you can only use the action in this way if the creature can hear and understand you.
+        \item When you use the Help action you can make a DC 15 Intelligence (History) check.
+        On a success, the creature gains a bonus on the attack roll equal to your proficiency bonus in History, as you share pertinent advice and historical examples.
+        \item Emboldened by your words, the creature also gains a bonus equal to half your proficiency bonus in History (rounded down).
+    \end{itemize}
     \paragraph{Requirements} Skilled proficiency in the History skill.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Advisor (2 FP)} \label{feat::advisor}
+    As an action, you can give a creature a bonus equal to your proficiency bonus with the History skill to any ability check or saving throw.
+    The creature must be able to hear and understand you.
+
+    You can use this ability a number of times equal to your Intelligence modifier (Minimum of one).
     \paragraph{Requirements} Expert proficiency in the History skill.
 % INVESTIGATION
 \subsubsection{Investigation Proficiency} \label{feat::investigationprof}
@@ -444,18 +471,6 @@ Animals are calmer when they're around you, and you yourself get the same feelin
 \paragraph{RANK 2} Animals naturally trust you, and you don't need to perform any check to calm an animal or monster that is not already violent toward you.
 \paragraph{RANK 3} You learn the Beast Command technique.
 
-
-
-% ============================================================================== %
-\subsubsection{Cognizant} \label{feat::cognizant}
-\small{\textcolor{gray}{History}}
-
-\normalsize
-From background or perchance you've been given a privileged access to books and teaching thorough your life.
-\paragraph{RANK 1} You are proficient with the History skill.
-\paragraph{RANK 2} You have advantage on any Intelligence (History) checks to recall information of your kin and your country of origin.
-\paragraph{RANK 3} You learn the Wizened Advice technique.
-
 % ============================================================================== %
 \subsubsection{Deft Explorer} \label{feat::deftexplorer}
 \small{\textcolor{gray}{Nature}}
@@ -521,17 +536,6 @@ Your abilities at haggling and persuading are known in your local markets, and y
 \paragraph{RANK 1} You double your proficiency modifier in the Persuasion skill.
 \paragraph{RANK 2} Your well-honed haggling skills allow you to shave off 10\% off the price of anything, even if you fail a Charisma (Persuasion) check.
 \paragraph{RANK 3} Increase your Charisma score by 1, to a maximum of 20.
-
-% ============================================================================== %
-\subsubsection{Historian} \label{feat::historian}
-\small{\textcolor{gray}{History}}
-
-\normalsize
-Your extensive knowledge in the social sciences allows you to understand people, societies, and history with ease.
-\paragraph{REQUIREMENTS} Cognizant 3.
-\paragraph{RANK 1} You double your proficiency modifier in the History skill.
-\paragraph{RANK 2} You can accurately recall anything you have seen or heard within the past month.
-\paragraph{RANK 3} Increase your Intelligence score by 1, to a maximum of 20.
 
 % ============================================================================== %
 \subsubsection{Inquisitive} \label{feat::inquisitive}
@@ -700,17 +704,6 @@ A skilled negotiator and a master of diplomacy, you have an easy time convincing
 \paragraph{RANK 3} You learn the Charm technique.
 
 % ============================================================================== %
-\subsubsection{Pickpocket} \label{feat::pickpocket}
-\small{\textcolor{gray}{Sleight of Hand}}
-
-\normalsize
-You have taken the time to hone your larcenous skills, making you an accomplished thief.
-\paragraph{REQUIREMENTS} Quick Fingers 3.
-\paragraph{RANK 1} You double your proficiency modifier in the Sleight of Hand skill.
-\paragraph{RANK 2} Other creatures have disadvantage on Intelligence (Investigation) or Wisdom (Perception) checks to notice an object you palmed in your hands.
-\paragraph{RANK 3} If you spend at least 1 minute observing or interacting with another creature outside combat, you can learn about anything the creature has that can be stolen.
-
-% ============================================================================== %
 \subsubsection{Pious} \label{feat::pious}
 \small{\textcolor{gray}{Religion}}
 
@@ -720,16 +713,6 @@ Your devotion has led to an incredible understanding of your religion and its hi
 \paragraph{RANK 1} You are proficient with the Religion skill.
 \paragraph{RANK 2} You can recall the name and description of any deity and important figure related to a religion of your choice without needing to succeed on any ability check.
 \paragraph{RANK 3} You have advantage in Intelligence (Religion) checks made to tell the tide of a creature you can see.
-
-% ============================================================================== %
-\subsubsection{Quick Fingers} \label{feat::quickfingers}
-\small{\textcolor{gray}{Sleight of Hand}}
-
-\normalsize
-While they've given you problems in the past, your quick and sticky fingers have awarded you with many a treasure thorough your life.
-\paragraph{RANK 1} You are proficient with the Sleight of Hand skill.
-\paragraph{RANK 2} You can use a bonus action to take the Search or the Use an Object actions.
-\paragraph{RANK 3} You learn the Steal technique.
 
 % ============================================================================== %
 \subsubsection{Silver-tongued} \label{feat::silvertongued}
@@ -742,29 +725,6 @@ You develop your conversational skill to better deceive others.
 \paragraph{RANK 2} You learn the Deceive technique.
 \paragraph{RANK 3} Increase your Charisma score by 1, to a maximum of 20.
 
-% ============================================================================== %
-\subsubsection{Skulker} \label{feat::skulker}
-\small{\textcolor{gray}{Stealth}}
-
-\normalsize
-You are expert at slinking through shadows.
-\paragraph{REQUIREMENTS} Sly 3.
-\paragraph{RANK 1} You double your proficiency modifier in the Stealth skill.
-\paragraph{RANK 2} Making a melee or range attack alerts your target, but doesn't immediately reveal your position.
-\paragraph{RANK 3} You gain or improve the Sneak Attack technique.
-
-% ============================================================================== %
-\subsubsection{Sly} \label{feat::sly}
-\small{\textcolor{gray}{Stealth}}
-
-\normalsize
-One with shadows, you can always escape from the most unfavorable situations.
-You have a natural ease melding with the dark, and intuitively know how to avoid making any noise.
-\paragraph{RANK 1} You are proficient with the Stealth skill.
-\paragraph{RANK 2} You can try to hide when you are lightly obscured from the creature from which you are hiding.
-\paragraph{RANK 3} You gain advantage on any Dexterity (Stealth) check if you move no more than half your speed on the same turn.
-
-% ============================================================================== %
 \subsubsection{Survivor} \label{feat::survivor}
 \small{\textcolor{gray}{Survival}}
 
