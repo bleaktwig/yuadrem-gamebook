@@ -177,21 +177,36 @@
     In addition, when you make a ranged attack against a creature while hidden, roll Dexterity (Stealth) contested against the creaute's Wisdom (Perception).
     If you win, the attack doesn't immediately reveal your position.
     \paragraph{Requirements} Expert proficiency in the Stealth skill.
-% ARCANA
+% ARCANA arcanist countercaster gifted identify metamagicinitiate
 \subsubsection{Arcanist} \label{feat::arcanist}
     You increase your proficiency level in the Arcana skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Gifted} \label{feat::gifted}
+    By chance or mysterious circumstance, you've gained a special attunement with the arcane arts of the world.
+    You learn one harmless cantrip of your choice that doesn't belong to any magic school.
     \paragraph{Requirements} Competent proficiency in the Arcana skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Metamagic Initiate} \label{feat::metamagicinitiate}
+    You learn one metamagic option from the metamagic table (see page \pageref{ssec::metamagic}).
+    You can use only one metamagic option on a spell when you cast it, unless the option says otherwise.
     \paragraph{Requirements} Skilled proficiency in the Arcana skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Identify} \label{feat::identify}
+    % NOTE: Normally, a magic can only be identified by paying an arcanist. This is the feat they use for that.
+    You can take this feat multiple times, gaining a different effect each times:
+    \begin{itemize}
+        \item You choose one object you are holding or can touch.
+        After analyzing it for a minute, you learn its properties and how to use it.
+        \item As part of the same action, you learn whether any spells are affecting the item and what they are.
+        If the item was created by a spell, you learn which spell created it.
+        \item As part of a long rest, you can identify magic items without consuming any materials.
+        At the DM's discretion, you might not be able to use this ability on a very rare item or lost artifact.
+        In this case, you learn the origin of the item and know where you can go to get more information.
+    \end{itemize}
     \paragraph{Requirements} Skilled proficiency in the Arcana skill.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Countercaster (2 FP)} \label{feat::countercaster}
+    Educated in all sorts of doctrines, you have advantage in the Identify a Spell action.
+    In addition, when you identify a spell you can try to prevent it from being casted.
+    If the casting creature is no more than 18 meters away from you, you can roll another Intelligence (Arcana) check with a DC equal to 15 + the spell's level using the same reaction.
+    On a success, the creature's spell fails and has no effect.
     \paragraph{Requirements} Expert proficiency in the Arcana skill.
 % HISTORY advisor cognizant historian sharpenedmind wizenedadvice
 \subsubsection{Historian} \label{feat::historian}
@@ -459,56 +474,120 @@
     You can use this ability a number of times equal to your Wisdom modifier (minimum of once)
      You regain all expended uses of it when you finish a short rest.
     \paragraph{Requirements} Expert proficiency in the Survival skill.
-% DECEPTION
-\subsubsection{Deception Proficiency} \label{feat::deceptionprof}
+% DECEPTION convincingspeech deceiver feigninnocence liar taunt
+\subsubsection{Deceiver} \label{feat::deceiver}
     You increase your proficiency level in the Deception skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Liar} \label{feat::liar}
+    You can easily lie to someone to their face without batting an eye.
+    While you might not always be proud of this skill, you can't deny that it's saved you in countless situations.
+
+    When you fail to convince someone with a lie, it'll still take them two turns to realize you're lying, provided the lie isn't completely absurd.
     \paragraph{Requirements} Competent proficiency in the Deception skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+% \subsubsection{Vicious Mockery} \label{feat::viciousmockery}
+%     Using two actions, you can unleash a string of insults at a creature you can see within 18 meters of you.
+%     If the target can hear and understand you, it must succeed on a Wisdom saving throw with DC 8 + your Charisma modifier or take 1d4 psychic damage and have disadvantage on the next attack roll it makes before the end of its next turn.
+%
+%     The creature knows you insulted it but doesn't noticed that you damaged it.
+%
+%     This damage increases by 1d4 when you reach 5th level (2d4), 11th level (3d4), and 17th level (4d4).
+%
+%     You cannot use this ability on the same creature more than once before you take a short rest.
+%     \paragraph{Requirements} Skilled proficiency in the Deception skill.
+\subsubsection{Taunt} \label{feat::taunt}
+    As an action, you make a Charisma (Deception) or Charisma (Persuasion) check contested by a creature's Wisdom (Insight) check.
+    The creature must be able to hear and understand you.
+
+    If you succeed on the check, the creature has disadvantage on attack rolls against targets other than you and can't make opportunity attacks against targets other than you.
+    This effect lasts for 1 minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 18 meters apart.
+    \paragraph{Requirements} Skilled proficiency in Deception.
+\subsubsection{Convincing Speech} \label{feat::convincingspeech}
+    You can take this feat three times, gaining different effects each time:
+    \begin{itemize}
+        \item You don't gain disadvantage on Charisma (Deception) or Charisma (Persuasion) checks made in the middle of combat.
+        \item Using two actions, you can attempt to deceive one person you can see within 9 meters of you who can see and hear you.
+        Make a Charisma (Deception) check contested by the target's Wisdom (Insight) check.
+        If your check succeeds, your movement doesn't provoke opportunity attacks from the target and your attack rolls against it have advantage; both benefits last until the end of your next turn or until you use this ability on a different target.
+        If your check fails, the target can't be deceived by you in this way for one hour.
+        \item If nor you or your allies attack the deceived person, it becomes convinced that you are their allies and will stop attacking you and your companions for a minute.
+        The creature rolls a Wisdom saving throw with a DC equal to the number you rolled in your Charisma (Deception) check at the end of its turns.
+        Its allies can help it so that it makes this roll with advantage.
+        The target can't be deceived by you in this way for 1 hour after winning or failing the contest.
+    \end{itemize}
     \paragraph{Requirements} Skilled proficiency in the Deception skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
-    \paragraph{Requirements} Skilled proficiency in the Deception skill.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Feign Innocence (2 FP)} \label{feat::feigninnocence}
+    You are an expert at convincing people even at the worst of circumstances.
+    When you fail a Charisma (Deception) check, you can convince your target that you didn't intend to trick them --- it was just an honest mistake!
+
+    You can use this ability a number of times equal to your Charisma modifier, and restore all expended uses on a short rest.
     \paragraph{Requirements} Expert proficiency in the Deception skill.
-% INTIMIDATION
-\subsubsection{Intimidation Proficiency} \label{feat::intimidationprof}
+% INTIMIDATION demoralize frightfulpresence inspirefear intimidating menacing
+\subsubsection{Intimidating} \label{feat::intimidating}
     You increase your proficiency level in the Intimidation skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Menacing} \label{feat::menacing}
+    Your menacing appearance has permitted you to bypass consequence in many situations, allowing you to lead a carefree lifestyle.
+    People are naturally more careful around you, and you can get away with petty crimes without repercussion from the law.
     \paragraph{Requirements} Competent proficiency in the Intimidation skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Demoralize} \label{feat::demoralize}
+    You can use two actions to attempt to demoralize one creature within 9 meters of you that can see and hear you.
+    Make a Charisma (Intimidation) check contested by the target's Wisdom (Insight) check.
+    If you succeed, the target is frightened of you for a minute.
+    In addition, it makes all attack rolls with disadvantage for that duration.
+    The creature can make a Wisdom saving throw at the end of its turns with a DC equal to the number you rolled to end this effect.
+
+    If you fail, the target can't be frightened by you in this way for one hour.
     \paragraph{Requirements} Skilled proficiency in the Intimidation skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Inspire Fear} \label{feat::inspirefear}
+    Your mear sight inspires fear upon others.
+    As a reaction, you can glance at a creature right before it makes a melee attack against you.
+    The creature rolls the attack with disadvantage.
+
+    You can use this ability a number of times equal to your Charisma modifier (minimum of one).
+
+    You can take this feat three times.
+    The second time, you can use this ability on any creature within 9 meters of you that is targetting you or an ally.
+    The third, the affected creature rolls all saving throws with disadvantage until the end of its next turn.
     \paragraph{Requirements} Skilled proficiency in the Intimidation skill.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Frightful Presence (2 FP)} \label{feat::frightfulpresence}
+    When you make a critical hit, your target becomes frightened of you until the end of your next turn.
+    In addition, any hostile creature within 9 meters that can see you make this attack must roll a DC 12 Wisdom saving throw.
+    On a failure, they become frightened of you until the end of your next turn too.
     \paragraph{Requirements} Expert proficiency in the Intimidation skill.
-% PERFORMANCE
+% PERFORMANCE actor enthrallingperformance flourishedduelist performer soothingpresence
 \subsubsection{Performer} \label{feat::performer}
     You increase your proficiency level in the Performance skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
-    \paragraph{Requirements} Competent proficiency in the Performance skill.
 \subsubsection{Soothing Presence} \label{feat::soothingpresence}
     A favorite of the masses, you are an expert at making people laugh and relax.
     During a long rest, you and your allies reduce their stress by one additional level.
+    \paragraph{Requirements} Competent proficiency in the Performance skill.
+\subsubsection{Flourished Duelist} \label{feat::flourishedduelist}
+    You learn the Distracting Strike action (see page \pageref{act::distractingstrike}).
     \paragraph{Requirements} Skilled proficiency in the Performance skill.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Actor} \label{feat::actor}
+    A natural performer, you've never failed to impress with your refined acting skills.
+    % You have an easy time imitating the demeanor of others, especially of those that you know well.
+    You can take this feat three times, gaining different effects each time:
+    \begin{itemize}
+        \item You have advantage on ability checks trying to pass off as another member of your kin, even without a disguise.
+        \item You have advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a different person of any kin.
+        If you are wearing a good quality outfit, you can pass these checks automatically.
+        \item You can mimic the speech of another person or the sounds made by other creatures.
+        You must have heard the person speaking, or heard the creature make the sound, for at least 1 minute.
+        A successful Wisdom (Insight) check contested by your Charisma (Deception) or Charisma (Performance) check allows a listener to determine that the effect is faked.
+    \end{itemize}
     \paragraph{Requirements} Skilled proficiency in the Performance skill.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Enthralling Performance (2 FP)} \label{feat::enthrallingperformance}
+    While performing, you can try to distract anyone who can see and hear you.
+    Make a Charisma (Performance) check contested by the each person's Wisdom (Insight) check.
+    If you check succeeds, you grab the person's attention enough that it automatically fails on Wisdom (Perception) and Intelligence (Investigation).
+    You can tell which people have failed and succeeded on the contest.
+
+    Any person enthralled by your performance will remember it for a lifetime.
+    They will remember you and can offer you favors as long as they are reasonable.
     \paragraph{Requirements} Expert proficiency in the Performance skill.
-% PERSUASION
+% PERSUASION eloquent haggler persuasive reliever therapist
 \subsubsection{Persuasive} \label{feat::persuasive}
     You increase your proficiency level in the Persuasion skill.
     This feat can be taken three times, or until you reach Expert proficiency on the skill.
@@ -522,7 +601,7 @@
     In addition, you can always reduce the price of an item by a quarter of its price, even if you fail a Charisma (Persuasion) check.
     % NOTE: PRICE REDUCTIONS ARE NOT CUMULATIVE!
     \paragraph{Requirements} Skilled proficiency in the Persuasion.
-\subsubsection{NAME} \label{feat::name}
+\subsubsection{Eloquent} \label{feat::eloquent}
     A skilled negotiator and a master of diplomacy, you have an easy time convincing people to do what you need.
     You can take this feat three times, gaining different benefits each time:
     \begin{itemize}
@@ -542,123 +621,10 @@
     Upon losing an insanity, the creature becomes stalwart, giving them advantage on attack rolls and saving throws until they take a short rest.
     \paragraph{Requirements} Expert proficiency in the Persuasion skill.
 
-% === SKILLS =================================================================== %
-\subsubsection{Gifted} \label{feat::gifted}
-\small{\textcolor{gray}{Arcana}}
-
-\normalsize
-By chance or mysterious circumstance, you've gained a special attunement with the arcane arts of the world.
-It's easy for you to perceive when magic is used around you, and your extensive studies allow you to even identify the spells being cast.
-\paragraph{RANK 1} You are proficient with the Arcana skill.
-\paragraph{RANK 2} You learn one harmless cantrip of your choice that doesn't belong to any magic school.
-\paragraph{RANK 3} You double your proficiency modifier in the Arcana skill.
-
-% ============================================================================== %
-\subsubsection{Actor} \label{feat::actor}
-\small{\textcolor{gray}{Performer}}
-
-\normalsize
-You master performance so that you can command any stage.
-\paragraph{REQUIREMENTS} Performer 3.
-\paragraph{RANK 1} You double your proficiency modifier in the Performance skill.
-\paragraph{RANK 2} You have advantage on Charisma (Deception) and Charisma (Performance) checks when trying to pass yourself off as a different person.
-\paragraph{RANK 3} Increase your Charisma score by 1, to a maximum of 20.
-
-% ============================================================================== %
-\subsubsection{Educated} \label{feat::educated}
-\small{\textcolor{gray}{Science}}
-
-\normalsize
-From background or perchance you've been given a privileged access to books and teaching thorough your life.
-You have an advanced understanding of the natural laws of the world.
-\paragraph{RANK 1} You are proficient with the Science skill.
-\paragraph{RANK 2} You have advantage on the Identify a Spell action.
-\paragraph{RANK 3} You have an intuitive understanding of how to use all sorts of machinery, and can operate siege weapons and heavy machines without performing any ability checks.
-
-% ============================================================================== %
-\subsubsection{Fearsome} \label{feat::fearsome}
-\small{\textcolor{gray}{Intimidation}}
-
-\normalsize
-You become fearsome to others, and people are scared to even talk about you.
-\paragraph{REQUIREMENTS} Menacing 3.
-\paragraph{RANK 1} You double your proficiency modifier in the Intimidation skill.
-\paragraph{RANK 2} You learn the Demoralize technique.
-\paragraph{RANK 3} Increase your Charisma score by 1, to a maximum of 20.
-
-% ============================================================================== %
-\subsubsection{Knowledgeable} \label{feat::knowledgeable}
-\small{\textcolor{gray}{Science}}
-
-\normalsize
-Your extensive knowledge in the natural sciences gives you access to a plethora of explanations to the phenomena of the world.
-\paragraph{REQUIREMENTS} Educated 3.
-\paragraph{RANK 1} You double your proficiency modifier in the Science skill.
-\paragraph{RANK 2} You learn the Identify technique.
-\paragraph{RANK 3} Increase your Intelligence score by 1, to a maximum of 20.
-
-% ============================================================================== %
-\subsubsection{Liar} \label{feat::liar}
-\small{\textcolor{gray}{Deception}}
-
-\normalsize
-You can easily lie to someone to their face without batting an eye.
-While you might not always be proud of this skill, you can't deny that it's saved you in countless situations.
-\paragraph{RANK 1} You are proficient with the Deception skill.
-\paragraph{RANK 2} When you fail to convince someone with a lie, it'll still take them one turn to realize you're lying, provided the lie isn't something absurd.
-\paragraph{RANK 3} You learn the Mimic technique.
-
 % ============================================================================== %
 \subsubsection{Linguist} \label{feat::linguist}
-\small{\textcolor{gray}{Languages}}
-
-\normalsize
-Your extensive knowledge in tongues is manifested in an enhanced ability recognizing languages and inventing codes of your own.
-\paragraph{RANK 1} You are proficient in the Languages skill.
 \paragraph{RANK 2} You have advantage on Charisma (Languages) checks to determine the language that a creature is speaking.
-\paragraph{RANK 3} You can ably create ciphers.
-Others can't decipher a code you create unless you teach them or they succeed on an Intelligence check (DC equal to your Intelligence score + your proficiency bonus).
-
-% ============================================================================== %
-\subsubsection{Lip-reader} \label{feat::lipreader}
-\small{\textcolor{gray}{Languages}}
-
-\normalsize
-You have an uncanny capacity with languages and understanding speakers even without actually hearing them.
-\paragraph{REQUIREMENTS} Linguist 3.
-\paragraph{RANK 1} You double your proficiency modifier in the Languages skill.
 \paragraph{RANK 2} If you see a creature's mouth while it is speaking a language you understand, you can interpret what it's saying by reading its lips.
-\paragraph{RANK 3} Increase your Charisma score by 1, to a maximum of 20.
 
-% ============================================================================== %
-\subsubsection{Menacing} \label{feat::menacing}
-\small{\textcolor{gray}{Intimidation}}
-
-\normalsize
-With good reason or not, people have always been a bit fearful of you.
-Your menacing appearance has permitted you to bypass consequence in many situations, allowing you to lead a carefree lifestyle.
-\paragraph{RANK 1} You are proficient with the Intimidation skill.
-\paragraph{RANK 2} People are naturally more careful around you, and you can get away with petty crimes without repercussion from the law.
-\paragraph{RANK 3} You learn the Taunt technique.
-
-% ============================================================================== %
-\subsubsection{Performer} \label{feat::performer}
-\small{\textcolor{gray}{Performance}}
-
-\normalsize
-A natural performer, you've never failed to impress with your refined acting skills.
-You have an easy time imitating the demeanor of others, especially of those that you know well.
-\paragraph{RANK 1} You are proficient with the Performance skill.
-\paragraph{RANK 2} You have advantage on ability checks trying to pass off as another member of your kin, even without a disguise.
-\paragraph{RANK 3} You learn the Distract technique.
-
-% ============================================================================== %
-\subsubsection{Silver-tongued} \label{feat::silvertongued}
-\small{\textcolor{gray}{Deception}}
-
-\normalsize
-You develop your conversational skill to better deceive others.
-\paragraph{REQUIREMENTS} Liar 3.
-\paragraph{RANK 1} You double your proficiency modifier in the Deception skill.
-\paragraph{RANK 2} You learn the Deceive technique.
-\paragraph{RANK 3} Increase your Charisma score by 1, to a maximum of 20.
+\subsubsection{Educated} \label{feat::educated}
+\paragraph{RANK 3} You have an intuitive understanding of how to use all sorts of machinery, and can operate siege weapons and heavy machines without performing any ability checks.
