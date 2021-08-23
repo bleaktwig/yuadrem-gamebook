@@ -8,6 +8,10 @@ Techniques are actions that are unlocked by certain ranks in talents. % WRITE MO
 \subsubsection{Aim $\circ$} \label{act::aim}
     You give yourself advantage on your next attack roll, which can be made until the end of your next turn.
 
+\subsubsection{Distracting Strike $\circ\circ$} \label{act::distractingstrike}
+    You use your action to distract a creature with an attack, giving your allies an opening.
+    You roll damage normally, and the next attack roll against the target by an creature other than you has advantage if the attack is made before the start of your next turn.
+
 \subsubsection{Mark $\circ\circ$} \label{act::mark}
     You choose a creature you can see within 27 meters and mark it as your quarry.
     For up to one hour, you deal an extra 1d6 damage to the target whenever you hit it with a weapon attack, and you have advantage on any Intelligence (Investigation), Wisdom (Perception), and Wisdom (Survival) checks you make to find it.
@@ -40,7 +44,7 @@ Techniques are actions that are unlocked by certain ranks in talents. % WRITE MO
     As an action, you can make a Dexterity (Sleight of Hand) check contested by a creature's Wisdom (Perception) to plant something on someone else, conceal an object on a creature, lift a purse, or take something from a pocket.
     You can do this in the middle of an encounter.
 
-% === COMBAT MANEUVERS ========================================================= %
+% NOTE: OLD:
 \subsubsection{Bonk} \label{tec::bonk}
 As an action, you can attempt to strike a creature's head with a melee weapon attack.
 In addition to taking the attack's normal damage, the creature must succeed on a Constitution saving throw (DC 8 + your proficiency bonus + your Strength modifier) or have disadvantage on ability checks and attack rolls during its next turn.
@@ -132,36 +136,15 @@ When you take the Attack action on your turn, you can choose to attack only once
 When you do so, choose a friendly creature who can see or hear you.
 That creature can immediately use its reaction to make one weapon attack, adding a d8 to the attack's damage roll.
 
-\subsubsection{Deceive} \label{tec::deceive}
-When you take the Attack action on your turn, you can replace one attack with an attempt to deceive one humanoid you can see within 9 meters of you that can see and hear you.
-Make a Charisma (Deception) check contested by the target's Wisdom (Insight) check.
-If your check succeeds, you movement doesn't provoke attacks from the target and your attack rolls against it have advantage; both benefits last until the end of your next turn.
-If your check fails, the target can't be deceived by you in this way for 1 hour.
-
 \subsubsection{Defensive Stance} \label{tec::defensivestance}
 You use your action and prepare yourself against assailants from all directions.
 Until the start of your next turn you gain a d4 bonus to your AC, and you can make opportunity attacks and the Riposte technique without using your reaction.
-
-\subsubsection{Demoralize} \label{tec::demoralize}
-When you take the Attack action on your turn, you can replace one attack with an attempt to demoralize one humanoid you can see within 9 meters of you that can see and hear you.
-Make a Charisma (Intimidation) check contested by the target's Wisdom (Insight) check.
-If your check succeeds, the target is frightened until the end of your next turn.
-If your check fails, the target can't be frightened by you in this way for 1 hour.
 
 \subsubsection{Disarming Attack} \label{tec::disarmingattack}
 You use your action to attempt to disarm the target with an attack, forcing it to drop one item of your choice that it's holding.
 The target must make a Strength saving throw with a DC of 8 + your proficiency bonus + your Strength modifier.
 On a failed save, it drops the object you choose.
 The object lands at its feet.
-
-\subsubsection{Distract} \label{tec::distract}
-While performing, you can try to distract one humanoid you can see who can see and hear you.
-Make a Charisma (Performance) check contested by the humanoid's Wisdom (Insight) check.
-If you check succeeds, you grab the humanoid's attention enough that it makes Wisdom (Perception), Wisdom (Insight), and Intelligence (Investigation) checks with disadvantage until you stop performing.
-
-\subsubsection{Distracting Strike} \label{tec::distractingstrike}
-You use your action to distract a creature with an attack, giving your allies an opening.
-Additionally to dealing damage normally, the next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn.
 
 \subsubsection{Evasive Footwork} \label{tec::evasivefootwork}
 When you move, you can use a bonus action to add a d6 to your AC until you stop moving.
@@ -188,17 +171,6 @@ On a failed save, the target has disadvantage on all attack rolls against target
 As part of you attack action, you can throw any one-handed bludgeoning weapon as if it was a thrown weapon.
 The range of this throw is 6/18 meters, and the damage is the same as the weapon's one handed normal damage.
 
-\subsubsection{Heal} \label{tec::heal}
-As an action, you can spend one use of a healer's kit to tend to a creature and restore 1d6 + 4 hit points to it, plus additional hit points equal to the creature's number of hit dice.
-The creature can't regain hit points from this technique again until it finishes a short or long rest.
-
-\subsubsection{Identify} \label{tec::identify}
-You choose one object you are holding or can easily touch.
-After analyzing it for a minute, you learn its properties and how to use it.
-% If it's a magic item, you learn whether it requires attunement to use, and how many charges it has, if any.
-You learn whether any spells are affecting the item and what they are.
-If the item was created by a spell, you learn which spell created it.
-
 \subsubsection{Injure} \label{tec::injure}
 As an action, you can attack with the sole purpose of injuring a creature.
 Roll your weapon attack normally.
@@ -223,11 +195,6 @@ That creature can use its reaction to move up to half its speed without provokin
 When you hit a creature with a weapon attack, you can use your bonus action to attempt to frighten the target.
 The target must make a Wisdom saving throw of a DC of 8 + your proficiency bonus + your Charisma modifier.
 On a failed save, it is frightened of you until the end of your next turn.
-
-\subsubsection{Mimic} \label{tec::mimic}
-You can mimic the speech of another person or the sounds made by other creatures.
-You must have heard the person speaking, or heard the creature make the sound, for at least one minute.
-A successful Wisdom (Insight) check contested by your Charisma (Deception) check allows a listener to determine that the effect is faked.
 
 \subsubsection{Precise Attack} \label{tec::preciseattack}
 When you make a weapon attack roll against a creature, you can use your bonus action to add a d8 to the attack roll.
@@ -254,10 +221,6 @@ You can attempt to repair a misfired (but not broken) firearm as a bonus action.
 Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll.
 If the attack hits, you add +10 to the attack's damage.
 
-\subsubsection{Reckless Strike} \label{tec::recklessstrike}
-Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll.
-If the attack hits, you add +10 to the attack's damage.
-
 \subsubsection{Rondel Hit} \label{tec::rondelhit}
 When you take the Attack action and attack with only a stave, spear, or halberd, you can use a bonus action to make a melee attack with the opposite end of the weapon, using the same ability modifier as the main attack.
 The weapon's damage die for this attack is a d4, and the attack deals bludgeoning damage.
@@ -270,13 +233,6 @@ Until the end of this turn, your attack rolls with ignore the AC gained by the t
 You can use your Attack action against a grappled creature to make a special melee attack to lift and slam that creature against the floor.
 You make a grapple check against the creature.
 If you succeed, the creature takes damage as if you hit it with a normal unarmed attack, and both you and the creature are prone.
-
-\subsubsection{Taunt} \label{tec::taunt}
-As an action, you make a Charisma (Intimidation) or Charisma (Persuasion) check contested by a creature's Wisdom (Insight) check.
-The creature must be able to hear you, and the two of you must share a language.
-
-If you succeed on the check, the creature has disadvantage on attack rolls against targets other than you and can't make opportunity attacks against targets other than you.
-This effect lasts for 1 minute, until one of your companions attacks the target or affects it with a spell, or until you and the target are more than 18 meters apart.
 
 \subsubsection{Visceral Attack} \label{tec::visceralattack}
 You can use your bonus action to do a melee attack shooting with a crossbow or pistol.
