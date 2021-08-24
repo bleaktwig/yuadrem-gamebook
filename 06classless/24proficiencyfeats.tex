@@ -1,97 +1,414 @@
-% % === TOOLS ==================================================================== %
-% % DISGUISE KIT
-% % RANK 2: PRODUCE A CONVINCING DISGUISE WITH STUFF YOU FIND AROUND YOU
-%
-% % ============================================================================== %
-% \subsubsection{Healer} \label{feat::healer}
-% \small{\textcolor{gray}{Medicine}}
-%
-% \normalsize
-% An able physician, you are able to quickly mend wounds and get your allies back in the fight.
-% \paragraph{Requirements} Mender 2.
-% \paragraph{RANK 1} You gain proficiency with the healer's kit.
-% \paragraph{RANK 2} You learn the Heal technique.
-% \paragraph{RANK 3}
-%
-% % ============================================================================== %
-% \subsubsection{Master of Disguise} \label{feat::masterofdisguise}
-% \small{\textcolor{gray}{Performance}}
-%
-% \normalsize
-% Description.
-% \paragraph{Requirements} Performer 2.
-% \paragraph{RANK 1} You gain proficiency with the disguise kit.
-% \paragraph{RANK 2}
-% \paragraph{RANK 3} If you spend one hour observing a creature, you can then spend a long rest crafting a disguise you can quickly don to mimic that creature.
-% Making the disguise requires a disguise kit.
-% You must make checks as normal to disguise yourself, but you can assume the disguise as an action.
-%
-% % ============================================================================== %
-% \subsubsection{Poisoner} \label{feat::poisoner}
-% \small{\textcolor{gray}{Nature}}
-%
-% \normalsize
-% Description.
-% \paragraph{Requirements} Naturalist 2.
-% \paragraph{RANK 1} You gain proficiency with the poisoner's kit.
-% \paragraph{RANK 2} When you make a damage roll, you ignore resistance to poison damage.
-% Additionally, you can coat a weapon in poison as a bonus action, instead of an action.
-% \paragraph{RANK 3} The Constitution saving throws of the poisons you make are increased by your proficiency modifier.
-%
-% % ============================================================================== %
-% \subsubsection{Thief} \label{feat::thief}
-% \small{\textcolor{gray}{Sleight of Hand}}
-%
-% \normalsize
-% Description.
-% \paragraph{Requirements} Quick Fingers 2.
-% \paragraph{RANK 1} You gain proficiency with thieves' tools.
-% \paragraph{RANK 2}
-% \paragraph{RANK 3} You can use your thieves' tools to disarm a trap or open a lock as a bonus action.
-%
-% % ============================================================================== %
-% \subsubsection{Tinkerer} \label{feat::tinkerer}
-% \small{\textcolor{gray}{Science}}
-%
-% \normalsize
-% Description.
-% \paragraph{Requirements} Educated 2.
-% \paragraph{RANK 1} You gain proficiency with tinker's tools.
-% \paragraph{RANK 2}
-% \paragraph{RANK 3}
-%
-% % ============================================================================== %
-% \subsubsection{Weaver} \label{feat::weaver}
-% \small{\textcolor{gray}{Sleight of Hand}}
-%
-% \normalsize
-% Description.
-% \paragraph{RANK 1} You gain proficiency with weaver's tools.
-% \paragraph{RANK 2}
-% \paragraph{RANK 3}
-%
-% % ============================================================================== %
+% !TEX root = ../main.tex
+\addcontentsline{toc}{section}{Proficiency Feats}
+\subsection*{Proficiency Feats}
+% ALCHEMIST'S SUPPLIES
+%   - INTELLIGENCE : POTIONS
+\subsubsection{Alchemist} \label{feat::alchemist}
+    Increase your level of proficiency with Alchemist's Supplies.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Alchemist's Supplies.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Alchemist's Supplies.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION - UPGRADABLE
+    \paragraph{Requirements} Skilled proficiency with Alchemist's Supplies.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Alchemist's Supplies.
+% BREWER'S SUPPLIES
+%   - CONSTITUTION (more sampling than alchemy) : POTIONS
+\subsubsection{Brewer} \label{feat::brewer}
+    Increase your level of proficiency with Brewer's Supplies.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Brewer's Supplies.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Brewer's Supplies.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Brewer's Supplies.
+% CALLIGRAPHER'S SUPPLIES
+%   - DEXTERITY : SCROLLS
+\subsubsection{Calligrapher} \label{feat::calligrapher}
+    Increase your level of proficiency with Calligrapher's Supplies.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Calligrapher's Supplies.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Calligrapher's Supplies.
+\subsubsection{Forger} \label{feat::forger}
+    You gain proficiency with a Forgery kit, using your proficiency bonus with Calligrapher's Supplies for checks using it.
+    You can take this feat two additional times, gaining different effects each time:
+    \begin{itemize}
+        \item The second, ...
+        \item The third, ...
+    \end{itemize}
+    \paragraph{Requirements} Skilled proficiency with Calligrapher's Supplies.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Calligrapher's Supplies.
+% CARPENTER'S TOOLS
+%   - Strength : Wooden Weapons and Staves
+\subsubsection{Carpenter} \label{feat::carpenter}
+    Increase your level of proficiency with Carpenter's Tools.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Carpenter's Tools.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Carpenter's Tools.
+\subsubsection{Woodcarver} \label{feat::woodcarver}
+    You gain proficiency with Woodcarving Tools, using your proficiency bonus with Carpenter's Tools for checks using them.
+    You can take this feat two additional times, gaining different effects each time:
+    %   - Dexterity : arrows, bolts, rods, and wands
+    \begin{itemize}
+        \item The second, ...
+        \item An expert woodcarver, you can use your Woodcarving Tools to work with bone.
+        Provided you can get the raw materials, you can craft qualars as you would craft wooden charms.
+    \end{itemize}
+    \paragraph{Requirements} Skilled proficiency with Carpenter's Tools.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Carpenter's Tools.
+% COOKING UTENSILS chef cook sweettreat warmmeal
+%   - Constitution : Food (a new item type!)
+\subsubsection{Cook} \label{feat::cook}
+    Increase your level of proficiency with Cooking Utensils.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{Warm Meal} \label{feat::warmmeal}
+    By cooking them, you can make rations more effective.
+    As part of a short rest, you can cook a number of rations equal to 4 + your proficiency bonus with Cooking Utensils.
+    The number of cooked rations produced is equal to 3/2ths of the original number of rations, but spoil if left untouched for more than 24 hours.
+    \paragraph{Requirements} Competent proficiency with Cooking Utensils.
+\subsubsection{Sweet Treat} \label{feat::sweettreat}
+    With one hour of work or when you finish a short rest, you can cook a number of treats equal to your proficiency bonus with Cooking Utensils.
+    These special treats last 8 hours after being made.
+    A creature can use a bonus action to eat one of those treats to gain temporary hit points equal to your proficiency bonus with Cooking Utensils.
+    \paragraph{Requirements} Skilled proficiency with Cooking Utensils.
+\subsubsection{Chef (2 FP)} \label{feat::chef}
+    As part of a short rest, you can cook special food, provided you have ingredients and Cooking Utensils on hand.
+    You can prepare enough of this food for a number of creatures equal to 4 + your proficiency bonus with Cooking Utensils.
+    At the end of the short rest, any creature who eats the food and spends one or more Hit Dice to regain hit points regains extra hit points equal to 2d8 + their Constitution modifier.
+    \paragraph{Requirements} Expert proficiency with Cooking Utensils.
+% GAMING KIT
+%   - Intelligence?
+\subsubsection{Player} \label{feat::player}
+    Increase your level of proficiency with Gaming Kits.
+    This feat can be re-taken until you are an expert with the item.
 
+    When you take this feat, choose a specific Gaming Kit with which you are proficient.
+    This doesn't apply for other Gaming Kits, but spending a long rest practicing with one allows you to apply your proficiency bonus to rolls related to it.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Gaming kit.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Gaming kit.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Gaming kit.
+% GLASSBLOWER'S TOOLS
+%   - Dexterity : Wondrous items?
+\subsubsection{Glassblower} \label{feat::glassblower}
+    Increase your level of proficiency with Glassblower's Tools.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Glassblower's Tools.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Glassblower's Tools.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Glassblower's Tools.
 % HEALER'S KIT combatmedic healer physician quickmender travellingdoctor
+%   - ???
 \subsubsection{Healer} \label{feat::healer}
     Increase your level of proficiency with the healer's kit.
-    This feat can be re-taken until you are a master with the artisan's tools.
+    This feat can be re-taken until you are an expert with the kit.
 \subsubsection{Quick Mender} \label{feat::quickmender}
     Used to working in the field, you can heal minor injuries as part of a short rest expending one use of your healer's kit.
-    A creature healed with this feat also gains a number of temporary hit points equal to its Constitution modifier.
+
+    A creature healed with this feat also gains a number of temporary hit points equal to its Constitution modifier (minimum of one).
     \paragraph{Requirements} Competent proficiency with healer's kit.
 \subsubsection{Physician} \label{feat::physician}
     As an avid physician, you can expend 3 uses of a healer's kit to heal a major injury as part of a long rest.
     The creature must succeed on a DC 12 Constitution saving throw for the treatment to work.
+
+    A creature healed with this feat also gains a number of temporary hit points equal to double its Constitution modifier (minimum of two).
     \paragraph{Requirements} Skilled proficiency with healer's kit.
 \subsubsection{Combat Medic} \label{feat::combatmedic}
     You are able to mend wounds quickly and get your allies back in the fight.
     Using two actions, you can spend one use of a healer's kit to tend to a creature and restore 1d6 + your proficiency modifier with the healer's kit hit points to it, plus additional hit points equal to the creature's maximum number of Hit Dice.
     The creature can't regain hit points from this feat again until it finishes a short rest.
 
-    You can take this feat two additional times, increasing the die to a d8 the second time and to a d10 the third.
+    You can take this feat two additional times, increasing the number of dice rolled to 2d6 the second time and 3d6 the third.
     \paragraph{Requirements} Skilled proficiency with Healer's kit.
 \subsubsection{Travelling Doctor (2 FP)} \label{feat::travellingdoctor}
     You keep your allies in top shape during your travels.
     The minimum number of hit points you and your allies regain from a hit die roll is equal to their Constitution modifier (minimum of 2).
     \paragraph{Requirements} Expert proficiency with Healer's kit.
+% HERBALISM KIT
+%   - ???
+\subsubsection{Herbalist} \label{feat::herbalist}
+    Increase your level of proficiency with Herbalism Kit.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Herbalism Kit.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Herbalism Kit.
+\subsubsection{Poisoner} \label{feat::poisoner}
+    You gain proficiency with Poisoner's Kits, using your proficiency bonus with Herbalism Kits for checks using them.
+    You can take this feat two additional times, gaining different effects each time:
+    \begin{itemize}
+        \item The second, your poisons ignore resistance to poison damage.
+        Additionally, you can coat a weapon in poison using one action instead of two.
+        \item The third, the Constitution saving throws of the poisons you make are increased by your proficiency bonus with the Herbalism Kit.
+    \end{itemize}
+    \paragraph{Requirements} Skilled proficiency with Herbalism Kit.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Herbalism Kit.
+% JEWELER'S TOOLS
+%   - Dexterity : Wondrous items
+\subsubsection{Jeweler} \label{feat::jeweler}
+    Increase your level of proficiency with Jeweler's Tools.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Jeweler's Tools.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Jeweler's Tools.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Jeweler's Tools.
+% LEATHERWORKER'S TOOLS
+%   - Dexterity : Light armour, hide armour?
+\subsubsection{Leatherworker} \label{feat::leatherworker}
+    Increase your level of proficiency with Leatherworker's Tools.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Leatherworker's Tools.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Leatherworker's Tools.
+\subsubsection{Cobbler} \label{feat::cobbler}
+    You gain proficiency with Cobbler's Tools, using your proficiency bonus with Leatherworker's Tools for checks using them.
+    You can take this feat two additional times, gaining different effects each time:
+    %   - Dexterity : boots
+    \begin{itemize}
+        \item The second, ...
+        \item The third, ...
+    \end{itemize}
+    \paragraph{Requirements} Skilled proficiency with Leatherworker's Tools.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Leatherworker's Tools.
+% MASON'S TOOLS
+%   - Strength : Weapons and armour made of stone (e.g. obsidian)
+\subsubsection{Mason} \label{feat::mason}
+    Increase your level of proficiency with Mason's Tools.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Mason's Tools.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Mason's Tools.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Mason's Tools.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MUSICAL INSTRUMENTS
+%   - ???
+\subsubsection{Musician} \label{feat::musician}
+    Increase your level of proficiency with Musical Instruments.
+    This feat can be re-taken until you are an expert with the toolset.
+
+    When you take this feat, choose a specific instrument with which you are proficient.
+    This doesn't apply for other instruments, but spending a long rest practicing with one allows you to apply your proficiency bonus to rolls related to it.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Musical Instruments.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Musical Instruments.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Musical Instruments.
+% NAVIGATOR'S TOOLS
+%   - ???
+\subsubsection{Navigator} \label{feat::navigator}
+    Increase your level of proficiency with Navigator's Tools.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Navigator's Tools.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Navigator's Tools.
+\subsubsection{Seafarer} \label{feat::seafarer}
+    You gain proficiency with Water Vehicles, using your proficiency bonus with Navigator's Tools for checks using them.
+    You can take this feat two additional times, gaining different effects each time:
+    \begin{itemize}
+        \item The second, ...
+        \item The third, ... % you cool and increase a ship's speed
+    \end{itemize}
+    \paragraph{Requirements} Skilled proficiency with Navigator's Tools.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Navigator's Tools.
+% PAINTER'S SUPPLIES
+%   - Dexterity : Scrolls
+\subsubsection{Painter} \label{feat::painter}
+    Increase your level of proficiency with Painter's Supplies.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Painter's Supplies.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Painter's Supplies.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Painter's Supplies.
+\subsubsection{Cartographer} \label{feat::cartographer}
+    You gain proficiency with a Cartographer's Kit, using your proficiency bonus with Painter's Supplies for checks using it.
+    You can take this feat two additional times, gaining different effects each time:
+    \begin{itemize}
+        \item The second, you gain the ability to map the region you've traveled during the day with perfect accuracy as part of a short rest.
+        These maps allow you to retrace your steps without rolling any check, and give you advantage on any ability check to avoid getting lost.
+        Additionally, maping unexplored or uncharted regions can fetch high prices with the right buyer.
+        \item The third, you gain the ability to copy another map as part of a long rest.
+        To do this, you consume materials that cost half the cost of the map you're copying, and must succeed on an ability check using the Cartographer's Kit with a DC proportional to the scale and the level of detail of the map, at the DM's discretion.
+        If you have spent a month of more exploring the region in the map, you make this ability check with advantage.
+    \end{itemize}
+    \paragraph{Requirements} Skilled proficiency with Painter's Supplies.
+% POTTER'S TOOLS
+%   - Dexterity : ...?
+\subsubsection{Potter} \label{feat::potter}
+    Increase your level of proficiency with Potter's Tools.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Potter's Tools.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Potter's Tools.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Potter's Tools.
+% SMITH'S TOOLS
+%   - Strength : Metal weapons, heavy armour, medium armour (except hide)
+\subsubsection{Smith} \label{feat::smith}
+    Increase your level of proficiency with Smith's Tools.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Smith's Tools.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Smith's Tools.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Smith's Tools.
+% Locksmithing Tools
+%   - Dexterity : ???
+\subsubsection{Locksmith} \label{feat::locksmith}
+    Increase your level of proficiency with Locksmithing Tools.
+    This feat can be re-taken until you are an expert with the toolset.
+
+    Locksmithing Tools can be used to make checks to open locks or disarm traps, which are rolled after a minute fidgeting with the lock.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Locksmithing Tools.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Locksmithing Tools.
+\subsubsection{Thief} \label{feat::thief}
+    You gain proficiency with Thieves' Tools, using your proficiency bonus with Locksmithing Tools for checks using them.
+    Thieves' tools reduce the time it takes you to open a lock or disarm a trap to two actions.
+
+    You can take this feat two additional times, gaining different effects each time:
+    \begin{itemize}
+        \item The second, ...
+        \item The third, the time it takes you to try to disarm a trap or open a lock is reduced from two to one action, provided you use your thieves' tools to do this.
+    \end{itemize}
+    \paragraph{Requirements} Skilled proficiency with Locksmithing Tools.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Locksmithing Tools.
+% TINKER'S TOOLS
+%   - Dexterity : Wondrous items, firearms
+\subsubsection{Tinkerer} \label{feat::tinkerer}
+    Increase your level of proficiency with Tinker's Tools.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Tinker's Tools.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Tinker's Tools.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION - UPGRADABLE
+    \paragraph{Requirements} Skilled proficiency with Tinker's Tools.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Tinker's Tools.
+% VEHICLES (LAND)
+\subsubsection{Rider} \label{feat::rider}
+    Increase your level of proficiency with Land Vehicles.
+    This feat can be re-taken until you are an expert with the proficiency.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Land Vehicles.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Land Vehicles.
+\subsubsection{NAME} \label{feat::name}
+    You gain proficiency with Air Vehicles, using your proficiency bonus with Land Vehicles for checks using them.
+    You can take this feat two additional times, gaining different effects each time:
+    \begin{itemize}
+        \item The second, ...
+        \item The third, ... % Half falling speed and reduce falling damage die from d6s to d4s.
+    \end{itemize}
+    \paragraph{Requirements} Skilled proficiency with Land Vehicles.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Land Vehicles.
+% WEAVER'S TOOLS
+%   - Dexterity : Cloaks, robes, and clothing
+\subsubsection{Weaver} \label{feat::weaver}
+    Increase your level of proficiency with Weaver's Tools.
+    This feat can be re-taken until you are an expert with the toolset.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Competent proficiency with Weaver's Tools.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Skilled proficiency with Weaver's Tools.
+\subsubsection{Disguise Maker} \label{feat::disguisemaker}
+    You gain proficiency with Disguise Kits, using your proficiency bonus with Weaver's Tools for checks using them.
+    You can take this feat two additional times, gaining different effects each time:
+    \begin{itemize}
+        \item The second, you learn to observe the most distinguishing attributes of a person.
+        If you spend one hour observing or interacting with a creature, you can then craft a disguise that can be used to mimic that creature during a long rest.
+        \item The third, you learn how to procure a convincing disguise with stuff you find around you.
+        Taking an hour, you can make a disguise that makes sense with the materials you have around you (at the DM's discretion), which is as effective as one made with a Disguise Kit with similar materials.
+    \end{itemize}
+    \paragraph{Requirements} Skilled proficiency with Weaver's Tools.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Weaver's Tools.
