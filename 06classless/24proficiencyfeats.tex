@@ -1,22 +1,66 @@
 % !TEX root = ../main.tex
 \addcontentsline{toc}{section}{Proficiency Feats}
 \subsection*{Proficiency Feats}
-% ALCHEMIST'S SUPPLIES
-%   - INTELLIGENCE : POTIONS
+% NOTE: DIVIDED INTO THRRE, TOOL PROFICIENCIES, LAND VEHICLES, AND KITS.
+
+\subsection*{Tool Proficiencies}
+You can use a set of Artisan's Tools to craft items as part of a long rest.
+Make an ordered list of the items you want to make.
+The items you have access to depend on your proficiency level with the tools, and are detailed in each tools' associated proficiency feat.
+Each item in the list has an associated DC and cost, which is equal to its DC and cost plus these values for all the previous items on the list.
+
+The DC of an item depends on its rarity.
+Common items have a DC of 6, Uncommon items have a DC of 9, Rare items a DC of 12, Very Rare a DC of 15, and legendary a DC of 20.
+
+After you finish the list, make an ability check with the relevant toolset.
+The number you roll determines how far down the list you are able to craft, and the cost you need to pay for components.
+
+% ALCHEMIST'S SUPPLIES alchemist experimentalelixir fromgreattobest potionperuser restorativereagents
 \subsubsection{Alchemist} \label{feat::alchemist}
     Increase your level of proficiency with Alchemist's Supplies.
     This feat can be re-taken until you are an expert with the toolset.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+
+    From mastery with these tools, you have access to all items in the Potions section (see page \pageref{ssec::potions}).
+    The cost associated to each item only accounts for the required reagents, not the vial to contain it.
+\subsubsection{Potion Peruser} \label{feat::potionperuser}
+    Using two actions, you can identify one potion within 1.5 meters of you, as if you had tasted it.
+    You must see the liquid for this benefit to work.
     \paragraph{Requirements} Competent proficiency with Alchemist's Supplies.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Restorative Reagents} \label{feat::restorativereagents}
+    Whenever a creature drinks a potion you created, the creature gains temporary hit points equal to 2d6 + your proficiency bonus with Alchemist's Supplies.
     \paragraph{Requirements} Skilled proficiency with Alchemist's Supplies.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{From Great to Best} \label{feat::fromgreattobest}
+    Over the course of a short rest, you can temporarily improve the potency of one potion of any rarity.
+    % To use this benefit, you must have alchemist's supplies with you, and the potion must be within reach.
+    If the potion is drunk during the day after the short rest ends, ignore the potion's die roll (if it has any), automatically rolling the maximum possible number.
+
+    You can take this feat three times, increasing the number of potions you can improve during the short rest by one each time.
     \paragraph{Requirements} Skilled proficiency with Alchemist's Supplies.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Experimental Elixir (2 FP)} \label{feat::experimentalelixir}
+    Whenever you finish a short rest, you can produce two experimental elixirs in an empty flask you touch.
+    Roll on the Experimental Elixir table for the elixir's effect, which is triggered when someone drinks the elixir.
+    Using two actions, a creature can drink the elixir or administer it to an incapacitated creature.
+
+    Creating an experimental elixir requires you to have alchemist's supplies on your person, and any elixir you create with this feature lasts until it is drunk or until the end of your next short rest.
+
+    If you gain Legendary proficiency with Alchemist's Supplies, can make one more elixir with this ability.
+
+    \begin{DndTable}[width=\linewidth, header=Experimental Elixir]{ll}
+        \textbf{d6} & \textbf{Effect} \\
+        1 & \textbf{Healing.}
+        The drinker regains a number of hit points equal to 2d4 + half your proficiency bonus with Alchemist's Supplies. \\
+        2 & \textbf{Swiftness.}
+        The drinker's walking speed increases by 3 meters for 1 hour. \\
+        3 & \textbf{Resilience.}
+        The drinker gains a +1 bonus to AC for 10 minutes. \\
+        4 & \textbf{Boldness.}
+        The drinker can roll a d4 and add the number rolled to every attack roll and saving throw they make for the next minute. \\
+        5 & \textbf{Flight.}
+        The drinker gains a flying speed of 3 meters for 10 minutes. \\
+        6 & \textbf{Transformation.}
+        The drinker's body is transformed as if by the alter self spell (see page \pageref{spell::alterself}).
+        The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.
+    \end{DndTable}
     \paragraph{Requirements} Expert proficiency with Alchemist's Supplies.
 % BREWER'S SUPPLIES
 %   - CONSTITUTION (more sampling than alchemy) : POTIONS
@@ -124,7 +168,7 @@
     DESCRIPTION
     \paragraph{Requirements} Competent proficiency with Glassblower's Tools.
 \subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+    DESCRIPTION % Flasks are extra special, with some boost to the brew or potion in it.
     \paragraph{Requirements} Skilled proficiency with Glassblower's Tools.
 \subsubsection{NAME (2 FP)} \label{feat::name}
     DESCRIPTION
@@ -157,7 +201,7 @@
     The minimum number of hit points you and your allies regain from a hit die roll is equal to their Constitution modifier (minimum of 2).
     \paragraph{Requirements} Expert proficiency with Healer's kit.
 % HERBALISM KIT
-%   - ???
+%   - ??? : Reagents, this includes stuff for alchemy, brewing, cooking, and poisonmaking.
 \subsubsection{Herbalist} \label{feat::herbalist}
     Increase your level of proficiency with Herbalism Kit.
     This feat can be re-taken until you are an expert with the toolset.
@@ -165,7 +209,7 @@
     DESCRIPTION
     \paragraph{Requirements} Competent proficiency with Herbalism Kit.
 \subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+    DESCRIPTION % collect reagents as part of a long rest. Roll an ability check. Reagents are worth the number rolled times 3.
     \paragraph{Requirements} Skilled proficiency with Herbalism Kit.
 \subsubsection{Poisoner} \label{feat::poisoner}
     You gain proficiency with Poisoner's Kits, using your proficiency bonus with Herbalism Kits for checks using them.
