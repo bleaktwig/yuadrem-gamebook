@@ -1,34 +1,116 @@
 % !TEX root = ../main.tex
 \subsection*{Brews} \label{ssec::brews}
-All prices are for barrels.
-Divide by 8 for the price of a tankard, or by 16 for the price of a cup.
+The prices listed for brews are for a small keg, which fits 8 tankards worth of brew.
+Divide this by 8 for the price of a tankard, or by 16 for the price of a cup.
+Prices consider only the brew itsel, not the medium of transportation.
 
-% brew of confusion (duh)
-% Revivify spell
+It takes one minute to drink a brew and gain its benefits, which can be done at the end of a short rest.
+A creature cannot benefit from more than one brew at the same time.
+% After drinking a brew a creature rolls a DC 8 Constitution saving throw.
+% On a failure, it empties the content of the brew
 
-% COMMON - 1st level spells, DC 10, +1
-Ale 2 sp
-Barrel 2 gp	70 lb.
-Blessed Beer % Bless
-Brew of Expeditious Retreat % Expeditious Retreat
-Brew of Heroism % Heroism
-Common Wine 32 agnomas
-Fine Wine 1,600 agnomas
-Laughing Ale % Tasha's Hideous Laughter
-Sleeping Wine % Sleep
-Tankard 2 cp	1 lb.
+\begin{DndTable}[width=\linewidth, header=Potions]{llll}
+    \textbf{Item}                      & \textbf{Rarity} & \textbf{Cost}  & \textbf{Weigtht} \\
+    Ale                                & Common          &     2 agnomas  &  4 kg.   \\
+    Ale of Heroism                     & Common          &   500 agnomas  &  4 kg.   \\
+    Barrel                             & Common          &    20 agnomas  & 35 kg.   \\
+    Common Wine                        & Common          &    32 agnomas  &  4 kg.   \\
+    Dozing Wine                        & Common          &   500 agnomas  &  4 kg.   \\
+    Exalted Beer                       & Common          &   500 agnomas  &  4 kg.   \\
+    Expeditious Brew                   & Common          &   500 agnomas  &  4 kg.   \\
+    Fine Wine                          & Common          & 1,600 agnomas  &  4 kg.   \\
+    Full Keg                           & Common          &    15 agnomas  & 15 kg.   \\
+    Laughing Ale                       & Common          &   500 agnomas  &  4 kg.   \\
+    Small Keg                          & Common          &    10 agnomas  &  2 kg.   \\
+    Tankard                            & Common          &     2 fobs     &  0.5 kg. \\
+    Beer of Vitality                   & Uncommon        & 2,000 agnomas  &  4 kg.   \\
+    Brew of Absorption                 & Uncommon        & 2,000 agnomas  &  4 kg.   \\
+    Brew of Giant's Strength           & Uncommon        & 2,000 agnomas  &  4 kg.   \\
+    Calming Wine                       & Uncommon        & 2,000 agnomas  &  4 kg.   \\
+    Dead Man's Ale                     & Uncommon        & 2,000 agnomas  &  4 kg.   \\
+    Madman Wine                        & Uncommon        & 2,000 agnomas  &  4 kg.   \\
+    Speaker's Whiskey                  & Uncommon        & 2,000 agnomas  &  4 kg.   \\
+    Thassa's Mockery                   & Uncommon        & 2,000 agnomas  &  4 kg.   \\
+\end{DndTable}
+
+
+
+\paragraph{Ale of Heroism} % Heroism
+    This ale is honey-flavored, reminding you of those most important to you.
+    A creature who drinks this is imbued with bravery.
+    For an hour, the creature is immune to being frightened and gains 1 temporary hit point at the start of each of its turns.
+    After the hour passes, the creature loses all temporary hit points gained from this brew.
+\paragraph{Dozing Wine} % Sleep
+    This wine is so comforting that it sends creatures into slumber.
+    Any creature who drinks this must succeed on a DC 10 Constitution saving throw.
+    On a failure, the creature falls unconscious for an hour, until the sleeper takes damage, or someone uses an action to shake or slap the sleeper awake.
+\paragraph{Exalted Beer} % Bless
+    The sweet flavor of this beer truly is a blessing.
+    After drinking it, the creature can add a d4 to any attack roll or saving throw it makes for one hour.
+\paragraph{Expeditious Brew} % Expeditious Retreat
+    This brew feels like caustic acid falling through your throat.
+    After drinking it, the creature gains a bonus of 3 meters to its movement speed for one hour.
+\paragraph{Laughing Brew} % Tasha's Hideous Laughter
+    This fuzzy and bubbly drink seems to vibrate with astounding speed.
+    After drinking it, the creature perceives everything as hilariously funny and falls into fits of laughter.
+    The creature must succeed on a DC 10 Wisdom saving throw or fall prone, becoming incapacitated and unable to stand up for up to an hour.
+    A creature with an Intelligence score of 4 or less isn't affected.
+
+    At the end of each of its turns, and each time it takes damage, the target can make another DC 10 Wisdom saving throw.
+    The target has advantage on the saving throw if it's triggered by damage.
+    On a success, the effect ends.
 % UNCOMMON - 2nd level spells, DC 12, +2
-Beer of Vitality % Aid
-Brew of Absorption % Absorb Elements + Dragon's breath of the absorbed element
-Brew of Giant Strength (Hill)
-    When you drink this potion, your Strength score changes to 21 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.
+\paragraph{Beer of Vitality} % Aid
+    This beer emboldens creatures with toughness and resolve.
+    The drinker's hit point maximum and current hit points increase by 5 for 8 hours.
+\paragraph{Brew of Absorption} % Absorb Elements + Dragon's breath of the absorbed element
+    This drink seems to remain in your throat after drinking it, ready to return to the world on command.
+    When the drinker takes acid, cold, fire, lightning, or poison damage within 8 hours of drinking the brew, it can use its reaction to gain resistance against the attack.
+    As part of the same reaction, it can then exhale energy in a 4.5 meter cone.
+    Each creature in the area must make a DC 12 Dexterity saving throw, taking 3d6 damage of the absorbed type on a failed save, or half as much damage on a successful one.
+    The drinker can only use this ability once during the brew's duration.
+\paragraph{Brew of Giant Strength}
+    This brew's transparent liquid has floating in it a sliver of fingernail from a cyclops.
+    When you drink it, your Strength score changes to 21 for 1 hour.
+    The potion has no effect on you if your Strength is equal to or greater than that score.
+\paragraph{Calming Wine} % Calm Emotions
+    This wine's fruity flavor seems to calm emotions on command.
+    Any creature who drinks this rolls a DC 12 Charisma saving throw.
+    A creature can choose to fail this saving throw if it wishes.
+    If a creature fails, two effects occur with a duration of an hour:
+    \begin{itemize}
+        \item Any effect causing a target to be charmed or frightened is suppressed.
+        When this effect ends, any suppressed effect resumes, provided that its duration has not expired in the meantime.
+        \item The target feels indifferent about creatures that it is hostile toward.
+        This indifference ends if the target is attacked or harmed by a spell or if it witnesses any of its friends being harmed.
+        When the effect ends, the creature becomes hostile again, unless the DM rules otherwise.
+    \end{itemize}
+\paragraph{Dead Man's Ale} % Blindness/Deafness
+    This brew looks like common ale, hiding a terrible effect within.
+    After drinking it, the creature rolls a DC 12 Constitution saving throw.
+    If it fails, the target is blinded for an hour.
+\paragraph{Madman Wine} % Crown of Madness
+    This wine looks normal, but has a somewhat odd flavor.
+    A creature who drinks this must succeed on a DC 12 Wisdom saving throw or become charmed for a minute.
+    While charmed, madness glows in the creature's eyes.
 
-    This potion's transparent liquid has floating in it a sliver of fingernail from a hill giant.
-Calming Wine % Calm Emotions
-Dead Man's Ale % Blindness/Deafness
-Madman Wine % Crown of Madness
-Speaker's Whiskey % Zone of Truth on a target
-Waterbreather % Water Breathing for one creature
+    The charmed creature must use its action before moving on each of its turns to make a melee attack against a creature other than itself within 1.5 meters of it chosen randomly.
+    If no creatures are within reach, it moves towards the closest creature to attack it.
+
+    The target can make a DC 12 Wisdom saving throw at the end of each of its turns.
+    On a success, the effect ends.
+\paragraph{Speaker's Whiskey} % Zone of Truth on a target
+    This strong whiskey seems to pick at your brain, forcing you to feel remorse about your misdeeds.
+    Any creature who drinks this must make a DC 12 Charisma saving throw.
+    On a failed save, a creature can't speak a deliberate lie for an hour.
+    A skilled brewer knows whether each creature succeeds or fails on its saving throw.
+
+    An affected creature is aware of the effect and can thus avoid answering questions to which it would normally respond with a lie.
+    Such creatures can be evasive in its answers as long as it remains within the boundaries of the truth.
+\paragraph{Thassa's Mockery} % Water Breathing
+    This transparent vodka has fish scales floating in it, which must be drinked with the brew to gain its effect.
+    This drinks grants a creature the ability to breathe underwater for 8 hours.
+    Affected creatures also retain their normal mode of respiration.
 % RARE - 3rd level spells, DC 14, +3
 Breathkiller % Stinking Cloud
 Brew of Clairvoyance
@@ -38,6 +120,7 @@ Brew of Maximum Power
 Mindblower % Speak with Plants + Hallucinatory Terrain
 Soulcatcher % Revivify
 % VERY RARE - 4-5th level spells, DC 16, +4
+Brew of Confusion % Confusion
 Brew of Vitality % Potion of Vitality
 Brew of Speed % Haste
 Dead Raiser % Raise Dead
