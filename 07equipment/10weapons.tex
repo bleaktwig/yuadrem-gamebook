@@ -1,0 +1,123 @@
+% !TEX root = ../main.tex
+\subsection*{Weapons} \label{ssec::weapons}
+% SPECIAL WEAPONS:
+% * Huge Krudzal weapons used to fight giants
+% * Drer fire weapons
+% * Sulia's large blast weapons (cannons and large handcannons)
+% * Kaldrathal's more refined flintlock pistols
+% * Mercury weapons from frostburn umans
+
+% heavy shields grant +3 AC and half cover against ranged attacks, but impose a movement speed debuff:
+% tower shield: +3 AC, -10 movement speed
+% bulwark: +4 AC, -20 movement speed
+
+% WEAPON CATEGORIES:
+% Knives:
+%   simple    : dagger (L) 1d4, throwing dagger (L) 1d4, kukri 1d6 (only when thrown, less range)
+%   1-handed  : parrying dagger 1
+% Straight Swords:
+%   simple    : shortsword 1d6
+%   1-handed  : broadsword (H) 1d8, backsword 1d8
+%   versatile : bastard sword 1d8-1d10
+%   2-handed  : longsword 1d10, claymore (H) 1d12, zweihander (H) 2d6, flamberge (H) 1d10, greatsword (H) 2d6
+% Curved Swords:
+%   simple    : sickle (L) 1d4, cutlass 1d6
+%   1-handed  : scimitar (L) 1d6, sabre 1d8, khopesh 1d6
+%   versatile : falchion (H) 1d8-1d10
+%   2-handed  : katana 1d10, double-bladed scimitar 2d4
+% Light Swords:
+%   simple    : mail breaker 1d4
+%   1-handed  : rapier 1d8, estoc/tuck 1d8, basket hilted sword 1d8
+% Axes:
+%   simple    : handaxe (L) 1d6
+%   versatile : battleaxe 1d8-1d10, broad axe 1d8-1d10 (H)
+%   2-handed  : bearded axe 1d10, greataxe (H) 1d12
+% Hammer:
+%   simple    : club (L) 1d4, light hammer (L) 1d4, mace 1d6
+%   1-handed  : warhammer 1d8-1d10, boomerang 1d4
+%   2-handed  : greatclub (H) 1d8, maul (H) 2d6, lucerne 1d10
+% Pick:
+%   simple    : kama (L) 1d6
+%   1-handed  : war pick 1d8
+%   2-handed  : horseman's pick 1d10
+% Staves:
+%   simple    : quarterstaff 1d6-1d8
+% Spears:
+%   simple    : javelin 1d6, trident 1d6-1d8
+%   versatile : spear 1d8-1d10, lance 1d12
+%   2-handed  : pike (H) 1d10
+% Halberds:
+%   2-handed  : glaive (H) 1d10, poleaxe (H) 1d10, lucerne (H) 1d0
+% Flails:
+%   1-handed  : nunchaku (L) 1d4, ball-and-chain 1d6
+% Whip:
+%   1-handed  : whip 1d4, bullwhip (1d4 slashing but 6m reach), qilinbian (1d6 slashing, finesse, reach - 6mt)
+% Bow:
+%   2-handed  : shortbow 1d6, composite bow 1d8, longbow (H) 1d8, yumi (H) 1d10 - disadvantage on less than 6 meters
+% Crossbow:
+%   1-handed  : hand crossbow (L) R1 1d6
+%   2-handed  : light crossbow R1 1d8, repeating crossbow R3 1d8, heavy crossbow (H) R1 1d10
+% Pistol:
+%   1-handed  : flintlock R1 1d10, pistol (change name) R4 1d8
+% Musket:
+%   2-handed  : musket R1 1d12
+% "Newer" Firearms:
+%   1-handed  : palm pistol (L) R1 1d8, pepperbox R6 1d10
+%   2-handed  : blunderbuss R1 2d8, bad news R1 2d12
+% Fire-breathers (Drer) - misfiring damages you:
+%   1-handed  : bomb 3d6
+%   2-handed  : firelance 1d12, hand mortar 2d8, flamespewer 1d6*
+% Giant-slayers (Krudzal) - no extra attack:
+%   2-handed  : dreihander 2d12, greatmaul 4d6, greatchisel 2d8*, hand ballista 2d10
+%       dreihander    - https://mortalshell.wiki.fextralife.com/Martyr's+Blade
+%       greatmaul     - https://mortalshell.wiki.fextralife.com/Smoldering+Mace
+%       greatchisel   - https://mortalshell.wiki.fextralife.com/Hammer+and+Chisel
+%       hand ballista - https://mortalshell.wiki.fextralife.com/Ballistazooka - action to shoot, action to reload
+% Trick weapons: take 3 or 4 from here https://bloodborne.wiki.fextralife.com/Weapons.
+% Exotic:
+%   1-handed  :
+%   versatile :
+%   2-handed  : swordspear* (H) 1d10
+%   ranged    : blowgun 1, net -
+% Special (no specific talents, generally used for flavor):
+%   simple    : shortspear 1d6, dart 1d4, sling 1d4
+% Footnotes:
+% * swordspears are essentially fancy glaive, but require proficiency with spears and swords due to having a different combat style.
+
+% Take firearms from https://www.dndbeyond.com/subclasses/gunslinger .
+
+\subsection*{Weapon Properties} \label{ssec::weaponproperties}
+    \subparagraph{Ammunition} You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon.
+    Each time you attack with the weapon, you expend one piece of ammunition.
+    Drawing the ammunition from a quiver, case, or other container is part of the attack.
+    Loading a one-handed weapon requires a free hand.
+    At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+
+    If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon.
+    A sling must be loaded to deal any damage when used in this way.
+
+    \subparagraph{Explosive} Upon a hit, everything within 5 ft of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage.
+    If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.
+
+    \subparagraph{Great} This weapon requires the Great Weapon User 1 feat to use.
+
+    \subparagraph{Heavy} Creatures that are Small or Tiny have disadvantage on attack rolls with heavy weapons.
+    A heavy weapon's size and bulk make it too large for a Small or Tiny creature to use effectively.
+
+    \subparagraph{Loading} Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.
+
+    \subparagraph{Misfiring} Whenever you make an attack roll, and the dice roll is equal to or lower than the weapon’s Misfire score, the weapon misfires.
+    The attack misses, and the weapon cannot be used again until you spend an action to try and repair it.
+    To repair your weapon, you must make a successful Tinker’s Tools check (DC equal to 8 + misfire score).
+    If your check fails, the weapon is broken and must be mended out of combat at a quarter of its cost.
+    Creatures who use a weapon without being proficient increase its misfire score by 1.
+
+    \subparagraph{Reloading} The weapon can be fired a number of times equal to its Reload score before you must spend 1 attack or 1 action to reload.
+    You must have one free hand to reload the weapon.
+
+    \subparagraph{Trick} This weapon requires the Flexible Fighter 1 feat to use.
+    These weapons can be transformed into alternate forms and have different capabilities in this transformed state.
+    The weapons have two values for damage and properties, one for their normal form, and one for the transformed one.
+
+    \subparagraph{Two-Handed} This weapon requires two hands to use.
+    This property is relevant only when you attack with the weapon, not when you simply hold it.
