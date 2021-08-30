@@ -26,7 +26,7 @@ The number you roll determines how far down the list you are able to craft, and 
     From mastery with these tools, you have access to all items in the Potions section (see page \pageref{ssec::potions}).
     The cost associated to each item only accounts for the required reagents, not the vial or flask used to contain it.
 
-    Common potions have a DC of 6 to make, Uncommon potions a DC of 9, Rare potions a DC of 12, Very Rare a DC of 15, and legendary a DC of 18.
+    Common potions have a DC of 6 to make, Uncommon potions a DC of 9, Rare potions a DC of 12, Very Rare a DC of 15, and Legendary a DC of 18.
     The cost and DC of potions relates to one vial or flask of the substance, as is detailed in the corresponding section.
 \subsubsection{Potion Peruser} \label{feat::potionperuser}
     Using two actions, you can identify one potion within 1.5 meters of you, as if you had tasted it.
@@ -68,8 +68,7 @@ The number you roll determines how far down the list you are able to craft, and 
         The drinker determines the transformation caused by the spell, the effects of which last for 10 minutes.
     \end{DndTable}
     \paragraph{Requirements} Expert proficiency with Alchemist's Supplies.
-% BREWER'S SUPPLIES
-%   - CONSTITUTION (more sampling than alchemy) : BREWS
+% BREWER'S SUPPLIES brewer chug mixeddrinks purify theenhancer
 \subsubsection{Brewer} \label{feat::brewer}
     Increase your level of proficiency with Brewer's Supplies.
     This feat can be re-taken until you are an expert with the toolset.
@@ -79,19 +78,39 @@ The number you roll determines how far down the list you are able to craft, and 
     From mastery with these tools, you have access to all items in the Brews sections (see page \pageref{ssec::brews}).
     The cost associated to each item only accounts for the required reagents, not the barrels used to contain the liquid or the tankard used to drink it.
 
-    Common brews have a DC of 8 to make, Uncommon brews a DC of 12, Rare brews a DC of 16, Very Rare a DC of 20, and legendary a DC of 24.
-    The DC of a brew relates to one barrel of the stuff, which fills 8 tankards before being drained.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION % Double usefulness of water by purifying it
+    Common brews have a DC of 8 to make, Uncommon brews a DC of 12, Rare brews a DC of 16, Very Rare a DC of 20, and Legendary a DC of 24.
+    Unless specified otherwise in the item's name, the DC of a brew relates to one small keg of the stuff, which fills 8 tankards before being drained.
+\subsubsection{Purify} \label{feat::purify}
+    Using brewing techniques you can purify dirty water with your Brewer's Supplies.
+    As part of a short rest, you can purify doses of water equal to 4 + your proficiency bonus with Brewer's Supplies.
     \paragraph{Requirements} Competent proficiency with Brewer's Supplies.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION % Drink a brew using 3 actions.
+\subsubsection{Chug!} \label{feat::chug}
+    Instead of a minute, you can drink a brew using 3 actions, gaining the normal benefits associated to it.
     \paragraph{Requirements} Skilled proficiency with Brewer's Supplies.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADEABLE % Enhance Ability Spell, but related to a brew. Make two tankards of the stuff per brew.
+\subsubsection{The Enhancer} \label{feat::theenhancer}
+    As part of a short rest, you can quickly brew a tankard worth of The Enhancer, a brew unique to master brewers.
+    Upon drinking, the drinker gains the effect associated to the drink for an hour.
+
+    The six variants of The Enhancer are listed.
+    \paragraph{Bear's Endurance} The target has advantage on Constitution checks.
+    It also gains 2d6 temporary hit points, which are lost when the effect ends.
+    \paragraph{Bull's Strength} The target has advantage on Strength checks, and their carrying capacity doubles.
+    \paragraph{Cat's Grace} The target has advantage on Dexterity checks.
+    It also doesn't take damage from falling 6 meters or less if it isn't incapacitated.
+    \paragraph{Eagle's Splendor} The target has advantage on Charisma checks.
+    \paragraph{Fox's Cunning} The target has advantage on Intelligence checks.
+    \paragraph{Owl's Wisdom} The target has advantage on Wisdom checks.
+
+    You can take this feat two additional times.
+    The second, you extend the duration of the effect to 8 hours.
+
+    The third, you extend the duration of the effect to 24 hours, and can brew two tankards worth of The Enhancer per short rest.
+    These tankards can be different variants of the brew.
     \paragraph{Requirements} Skilled proficiency with Brewer's Supplies.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION % Mixing brews to sum effects
+\subsubsection{Mixed Drinks (2 FP)} \label{feat::mixeddrinks}
+    As part of a short rest, you can mix two brews to combine their effects.
+    To do this, you must succeed on a DC 15 check with your Brewer's Supplies.
+    On a successful check you combine the brews' effects, and are left with an amount of the combined brew equal to half the sum of the two brews --- the remainder is lost in the mixing process.
     \paragraph{Requirements} Expert proficiency with Brewer's Supplies.
 % CALLIGRAPHER'S SUPPLIES
 %   - DEXTERITY : SCROLLS
@@ -140,17 +159,17 @@ The number you roll determines how far down the list you are able to craft, and 
     DESCRIPTION
     \paragraph{Requirements} Expert proficiency with Carpenter's Tools.
 % COOKING UTENSILS chef cook sweettreat warmmeal
-%   - Constitution : Food (a new item type!)
+%   - Constitution : Food
 \subsubsection{Cook} \label{feat::cook}
     Increase your level of proficiency with Cooking Utensils.
     This feat can be re-taken until you are an expert with the toolset.
 \subsubsection{Warm Meal} \label{feat::warmmeal}
     By cooking them, you can make rations more effective.
     As part of a short rest, you can cook a number of rations equal to 4 + your proficiency bonus with Cooking Utensils.
-    The number of cooked rations produced is equal to 3/2ths of the original number of rations, but spoil if left untouched for more than 24 hours.
+    The number of cooked rations produced is equal to double the original number of rations, but spoil if left untouched for more than 24 hours.
     \paragraph{Requirements} Competent proficiency with Cooking Utensils.
 \subsubsection{Sweet Treat} \label{feat::sweettreat}
-    With one hour of work or when you finish a short rest, you can cook a number of treats equal to your proficiency bonus with Cooking Utensils.
+    With one hour of work or as part of a short rest, you can cook a number of treats equal to your proficiency bonus with Cooking Utensils.
     These special treats last 8 hours after being made.
     A creature can use a bonus action to eat one of those treats to gain temporary hit points equal to your proficiency bonus with Cooking Utensils.
     \paragraph{Requirements} Skilled proficiency with Cooking Utensils.
