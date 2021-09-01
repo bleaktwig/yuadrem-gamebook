@@ -8,6 +8,13 @@ Techniques are actions that are unlocked by certain ranks in talents. % WRITE MO
 \subsubsection{Aim $\circ$} \label{act::aim}
     You give yourself advantage on your next attack roll, which can be made until the end of your next turn.
 
+\subsubsection{Bash} \label{act::bash}
+    As an action, you attempt to bash a creature with your shield.
+    Your attack bonus for this attack is equal to the shield's AC bonus + your Strength modifier.
+    On a hit, the creature takes 1d6 + your Strength modifier in bludgeoning damage.
+
+    You can use this attack only once per turn, and it doesn't count towards your Multiple Attack Penalty.
+
 \subsubsection{Block $\diamond$} \label{act::block}
     You can use your reaction to prepare yourself against one melee or ranged attack.
     You increase your AC by 1d6 against the attack.
@@ -64,10 +71,6 @@ As an action, you can attempt to strike a creature's head with a melee weapon at
 In addition to taking the attack's normal damage, the creature must succeed on a Constitution saving throw (DC 8 + your proficiency bonus + your Strength modifier) or have disadvantage on ability checks and attack rolls during its next turn.
 You need to be using a bludgeoning weapon to perform this technique.
 
-\subsubsection{Buttstroke} \label{tec::buttstroke}
-You use your action to make one Strength melee attack with the pommel or butt of your weapon against a creature.
-If the attack hits, the creature takes 1d6 + your Strength modifier bludgeoning damage, and it can't perform opportunity attacks until the start of your next turn.
-
 \subsubsection{Feint} \label{tec::feint}
 You use your bonus action to feint, choosing one creature within melee range as your target.
 You have advantage on your next melee attack roll this turn against that creature.
@@ -93,11 +96,6 @@ If the target is Large or smaller, it must make a Strength saving throw of a DC 
 On a failed save, you knock the target prone.
 
 % === ADVANCED COMBAT MANEUVERS ================================================ %
-\subsubsection{Bash} \label{tec::bash}
-You use your bonus action to bash a creature's head with your shield.
-Your attack bonus for this attack is equal to your proficiency bonus (if you're proficient with the shield type) + your strength modifier.
-On a hit, the creature takes 1d6 + your Strength modifier bludgeoning damage, and your next melee attack on this turn to it is made with advantage.
-
 \subsubsection{Bull's Eye} \label{tec::bullseye}
 You use your action to perform one lethal attack with a thrown or ranged weapon.
 Perform your attack normally.
@@ -116,10 +114,6 @@ As a bonus action, choose a creature you can see that is at least 6 meters away 
 If that creature moves within you polearm's reach on its next turn, you can make a melee attack against it with your polearm as a reaction.
 If the attack hits, the targets takes an extra damage die.
 You can't use this technique if the creature used the Disengage action before moving.
-
-\subsubsection{Cheap Shot} \label{tec::cheapshot}
-After successfully attacking a target with a melee weapon attack, you can use your bonus action to attack the same target with a crossbow or pistol by shooting in melee range.
-This attack is done with advantage.
 
 \subsubsection{Cleave} \label{tec::cleave}
 You learn to use the weight of your weapon to destabilize your opponent.
@@ -221,35 +215,12 @@ You can use your Attack action against a grappled creature to make a special mel
 You make a grapple check against the creature.
 If you succeed, the creature takes damage as if you hit it with a normal unarmed attack, and both you and the creature are prone.
 
-\subsubsection{Visceral Attack} \label{tec::visceralattack}
-You can use your bonus action to do a melee attack shooting with a crossbow or pistol.
-If the attack hits, your next melee attack on your turn against the same target is done with advantage.
-
 \subsubsection{Violent Shot} \label{tec::violentshot}
 When you make a firearm attack against a creature, you can tune your weapon to enhance the volatility of the attack.
 The attack gains a +2 to the firearm's misfire score.
 If the attack hits, you can roll one additional weapon damage die.
 
 % === EXPERT COMBAT MANEUVERS ================================================== %
-\subsubsection{Armor Puncture} \label{tec::armorpuncture}
-You use your action to attempt a well-place strike onto a creature's armor or carapace.
-If your target has natural, medium, or heavy armor, you strike with the sole purpose of destroying it.
-You make a weapon attack with a piercing weapon with which you are proficient, applying a -3 penalty to the attack roll.
-
-If the attack hits, the creature's armor suffers a permanent -1 to its AC bonus, in addition to the damage that the attack would normally do.
-This effect is cumulative, and can only be reversed by an appropriate armorer.
-
-\subsubsection{Grievous Wound} \label{tec::grievouswound}
-As an action, you can choose to aim an attack to your opponent's arms or object manipulation limbs.
-You make a weapon attack with a slashing weapon with which you are proficient, applying a -3 penalty to the attack roll.
-If the attack hits, the target has disadvantage on all attack rolls until your next turn, and suffers the damage that the attack would normally do.
-
-\subsubsection{Hemorrhaging Attack} \label{tec::hemorrhagingattack}
-As an action, you concentrate to perform one deadly shot at a target.
-You make a weapon attack with a ranged weapon with which you are proficient, applying a -3 penalty to the attack roll.
-If the attack hits, it is automatically a critical hit.
-Additionally, the target suffers half of the damage from the attack at the end of its next turn.
-
 \subsubsection{Shield Break} \label{tec::shieldbreak}
 On a successful melee attack against a creature, you can forego dealing damage to it and instead knock its shield aside momentarily.
 The creature subtracts the shield's AC bonus from its AC until the start of your next turn.
