@@ -5,10 +5,8 @@ TODO: DESCRIPTION
 
 % === ARMOR TYPES ==================================================================================
 % UNARMORED
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
-
-    To gain the benefits of this feat, you must not be wearing armor.
+\subsubsection{Unarmored Agility} \label{feat::unarmoredagility}
+    As long as you are not wearing any armor, your movement speed increases by 1.5 meters.
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION
 
@@ -17,10 +15,9 @@ TODO: DESCRIPTION
     DESCRIPTION - UPGRADABLE
 
     To gain the benefits of this feat, you must not be wearing armor.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
-
-    To gain the benefits of this feat, you must not be wearing armor.
+\subsubsection{Unarmored Master (2 FP)} \label{feat::unarmoredfighter}
+    If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, and half damage if you fail.
+    You only get this bonus while wearing no armor or light armor.
 % LIGHT
 \subsubsection{Lightly Armored} \label{feat::lightlyarmored}
     You learn how to wear light armor in combat.
@@ -65,10 +62,9 @@ TODO: DESCRIPTION
 % HEAVY
 \subsubsection{Heavily Armored} \label{feat::heavilyarmored}
     You learn how to wear heavy armor in combat.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
-
-    To gain the benefits of this feat, you must be wearing heavy armor.
+\subsubsection{Heavy-Weight} \label{feat::heavyweight}
+    While you are wearing heavy armor, you roll with advantage when you take the Shove action.
+    You also roll Strength (Athletics) with advantage when you are targeted by the Shove action.
     \paragraph{Requirements} Proficiency with Heavy Armor.
 \subsubsection{Imposing Figure} \label{feat::imposingfigure}
     DESCRIPTION
@@ -154,10 +150,8 @@ TODO: DESCRIPTION
 
     To gain the benefits of this feat, you must be wearing armor with the Leather property.
 % PLATE
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
-
-    To gain the benefits of this feat, you must be wearing armor with the Plate property.
+\subsubsection{Heavy Hitter} \label{feat::heavyhitter}
+    If you are wearing plate gauntlets, add a +2 bonus to your damage rolls with unarmed attacks.
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION
 
@@ -259,7 +253,7 @@ TODO: DESCRIPTION
     \paragraph{Requirements} Expert proficiency with Simple Weapons.
 
 % === MARTIAL WEAPONS ==============================================================================
-% AXES
+% AXES axemaster forcefuldisarm griefer maimingstrikes murderousintent rush treefeller
 \subsubsection{Axemaster} \label{feat::axemaster}
     More than a simple tool, you master the use of axes in combat.
 
@@ -271,21 +265,21 @@ TODO: DESCRIPTION
     \paragraph{Requirements} Competent proficiency with Axes.
 \subsubsection{Tree Feller} \label{feat::treefeller}
     Nature is your foe, and you use your axe to fell both trees and enemies.
-    You have advantage on attack rolls against any creature made of wood, regardless their nature.
+    You have advantage on attack rolls against plant-based creatures and any structure made of wood.
     \paragraph{Requirements} Competent proficiency with Axes.
 \subsubsection{Forceful Disarm} \label{feat::forcefuldisarm}
     You reduce the action cost of the Disarm action to one action.
     If you are holding an axe, you have advantage on your attack roll with the Disarm action to force a creature to drop its shield.
     \paragraph{Requirements} Skilled proficiency with Axes.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Maiming Strikes (2 FP)} \label{feat::maimingstrikes}
+    When you hit a creature with the attack action, the next attack against that creature before the end of your next turn is rolled with advantage.
     \paragraph{Requirements} Skilled proficiency with Axes.
 \subsubsection{Rush} \label{feat::rush}
     As part of your attack, you can move up to half your movement speed towards the target of your attack.
     You can use this ability only once per turn.
-    \paragraph{Requirements} Expert proficiency with Axes.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Axes or Hammers.
+\subsubsection{Murderous Intent (2 FP)} \label{feat::murderousintent}
+    When a creature rolls on the minor or major injury charts from one of your attacks made with an axe, it must roll the d20 twice and take the higher result.
     \paragraph{Requirements} Expert proficiency with Axes.
 % BOWS
 \subsubsection{Bowmaster} \label{feat::bowmaster}
@@ -365,7 +359,7 @@ TODO: DESCRIPTION
     Your melee attacks with curved swords ignore the AC provided by shields.
     In addition, whenever you get a critical hit against a target wearing a shield, you can forfeit your brutal critical roll and injure the target's shield-bearing arm as if you had rolled a 4 in the Minor Injury chart (see page \pageref{ssec::injuriesandinsanity}).
     \paragraph{Requirements} Expert proficiency with Curved Swords.
-% HAMMERS
+% HAMMERS rush
 \subsubsection{Blunt Fighter} \label{feat::bluntfighter}
     You increase your proficiency level with hammers.
     This feat can be taken three times, or until you reach Expert proficiency with the weapon type.
@@ -381,17 +375,24 @@ TODO: DESCRIPTION
 \subsubsection{NAME (2 FP)} \label{feat::name}
     DESCRIPTION
     \paragraph{Requirements} Skilled proficiency with Hammers.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
-    \paragraph{Requirements} Expert proficiency with Hammers.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Bend Metal (2 FP)} \label{feat::bendmetal}
+    When you hit a creature with a hammer, you can choose to not damage it; instead focusing in its armor.
+    If the creature is wearing armor with the Chain, Plate, or Natural property, it applies a -1 penalty to its AC.
+
+    Damaged armor can be repaired by someone Skilled with Smith's tools, and it usually costs a quarter or half of the cost of the armor, to the DM's discretion.
+    If you reduce the AC bonus given by the armor to 0, the armor is destroyed irreparably.
+
+    Natural armor damaged by this feat heals over time, regaining its original AC over the course of a long rest.
     \paragraph{Requirements} Expert proficiency with Hammers.
 % POLEARMS
-\subsubsection{Polearms Proficiency} \label{feat::name}
-    DESCRIPTION
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Polearm Master} \label{feat::polearmmaster}
+    You increase your proficiency level with polearms.
+    This feat can be taken three times, or until you reach Expert proficiency with the weapon type.
+\subsubsection{Rondel Hit} \label{feat::rondelhit}
+    When you take the Attack action and attack with a polearm, you can use another action to make a melee attack with the opposite end of the weapon, using the same ability modifier as the main attack.
+    The weapon's damage die for this attack is a d4, and the attack deals bludgeoning damage.
+
+    This attack is unaffected by your Multiple Attack Penalty, and doesn't count toward it.
     \paragraph{Requirements} Competent proficiency with Polearms.
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION
@@ -399,11 +400,13 @@ TODO: DESCRIPTION
 \subsubsection{NAME - ACTION} \label{feat::name}
     DESCRIPTION
     \paragraph{Requirements} Skilled proficiency with Polearms.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Sweep (2 FP)} \label{feat::sweep}
+    Using two actions, you can choose to attack all creatures in a 180$\degree$ arc in front of you within the range of your equipped weapon.
+    You make a melee attack roll once, hitting all creatures with an AC lower than the number rolled.
+    You roll damage once, which is applied on all the struck creatures.
     \paragraph{Requirements} Skilled proficiency with Polearms.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Not on my Watch!} \label{feat::notonmywatch}
+    While you are wielding a polearm, other creatures provoke an opportunity attack from you when they enter your reach.
     \paragraph{Requirements} Expert proficiency with Polearms.
 \subsubsection{NAME (2 FP)} \label{feat::name}
     DESCRIPTION
@@ -593,28 +596,57 @@ TODO: DESCRIPTION
 \subsubsection{NAME (2 FP)} \label{feat::name}
     DESCRIPTION
     \paragraph{Requirements} Fighting Style: Great Weapon Fighting 2.
-% MONASTIC FIGHTING?
-% \subsubsection{NAME} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Fighting Style: Monastic Fighting 1.
-% \subsubsection{NAME - ACTION} \label{feat::name}
-%     DESCRIPTION - UPGRADABLE
-%     \paragraph{Requirements} Fighting Style: Monastic Fighting 1.
-% \subsubsection{NAME (2 FP)} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Fighting Style: Monastic Fighting 1.
-% \subsubsection{NAME} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Fighting Style: Monastic Fighting 2.
-% \subsubsection{NAME - ACTION} \label{feat::name}
-%     DESCRIPTION - UPGRADABLE
-%     \paragraph{Requirements} Fighting Style: Monastic Fighting 2.
-% \subsubsection{NAME (2 FP)} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Fighting Style: Monastic Fighting 2.
+% MONASTIC FIGHTING
+\subsubsection{Monkey's Fist} \label{feat::monkeysfist}
+    The damage of your unarmed strikes is equal to d4 + your Dexterity modifier instead of the normal damage for an unarmed strike.
+
+    In addition, when you use the attack action on your turn you can expend one use of your Monastic Die to make an unarmed attack as a free action, adding the result of the die to the damage roll.
+    \paragraph{Requirements} Fighting Style: Monastic Fighting 1.
+\subsubsection{Agile Grappler} \label{feat::agilegrappler}
+    You can take this feat three times, gaining different benefits each time:
+    \begin{itemize}
+        \item When you take the Grapple action, you can use a Monastic Die to roll on the contest using your Dexterity (Acrobatics) instead of your Strength (Athletics), adding the result of the die to the check.
+        \item When you attempt to grapple a creature, you choose what the creature rolls in the contest between Strength (Athletics) and Dexterity (Acrobatics).
+        \item When you successfully grapple a creature, you can use another Monastic Die to make one melee attack against the creature as a free action, adding the result of the die to the damage roll.
+    \end{itemize}
+    \paragraph{Requirements} Fighting Style: Monastic Fighting 1.
+\subsubsection{Flurry of Blows (2 FP)} \label{feat::flurryofblows}
+    The Multiple Attack Penalty related to your unarmed weapon attacks is reduced by 3.
+
+    In addition, you can spend one use of your Monastic Die to make two unarmed weapon attacks instead of one using one action.
+    You add the result of the die to the attack roll of both attacks.
+    \paragraph{Requirements} Fighting Style: Monastic Fighting 1.
+\subsubsection{Blind Fighter} \label{feat::blindfighter}
+    You have blindsight with a range of 3 meters.
+    Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness.
+    Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.
+    \paragraph{Requirements} Fighting Style: Monastic Fighting 2.
+\subsubsection{Martial Artist} \label{feat::martialartist}
+    When you take this feat, you learn one of the following abilities.
+    You can take this feat three times, learning a different ability each time.
+    \begin{itemize}
+        \item \textbf{Deflect Missiles.} You can use your reaction to deflect or catch the missile when you are hit by a ranged weapon attack.
+        When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier.
+
+        If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free.
+        If you catch a missile in this way, you can spend 1 Monastic Die to make a ranged attack (range 6/18 meters) with the weapon or piece of ammunition you just caught, as part of the same reaction.
+        You make this attack with proficiency, regardless of your weapon proficiencies.
+
+        \item \textbf{Diamond Soul.} Whenever you make a saving throw and fail, you can spend one Monastic Die.
+        You add a the number rolled to your saving throw, potentially turning a failure into a success.
+
+        \item \textbf{Stunning Strike.} When you hit a creature with an unarmed attack, you can spend two Monastic DIce to attempt a stunning strike.
+        The target must succeed on a Constitution Saving throw with DC equal to 8 + the result of your Monastic Dice roll or be stunned until the end of your next turn.
+    \end{itemize}
+
+    \paragraph{Requirements} Fighting Style: Monastic Fighting 2.
+\subsubsection{Quickened Healing (2 FP)} \label{feat::quickenedhealing}
+    Using an actions, you can spend a Monastic Die to heal yourself.
+    You regain a number of hit points equal to the number rolled + your Wisdom modifier.
+    \paragraph{Requirements} Fighting Style: Monastic Fighting 2.
 % MOUNTED FIGHTING
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Height Superiority} \label{feat::heightsuperiority}
+    You have advantage on melee attack rolls against any unmounted creature that is smaller than your mount.
     \paragraph{Requirements} Fighting Style: Mounted Fighting 1.
 \subsubsection{NAME - ACTION} \label{feat::name}
     DESCRIPTION - UPGRADABLE
@@ -635,11 +667,19 @@ TODO: DESCRIPTION
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION
     \paragraph{Requirements} Fighting Style: Protection 1.
-\subsubsection{NAME - ACTION} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Interception} \label{feat::interception}
+    You can take this feat three times, gaining different benefits each time:
+    \begin{itemize}
+        \item When a creature you can see attacks a target other than you that is within 1.5 meters of you, you can use your reaction to impose disadvantage on the attack roll.
+        \item If the attack hits the target, the damage the target takes is reduced by 1d10 + 3 (to a minimum of 0 damage).
+        \item When you use this ability, you can make a melee weapon attack against the attacking creature.
+    \end{itemize}
+    You must be wearing a shield or a martial wepaon to use this reaction.
     \paragraph{Requirements} Fighting Style: Protection 1.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Sentinel (2 FP)} \label{feat::sentinel}
+    When you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of its turn.
+
+    In addition, creatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach.
     \paragraph{Requirements} Fighting Style: Protection 1.
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION
@@ -1129,21 +1169,6 @@ If you hurl a creature, both it and the target of your attack take 1d6 + your St
 \paragraph{RANK 3} You learn the Suplex technique.
 
 % ============================================================================== %
-\subsubsection{Heavy-Weight Combatant} \label{feat::heavyweightcombatant}
-\small{\textcolor{gray}{Athletics}}
-
-\normalsize
-You can use the weight of your body and your armor to greatly aid you in combat.
-\paragraph{REQUIREMENTS} Heavily Armored 2 and Pugilist 2.
-\paragraph{RANK 1} If you are wearing metal gauntlets, your unarmed strike uses a d6 + your Strength modifier for damage.
-\paragraph{RANK 2} While you are wearing heavy armor, you roll with advantage when taking the Shove action.
-You also roll Strength (Athletics) with advantage when you are targeted by a Shove action.
-\paragraph{RANK 3} You have learned to strategically position the crevices in your armor to hurt creatures too close to you.
-When you grapple a creature, the target takes 1d6 piercing damage if your grapple check succeeds.
-If another creature grapples you, they take 1d6 piercing damage.
-If you start your turn grappling or being grappled by a creature, it takes 1d6 piercing damage.
-
-% ============================================================================== %
 \subsubsection{Horse Killer} \label{feat::horsekiller}
 \small{\textcolor{gray}{Animal Handling}}
 
@@ -1200,17 +1225,6 @@ Your proficiency with the longsword is unparalleled, and you regularly prove to 
 \paragraph{RANK 1} When you use a longsword, its damage die changes from a d10 to a d12.
 \paragraph{RANK 2} When a creature misses you with a melee weapon attack, you can roll to use the Disarm action on it as your reaction.
 \paragraph{RANK 3} When you use the Block technique and an attack misses you, you can use the Riposte technique without using your reaction.
-
-% ============================================================================== %
-\subsubsection{Maiming Strikes} \label{feat::maimingstrikes}
-\small{\textcolor{gray}{Strength}}
-
-\normalsize
-Your increased proficiency cleaving through wood and stone translates to devastating attacks against flesh and bone.
-\paragraph{REQUIREMENTS} Axe Adept 2 and Pick Adept 2.
-\paragraph{RANK 1} The last attack you make with the Attack action is rolled with advantage if you hit the target at least once in your turn.
-\paragraph{RANK 2} When a creature rolls on the minor \& major injury charts from one of your attacks, they roll with advantage.
-\paragraph{RANK 3} You learn the Cleave technique.
 
 % ============================================================================== %
 \subsubsection{Medium Haft Master} \label{feat::mediumhaftmaster}
@@ -1439,19 +1453,6 @@ You can only use this ability if you're not using a fist weapon.
 \paragraph{RANK 2} When you use the Attack action, you can make an unarmed strike as a bonus action.
 \paragraph{RANK 3} You get access to one Martial Arts technique of your choice.
 You may buy this rank again to attain new Martial Arts techniques as long as you have not learned all available techniques.
-
-% ============================================================================== %
-\subsubsection{Unarmored} \label{feat::unarmored}
-\small{\textcolor{gray}{Dexterity}}
-
-\normalsize
-Your extensive physical training allows to forfeit armor when fighting.
-Your body is the only armor you need.
-\paragraph{REQUIREMENTS} Acrobat 2 and Athlete 2.
-\paragraph{RANK 1} As long as you are not wearing any armor, your speed increases by 3 meters.
-\paragraph{RANK 2} If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, and half damage if you fail.
-You only get this bonus while wearing no armor or light armor.
-\paragraph{RANK 3} You learn the Rush technique.
 
 % ============================================================================== %
 \subsubsection{Way of the Fist} \label{feat::wayofthefist}
