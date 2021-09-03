@@ -49,7 +49,7 @@ TODO: DESCRIPTION
 \subsubsection{Agile in a Suit} \label{feat::agileinasuit}
     When you wear medium armor, you can add 3, rather than 2, to your AC if you have a Dexterity of 16 or higher.
     \paragraph{Requirements} Proficiency with Medium Armor.
-\subsubsection{NAME} \label{feat::name}
+\subsubsection{Vital Protection} \label{feat::vitalprotection}
     While wearing medium armor, you may add a +1 to Strength, Dexterity, and Constitution saving throws in which you don't have any proficiency level.
 
     You can take this feat two additional times, increasing this bonus by +1 each time.
@@ -67,9 +67,7 @@ TODO: DESCRIPTION
     You also roll Strength (Athletics) with advantage when you are targeted by the Shove action.
     \paragraph{Requirements} Proficiency with Heavy Armor.
 \subsubsection{Imposing Figure} \label{feat::imposingfigure}
-    DESCRIPTION
-
-    To gain the benefits of this feat, you must be wearing heavy armor.
+    When you make a Charisma (Intimidation) check, you can add a +5 bonus if you are wearing heavy armor.
     \paragraph{Requirements} Proficiency with Heavy Armor.
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION - UPGRADABLE
@@ -186,10 +184,8 @@ TODO: DESCRIPTION
 % MEDIUM SHIELDS
 \subsubsection{Shield Training} \label{feat::shieldtraining}
     Always balanced in combat, you learn how to use medium shields in combat.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
-
-    To gain the benefits of this feat, you must be wielding a medium shield.
+\subsubsection{Blade \& Board} \label{feat::bladeandboard}
+    While you're wielding a medium shield and a creature misses you with a melee attack, you can use your reaction to attack it with a melee attack.
     \paragraph{Requirements} Proficiency with Medium Shields.
 \subsubsection{The Best Defense...} \label{feat::thebestdefense}
     You learn the Bash action (see page \pageref{act::bash}).
@@ -246,7 +242,12 @@ TODO: DESCRIPTION
     DESCRIPTION
     \paragraph{Requirements} Skilled proficiency with Simple Weapons.
 \subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Combat Improviser} \label{feat::combatimproviser}
+    If you can grab it, you can swing it.
+
+    You can apply your proficiency modifier with Simple Weapons to attacks made with improvised weapons.
+
+    In addition, you have advantage on all attack rolls using improvised weapons during the first round of combat.
     \paragraph{Requirements} Expert proficiency with Simple Weapons.
 \subsubsection{NAME (2 FP)} \label{feat::name}
     DESCRIPTION
@@ -344,8 +345,6 @@ TODO: DESCRIPTION
     You reduce the action cost of the Disarm action to one action.
     If you are holding a curved sword, you have advantage on your attack roll with the Disarm action to force a creature to drop its shield.
     \paragraph{Requirements} Skilled proficiency with Curved Swords.
-    DESCRIPTION
-    \paragraph{Requirements} Skilled proficiency with Curved Swords.
 \subsubsection{Parrying Stance (2 FP)} \label{feat::parryingstance}
     You learn the Parry reaction (see page \pageref{act::parry}).
 
@@ -392,13 +391,18 @@ TODO: DESCRIPTION
     When you take the Attack action and attack with a polearm, you can use another action to make a melee attack with the opposite end of the weapon, using the same ability modifier as the main attack.
     The weapon's damage die for this attack is a d4, and the attack deals bludgeoning damage.
 
-    This attack is unaffected by your Multiple Attack Penalty, and doesn't count toward it.
+    This attack is unaffected by your multiple attack penalty, and doesn't count toward it.
     \paragraph{Requirements} Competent proficiency with Polearms.
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION
     \paragraph{Requirements} Competent proficiency with Polearms.
-\subsubsection{NAME - ACTION} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Trip} \label{feat::trip}
+    Using two actions, you can attack a creature with the intention of knocking it down.
+    Make a normal attack roll against the creature.
+    On a hit, the creature must make a Strength saving throw of a DC equal to 8 + your proficiency bonus with polearms + your Strength modifier in addition to taking damage.
+    On a failed save, you knock the target prone.
+
+    The creature has advantage on this roll if it is at least 2 size categories larger than you.
     \paragraph{Requirements} Skilled proficiency with Polearms.
 \subsubsection{Sweep (2 FP)} \label{feat::sweep}
     Using two actions, you can choose to attack all creatures in a 180$\degree$ arc in front of you within the range of your equipped weapon.
@@ -416,14 +420,14 @@ TODO: DESCRIPTION
     You increase your proficiency level with rapiers.
     This feat can be taken three times, or until you reach Expert proficiency with the weapon type.
 \subsubsection{Quick Stabs} \label{feat::quickstabs}
-    You reduce the Multiple Attack Penalty by 2 with rapiers.
+    You reduce the multiple attack penalty by 2 with rapiers.
     \paragraph{Requirements} Competent proficiency with Rapiers.
 \subsubsection{Impairing Attack} \label{feat::impairingattack}
     During your turn, if you make a melee attack against a creature, that creature can't make opportunity attacks against you for the rest of your turn.
     \paragraph{Requirements} Competent proficiency with Curved Swords or Rapiers.
 \subsubsection{Dignified Miss} \label{feat::dignifiedmiss}
     Whenever you miss with a melee weapon attack, you can use your reaction to make another melee weapon attack.
-    The Multiple Attack Penalty applies to this attack normally.
+    The multiple attack penalty applies to this attack normally.
     \paragraph{Requirements} Skilled proficiency with Rapiers.
 \subsubsection{Appropiate Response (2 FP)} \label{feat::appropiateresponse}
     You learn the Riposte reaction (see page \pageref{act::riposte}).
@@ -467,7 +471,7 @@ TODO: DESCRIPTION
     DESCRIPTION
     \paragraph{Requirements} Competent proficiency with Straight Swords.
 \subsubsection{NAME} \label{feat::name}
-    When you are wielding a straight sword in one hand and no other weapons, you gain a +1 bonus to AC.
+    DESCRIPTION
     \paragraph{Requirements} Competent proficiency with Straight Swords.
 \subsubsection{NAME - ACTION} \label{feat::name}
     DESCRIPTION
@@ -481,15 +485,20 @@ TODO: DESCRIPTION
 \subsubsection{Stalwart Stance (2 FP)} \label{feat::stalwartstance}
     You learn the Block reaction.
 
-    In addition, when you are wielding a straight sword in one hand and no other weapons, you can a +1 bonus to your AC.
+    In addition, when you are wielding a straight sword and no other weapons, you can a +1 bonus to your AC.
     \paragraph{Requirements} Expert proficiency with Straight Swords.
 
 % === WEAPON TYPES =================================================================================
 % BLUDGEONING
 \subsubsection{Fell Hand} \label{feat::fellhand}
     When you score a critical hit that deals bludgeoning damage to a creature, attack rolls against that creature are made with advantage until the start of your next turn.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Bonk} \label{feat::bonk}
+    Using two actions, you can attempt to hit a creature directly in its head.
+    Make a normal attack roll.
+    On a successful hit, apart from taking damage, the creature must roll a Constitution saving throw with a DC equal to 8 + your proficiency bonus with the weapon you're wielding + your Strength modifier.
+    On a failed save, the creature has disadvantage on all attack rolls and ability checks until the start of your next turn.
+
+    To use this ability, you must be wielding a bludgeoning weapon and be able to reach the creature's head --- or one of them.
 \subsubsection{Off-balance} \label{feat::offbalance}
     Once per turn, when you hit a creature with an attack that deals bludgeoning damage, you can move it 1.5 meters to an unoccupied space, provided that the target is no more than one size larger than you.
 
@@ -531,8 +540,9 @@ TODO: DESCRIPTION
     DESCRIPTION
 
 % === FIGHTING STYLES ==============================================================================
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION --- TAKE A FIGHTING STYLE (ONLY ONCE, FOLLOWING TIMES ARE MAJOR CHARACTER ADV.)
+\subsubsection{Fighting Initiate} \label{feat::fightinginitiate}
+    You learn one fighting style of your choice (see page \pageref{ssec::fightingstyles}).
+    You can take this feat only once, but you can learn more fighting styles as a major character improvement.
 % ARCHERY
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION
@@ -578,8 +588,11 @@ TODO: DESCRIPTION
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION
     \paragraph{Requirements} Fighting Style: Great Weapon Fighting 1.
-\subsubsection{NAME - ACTION} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Cleaving} \label{feat::cleaving}
+    When fighting with a weapon with the Heavy property, you can attack two creatures instead of one with a melee attack.
+    You can attack in this way only once during your turn.
+
+    You can take this feat two additional times, increasing the number of creatures you can hit with this attack by 1 each time.
     \paragraph{Requirements} Fighting Style: Great Weapon Fighting 1.
 \subsubsection{NAME (2 FP)} \label{feat::name}
     DESCRIPTION
@@ -587,11 +600,8 @@ TODO: DESCRIPTION
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION
     \paragraph{Requirements} Fighting Style: Great Weapon Fighting 2.
-\subsubsection{Cleaving} \label{feat::cleaving}
-    When fighting with a weapon with the Heavy property, you can attack two creatures instead of one with a melee attack.
-    You can attack in this way only once during your turn.
-
-    You can take this feat two additional times, increasing the number of creatures you can hit with this attack by 1 each time.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
     \paragraph{Requirements} Fighting Style: Great Weapon Fighting 2.
 \subsubsection{NAME (2 FP)} \label{feat::name}
     DESCRIPTION
@@ -600,20 +610,20 @@ TODO: DESCRIPTION
 \subsubsection{Monkey's Fist} \label{feat::monkeysfist}
     The damage of your unarmed strikes is equal to d4 + your Dexterity modifier instead of the normal damage for an unarmed strike.
 
-    In addition, when you use the attack action on your turn you can expend one use of your Monastic Die to make an unarmed attack as a free action, adding the result of the die to the damage roll.
+    In addition, when you use the attack action on your turn you can expend one use of your monastic die to make an unarmed attack as a free action, adding the result of the die to the damage roll.
     \paragraph{Requirements} Fighting Style: Monastic Fighting 1.
 \subsubsection{Agile Grappler} \label{feat::agilegrappler}
     You can take this feat three times, gaining different benefits each time:
     \begin{itemize}
-        \item When you take the Grapple action, you can use a Monastic Die to roll on the contest using your Dexterity (Acrobatics) instead of your Strength (Athletics), adding the result of the die to the check.
+        \item When you take the Grapple action, you can use a monastic die to roll on the contest using your Dexterity (Acrobatics) instead of your Strength (Athletics), adding the result of the die to the check.
         \item When you attempt to grapple a creature, you choose what the creature rolls in the contest between Strength (Athletics) and Dexterity (Acrobatics).
-        \item When you successfully grapple a creature, you can use another Monastic Die to make one melee attack against the creature as a free action, adding the result of the die to the damage roll.
+        \item When you successfully grapple a creature, you can use another monastic die to make one melee attack against the creature as a free action, adding the result of the die to the damage roll.
     \end{itemize}
     \paragraph{Requirements} Fighting Style: Monastic Fighting 1.
 \subsubsection{Flurry of Blows (2 FP)} \label{feat::flurryofblows}
-    The Multiple Attack Penalty related to your unarmed weapon attacks is reduced by 3.
+    The multiple attack penalty related to your unarmed weapon attacks is reduced by 3.
 
-    In addition, you can spend one use of your Monastic Die to make two unarmed weapon attacks instead of one using one action.
+    In addition, you can spend one use of your monastic die to make two unarmed weapon attacks instead of one using one action.
     You add the result of the die to the attack roll of both attacks.
     \paragraph{Requirements} Fighting Style: Monastic Fighting 1.
 \subsubsection{Blind Fighter} \label{feat::blindfighter}
@@ -629,19 +639,19 @@ TODO: DESCRIPTION
         When you do so, the damage you take from the attack is reduced by 1d10 + your Dexterity modifier.
 
         If you reduce the damage to 0, you can catch the missile if it is small enough for you to hold in one hand and you have at least one hand free.
-        If you catch a missile in this way, you can spend 1 Monastic Die to make a ranged attack (range 6/18 meters) with the weapon or piece of ammunition you just caught, as part of the same reaction.
+        If you catch a missile in this way, you can spend 1 monastic die to make a ranged attack (range 6/18 meters) with the weapon or piece of ammunition you just caught, as part of the same reaction.
         You make this attack with proficiency, regardless of your weapon proficiencies.
 
-        \item \textbf{Diamond Soul.} Whenever you make a saving throw and fail, you can spend one Monastic Die.
+        \item \textbf{Diamond Soul.} Whenever you make a saving throw and fail, you can spend one monastic die.
         You add a the number rolled to your saving throw, potentially turning a failure into a success.
 
-        \item \textbf{Stunning Strike.} When you hit a creature with an unarmed attack, you can spend two Monastic DIce to attempt a stunning strike.
-        The target must succeed on a Constitution Saving throw with DC equal to 8 + the result of your Monastic Dice roll or be stunned until the end of your next turn.
+        \item \textbf{Stunning Strike.} When you hit a creature with an unarmed attack, you can spend two monastic dice to attempt a stunning strike.
+        The target must succeed on a Constitution Saving throw with DC equal to 8 + the result of your monastic dice roll or be stunned until the end of your next turn.
     \end{itemize}
 
     \paragraph{Requirements} Fighting Style: Monastic Fighting 2.
 \subsubsection{Quickened Healing (2 FP)} \label{feat::quickenedhealing}
-    Using an actions, you can spend a Monastic Die to heal yourself.
+    Using an actions, you can spend a monastic die to heal yourself.
     You regain a number of hit points equal to the number rolled + your Wisdom modifier.
     \paragraph{Requirements} Fighting Style: Monastic Fighting 2.
 % MOUNTED FIGHTING
@@ -691,8 +701,8 @@ TODO: DESCRIPTION
     DESCRIPTION
     \paragraph{Requirements} Fighting Style: Protection 2.
 % THROWN WEAPON FIGHTING
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Quick Draw} \label{feat::quickdraw}
+    You learn the Quick Draw reaction (see page \pageref{act::quickdraw}).
     \paragraph{Requirements} Fighting Style: Thrown Weapons Fighting 1.
 \subsubsection{NAME - ACTION} \label{feat::name}
     DESCRIPTION - UPGRADABLE
@@ -700,8 +710,8 @@ TODO: DESCRIPTION
 \subsubsection{NAME (2 FP)} \label{feat::name}
     DESCRIPTION
     \paragraph{Requirements} Fighting Style: Thrown Weapons Fighting 1.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Throwing Arm} \label{feat::throwingarm}
+    Attacking at long range doesn't impose disadvantage on your thrown weapon attack rolls.
     \paragraph{Requirements} Fighting Style: Thrown Weapons Fighting 2.
 \subsubsection{NAME - ACTION} \label{feat::name}
     DESCRIPTION - UPGRADABLE
@@ -710,23 +720,32 @@ TODO: DESCRIPTION
     DESCRIPTION
     \paragraph{Requirements} Fighting Style: Thrown Weapons Fighting 2.
 % TWO-WEAPON FIGHTING
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Ready for Action} \label{feat::readyforaction}
+    You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.
     \paragraph{Requirements} Fighting Style: Two-Weapon Fighting 1.
 \subsubsection{NAME - ACTION} \label{feat::name}
     DESCRIPTION - UPGRADABLE
     \paragraph{Requirements} Fighting Style: Two-Weapon Fighting 1.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Lock (2 FP)} \label{feat::lock}
+    As an action, you can attempt to lock a creature's weapon with yours to prevent it from attacking.
+    Using one of your weapons, you try to seize one of your target's weapons by making a lock check, a Dexterity (Sleight of Hand) check contested by the target's Dexterity (Sleight of Hand) or Strength (Athletics) check (the target chooses the ability to use).
+    If you succeed, the target can't make attack rolls with the locked weapon.
+
+    At the end of the creature's turns, it can try to end this conditions by succeeding on a Dexterity (Sleight of Hand) or a Strength (Athletics) check contested by your Dexterity (Sleight of Hand) check at the start of its turn.
+    The creature can also end the lock at any time by letting go of the weapon.
+
+    In addition, the condition ends if you are incapacitated, if you are removed from the reach of the creature, or if you choose to end the effect (no action required).
     \paragraph{Requirements} Fighting Style: Two-Weapon Fighting 1.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Offense \& Defense} \label{feat::offenseanddefense}
+    You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.
     \paragraph{Requirements} Fighting Style: Two-Weapon Fighting 2.
 \subsubsection{NAME - ACTION} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
-    \paragraph{Requirements} Fighting Style: Two-Weapon Fighting 2.
-\subsubsection{NAME (2 FP)} \label{feat::name}
     DESCRIPTION
+    \paragraph{Requirements} Fighting Style: Two-Weapon Fighting 2.
+\subsubsection{Two-weapon Master (2 FP)} \label{feat::twoweaponmaster}
+    You can use two-weapon fighting even when the one-handed melee weapons you are wielding aren't light.
+
+    In addition, when you are fighting with one weapon in each hand, you reduce all Multiple Attack Penalties applied by 1.
     \paragraph{Requirements} Fighting Style: Two-Weapon Fighting 2.
 % UNARMED FIGHTING
 \subsubsection{NAME} \label{feat::name}
@@ -849,17 +868,6 @@ TODO: DESCRIPTION
 % \paragraph{RANK 3} You learn the Careless Deflect technique.
 
 % ============================================================================== %
-\subsubsection{Armor Breaker} \label{feat::armorbreaker}
-\small{\textcolor{gray}{Strength}}
-
-\normalsize
-You use your extensive knowledge of heavy armor to improve your effectiveness against it, turning your bludgeoning attacks into devastating metal bending strikes.
-\paragraph{REQUIREMENTS} Hammer Adept 2 and Heavily Armored 1.
-\paragraph{RANK 1} You can use the Bonk technique as an opportunity attack.
-\paragraph{RANK 2}
-\paragraph{RANK 3} You learn the Fell Strike technique.
-
-% ============================================================================== %
 \subsubsection{Ball-and-Chain Master} \label{feat::ballandchainmaster}
 \small{\textcolor{gray}{Strength}}
 
@@ -869,16 +877,6 @@ Your increased awareness works in tandem to your flail mastery, allowing you to 
 \paragraph{RANK 1} When you use a ball-and-chain, its damage die changes from a d6 to a d8.
 \paragraph{RANK 2} When you hit with an opportunity attack using a ball-and-chain, the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + your Strength modifier) or be knocked prone.
 \paragraph{RANK 3} You learn the Shield Sweep technique.
-
-% ============================================================================== %
-\subsubsection{Blade \& Board} \label{feat::bladeandboard}
-\small{\textcolor{gray}{Strength}}
-
-\normalsize
-You know the perfect balance between defense and attack, making you a formidable foe in melee combat.
-\paragraph{REQUIREMENTS} Straight Blade Adept 2 and Shield Training 2, or Axe Adept 2 and Shield Training 2.
-\paragraph{RANK 1} When you're wielding a slashing weapon and a shield, you gain a +1 to AC and to your attack damage.
-\paragraph{RANK 2} While you're wielding a shield and a creature misses you with a melee attack, you can use your reaction to attack it with a melee attack.
 
 % ============================================================================== %
 \subsubsection{Blade Breaker} \label{feat::bladebreaker}
@@ -926,7 +924,6 @@ Your staff is an extension of your body, and it has become an essential part of 
 Additionally, if you have moved at least 3 meters during this round, you can jump in a straight line up to a distance equal to your Dexterity modifier times 3 meters.
 \paragraph{RANK 2} You gain a +1 bonus to your AC while using a staff.
 Additionally, if you use the weapon with two hands you gain another +1 bonus to your AC.
-\paragraph{RANK 3} You learn the Defensive Stance technique.
 
 % ============================================================================== %
 \subsubsection{Bullet Tinkerer} \label{feat::bullettinkerer}
@@ -940,17 +937,6 @@ Due to this, learning how to craft it yourself is an essential aspect for using 
 \paragraph{RANK 2} If you roll a misfire, you can use your reaction to roll a d20 with disadvantage.
 If the number rolled is higher than the weapon's misfire score, the weapon does not misfire.
 \paragraph{RANK 3} You learn the Violent Shot technique.
-\subsubsection{Combat Improviser} \label{feat::combatimproviser}
-\small{\textcolor{gray}{Strength or Dexterity}}
-
-\normalsize
-Anything can be your weapon.
-If you can grab it, you can swing it.
-\paragraph{REQUIREMENTS} Armed Fighter 1.
-\paragraph{RANK 1} You are proficient with improvised weapons.
-An improvised weapon is anything that is somewhat similar to a simple weapon.
-\paragraph{RANK 2} After rolling for initiative, you make your first attack with an improvised weapon at advantage.
-\paragraph{RANK 3} You learn one technique of your choice between Bonk, Block, Buttstroke, Feint, Lunge, Parry, Pushing Attack, Protect, Quick Draw, Riposte, Rush, Sweep, and Trip.
 
 % ============================================================================== %
 \subsubsection{Cutthroat} \label{feat::cutthroat}
@@ -984,17 +970,6 @@ A master of the buckler, you have learned to use it as an addition to your main 
 \paragraph{RANK 1} When you use the Parry technique, you can roll a d8 instead of a d6 when increasing your AC.
 \paragraph{RANK 2} When fighting with a one-handed melee weapon and a light shield, you can add half your shield's AC (rounded up) to the weapon's attack damage.
 \paragraph{RANK 3} When you use your Parry technique and the attacking creature misses, you can use the Disarm action against it as part of your reaction.
-
-% ============================================================================== %
-\subsubsection{Dual Wielder} \label{feat::dualwielder}
-\small{\textcolor{gray}{Dexterity}}
-
-\normalsize
-You master fighting with two weapons.
-\paragraph{REQUIREMENTS} Dexterity 13. Armed Fighter 2.
-\paragraph{RANK 1} When you engage in two-weapon fighting, you can add your ability modifier to the damage of the second attack.
-\paragraph{RANK 2} You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.
-\paragraph{RANK 3} You learn the Lock technique.
 
 % ============================================================================== %
 \subsubsection{Far Thruster} \label{feat::farthruster}
@@ -1418,28 +1393,6 @@ Your skill with the long blades is unparalleled, and your resoluteness in combat
 \paragraph{REQUIREMENTS} Straight Sword Adept 2, Curved Sword Adept 2, and Light Sword Adept 2.
 \paragraph{RANK 1} You gain a +1 bonus to attack rolls you make with swords.
 \paragraph{RANK 2} When you make an opportunity attack with a sword, you have advantage on the attack roll.
-
-% ============================================================================== %
-\subsubsection{Thrown Weapon Master} \label{feat::thrownweaponmaster}
-\small{\textcolor{gray}{Strength or Dexterity}}
-
-\normalsize
-Born with quick fingers and good aim, you're an expert at piercing your enemies with thrown objects.
-\paragraph{REQUIREMENTS} Armed Fighter 1.
-\paragraph{RANK 1} Attacking at long range doesn't impose disadvantage on your thrown weapon attack rolls.
-\paragraph{RANK 2} When you throw a thrown weapon as an attack roll, you can draw another thrown weapon freely.
-\paragraph{RANK 3} You learn the Quick Draw technique.
-
-% ============================================================================== %
-\subsubsection{Two-weapon Master} \label{feat::twoweaponmaster}
-\small{\textcolor{gray}{Dexterity}}
-
-\normalsize
-Your ability to wield two weapons is unparalleled, and you can surprise any foe with your quick steps and unrelenting strikes.
-\paragraph{REQUIREMENTS} Dexterity 16. Dual Wielder 2.
-\paragraph{RANK 1} You can use use two-weapon fighting even when the one-handed melee weapons you are wielding aren't light.
-\paragraph{RANK 2} You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.
-\paragraph{RANK 3} You can add your ability modifier to the damage of the bonus attack of your two-weapon fighting action.
 
 % ============================================================================== %
 \subsubsection{Unarmed Artist} \label{feat::unarmedartist}
