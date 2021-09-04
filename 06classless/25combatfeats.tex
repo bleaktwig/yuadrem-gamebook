@@ -59,7 +59,7 @@ TODO: DESCRIPTION
 
     To gain the benefits of this feat, you must be wearing medium armor.
     \paragraph{Requirements} Proficiency with Medium Armor.
-% HEAVY
+% HEAVY heavilyarmored heavyarmormaster heavyweight imposingfigure tough
 \subsubsection{Heavily Armored} \label{feat::heavilyarmored}
     You learn how to wear heavy armor in combat.
 \subsubsection{Heavy-Weight} \label{feat::heavyweight}
@@ -69,15 +69,14 @@ TODO: DESCRIPTION
 \subsubsection{Imposing Figure} \label{feat::imposingfigure}
     When you make a Charisma (Intimidation) check, you can add a +5 bonus if you are wearing heavy armor.
     \paragraph{Requirements} Proficiency with Heavy Armor.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Heavy Armor Master} \label{feat::heavyarmormaster}
+    While you are wearing heavy armor, bludgeoning, piercing, and slashing damage that you take is reduced by 1.
 
-    To gain the benefits of this feat, you must be wearing heavy armor.
+    You can take this feat two additional times, increasing this defense by 1 each time.
     \paragraph{Requirements} Proficiency with Heavy Armor.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
-
-    To gain the benefits of this feat, you must be wearing heavy armor.
+\subsubsection{Tough (2 FP)} \label{feat::tough}
+    Your hit point maximum increases by an amount equal to your level when you take this feat.
+    Whenever you gain a level thereafter, your hit point maximum increases by an additional hit point.
     \paragraph{Requirements} Proficiency with Heavy Armor.
 
 % === ARMOR PROPERTIES =============================================================================
@@ -160,20 +159,20 @@ TODO: DESCRIPTION
     To gain the benefits of this feat, you must be wearing armor with the Plate property.
 
 % === SHIELD TYPES =================================================================================
-% SMALL SHIELDS
+% SMALL SHIELDS bucklertraining defensiveduelist quickshielding strappedandsecured swiftdeflection
 \subsubsection{Buckler Training} \label{feat::bucklertraining}
     You learn how to use small shields in combat.
 \subsubsection{Quick Shielding} \label{feat::quickshielding}
     You can don or doff a light shield as a free object interaction.
     \paragraph{Requirements} Proficiency with Small Shields.
+\subsubsection{Defensive Duelist} \label{feat::defensiveduelist}
+    When fighting with a one-handed melee weapon and a small shield, you can add half your shield's AC (rounded up) to the weapon's attack damage.
+    \paragraph{Requirements} Proficiency with Small Shields.
 \subsubsection{Swift Deflection} \label{feat::swiftdeflection}
     You learn the Parry reaction (see page \pageref{act::parry}).
-    When you use this reaction while holding a small shield, increase the bonus to your AC from a d6 to a d8.
-    \paragraph{Requirements} Proficiency with Small Shields.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
 
-    To gain the benefits of this feat, you must be wielding a small shield.
+    You can take this feat two additional times.
+    Each time you increase the bonus to your AC by one die, so a d6 turns into a d8, and a d8 into a d10.
     \paragraph{Requirements} Proficiency with Small Shields.
 \subsubsection{Strapped and Secured (2 FP)} \label{feat::strappedandsecured}
     By attaching a leather strap to a light shield, you can carry it without using your off-hand.
@@ -181,76 +180,92 @@ TODO: DESCRIPTION
 
     In addition, your shield cannot be removed by the Disarm action.
     \paragraph{Requirements} Proficiency with Small Shields.
-% MEDIUM SHIELDS
+% MEDIUM SHIELDS bladeandboard shieldtraining shieldmaster stalwartshield thebestdefense
 \subsubsection{Shield Training} \label{feat::shieldtraining}
     Always balanced in combat, you learn how to use medium shields in combat.
 \subsubsection{Blade \& Board} \label{feat::bladeandboard}
     While you're wielding a medium shield and a creature misses you with a melee attack, you can use your reaction to attack it with a melee attack.
     \paragraph{Requirements} Proficiency with Medium Shields.
 \subsubsection{The Best Defense...} \label{feat::thebestdefense}
-    You learn the Bash action (see page \pageref{act::bash}).
-    In addition, if you hit a creature with this action using a medium shield, your next melee attack on this turn to the it is made with advantage.
-    \paragraph{Requirements} Proficiency with Medium Shields.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+    As an action, you can bash a creature with your shield.
+    Your attack bonus for this attack is equal to the shield's AC bonus + your Strength modifier.
+    On a hit, the creature takes 1d4 + your Strength modifier in bludgeoning damage.
 
-    To gain the benefits of this feat, you must be wielding a medium shield.
-    \paragraph{Requirements} Proficiency with Medium Shields.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+    You can use this attack only once per turn, and it doesn't count towards your multiple attack penalty.
 
-    To gain the benefits of this feat, you must be wielding a medium shield.
+    In addition, if you hit a creature with this action using a medium shield, your next melee attack on this turn to the creature is made with advantage.
     \paragraph{Requirements} Proficiency with Medium Shields.
-% HEAVY SHIELDS
-\subsubsection{Heavy Shields Training} \label{feat::heavyshieldtraining}
+\subsubsection{Shield Master} \label{feat::shieldmaster}
+    You can take this feat three times, gaining an additional effect each time:
+    \begin{itemize}
+        \item The first time, you gain half cover against ranged attacks while using a medium shield.
+        \item The second time, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.
+        \item The third time, if you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect.
+    \end{itemize}
+    \paragraph{Requirements} Proficiency with Medium Shields.
+\subsubsection{Stalwart Shield (2 FP)} \label{feat::stalwartshield}
+    You learn the Push action.
+
+    In addition, you can use this action as a free action after making an attack with a melee weapon against it.
+    You must be wielding a medium shield to use the action in this way.
+    \paragraph{Requirements} Proficiency with Medium Shields.
+% HEAVY SHIELDS bulwarktraining consistentefense heavyshieldtraining immovableobject takecover
+\subsubsection{Heavy Shield Training} \label{feat::heavyshieldtraining}
     Prioritizing a solid defense above everything, you learn how to use heavy shields in combat.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
-
-    To gain the benefits of this feat, you must be wielding a heavy shield.
+\subsubsection{Consistent Defense} \label{feat::consistentefense}
+    You gain three-fourths cover instead of half cover against ranged attacks while using a heavy shield.
     \paragraph{Requirements} Proficiency with Heavy Shields.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
-
-    To gain the benefits of this feat, you must be wielding a heavy shield.
+\subsubsection{Bulwark Training} \label{feat::bulwarktraining}
+    You halve the movement debuff associated to heav shields.
     \paragraph{Requirements} Proficiency with Heavy Shields.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Take Cover!} \label{feat::takecover}
+    You can duck behind a heavy shield as an action, granting you full cover against ranged attacks until the start of your next turn.
 
-    To gain the benefits of this feat, you must be wielding a heavy shield.
+    You can take this feat two additional times, granting you a new bonus each time:
+    The second time, creatures standing behind you from the attacker's perspective have three-fourths cover against ranged attacks.
+
+    The third time, you have advantage on Strength and Dexterity saving throws while you are ducking behind your shield.
     \paragraph{Requirements} Proficiency with Heavy Shields.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Immovable Object (2 FP)} \label{feat::immovableobject}
+    You are an obstacle.
 
-    To gain the benefits of this feat, you must be wielding a heavy shield.
+    Creatures can't use a Tumble action to move through your space.
+
+    In addition, you have advantage on Strength (Athletics) checks to prevent being moved or grappled if you have a heavy shield equipped.
     \paragraph{Requirements} Proficiency with Heavy Shields.
 
 % === SIMPLE WEAPONS ===============================================================================
 % SIMPLE WEAPONS
-\subsubsection{Simple Weapons Proficiency} \label{feat::name}
+\subsubsection{Simple Fighter} \label{feat::simplefighter}
     No one learned how to use a sword without first swinging a stick.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+
+    You increase your proficiency level with simple weapons.
+    This feat can be taken three times, or until you reach Expert proficiency with the weapon type.
+\subsubsection{Combat Improviser} \label{feat::combatimproviser}
+    If you can grab it, you can swing it.
+
+    You can apply your proficiency modifier with simple weapons to attacks made with improvised weapons.
+
+    In addition, you have advantage on all attack rolls using improvised weapons during the first round of combat.
     \paragraph{Requirements} Competent proficiency with Simple Weapons.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Cutthroat} \label{feat::cutthroat}
+    You have advantage on any check to conceal a small weapon on your person.
     \paragraph{Requirements} Competent proficiency with Simple Weapons.
 \subsubsection{Adaptable Fighter} \label{feat::adaptablefighter}
     You learn one action of your choice between % Bonk, Block, Buttstroke, Feint, Lunge, Parry, Pushing Attack, Protect, Quick Draw, Riposte, Rush, Sweep, and Trip.
     \paragraph{Requirements} Skilled proficiency with Simple Weapons.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Quick Action (2 FP)} \label{feat::quickaction}
+    You can make one melee weapon attack with a simple weapon with the light property as part of a Grapple, Escape a Grapple, Overrun, or Tumble action.
+
+    You can use this ability only once per turn.
     \paragraph{Requirements} Skilled proficiency with Simple Weapons.
 \subsubsection{NAME} \label{feat::name}
-\subsubsection{Combat Improviser} \label{feat::combatimproviser}
-    If you can grab it, you can swing it.
-
-    You can apply your proficiency modifier with Simple Weapons to attacks made with improvised weapons.
-
-    In addition, you have advantage on all attack rolls using improvised weapons during the first round of combat.
-    \paragraph{Requirements} Expert proficiency with Simple Weapons.
-\subsubsection{NAME (2 FP)} \label{feat::name}
     DESCRIPTION
+    \paragraph{Requirements} Expert proficiency with Simple Weapons.
+\subsubsection{Solid Start (2 FP)} \label{feat::solidstart}
+    You roll for initiative with advantage.
+
+    In addition, any hit you score against a creature that hasn't taken any actions in combat is a critical hit.
     \paragraph{Requirements} Expert proficiency with Simple Weapons.
 
 % === MARTIAL WEAPONS ==============================================================================
@@ -293,7 +308,7 @@ TODO: DESCRIPTION
     When you hit with a melee attack with your bow, the attacked creature can't make opportunity attacks against you until the start of your next turn.
     \paragraph{Requirements} Competent proficiency with Bows.
 \subsubsection{Covered Shooter} \label{feat::coveredshooter}
-    If you miss with a ranged attack with a bow or thrown weapon while hidden, the attack doesn't reveal your location, and you remain hidden.
+    If you miss with a ranged attack while hidden, the attack doesn't reveal your location, and you remain hidden.
     \paragraph{Requirements} Competent proficiency with Bows.
 \subsubsection{NAME - ACTION} \label{feat::name}
     DESCRIPTION
@@ -547,17 +562,25 @@ TODO: DESCRIPTION
 \subsubsection{NAME} \label{feat::name}
     DESCRIPTION
     \paragraph{Requirements} Fighting Style: Archery 1.
-\subsubsection{NAME - ACTION} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
-    \paragraph{Requirements} Fighting Style: Archery 1.
+\subsubsection{Bullseye} \label{feat::bullseye}
+    By focusing your aim, you can choose to cause an additional effect when you hit a creature with a ranged attack.
+    You learn one effect when learning this technique, but you can learn additional ones by taking it again:
+    \begin{itemize}
+        \item \textbf{Leg Shot.} The creature's movement speed is divided by half (rounded up) until the start of your next turn.
+        \item \textbf{Hand Shot.} The creature has disatvantage on the first melee attack roll it makes during its next turn.
+        \item \textbf{Slayer's Shot.} The creature takes an extra 1d8 damage if its below its hit point maximum.
+    \end{itemize}
+
+    You can use one of these effects only once per turn.
+    \paragraph{Requirements} Fighting Style: Archery 1 or Thrown Weapons Fighting 1.
 \subsubsection{NAME (2 FP)} \label{feat::name}
     DESCRIPTION
     \paragraph{Requirements} Fighting Style: Archery 1.
 \subsubsection{Sniper} \label{feat::sniper}
     Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.
     \paragraph{Requirements} Fighting Style: Archery 2.
-\subsubsection{NAME - ACTION} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Mark} \label{feat::mark}
+    You learn the Mark action (see page \pageref{act::mark}).
     \paragraph{Requirements} Fighting Style: Archery 2.
 \subsubsection{NAME (2 FP)} \label{feat::name}
     DESCRIPTION
@@ -704,17 +727,16 @@ TODO: DESCRIPTION
 \subsubsection{Quick Draw} \label{feat::quickdraw}
     You learn the Quick Draw reaction (see page \pageref{act::quickdraw}).
     \paragraph{Requirements} Fighting Style: Thrown Weapons Fighting 1.
-\subsubsection{NAME - ACTION} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
-    \paragraph{Requirements} Fighting Style: Thrown Weapons Fighting 1.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Fast Fingers (2 FP)} \label{feat::fastfingers}
+    You don't attack with disadvantage with ranged attacks when a creature is within 1.5 meters of you.
+
+    In addition, you don't provoke attacks of opportunity when unsheathing a weapon or attacking with a ranged weapon when you are within 1.5 of a creature.
     \paragraph{Requirements} Fighting Style: Thrown Weapons Fighting 1.
 \subsubsection{Throwing Arm} \label{feat::throwingarm}
     Attacking at long range doesn't impose disadvantage on your thrown weapon attack rolls.
     \paragraph{Requirements} Fighting Style: Thrown Weapons Fighting 2.
 \subsubsection{NAME - ACTION} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+    DESCRIPTION
     \paragraph{Requirements} Fighting Style: Thrown Weapons Fighting 2.
 \subsubsection{NAME (2 FP)} \label{feat::name}
     DESCRIPTION
@@ -794,17 +816,20 @@ TODO: DESCRIPTION
     \paragraph{Requirements} Fighting Style: Battle Mastery 2.
 
 % === EXOTIC WEAPONS ===============================================================================
-% BLOWGUNS
-\subsubsection{Blowguns Proficiency} \label{feat::name}
-    DESCRIPTION
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+% BLOWGUNS blowgunmaster hiddenshooter poisoneddart stronglungs
+\subsubsection{Blowgun Master} \label{feat::blowgunmaster}
+    You increase your proficiency level with blowguns.
+    This feat can be taken three times, or until you reach Expert proficiency with the weapon type.
+\subsubsection{Hidden Shooter} \label{feat::hiddenshooter}
+    Making a ranged attack with a blowgun while hidden doesn't reveal your location, even if the attack is a hit.
     \paragraph{Requirements} Competent proficiency with Blowguns.
-\subsubsection{NAME - ACTION} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Poisoned Dart} \label{feat::poisoneddart}
+    When you hit with a blowgun with a dart that has poison applied, the target has disadvantage on saving throws against the poison.
     \paragraph{Requirements} Skilled proficiency with Blowguns.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Strong Lungs (2 FP)} \label{feat::stronglungs}
+    Your blowgun deals 1d4 piercing damage instead of 1.
+
+    In addition, attacking with a blowgun at long range doesn't impose disadvantage on your ranged weapon attack rolls.
     \paragraph{Requirements} Expert proficiency with Blowguns.
 % FLAILS
 \subsubsection{Flails Proficiency} \label{feat::name}
@@ -890,30 +915,6 @@ You know that the perfect counter against any sword is simply a long pole.
 \paragraph{RANK 3} While using a polearm, you can use the Disarm action as your opportunity attack.
 
 % ============================================================================== %
-\subsubsection{Blowgun Adept} \label{feat::blowgunadept}
-\small{\textcolor{gray}{Dexterity}}
-
-\normalsize
-While unconventional, you understand the effectiveness of the blowgun when remaining hidden is of the essence.
-\paragraph{REQUIREMENTS} Armed Fighter 1.
-\paragraph{RANK 1} You are proficient with blowguns.
-\paragraph{RANK 2} You gain a +1 bonus to attack rolls with a blowgun.
-Additionally, attacking with a blowgun at long range doesn't impose disadvantage on your ranged weapon attack rolls.
-\paragraph{RANK 3} When you hit with a blowgun while hidden, your location is not revealed.
-
-% ============================================================================== %
-\subsubsection{Blunt Thrower} \label{feat::bluntthrower}
-\small{\textcolor{gray}{Strength}}
-
-\normalsize
-You take advantage of the raw practicality of a good hammer, and not even faraway foes can escape the wrath of its face.
-\paragraph{REQUIREMENTS} Hammer Adept 2 and Thrown Weapon Master 2.
-\paragraph{RANK 1} You don't provoke opportunity attacks when picking weapons up from the floor.
-\paragraph{RANK 2} When you hit a creature with an thrown bludgeoning weapon, you divide its moving speed by half (rounded up) during its next turn.
-This effect does not stack.
-\paragraph{RANK 3} You learn the Hammer Fling technique.
-
-% ============================================================================== %
 \subsubsection{Blunt Master} \label{feat::bluntmaster}
 \small{\textcolor{gray}{Dexterity}}
 
@@ -937,39 +938,6 @@ Due to this, learning how to craft it yourself is an essential aspect for using 
 \paragraph{RANK 2} If you roll a misfire, you can use your reaction to roll a d20 with disadvantage.
 If the number rolled is higher than the weapon's misfire score, the weapon does not misfire.
 \paragraph{RANK 3} You learn the Violent Shot technique.
-
-% ============================================================================== %
-\subsubsection{Cutthroat} \label{feat::cutthroat}
-\small{\textcolor{gray}{Dexterity}}
-
-\normalsize
-A master at concealing your dagger, you act quick and strike hard in combat.
-\paragraph{REQUIREMENTS} Dagger Savant 2.
-\paragraph{RANK 1} You have advantage on any check to conceal a small weapon on your person.
-\paragraph{RANK 2} You gain a +2 bonus to initiative. % when wielding a light weapon.
-\paragraph{RANK 3} You gain or improve the Sneak Attack technique.
-
-% ============================================================================== %
-\subsubsection{Dagger Savant} \label{feat::daggersavant}
-\small{\textcolor{gray}{Dexterity}}
-
-\normalsize
-You wield the lightest of blades with the deadliest of skills.
-\paragraph{REQUIREMENTS} Armed Fighter 1.
-\paragraph{RANK 1} You can perform one melee attack with a dagger as part of a Grapple, Escape a Grapple, Overrun, or Tumble action.
-\paragraph{RANK 2} You gain or improve the Sneak Attack technique.
-\paragraph{RANK 3} You learn the Riposte technique.
-
-% ============================================================================== %
-\subsubsection{Defensive Duelist} \label{feat::defensiveduelist}
-\small{\textcolor{gray}{Dexterity}}
-
-\normalsize
-A master of the buckler, you have learned to use it as an addition to your main weapon.
-\paragraph{REQUIREMENTS} Buckler Training 2.
-\paragraph{RANK 1} When you use the Parry technique, you can roll a d8 instead of a d6 when increasing your AC.
-\paragraph{RANK 2} When fighting with a one-handed melee weapon and a light shield, you can add half your shield's AC (rounded up) to the weapon's attack damage.
-\paragraph{RANK 3} When you use your Parry technique and the attacking creature misses, you can use the Disarm action against it as part of your reaction.
 
 % ============================================================================== %
 \subsubsection{Far Thruster} \label{feat::farthruster}
@@ -1062,17 +1030,6 @@ Some of these, like the zweihander and the greataxe, also require you to have pr
 \paragraph{RANK 3} You learn the Reckless Strike technique.
 
 % ============================================================================== %
-\subsubsection{Greatshield Training} \label{feat::greatshieldtraining}
-\small{\textcolor{gray}{Strength}}
-
-\normalsize
-When it comes to protecting your life or that of others, you know that size matters.
-\paragraph{REQUIREMENTS} Shield Training 1.
-\paragraph{RANK 1} You gain proficiency with heavy shields
-\paragraph{RANK 2} Creatures standing behind you get three-fourths cover against ranged attacks.
-\paragraph{RANK 3} You learn the Protect technique.
-
-% ============================================================================== %
 \subsubsection{Gunner} \label{feat::gunner}
 \small{\textcolor{gray}{Dexterity}}
 
@@ -1108,30 +1065,6 @@ In addition to the ally gaining advantage on the attack roll, the ally gains a b
 \paragraph{RANK 3} You learn the Bonk technique.
 
 % ============================================================================== %
-% ============================================================================== %
-\subsubsection{Heavily Armored} \label{feat::heavilyarmored}
-\small{\textcolor{gray}{Strength}}
-
-\normalsize
-You are trained to use heavy armor.
-\paragraph{REQUIREMENTS} Moderately Armored 1.
-\paragraph{RANK 1} You gain proficiency with heavy armor.
-\paragraph{RANK 2} Equipped heavy armor and metal accessories only add half their weight to your encumbrance.
-\paragraph{RANK 3} Increase your Strength by 1, to a maximum of 20.
-
-% ============================================================================== %
-\subsubsection{Heavy Armor Master} \label{feat::heavyarmormaster}
-\small{\textcolor{gray}{Strength}}
-
-\normalsize
-You can use your armor to deflect strikes that would easily kill others.
-\paragraph{REQUIREMENTS} Heavily Armored 2 and Athletics 2.
-\paragraph{RANK 1} Your hit point maximum increases by an amount equal to your number of hit dice.
-Whenever you earn a hit die thereafter, your hit point maximum increases by an additional 1 hit point.
-\paragraph{RANK 2} While you are wearing heavy armor, piercing and slashing damage that you take is reduced by 3.
-\paragraph{RANK 3} You learn the Defend technique.
-
-% ============================================================================== %
 \subsubsection{Heavy Lifter} \label{feat::heavylifter}
 \small{\textcolor{gray}{Strength}}
 
@@ -1153,19 +1086,6 @@ Mounts are one of the most common advantages in war, so you've learned to deal w
 \paragraph{RANK 1} You can always target a rider's mount with an attack made with a spear, even if the rider can normally deflect this attack to it.
 \paragraph{RANK 2} You have a +2 to your attack rolls made against mounts.
 \paragraph{RANK 3} You learn the Charge Stopper technique.
-
-% ============================================================================== %
-\subsubsection{Immovable Object} \label{feat::immovableobject}
-\small{\textcolor{gray}{Strength}}
-
-\normalsize
-You are an obstacle.
-\paragraph{REQUIREMENTS} Greatshield Training 2.
-\paragraph{RANK 1} Creatures can't use a Tumble action to move through your space.
-Additionally, you have advantage on Strength (Athletics) checks against being shoved or pushed.
-\paragraph{RANK 2} While using a heavy shield, you get three-fourths cover against ranged attacks.
-Additionally, you can duck behind your shield as a reaction, granting you full cover against ranged attacks until the start of your next turn.
-\paragraph{RANK 3} The movement speed debuff from using a tower shield is halved for you.
 
 % ============================================================================== %
 \subsubsection{Insistent Fighter} \label{feat::insistentfighter}
@@ -1272,17 +1192,6 @@ You keep your enemies at bay with your long weapons.
 \paragraph{RANK 3} You learn the Rondel Hit technique.
 
 % ============================================================================== %
-\subsubsection{Precise Thrower} \label{feat::precisethrower}
-\small{\textcolor{gray}{Dexterity}}
-
-\normalsize
-Either from luck or rigorous training, you have the capacity to hit the hardest of targets when throwing a weapon.
-\paragraph{REQUIREMENTS} Dagger Savant 2 and Thrown Weapon Master 2.
-\paragraph{RANK 1} Attacking at long range doesn't impose disadvantage on your thrown weapon attack rolls.
-\paragraph{RANK 2} Whenever you hit a creature with an thrown slashing or piercing weapon, it has disadvantage on the first melee attack it performs on its next turn.
-\paragraph{RANK 3} You learn the Bull's Eye technique.
-
-% ============================================================================== %
 \subsubsection{Pugilist} \label{feat::pugilist}
 \small{\textcolor{gray}{Strength}}
 
@@ -1314,28 +1223,6 @@ You can strike a foe with an arrow or bullet no matter where they are in the bat
 \paragraph{RANK 1} If you do not move during your turn, you can make an additional ranged weapon attack as a bonus action.
 \paragraph{RANK 2} Both your normal and long ranges are multiplied by 1.5 for all ranged weapons..
 \paragraph{RANK 3} Whenever you have advantage on a ranged attack roll using Dexterity, you can reroll one of the dice once.
-
-% ============================================================================== %
-\subsubsection{Shield Master} \label{feat::shieldmaster}
-\small{\textcolor{gray}{Strength or Dexterity}}
-
-\normalsize
-You know that fighting to the death leads to a short life.
-You trust your shield with your life, and you are an expert at avoiding death.
-\paragraph{REQUIREMENTS} Shield Training 2.
-\paragraph{RANK 1} If you aren't incapacitated, you can add your shield's AC bonus to any Dexterity saving throw you make against a spell or other harmful effect that targets only you.
-\paragraph{RANK 2} If you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, interposing your shield between yourself and the source of the effect.
-\paragraph{RANK 3} When you use the Shove action or the Push technique with your shield, you can choose to force the Prone condition on your target instead of pushing it.
-
-% ============================================================================== %
-\subsubsection{Shield Training} \label{feat::shieldtraining}
-\small{\textcolor{gray}{Strength or Dexterity}}
-
-\normalsize
-Your prefer to live a long life, and choose to carry your trusty shield with you at all times.
-\paragraph{RANK 1} You gain proficiency with medium shields.
-\paragraph{RANK 2} In combat, you can don or doff a medium shield as a bonus action instead of an action.
-\paragraph{RANK 3} You learn the Push technique.
 
 % ============================================================================== %
 \subsubsection{Shooter} \label{feat::shooter}
