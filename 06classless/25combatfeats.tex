@@ -81,8 +81,9 @@ TODO: DESCRIPTION
 
 % === ARMOR PROPERTIES =============================================================================
 % BULWARK
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Virtuous Defender} \label{feat::virtuousdefender}
+    You learn to fend off strikes directed at you, or other creatures nearby.
+    If you or a creature you can see within 1.5 meters of you is hit by an attack, you use your reaction to switch places with the creature, receiving the attack instead.
 
     To gain the benefits of this feat, you must be wearing armor with the Bulwark property.
 \subsubsection{NAME} \label{feat::name}
@@ -252,7 +253,7 @@ TODO: DESCRIPTION
     You have advantage on any check to conceal a small weapon on your person.
     \paragraph{Requirements} Competent proficiency with Simple Weapons.
 \subsubsection{Adaptable Fighter} \label{feat::adaptablefighter}
-    You learn one action of your choice between % Bonk, Block, Buttstroke, Feint, Lunge, Parry, Pushing Attack, Protect, Quick Draw, Riposte, Rush, Sweep, and Trip.
+    You learn one action of your choice between the Aim, Block, Distracting Strike, Parry, Push, Reckless Attack, Reckless Shot, Riposte, and Steal actions.
     \paragraph{Requirements} Skilled proficiency with Simple Weapons.
 \subsubsection{Quick Action (2 FP)} \label{feat::quickaction}
     You can make one melee weapon attack with a simple weapon with the light property as part of a Grapple, Escape a Grapple, Overrun, or Tumble action.
@@ -685,24 +686,41 @@ TODO: DESCRIPTION
     Using an actions, you can spend a monastic die to heal yourself.
     You regain a number of hit points equal to the number rolled + your Wisdom modifier.
     \paragraph{Requirements} Fighting Style: Monastic Fighting 2.
-% MOUNTED FIGHTING
-\subsubsection{Height Superiority} \label{feat::heightsuperiority}
+% MOUNTED FIGHTING charger heightsuperiority protectedmount strikeapose trainedmount trample
+\subsubsection{Trained Mount} \label{feat::trainedmount}
+    As an action, you can issue commands to your mount --- even if you are not mounting it.
+    You can take this feat three times, improving the commands you can issue to your mount:
+    \begin{itemize}
+        \item The first time you take this feat, you can issue a general command to your mount, which it will follow to the best of its ability.
+        \item The second time, you can issue your mount to make the Attack, Overrun, or Shove actions during its turn.
+        \item The third, you gain full control of your mount during its turn after issuing a command.
+    \end{itemize}
+    \paragraph{Requirements} Fighting Style: Mounted Fighting 1.
+\subsubsection{Strike a Pose (2 FP)} \label{feat::strikeapose}
+    You have advantage in all Charisma (Intimidation) and Charisma (Performance) checks while mounted.
+
+    In addition, you can strike an intimidating pose as an action during your turn.
+    Each creature of your choice within 9 meters of you must make a Wisdom saving throw with DC equal to 8 + your proficiency with land vehicles + your Charisma modifier.
+    On a failed save, a target becomes frightened of you for 1 minute.
+    If the frightened creature takes any damage, it can repeat the saving throw, ending the effect on itself on a success.
+
+    You can only use this ability while mounted.
+    \paragraph{Requirements} Fighting Style: Mounted Fighting 1.
+\subsubsection{Protected Mount} \label{feat::protectedmount}
+    While you are mounted and aren't incapacitated, you gain the following effects:
+    \begin{itemize}
+        \item You can force an attack targeted at your mount to target you instead.
+        \item If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.
+    \end{itemize}
+    \paragraph{Requirements} Fighting Style: Mounted Fighting 2.
+\subsubsection{Trample} \label{feat::trample}
+    While mounted, you can try to move through a creature's space by having your mount take the Overrun action.
+    Your mount makes its Strength (Athletics) roll with advantage if it has moved at least 3 meters before making this roll.
+
+    If your mount succeeds, the target is knocked prone, and it takes 1d8 + your mount's Strength modifier bludgeoning damage.
+    \paragraph{Requirements} Fighting Style: Mounted Fighting 2.
+\subsubsection{Height Superiority (2 FP)} \label{feat::heightsuperiority}
     You have advantage on melee attack rolls against any unmounted creature that is smaller than your mount.
-    \paragraph{Requirements} Fighting Style: Mounted Fighting 1.
-\subsubsection{NAME - ACTION} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
-    \paragraph{Requirements} Fighting Style: Mounted Fighting 1.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
-    \paragraph{Requirements} Fighting Style: Mounted Fighting 1.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
-    \paragraph{Requirements} Fighting Style: Mounted Fighting 2.
-\subsubsection{NAME - ACTION} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
-    \paragraph{Requirements} Fighting Style: Mounted Fighting 2.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
     \paragraph{Requirements} Fighting Style: Mounted Fighting 2.
 % PROTECTION
 \subsubsection{NAME} \label{feat::name}
@@ -715,21 +733,21 @@ TODO: DESCRIPTION
         \item If the attack hits the target, the damage the target takes is reduced by 1d10 + 3 (to a minimum of 0 damage).
         \item When you use this ability, you can make a melee weapon attack against the attacking creature.
     \end{itemize}
-    You must be wearing a shield or a martial wepaon to use this reaction.
+    You must be wearing a shield or a weapon to use this reaction.
     \paragraph{Requirements} Fighting Style: Protection 1.
 \subsubsection{Sentinel (2 FP)} \label{feat::sentinel}
     When you hit a creature with an opportunity attack, the creature's speed becomes 0 for the rest of its turn.
 
     In addition, creatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach.
     \paragraph{Requirements} Fighting Style: Protection 1.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Durable} \label{feat::durable}
+    When you roll a hit die to regain hit points, the minimum number of hit points you can regain from the roll equals 1 + your Constitution modifier (minimum of 2).
     \paragraph{Requirements} Fighting Style: Protection 2.
 \subsubsection{NAME - ACTION} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
-    \paragraph{Requirements} Fighting Style: Protection 2.
-\subsubsection{NAME (2 FP)} \label{feat::name}
     DESCRIPTION
+    \paragraph{Requirements} Fighting Style: Protection 2.
+\subsubsection{Protector (2 FP)} \label{feat::protector}
+    You impose disadvantage on all melee attack rolls made against a friendly creature within 1.5 meters of you.
     \paragraph{Requirements} Fighting Style: Protection 2.
 % THROWN WEAPON FIGHTING
 \subsubsection{Quick Draw} \label{feat::quickdraw}
@@ -743,7 +761,7 @@ TODO: DESCRIPTION
 \subsubsection{Throwing Arm} \label{feat::throwingarm}
     Attacking at long range doesn't impose disadvantage on your thrown weapon attack rolls.
     \paragraph{Requirements} Fighting Style: Thrown Weapons Fighting 2.
-\subsubsection{NAME - ACTION} \label{feat::name}
+\subsubsection{NAME} \label{feat::name}
     DESCRIPTION
     \paragraph{Requirements} Fighting Style: Thrown Weapons Fighting 2.
 \subsubsection{NAME (2 FP)} \label{feat::name}
@@ -779,9 +797,9 @@ TODO: DESCRIPTION
     \paragraph{Requirements} Fighting Style: Two-Weapon Fighting 2.
 % UNARMED FIGHTING charger grappler meathammer meatshield pugilist unarmedartist
 \subsubsection{Charger} \label{feat::charger}
-    If you moved at least 3 meters in a straight line towards a creature during your turn, you have advantage on your next melee attack roll made against the creature.
+    Mounted or not, if you moved at least 3 meters in a straight line towards a creature during your turn, you have advantage on your next melee attack roll made against the creature.
     In addition, add a +5 to the attack's damage roll on a hit.
-    \paragraph{Requirements} Fighting Style: Unarmed Fighting 1.
+    \paragraph{Requirements} Fighting Style: Mounted Fighting 1 or Unarmed Fighting 1.
 \subsubsection{Grappler} \label{feat::grappler}
     You can take this feat three times, learning different effects each time:
     \begin{itemize}
@@ -812,9 +830,11 @@ TODO: DESCRIPTION
 
     In addition, whenever you successfully hit another creature with a grappled creature, the latter takes half the damage done.
     \paragraph{Requirements} Fighting Style: Unarmed Fighting 2.
-% BATTLE MASTERY assessthesituation commander
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+% BATTLE MASTERY actionsurge assessthesituation commander dynamicfighter mageslayer secondwind
+\subsubsection{Second Wind} \label{feat::secondwind}
+    On your turn, you can use an action to regain hit points equal to 1d10 + your level.
+
+    Once you use this ability, you must finish a short rest before you can use it again.
     \paragraph{Requirements} Fighting Style: Battle Mastery 1.
 \subsubsection{Assess the Situation} \label{feat::assessthesituation}
     Right after rolling initiative, you can quickly assess a creature of your choice.
@@ -823,17 +843,24 @@ TODO: DESCRIPTION
 
     You can take this feat three times, increasing the number of creature you can use this ability with by 1 the second and third times.
     \paragraph{Requirements} Fighting Style: Battle Mastery 1.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Action Surge (2 FP)} \label{feat::actionsurge}
+    Thanks to rigorous martial training, you can push yourself beyond your normal limits for a limited time.
+    On your turn, you can take 3 additional actions.
+    In addition, you can ignore the multiple attack penalty during this turn.
     \paragraph{Requirements} Fighting Style: Battle Mastery 1.
 \subsubsection{Commander} \label{feat::commander}
     You have advantage on all Charisma (Deception), Charisma (Intimidation), Charisma (Performance), and Charisma (Persuasion) checks while in combat.
     \paragraph{Requirements} Fighting Style: Battle Mastery 2.
-\subsubsection{NAME - ACTION} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
+\subsubsection{Dynamic Fighter} \label{feat::dynamicfighter}
+    Adaptable to any weapon, you learn one action of your choice among the Aim, Block, Distracting Strike, Parry, Push, Quick Draw, Reckless Attack, Reckless Shot, and Riposte actions.
     \paragraph{Requirements} Fighting Style: Battle Mastery 2.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Mage Slayer (2 FP)} \label{feat::mageslayer}
+    You have practiced techniques useful in melee combat against spellcaster, gaining the following benefits:
+    \begin{itemize}
+        \item When a creature within 1.5 meters of you casts a spell, you can use your reaction to make a melee weapon attack against that creature.
+        \item When you damage a creature that is concentrating on a spell, that creature has disadvantage on the saving throw it makes to maintain its concentration.
+        \item You have advantage on saving throws against spells cast by creatures within 1.5 meters of you.
+    \end{itemize}
     \paragraph{Requirements} Fighting Style: Battle Mastery 2.
 
 % === EXOTIC WEAPONS ===============================================================================
