@@ -1,3 +1,82 @@
 % !TEX root = ../main.tex
 \section{Spellcasting Rules}
-% TODO: You can learn a new spell from your doctrine as part of a long rest, and the number of spells you can have prepared at once is equal to your level.
+\subsection*{Known Spells}
+    As a user of magic, you know a number of spells which you can use in any scenario you find appropiate.
+    The maximum number of spells you can have prepared at a time is equal to your Intelligence modifier + half your level (rounded down).
+    If you add a new spell when you already have the maximum number of spells prepared, you forget one spell of your choice.
+    To keep these spells available you can use a spellbook (see page \pageref{item::spellbook}).
+
+    When you take the spellcaster feat (page \pageref{feat::spellcaster}), you have access to one spell and three cantrips --- one from your doctrine, one from your school, and one of your choice.
+    You learn one additional cantrip when you reach levels 4 and 10.
+
+    You can learn one new spell as part of a long rest.
+    This spell must belong to a spellcasting doctrine available to you.
+
+    \begin{DndTable}[width=\linewidth, header=Spellcasting Ability]{llll}
+        \textbf{Level} & \textbf{Cantrips Known} & \textbf{Spell Points} & \textbf{Max Spell Level} \\
+         1st &    3 &     2 &    1st \\
+         2nd &    3 &     3 &    1st \\
+         3rd &    3 &     7 &    1st \\
+         4th &    4 &     8 &    1st \\
+         5th &    4 &    13 &    2nd \\
+         6th &    4 &    16 &    2nd \\
+         7th &    4 &    19 &    2nd \\
+         8th &    4 &    22 &    2nd \\
+         9th &    4 &    28 &    3rd \\
+        10th &    5 &    32 &    3rd \\
+        11th &    5 &    36 &    3rd \\
+        12th &    5 &    36 &    3rd \\
+        13th &    5 &    41 &    4th \\
+        14th &    5 &    41 &    4th \\
+        15th &    5 &    47 &    4th \\
+        16th &    5 &    47 &    4th \\
+        17th &    5 &    53 &    5th \\
+        18th &    5 &    57 &    5th \\
+        19th &    5 &    61 &    5th \\
+        20th &    5 &    66 &    5th
+    \end{DndTable}
+
+\subsection*{Spell Points}
+    Your character uses spell points to fuel spells.
+    Each spell has a point cost based on its level.
+    The spell point cost table summarizes the cost in spell points of spells from 1st to 9th level.
+    Cantrips don't require slots and therefore don't require spell points.
+
+    Spells of 6th level and higher are particularly taxing to cast.
+    You can use spell points to cast one spell of each level of 6th or higher.
+    You can't cast another spell of the same level until you finish a short rest.
+    % TODO: Remove this restriction as a feat.
+
+    The number of spell points you have to spend is based on your level, as shown in the spellcasting ability table.
+    Your level also determines the maximum-level spell you can cast.
+    Even though you might have enough points to create a slot above this maximum, you can't do so.
+
+    \begin{DndTable}[width=\linewidth, header=Spell Point Cost]{ll}
+        \textbf{Spell Level} & \textbf{Point Cost} \\
+        1st &  2 \\
+        2nd &  3 \\
+        3rd &  5 \\
+        4th &  6 \\
+        5th &  7 \\
+        6th &  9 \\
+        7th & 10 \\
+        8th & 11 \\
+        9th & 13
+    \end{DndTable}
+
+\subsection*{Spellcasting Ability}
+    When you take the spellcaster feat, you decide a spellcasting ability, which can be Intelligence, Wisdom, or Charisma.
+    This choice reflects your medium for casting spells: Conceptualization for Intelligence, volition for Wisdom, and empathy for Charisma.
+
+    You use this ability score whenever a spell refers to your spellcasting ability.
+    In addition, you use its modifier when setting the saving throw DC for a spell you cast and when making an attack roll with one.
+
+    \subparagraph{Spell save DC} = 8 + your spellcasting proficiency bonus + your chosen ability modifier
+    \subparagraph{Spell attack modifier} = your spellcasting proficiency bonus + your chosen ability modifier
+
+    After taking the spellcaster feat, your spellcasting proficiency bonus is +2.
+    You can increase this modifier further by taking the avid spellcaster feat (see page \pageref{feat::avidspellcaster}).
+
+\subsection*{Spellcasting Focus}
+    You can use a spellcasting focus to replace the material components for your spells.
+    This focus is related to your magic school, and is explained in its section.
