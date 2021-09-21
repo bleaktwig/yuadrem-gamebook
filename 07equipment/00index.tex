@@ -123,23 +123,28 @@
 % Aristocratic	2 gp
 % Meat, chunk	3 sp
 
+\section{Materials and Labor} \label{sec::materialsandlabor}
+    Any item in Yuadrem that can be bought can be crafted as well by a suficiently skilled artisan.
+    Just like items, materials are separated by rarity, with increased rarity having increased cost.
+    In addition, the labor required to craft rarer items is naturally harder, and thus is more expensive.
+    This relation is shown in the Materials and Labor Costs table.
+
+    Different items require a different number of materials.
+    In addition to their final cost, items listed in the following sections also show the required number of materials needed to craft them, and the relevant set of artisan's tools needed to craft them.
+
+    \begin{DndTable}[width=\linewidth, header=Materials and Labor Costs]{llll}
+        \textbf{Rarity} & \textbf{Material Price} & \textbf{Labor Price} \\
+        Common          &     10 agnomas          &     20 agnomas \\
+        Uncommon        &     50 agnomas          &    100 agnomas \\
+        Rare            &    500 agnomas          &  1,000 agnomas \\
+        Very Rare       &  5,000 agnomas          & 10,000 agnomas \\
+        Legendary       & 25,000 agnomas          & 50,000 agnomas
+    \end{DndTable}
+
 \section{Items} \label{sec::items}
-Items marked with the $\odot$ symbol require attunement to be used.
+    Items marked with the $\odot$ symbol require attunement to be used.
 
-% PRICE TABLE:
-% RARITY    | COST PER MATERIAL | TOTAL MATERIAL COST (8) | LABOR COST | ITEM COST | CONSUMABLE COST |
-% Common    |                10 |                      80 |         20 |       100 |              30 |
-% Uncommon  |                50 |                     400 |        100 |       500 |             150 |
-% Rare      |               500 |                   4,000 |      1,000 |     5,000 |           1,500 |
-% Very Rare |             5,000 |                  40,000 |     10,000 |    50,000 |          15,000 |
-% Legendary |            25,000 |                 200,000 |     50,000 |   250,000 |          75,000 |
-% NOTE: For consumable items, reduce total material cost:
-%  - for potions, to 1/8th.
-%  - for brews, by 1/6th.
-%  - for food, by 1/4th.
-% Of course, this doesn't apply to magic items like bloodwell vials or Erebos' oozes.
-
-% TODO: UPDATE BREWS AND POTIONS PRICES BASED ON THE UPPER LIST.
+% TODO. UPDATE PRICES BASED ON THE LIST.
 \input{07equipment/10adventuringgear}
 \input{07equipment/10ammunition}
 \input{07equipment/10armorandshields}
