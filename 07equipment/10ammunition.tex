@@ -1,7 +1,66 @@
 % !TEX root = ../main.tex
 \subsection*{Ammunition} \label{ssec::ammunition}
-% AMMUNITION
-% Arrows (20)	1 gp	1 lb.
-% Blowgun needles (50)	1 gp	1 lb.
-% Crossbow bolts (20)	1 gp	1½ lb.
-% Sling bullets (20)	4 cp	1½ lb.
+\begin{table*}[b]%
+    \begin{DndTable}[width=\linewidth, header=Ammunition]{Xcccccc}
+        \textbf{Item} & \textbf{Rarity} & \textbf{Material \#} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
+        Arrow                       & Mundane   &  1 &     15 fobs    & WOO    & 25 gr  & PHB 150 \\
+        Arrows (20)                 & Mundane   & 18 &      1 agnoma  & WOO    & 0.5 kg & PHB 150 \\
+        Blowgun Needle              & Mundane   &  1 &     15 fobs    & WOO    & 25 gr  & PHB 150 \\
+        Blowgun Needles (20)        & Mundane   & 18 &      1 agnoma  & WOO    & 0.5 kg & PHB 150 \\
+        Crossbow Bolt               & Mundane   &  1 &     15 fobs    & WOO    & 50 gr  & PHB 150 \\
+        Crossbow Bolts (20)         & Mundane   & 18 &      1 agnoma  & WOO    & 1 kg   & PHB 150 \\
+        Sling Bullet                & Mundane   &  1 &     15 fobs    & WOO    & 50 gr  & PHB 150 \\
+        Sling Bullets (20)          & Mundane   & 18 &      1 agnoma  & WOO    & 1 kg   & PHB 150 \\
+        Bullet                      & Common    &  1 &     30 agnomas & TIN    & 100 g  & DMG 268 \\
+        Bullets (10)                & Common    &  8 &    100 agnomas & TIN    & 1 kg   & DMG 268 \\
+        +1 Ammunition (20)          & Uncommon  &  4 &    300 agnomas & $\ast$ & $\ast$ & DMG 150 \\
+        Barbed Ammunition (20)      & Uncommon  &  4 &    300 agnomas & $\ast$ & $\ast$ & ---     \\
+        Destructive Ammunition (20) & Uncommon  &  4 &    300 agnomas & $\ast$ & $\ast$ & XGE  78 \\
+        Reinforced Ammunition (20)  & Uncommon  &  4 &    300 agnomas & $\ast$ & $\ast$ & XGE 139 \\
+        Walloping Ammunition (20)   & Uncommon  &  4 &    300 agnomas & $\ast$ & $\ast$ & XGE 139 \\
+        +2 Ammunition (20)          & Rare      &  4 &  3,000 agnomas & $\ast$ & $\ast$ & DMG 150 \\
+        Cacophonous Ammunition      & Rare      &  1 &  1,500 agnomas & $\ast$ & $\ast$ & ---     \\
+        Fulgurating Ammunition (5)  & Rare      &  1 &  1,500 agnomas & $\ast$ & $\ast$ & MOT 198 \\
+        Stunning Ammunition (5)     & Rare      &  1 &  1,500 agnomas & $\ast$ & $\ast$ & MOT 198 \\
+        +3 Ammunition (20)          & Very Rare &  4 & 30,000 agnomas & $\ast$ & $\ast$ & DMG 150 \\
+        Slaying Ammunition (4)      & Very Rare &  4 & 30,000 agnomas & $\ast$ & $\ast$ & DMG 152
+    \end{DndTable}
+\end{table*}
+
+$\ast$ \textit{Required tool and weight depends on the type of ammunition.
+Refer to the mundane or common version of the ammunition.}
+
+\paragraph{+1/+2/+3 Ammunition}
+    You have a +1/+2/+3 bonus to attack and damage rolls made with this piece of ammunition.
+    These pieces of ammunition break following the normal rules for losing ammunition.
+\paragraph{Barbed Ammunition}
+    A creature attacked by a piece of barbed ammunition takes 1d4 necrotic damage at the beginning of its next turn.
+    This effect doesn't stack.
+\paragraph{Cacophonous Ammunition}
+    Upon landing, a wave of thunderous force sweeps out from this projectile.
+    Each creature in a 3-meters sphere originating from its landing location must make a DC 13 Constitution saving throw, taking 2d8 thunder damage and being pushed 2 meters away on a failed save.
+    Unsecured objects that are completely within the area of effect are automatically pushed 2 meters away from the landing location.
+
+    In addition, if you hit a creature with this projectile it must succeed on a DC 13 Constitution saving throw, taking 3d10 lightning damage on a failed save, or half as much damage on a successful save.
+
+    This piece of ammunition breaks upon landing.
+\paragraph{Destructive Ammunition}
+    Coated with heavy steel, this piece of ammunition is unusually effective when used to break objects.
+    Whenever of a piece of destructive ammunition hits an object, the hit is a critical hit.
+\paragraph{Fulgurating Ammunition}
+    On a hit, this projectile deals an extra 2d8 lightning damage to its target.
+    All other creatures within 2 meters of the target must each succeed on a DC 15 Constitution saving throw or take 1d8 thunder damage.
+\paragraph{Reinforced Ammunition}
+    This piece of ammunition doesn't break when used in combat.
+    It can however be broken by succeeding on a DC 15 Athletics check.
+\paragraph{Slaying Ammunition}
+    A slaying ammunition is a specially designed weapon meant to slay a particular kind of creature.
+    If a creature belonging to the type, race, or group associated with a slaying ammunition takes damage from it, the creature must make a DC 17 Constitution saving throw, taking an extra 6d10 piercing damage on a failed save, or half as much extra damage on a successful one.
+
+    Once an arrow of slaying deals its extra damage to a creature, it breaks.
+\paragraph{Stunning Ammunition}
+    On a hit, this projectile deals an extra 1d10 force damage, and the target must roll a DC 13 Constitution saving throw, becoming stunned until the end of your next turn on a failed save.
+\paragraph{Walloping Ammunition}
+    This ammunition packs a wallop.
+    A creature hit by the ammunition must succeed on a DC 10 Strength saving throw or be knocked prone.
+\pagebreak
