@@ -38,13 +38,6 @@
         \end{DndTable}
     \end{table*}
 
-    \paragraph{Padded Armor}
-        Padded armor consists of quilted layers of cloth and batting.
-    \paragraph{Leather Armor}
-        The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil.
-        The rest of the armor is made of softer and more flexible materials.
-    \paragraph{Studded Leather Armor}
-        Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.
     \paragraph{Glamoured Studded Leather}
         This armor has the normal appearance of a set of clothing.
         While crafting it, its maker(s) decide what it looks like, including color, style, and accessories, but the armor retains its normal bulk and weight.
@@ -55,6 +48,13 @@
 
         The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil.
         The rest of the armor is made of softer and more flexible materials.
+    \paragraph{Leather Armor}
+        The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil.
+        The rest of the armor is made of softer and more flexible materials.
+    \paragraph{Padded Armor}
+        Padded armor consists of quilted layers of cloth and batting.
+    \paragraph{Studded Leather Armor}
+        Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.
 \newpage
 \subsubsection{Medium Armor} \label{ssec::mediumarmor}
     Medium armor offers more protection than light armor, but it also impairs movement more.
@@ -90,15 +90,15 @@
     \paragraph{Laminar Armor}
         This armor consists of laminae of small wood slabs woven together using strong leather.
         The strong wood provides a solid defense against piercing attacks, albeit weighing much more than similar armors.
+    \paragraph{Nidhogg Mantle}
+        Crafted from nidhogg scales, this carapace-like armor encases portions of the wearer's shoulders, neck, and chest.
+        A creature wearing this armor can breathe normally in any environment, and has advantage on saving throws against harmful gases (such as those created by a cloudkill spell, a stinking cloud spell, inhaled poisons, and the breath weapons of some creatures).
     \paragraph{Scale Mail}
         This armor consists of a coat, leggings, and a separate skirt of leather covered with overlapping pieces of metal, much like the scales of a fish.
         The suit includes gauntlets.
     \paragraph{Woven Iron Shirt}
         By using thin iron threads, a woven iron shirt provides good protection while remaining light.
         This armor can be worn under normal clothes, becoming effectively invisible.
-    \paragraph{Nidhogg Mantle}
-        Crafted from nidhogg scales, this carapace-like armor encases portions of the wearer's shoulders, neck, and chest.
-        A creature wearing this armor can breathe normally in any environment, and has advantage on saving throws against harmful gases (such as those created by a cloudkill spell, a stinking cloud spell, inhaled poisons, and the breath weapons of some creatures).
     \paragraph{Woven Steel Shirt}
         By using thin steel threads, a woven steel shirt provides good protection while remaining light.
         This armor can be worn under normal clothes, becoming effectively invisible.
@@ -115,53 +115,162 @@
     The armor reduces the wearer's speed by 2 meters unless the wearer has a Strength score equal to or higher than 15.
 
     \begin{table*}[t]%
-        \begin{DndTable}[width=\linewidth, header=Medium Armor]{Xlclcccccc}
+        \begin{DndTable}[width=\linewidth, header=Heavy Armor]{Xlclcccccc}
             \textbf{Armor} & \textbf{Rarity} & \textbf{AC} & \textbf{Properties} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
-            Ring Mail                & Common    & 14 & Chain, Noisy     & 1 &      30 agnomas & LEA + SMI & 20 kg   & PHB 145 \\
-            Chain Mail               & Common    & 16 & Chain, Noisy     & 6 &      80 agnomas & SMI + WEA & 27.5 kg & PHB 145 \\
-            Splint Armor             & Uncommon  & 17 & Composite, Noisy & 2 &     200 agnomas & LEA + SMI & 30 kg   & PHB 145 \\
-            Plate Armor              & Rare      & 18 & Plate, Noisy     & 1 &   1,500 agnomas & LEA + SMI & 32.5 kg & PHB 145 \\
-            Demon Armor              & Very Rare & 19 & Plate, Noisy     & 8 &  50,000 agnomas & SMI + WEA & 32.5 kg & DMG 165 \\
-            Thulkrakan Plate         & Very Rare & 20 & Plate, Noisy     & 8 &  50,000 agnomas & LEA + SMI & 32.5 kg & DMG 167 \\
-            Armor of Invulnerability & Legendary & 18 & Plate, Noisy     & 8 & 250,000 agnomas & LEA + SMI & 32.5 kg & DMG 152 \\
-            Tizerus' Chain           & Legendary & 19 & Chain, Noisy     & 8 & 250,000 agnomas & SMI + WEA & 27.5 kg & DMG 167 \\
-            Obsidian Wyvern Plate    & Legendary & 20 & Plate, Noisy     & 8 & 250,000 agnomas & LEA + SMI & 32.5 kg & BGDIA 224
+            Ring Mail          & Common    & 14 & Chain, Noisy     & 1 &      30 agnomas & LEA + SMI & 20 kg   & PHB 145 \\
+            Chain Mail         & Common    & 16 & Chain, Noisy     & 6 &      80 agnomas & SMI + WEA & 27.5 kg & PHB 145 \\
+            Splint Armor       & Uncommon  & 17 & Composite, Noisy & 2 &     200 agnomas & LEA + SMI & 30 kg   & PHB 145 \\
+            Plate Armor        & Rare      & 18 & Plate, Noisy     & 1 &   1,500 agnomas & LEA + SMI & 32.5 kg & PHB 145 \\
+            Demon Armor        & Very Rare & 19 & Plate, Noisy     & 8 &  50,000 agnomas & SMI + WEA & 32.5 kg & DMG 165 \\
+            Thulkrakan Plate   & Very Rare & 20 & Plate, Noisy     & 8 &  50,000 agnomas & LEA + SMI & 32.5 kg & DMG 167 \\
+            Invulnerable Armor & Legendary & 18 & Plate, Noisy     & 8 & 250,000 agnomas & LEA + SMI & 32.5 kg & DMG 152 \\
+            Tizerus' Chain     & Legendary & 19 & Chain, Noisy     & 8 & 250,000 agnomas & SMI + WEA & 27.5 kg & DMG 167 \\
+            Obsidian Plate     & Legendary & 20 & Plate, Noisy     & 8 & 250,000 agnomas & LEA + MAS & 32.5 kg & BGDIA 224
         \end{DndTable}
     \end{table*}
 
-    \paragraph{Ring Mail}
-        This armor is leather armor with heavy rings sewn into it.
-        The rings help reinforce the armor against blows from swords and axes.
-        Ring mail is inferior to chain mail, and it's usually worn only by those who can't afford better armor.
+    \paragraph{Armor of Invulnerability $\odot$}
+        You have resistance to physical damage while you wear this armor.
     \paragraph{Chain Mail}
         Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows.
         The suit includes gauntlets.
-    \paragraph{Splint Armor}
-        This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding.
-        Flexible chain mail protects the joints.
+    \paragraph{Demon Armor $\odot$}
+        This armor earned its denomination from the grim spikes and scythes that adorn its design.
+        While wearing this armor, the armor's clawed gauntlets turn unarmed strikes with your hands into weapons that deal slashing damage, with a +1 bonus to attack and damage rolls and a damage die of 1d8.
+    \paragraph{Obsidian Wyvern Plate $\odot$}
+        You gain a +2 bonus to AC and resistance to poison damage while you wear this armor.
+        In addition, you gain advantage on ability checks and saving throws made to avoid or end the grappled condition on yourself.
     \paragraph{Plate Armor}
         Plate consists of shaped, interlocking metal plates to cover the entire body.
         A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor.
         Buckles and straps distribute the weight over the body.
-    \paragraph{Demon Armor $\odot$}
-        This armor earned its denomination from the grim spikes and scythes that adorn its design.
-        While wearing this armor, the armor's clawed gauntlets turn unarmed strikes with your hands into weapons that deal slashing damage, with a +1 bonus to attack and damage rolls and a damage die of 1d8.
+    \paragraph{Ring Mail}
+        This armor is leather armor with heavy rings sewn into it.
+        The rings help reinforce the armor against blows from swords and axes.
+        Ring mail is inferior to chain mail, and it's usually worn only by those who can't afford better armor.
+    \paragraph{Splint Armor}
+        This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding.
+        Flexible chain mail protects the joints.
     \paragraph{Thulkrakan Plate}
         While wearing this armor, if an effect moves you against your will along the ground, you can use your reaction to reduce the distance you are moved by up to 2 meters.
-    \paragraph{Armor of Invulnerability $\odot$}
-        You have resistance to physical damage while you wear this armor.
     \paragraph{Tizerus' Chain $\odot$}
         While wearing this armor, you are immune to fire damage, and you can stand on and walk across molten rock as if it were solid ground.
-    \paragraph{Obsidian Wyvern Plate $\odot$}
-        You gain a +2 bonus to AC and resistance to poison damage while you wear this armor.
-        In addition, you gain advantage on ability checks and saving throws made to avoid or end the grappled condition on yourself.
 \newpage
-\subsubsection{Small Shields} \label{ssec::smallshields}
-This type of shield grants a +1 bonus to your AC.
+\subsubsection{Shields} \label{ssec::shields}
+    A shield is made from wood or metal and is carried in one hand.
+    You can benefit from only one shield at a time.
 
-\subsubsection{Medium Shields} \label{ssec::mediumshields}
-This type of shield grants a +2 bonus to your AC.
+    Shields are separated into three weight classes: small, medium, and heavy:
+    \subparagraph{Small Shields}
+        Light and small, these shields grant a bonus of +1 to AC.
+        In addition, donning or doffing them requires one action instead of two.
+    \subparagraph{Medium Shields}
+        Standard and sturdy, these shields grant a bonus of +2 to AC.
+    \subparagraph{Heavy Shields}
+        These shields are bulky and unwieldy, but grant a +3 bonus to AC.
+        In addition, they grant you half cover against ranged attacks.
+        Due to their size, the wearer's move action requires 2 actions instead of one.
 
-\subsubsection{Heavy Shields} \label{ssec::heavyshields}
-This type of shield grants a +3 bonus to your AC.
-In addition, it grants you half cover against ranged attacks, but the move action requires 2 actions for you.
+    \begin{table*}[t]%
+        \begin{DndTable}[width=\linewidth, header=Shields]{Xlclcccccc}
+            \textbf{Shield} & \textbf{Rarity} & \textbf{AC} & \textbf{Type} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
+            Buckler                   & Plain     & +1     & Light  & 3 &       5 agnomas & LEA + SMI &  1 kg  & --- \\
+            Kite Shield               & Plain     & +2     & Medium & 8 &      10 agnomas & CAR       &  3 kg  & PHB 144 \\
+            Tower Shield              & Common    & +3     & Heavy  & 3 &      50 agnomas & LEA + CAR & 10 kg  & --- \\
+            +1 Shield                 & Uncommon  & $\ast$ & $\ast$ & 8 &     500 agnomas & $\ast$    & $\ast$ & DMG 200 \\
+            Sentinel Shield           & Uncommon  & +1     & Light  & 8 &     500 agnomas & LEA + SMI &  2 kg  & DMG 199 \\
+            +2 Shield                 & Rare      & $\ast$ & $\ast$ & 8 &   5,000 agnomas & $\ast$    & $\ast$ & DMG 200 \\
+            Alert Shield              & Rare      & +4     & Medium & 8 &   5,000 agnomas & CAR + SMI &  3 kg  & CoS 68 \\
+            Arrow-Catching Shield     & Rare      & +3     & Heavy  & 8 &   5,000 agnomas & CAR + TIN & 10 kg  & DMG 152 \\
+            Battering Shield          & Rare      & +4     & Heavy  & 8 &   5,000 agnomas & CAR + SMI & 12 kg  & EGW 266 \\
+            Pariah's Shield           & Rare      & +2     & Medium & 8 &   5,000 agnomas & LEA + SMI &  5 kg  & GGR 180 \\
+            Shield of Attraction      & Rare      & +1     & Light  & 8 &   5,000 agnomas & SMI + TIN &  3 kg  & DMG 200 \\
+            +3 Shield                 & Very Rare & $\ast$ & $\ast$ & 8 &  50,000 agnomas & $\ast$    & $\ast$ & DMG 200 \\
+            Animated Shield           & Very Rare & +2     & Medium & 8 &  50,000 agnomas & SMI + TIN &  3 kg  & DMG 151 \\
+            Spellguard Shield         & Very Rare & +3     & Heavy  & 8 &  50,000 agnomas & CAR + SMI & 10 kg  & DMG 201 \\
+            Uven Shield               & Very Rare & +3     & Heavy  & 8 &  50,000 agnomas & LEA + MAS & 20 kg  & WDMM 299 \\
+            Shield of the Hidden Lord & Legendary & +5     & Heavy  & 8 & 250,000 agnomas & SMI + TIN & 12 kg  & BGDIA 225
+        \end{DndTable}
+    \end{table*}
+    $\ast$ \textit{AC bonus, type, equired tools and weight all depen on the type of shield.
+    Refer to the plain or common versions of the shields and apply the AC bonus on top.}
+
+    \paragraph{+1/+2/+3 Shield}
+        You have a +1/+2/+3 bonus to AC on top of the normal AC granted by the shield.
+    \paragraph{Animated Shield $\odot$}
+        While holding this shield, you can use an action to cause it to animate.
+        The shield leaps into the air and hovers in your space to protect you as if you were wielding it, leaving your hands free.
+        The shield remains animated for 1 minute, until you use an action to end this effect, or until you are incapacitated or die, at which point the shield falls to the ground or into your hand if you have one free.
+    \paragraph{Alert Shield}
+        The shield is emblazoned with a stylized silver dragon.
+        The shield grants a +2 bonus to initiative if the bearer isn't incapacitated.
+    \paragraph{Arrow-Catching Shield $\odot$}
+        You gain a +2 bonus to AC against ranged attacks while you wield this shield.
+        This bonus is in addition to the shield's normal bonus to AC.
+        In addition, whenever an attacker makes a ranged attack against a target within 1 meter of you, you can use your reaction to become the target of the attack instead.
+    \paragraph{Battering Shield $\odot$}
+        This iron tower shield has 3 charges, and it regains 1d3 expended charges daily at dawn.
+        If you are holding the shield and push a creature within your reach at least 1 meter away, you can expend 1 charge to push that creature an additional 2 meters, knock it prone, or both.
+    \paragraph{Buckler}
+        This small metal shield acts more as a reinforced gauntlet than a shield, but its light weight makes it ideal for mobile combatants.
+    \paragraph{Kite Shield}
+        This wooden shield provides solid defense against most attacks.
+    \paragraph{Pariah's Shield $\odot$}
+        Akhoash Oromai soldiers consider it an honor to bear this shield, even knowing that it might be the last honor they receive.
+        The front of the shield is sculpted to depict a grieving face.
+
+        You gain a +1 bonus to AC for every two allies within 1 meter of you (up to a maximum of +3) while you wield this shield.
+        This bonus is in addition to the shield's normal bonus to AC.
+
+        When a creature you can see within 1 meter of you takes damage, you can use your reaction to take that damage, instead of the creature taking it.
+    \paragraph{Sentinel Shield}
+        While holding this light shield, you have advantage on initiative rolls and Wisdom (Perception) checks.
+        The shield is emblazoned with a symbol of an eye.
+    \paragraph{Shield of Attraction $\odot$}
+        While holding this metal shield, you have resistance to damage from ranged weapon attacks.
+
+        Whenever a ranged weapon attack is made against a target within 2 meters of you, you become the target instead.
+    \paragraph{Shield of the Hidden Lord}
+        This hellish shield is twisted into a fiendish face that resembles a devil of some sort.
+        The shield has the following properties:
+        \begin{itemize}
+            \item \textbf{Tizerus' Friend}.
+            You gain resistance to fire damage.
+            \item \textbf{Engulfed in Flame}.
+            The shield has 3 charges.
+            You can use two actions to expend 1 charge to cast fireball (see page \pageref{spell:fireball}) or 2 charges to cast wall of fire (see page \pageref{spell:walloffire}) from the shield (save DC 21 for each).
+            The wall of fire spell lasts for 1 minute (no concentration required).
+            The shield regains all expended charges daily at dawn.
+            \item \textbf{Hellish Visage}.
+            Anytime during your turn, you can choose to radiate an aura of dread for 1 minute.
+            Any creature hostile to you that starts its turn within 4 meters of the shield must make a DC 18 Wisdom saving throw.
+            On a failed save, the creature is frightened until the start of its next turn.
+            On a successful save, the creature is immune to this power of the shield for the next 24 hours.
+            Once you use this power, you can't use it again until the next dawn.
+        \end{itemize}
+    \paragraph{Spellguard Shield $\odot$}
+        While holding this shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you.
+    \paragraph{Tower Shield}
+        This heavy wooden shield is ideal for watchers and defenders that rarely need to move in combat.
+    \paragraph{Uven Shield $\odot$}
+        Stolen from the strange designs of the Krudzalian giants, this stone shield has a rune burned into its outward-facing side of unknown meaning.
+
+        While holding the shield, you benefit from the following properties:
+        \begin{itemize}
+            \item \textbf{Winter's Friend}.
+            You are immune to cold damage.
+            \item \textbf{Deadly Rebuke}.
+            Immediately after a creature hits you with a melee attack, you can use your reaction to deal 3d6 necrotic damage to that creature.
+            \item \textbf{Bane}.
+            You can cast the bane spell from the shield (save DC 17).
+            The spell does not require concentration and lasts for 1 minute.
+            Once you cast the spell from the shield, you can't do so again until you finish a short rest.
+            \item \textbf{Gift of Vengeance}.
+            You can transfer the shield's magic to a weapon by tracing the uven rune on the weapon with one finger.
+            The transfer takes one long rest of work that requires the two items to be within 1 meter of each other.
+            At the end, the shield is destroyed, and the rune is etched or burned into the chosen weapon.
+            This weapon becomes a rare magic item that requires attunement.
+            It has the properties of a +1 weapon.
+            The bonus increases to +3 when the weapon is used against one type of creature, chosen by you at the time of the weapon's creation.
+        \end{itemize}
+\newpage
