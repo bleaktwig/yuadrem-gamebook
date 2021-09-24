@@ -6,11 +6,17 @@
     \begin{table*}[t]%
         \begin{DndTable}[width=\linewidth, header=Food]{Xlccccc}
             \textbf{Food} & \textbf{Rarity} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
-            Animal Feed (ration)  &  &  &   5 fobs    & COO & 5 kg & PHB 157 \\
-            Chunk of Meat         &  &  &   3 agnomas & --- & ---  & PHB 158 \\
+            Animal Feed (ration)  &  &  &   5 fobs    & COO & 5 kg   & PHB 157 \\
+            Chunk of Meat         &  &  &   3 agnomas & COO & ---    & PHB 158 \\
+            Hunk of Cheese        &  &  &  10 fobs    & COO & ---    & PHB 158 \\
+            Loaf of Bread         &  &  &   2 fobs    & COO & ---    & PHB 158 \\
+            Mess Kit              &  &  &  20 fobs    & SMI & 0.5 kg & PHB 152 \\
         \end{DndTable}
     \end{table*}
 
+    \paragraph{Mess Kit}
+        This tin box contains a cup and simple cutlery.
+        The box clamps together, and one side can be used as a cooking pan and the other as a plate or shallow bowl.
 
     % Food and water are separate!
 
@@ -26,13 +32,15 @@
     A creature cannot benefit from more than one brew at the same time.
     % After drinking a brew a creature rolls a DC 8 Constitution saving throw.
     % On a failure, it empties the content of the brew
-
     \begin{table*}[t]%
         \begin{DndTable}[width=\linewidth, header=Brews]{Xlccccc}
             \textbf{Brew} & \textbf{Rarity} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
             Ale                      & Mundane   & 2 &      20 fobs    & BRE &  4 kg.   & PHB 158 \\
+            Jug                      & Mundane   & 2 &      20 fobs    & GLA &  2 kg.   & --- \\
             Tankard                  & Mundane   & 1 &      15 fobs    & CAR &  0.5 kg. & PHB 153 \\
             Barrel                   & Plain     & 3 &       5 agnomas & CAR & 35 kg.   & PHB 153 \\
+            Bottle                   & Plain     & 1 &       3 agnomas & GLA &  1 kg.   & PHB 153 \\
+            Cup                      & Plain     & 1 &       3 agnomas & GLA & ---      & --- \\
             Common Wine              & Plain     & 1 &       3 agnomas & BRE &  4 kg.   & PHB 158 \\
             Full Keg                 & Plain     & 2 &       4 agnomas & CAR & 15 kg.   & --- \\
             Small Keg                & Plain     & 1 &       3 agnomas & CAR &  2 kg.   & --- \\
@@ -79,6 +87,8 @@
     \paragraph{Beer of Vitality} % Aid
         This beer emboldens creatures with toughness and resolve.
         The drinker's hit point maximum and current hit points increase by 5 for 8 hours.
+    \paragraph{Bottle}
+        A bottle holds 1 liter of liquid.
     \paragraph{Brainbender} % Confusion
         This brew is a nut-flavored greenish liquid.
         The liquid assaults and twists creatures' minds, spawning delusions and provoking uncontrolled action.
@@ -227,6 +237,8 @@
             You can move through solid earth or stone as if it was air and without destabilizing it, but you can't end your movement there.
             If you do so, you are ejected to the nearest unoccupied space, this effect ends, and you are stunned until the end of your next turn.
         \end{itemize}
+    \paragraph{Jug}
+        A jug holds 1 liter of liquid.
     \paragraph{Kickstarter (Bottle)} % Awaken
         This color-changing thick liquid is said to contain the very essence of the tides.
         Any Huge or smaller beast with an intelligence of 3 or less can receive the effect of this potion.
@@ -307,6 +319,7 @@
         This drinks grants a creature the ability to breathe underwater for 8 hours.
         Affected creatures also retain their normal mode of respiration.
 \pagebreak
+
 \subsubsection{Potions} \label{ssec::potions} % TODO. Potions require some balancing and to reference the correct sources.
     Potions are small amounts of potent liquid contained in a flask or vial.
     A creature can drink a potion using two actions, or it can throw the container up to 4/12 meters as an action.
@@ -327,7 +340,7 @@
             Caustic Brew (Flask)               & Common    & 3 &      50 agnomas & ALC       & 0.5 kg. & --- \\
             Potion of Healing (Flask)          & Common    & 1 &      30 agnomas & ALC       & 0.5 kg. & DMG 187 \\
             Potion of Sickness (Flask)         & Common    & 3 &      50 agnomas & ALC       & 0.5 kg. & --- \\
-            Vial                               & Common    & 3 &       1 agnoma  & GLA       & ---     & PHB 153 \\
+            Vial                               & Common    & 1 &       3 agnomas & GLA       & ---     & PHB 153 \\
             Bloodwell Vial +1                  & Uncommon  & 8 &     500 agnomas & ALC + GLA & ---     & TCE 122 \\
             Bottled Acid Arrow (Flask)         & Uncommon  & 3 &     250 agnomas & ALC       & 0.5 kg. & --- \\
             Coldblood (Vial)                   & Uncommon  &$\ast$ & 500 agnomas & ALC       & ---     & --- \\
@@ -577,17 +590,20 @@
         If the target fails the saving throw, its hit point maximum is reduced for 1 hour by an amount equal to the necrotic damage it took.
         Any effect that removes a disease allows a creature's hit point maximum to return to normal before that time passes.
 \newpage
+
 \subsubsection{Poisons}
     % NOTE: Coating a weapon or 3 pieces of ammunition in poison costs two actions.
     \begin{table*}[t]%
         \begin{DndTable}[width=\linewidth, header=Poisons]{Xlccccc}
             \textbf{Poison} & \textbf{Rarity} & \textbf{Method} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
-            Assassin's Blood      &  & Ingested &  & 150 agnomas & POI & --- & DMG 258 \\
-            Basic Poison (vial)   &  & Injury   &  & 100 agnomas & POI & --- & PHB 153 \\
-            Burnt Othur Fumes     &  & Inhaled  &  & 500 agnomas & POI & --- & DMG 258 \\
-            Carrion Crawler Mucus &  & Contact  &  & 200 agnomas & POI & --- & DMG 258 \\
-            Essence of Ether      &  & Inhaled  &  & 300 agnomas & POI & --- & DMG 258 \\
-            Sprouting Poison      &  & Injury   &  & 200 agnomas & POI & --- & DMG 258 \\
+            Assassin's Blood      &  & Ingested &  &   150 agnomas & POI & --- & DMG 258 \\
+            Basic Poison (vial)   &  & Injury   &  &   100 agnomas & POI & --- & PHB 153 \\
+            Burnt Othur Fumes     &  & Inhaled  &  &   500 agnomas & POI & --- & DMG 258 \\
+            Carrion Crawler Mucus &  & Contact  &  &   200 agnomas & POI & --- & DMG 258 \\
+            Essence of Ether      &  & Inhaled  &  &   300 agnomas & POI & --- & DMG 258 \\
+            Sprouting Poison      &  & Injury   &  &   200 agnomas & POI & --- & DMG 258 \\
+            Malice                &  & Inhaled  &  &   250 agnomas & POI & --- & DMG 258 \\
+            Midnight Tears        &  & Ingested &  & 1,500 agnomas & POI & --- & DMG 258 \\
         \end{DndTable}
     \end{table*}
 
@@ -618,3 +634,9 @@
         A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour.
         If the saving throw fails by 5 or more, the creature is also unconscious while poisoned in this way.
         The creature wakes up if it takes damage or if another creature takes two actions to shake it awake.
+    \paragraph{Malice}
+        A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 1 hour.
+        The poisoned creature is blinded.
+    \paragraph{Midnight Tears}
+        A creature that ingests this poison suffers no effect until the stroke of midnight.
+        If the poison has not been neutralized before then, the creature must succeed on a DC 17 Constitution saving throw, taking 31 (9d6) poison damage on a failed save, or half as much damage on a successful one.
