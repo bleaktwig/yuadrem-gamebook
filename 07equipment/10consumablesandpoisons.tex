@@ -3,7 +3,15 @@
 % TODO. The effect of two kinds of food or brews do not stack, but the effect of a brew, a potion, and food can stack together.
 
 \subsubsection{Food} \label{ssec::food}
-    \textbf{TODO.}
+    \begin{table*}[t]%
+        \begin{DndTable}[width=\linewidth, header=Food]{Xlccccc}
+            \textbf{Food} & \textbf{Rarity} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
+            Animal Feed (ration)  &  &  &   5 fobs    & COO & 5 kg & PHB 157 \\
+            Chunk of Meat         &  &  &   3 agnomas & --- & ---  & PHB 158 \\
+        \end{DndTable}
+    \end{table*}
+
+
     % Food and water are separate!
 
     % Ioun's Stone Pig % Random Ioun strong --- randomized when drinking.
@@ -572,11 +580,14 @@
 \subsubsection{Poisons}
     % NOTE: Coating a weapon or 3 pieces of ammunition in poison costs two actions.
     \begin{table*}[t]%
-        \begin{DndTable}[width=\linewidth, header=Potions]{Xlccccc}
+        \begin{DndTable}[width=\linewidth, header=Poisons]{Xlccccc}
             \textbf{Poison} & \textbf{Rarity} & \textbf{Method} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
-            Assassin's Blood    &  & Ingested &  & 150 agnomas & POI & --- & DMG 258 \\
-            Basic Poison (vial) &  & Contact  &  & 100 agnomas & POI & --- & PHB 153 \\
-            Burnt Othur Fumes   &  & Inhaled  &  & 500 agnomas & POI & --- & DMG 258 \\
+            Assassin's Blood      &  & Ingested &  & 150 agnomas & POI & --- & DMG 258 \\
+            Basic Poison (vial)   &  & Injury   &  & 100 agnomas & POI & --- & PHB 153 \\
+            Burnt Othur Fumes     &  & Inhaled  &  & 500 agnomas & POI & --- & DMG 258 \\
+            Carrion Crawler Mucus &  & Contact  &  & 200 agnomas & POI & --- & DMG 258 \\
+            Essence of Ether      &  & Inhaled  &  & 300 agnomas & POI & --- & DMG 258 \\
+            Sprouting Poison      &  & Injury   &  & 200 agnomas & POI & --- & DMG 258 \\
         \end{DndTable}
     \end{table*}
 
@@ -593,3 +604,17 @@
         A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or take 10 (3d6) poison damage, and must repeat the saving throw at the start of each of its turns.
         On each successive failed save, the character takes 3 (1d6) poison damage.
         After three successful saves, the poison ends.
+    \paragraph{Carrion Crawler Mucus}
+        This poison must be harvested from a dead or incapacitated carrion crawler.
+        A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute.
+        The poisoned creature is paralyzed.
+        The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+    \paragraph{Essence of Ether}
+        A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 8 hours.
+        The poisoned creature is unconscious.
+        The creature wakes up if it takes damage or if another creature takes two actions to shake it awake.
+    \paragraph{Sprouting Poison}
+        This poison is typically made only in a place far removed from sunlight.
+        A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour.
+        If the saving throw fails by 5 or more, the creature is also unconscious while poisoned in this way.
+        The creature wakes up if it takes damage or if another creature takes two actions to shake it awake.
