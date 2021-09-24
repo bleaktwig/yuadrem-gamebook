@@ -9,7 +9,7 @@
     % Ioun's Stone Pig % Random Ioun strong --- randomized when drinking.
     % Heroes Feast % Heroes Feast spell.
 \newpage~\newpage
-\subsection*{Brews} \label{ssec::brews}
+\subsection*{Brews} \label{ssec::brews} % TODO. Brews require a TON of balance and to reference the correct sources.
     The prices listed for brews are for a small keg, which fits 8 tankards worth of brew.
     Divide this by 8 for the price of a tankard, or by 16 for the price of a cup.
     Prices consider only the brew itself, not the medium of transportation.
@@ -46,13 +46,13 @@
             Brew of Clairvoyance     & Rare      & 3 &   2,500 agnomas & BRE &  4 kg.   & --- \\
             Brew of Invulnerability  & Rare      & 3 &   2,500 agnomas & BRE &  4 kg.   & --- \\
             Brew of Letargy          & Rare      & 3 &   2,500 agnomas & BRE &  4 kg.   & --- \\
-            Brew of Maximum Power    & Rare      & 3 &   2,500 agnomas & BRE &  4 kg.   & --- \\
+            Brew of Maximum Power    & Rare      & 3 &   2,500 agnomas & BRE &  4 kg.   & EGW 268 \\
             Mindblower               & Rare      & 3 &   2,500 agnomas & BRE &  4 kg.   & --- \\
             Soulcatcher (Bottle)     & Rare      & 8 &   5,000 agnomas & BRE &  0.5 kg. & --- \\
             Brainbender              & Very Rare & 3 &  25,000 agnomas & BRE &  4 kg.   & --- \\
             Brew of Vitality         & Very Rare & 3 &  25,000 agnomas & BRE &  4 kg.   & --- \\
             Brew of Speed            & Very Rare & 3 &  25,000 agnomas & BRE &  4 kg.   & --- \\
-            Erebos' Ooze (Jar)       & Very Rare & 8 &  50,000 agnomas & BRE &  1 kg.   & --- \\
+            Erebos' Ooze (Jar)       & Very Rare & 8 &  50,000 agnomas & BRE &  1 kg.   & ERLW 278 \\
             Kickstarter (Bottle)     & Very Rare & 8 &  50,000 agnomas & BRE &  0.5 kg. & --- \\
             Dancer's Whiskey         & Legendary & 3 & 125,000 agnomas & BRE &  4 kg.   & --- \\
             Groundshaker             & Legendary & 3 & 125,000 agnomas & BRE &  4 kg.   & --- \\
@@ -299,7 +299,7 @@
         This drinks grants a creature the ability to breathe underwater for 8 hours.
         Affected creatures also retain their normal mode of respiration.
 \pagebreak
-\subsubsection{Potions} \label{ssec::potions}
+\subsubsection{Potions} \label{ssec::potions} % TODO. Potions require some balancing and to reference the correct sources.
     Potions are small amounts of potent liquid contained in a flask or vial.
     A creature can drink a potion using two actions, or it can throw the container up to 4/12 meters as an action.
     This is considered a ranged weapon and any feat that applies to thrown weapons applies to it.
@@ -569,3 +569,27 @@
         If the target fails the saving throw, its hit point maximum is reduced for 1 hour by an amount equal to the necrotic damage it took.
         Any effect that removes a disease allows a creature's hit point maximum to return to normal before that time passes.
 \newpage
+\subsubsection{Poisons}
+    % NOTE: Coating a weapon or 3 pieces of ammunition in poison costs two actions.
+    \begin{table*}[t]%
+        \begin{DndTable}[width=\linewidth, header=Potions]{Xlccccc}
+            \textbf{Poison} & \textbf{Rarity} & \textbf{Method} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
+            Assassin's Blood    &  & Ingested &  & 150 agnomas & POI & --- & DMG 258 \\
+            Basic Poison (vial) &  & Contact  &  & 100 agnomas & POI & --- & PHB 153 \\
+            Burnt Othur Fumes   &  & Inhaled  &  & 500 agnomas & POI & --- & DMG 258 \\
+        \end{DndTable}
+    \end{table*}
+
+    \paragraph{Assassin's Poison}
+        A creature subjected to this poison must make a DC 10 Constitution saving throw.
+        On a failed save, it takes 6 (1d12) poison damage and is poisoned for 24 hours.
+        On a successful save, the creature takes half damage and isn't poisoned.
+    \paragraph{Basic Poison}
+        You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition.
+        Applying the poison takes two actions.
+        A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage.
+        Once applied, the poison retains potency for 1 minute before drying.
+    \paragraph{Burnt Othur Fumes}
+        A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or take 10 (3d6) poison damage, and must repeat the saving throw at the start of each of its turns.
+        On each successive failed save, the character takes 3 (1d6) poison damage.
+        After three successful saves, the poison ends.
