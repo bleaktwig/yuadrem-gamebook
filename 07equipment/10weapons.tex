@@ -1,7 +1,79 @@
 % !TEX root = ../main.tex
 \subsection*{Weapons} \label{ssec::weapons}
-\textbf{TODO.}
-\newpage~\newpage
+\subsection*{Weapon Properties} \label{ssec::weaponproperties}
+    \subparagraph{Ammunition}
+        You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon.
+        Each time you attack with the weapon, you expend one piece of ammunition.
+        Drawing the ammunition from a quiver, case, or other container is part of the attack.
+        Loading a one-handed weapon requires a free hand.
+        At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+
+        If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon.
+        A sling must be loaded to deal any damage when used in this way.
+    \subparagraph{Explosive}
+        Upon a hit, everything within 1 meter of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage.
+        If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.
+    \subparagraph{Finesse}
+        When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls.
+        You must use the same modifier for both rolls.
+    \subparagraph{Heavy}
+        Creatures that are Small or Tiny have disadvantage on attack rolls with heavy weapons.
+        A heavy weapon's size and bulk make it too large for a Small or Tiny creature to use effectively.
+
+        In addition, the multiple attack penalty is increased to 6 for weapons with this property.
+    \subparagraph{Light}
+        A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.
+
+        In addition, the multiple attack penalty is reduced to 4 for weapons with this property.
+    \subparagraph{Loading}
+        After attacking with this weapon, you need to use one action to reload it before attacking again.
+        You must have one free hand to reload the weapon.
+    \subparagraph{Misfiring}
+        Whenever you make an attack roll, and the dice roll is equal to or lower than the weapon’s misfire score, the weapon misfires.
+        The attack misses, and the weapon cannot be used again until you spend two actions to try and repair it.
+        To repair your weapon, you must make a successful Tinker’s Tools check (DC equal to 8 + the weapon's misfire score).
+        If your check fails, the weapon is broken and must be mended as part of a long rest at a quarter of its cost.
+        Creatures who use a weapon without being proficient increase its misfire score by 1.
+    \subparagraph{Range}
+        A weapon that can be used to make a ranged attack has a range in parentheses after the ammunition or thrown property.
+        The range lists two numbers.
+        The first is the weapon’s normal range in meters, and the second indicates the weapon’s long range.
+        When attacking a target beyond normal range, you have disadvantage on the attack roll.
+        You can’t attack a target beyond the weapon’s long range.
+    \subparagraph{Reach}
+        This weapon adds 1 meters to your reach when you attack with it, as well as when determining your reach for opportunity attacks with it.
+    \subparagraph{Reloading}
+        The weapon can be fired a number of times equal to its reload score before you must spend one action to reload it.
+        You must have one free hand to reload the weapon.
+    \subparagraph{Special}
+        A weapon with the special property has unusual rules governing its use, explained in the weapon’s description (see ``Special Weapons'' later in this section).
+    \subparagraph{Thrown}
+        If a weapon has the thrown property, you can throw the weapon to make a ranged attack.
+        If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon.
+        For example, if you throw a handaxe, you use your Strength, but if you throw a dagger, you can use either your Strength or your Dexterity, since the Dagger has the finesse property.
+    % \subparagraph{Trick}
+        % This weapon requires the Flexible Fighter 1 feat to use.
+        % These weapons can be transformed into alternate forms and have different capabilities in this transformed state.
+        % The weapons have two values for damage and properties, one for their normal form, and one for the transformed one.
+    \subparagraph{Two-Handed}
+        This weapon requires two hands to attack with it.
+        This property is relevant only when you attack with the weapon, not when you simply hold it.
+    \subparagraph{Versatile}
+        This weapon can be used with one or two hands.
+        A damage value in parentheses appears with the property --- the damage when the weapon is used with two hands to make a melee attack.
+
+\subsection*{Improvised Weapons} \label{ssec::improvisedweapons}
+    Sometimes characters don't have their weapons and have to attack with whatever is at hand.
+    An improvised weapon includes any object you can wield in one or two hands, such as broken glass, a table leg, a frying pan, a wagon wheel, or a dead creature.
+
+    Often, an improvised weapon is similar to an actual weapon and can be treated as such.
+    For example, a table leg is akin to a club.
+    At the DM's option, a character proficient with a weapon can use a similar object as if it were that weapon and use their proficiency bonus with that weapon.
+
+    An object that bears no resemblance to a weapon deals 1d4 damage (the DM assigns a damage type appropriate to the object).
+    If a character uses a ranged weapon to make a melee attack, or throws a melee weapon that does not have the thrown property, it also deals 1d4 damage.
+    An improvised thrown weapon has a normal range of 4 meters and a long range of 12 meters.
+
 % SPECIAL WEAPONS:
 % * Huge Krudzal weapons used to fight giants
 % * Drer fire weapons
@@ -87,77 +159,3 @@
 % * swordspears are essentially fancy glaive, but require proficiency with spears and swords due to having a different combat style.
 
 % Take firearms from https://www.dndbeyond.com/subclasses/gunslinger .
-
-\subsection*{Weapon Properties} \label{ssec::weaponproperties}
-    \subparagraph{Ammunition}
-        You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon.
-        Each time you attack with the weapon, you expend one piece of ammunition.
-        Drawing the ammunition from a quiver, case, or other container is part of the attack.
-        Loading a one-handed weapon requires a free hand.
-        At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
-
-        If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon.
-        A sling must be loaded to deal any damage when used in this way.
-    \subparagraph{Explosive}
-        Upon a hit, everything within 1 meter of the target must make a Dexterity saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier) or suffer 1d8 fire damage.
-        If the weapon misses, the ammunition fails to detonate, or bounces away harmlessly before doing so.
-    \subparagraph{Finesse}
-        When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls.
-        You must use the same modifier for both rolls.
-    \subparagraph{Heavy}
-        Creatures that are Small or Tiny have disadvantage on attack rolls with heavy weapons.
-        A heavy weapon's size and bulk make it too large for a Small or Tiny creature to use effectively.
-
-        In addition, the multiple attack penalty is increased to 6 for weapons with this property.
-    \subparagraph{Light}
-        A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons.
-
-        In addition, the multiple attack penalty is reduced to 4 for weapons with this property.
-    \subparagraph{Loading}
-        After attacking with this weapon, you need to use one action to reload it before attacking again.
-        You must have one free hand to reload the weapon.
-    \subparagraph{Misfiring}
-        Whenever you make an attack roll, and the dice roll is equal to or lower than the weapon’s misfire score, the weapon misfires.
-        The attack misses, and the weapon cannot be used again until you spend two actions to try and repair it.
-        To repair your weapon, you must make a successful Tinker’s Tools check (DC equal to 8 + the weapon's misfire score).
-        If your check fails, the weapon is broken and must be mended as part of a long rest at a quarter of its cost.
-        Creatures who use a weapon without being proficient increase its misfire score by 1.
-    \subparagraph{Range}
-        A weapon that can be used to make a ranged attack has a range in parentheses after the ammunition or thrown property.
-        The range lists two numbers.
-        The first is the weapon’s normal range in meters, and the second indicates the weapon’s long range.
-        When attacking a target beyond normal range, you have disadvantage on the attack roll.
-        You can’t attack a target beyond the weapon’s long range.
-    \subparagraph{Reach}
-        This weapon adds 1 meters to your reach when you attack with it, as well as when determining your reach for opportunity attacks with it.
-    \subparagraph{Reloading}
-        The weapon can be fired a number of times equal to its reload score before you must spend one action to reload it.
-        You must have one free hand to reload the weapon.
-    \subparagraph{Special}
-        A weapon with the special property has unusual rules governing its use, explained in the weapon’s description (see ``Special Weapons'' later in this section).
-    \subparagraph{Thrown}
-        If a weapon has the thrown property, you can throw the weapon to make a ranged attack.
-        If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon.
-        For example, if you throw a handaxe, you use your Strength, but if you throw a dagger, you can use either your Strength or your Dexterity, since the Dagger has the finesse property.
-    % \subparagraph{Trick}
-        % This weapon requires the Flexible Fighter 1 feat to use.
-        % These weapons can be transformed into alternate forms and have different capabilities in this transformed state.
-        % The weapons have two values for damage and properties, one for their normal form, and one for the transformed one.
-    \subparagraph{Two-Handed}
-        This weapon requires two hands to attack with it.
-        This property is relevant only when you attack with the weapon, not when you simply hold it.
-    \subparagraph{Versatile}
-        This weapon can be used with one or two hands.
-        A damage value in parentheses appears with the property --- the damage when the weapon is used with two hands to make a melee attack.
-
-\subsection*{Improvised Weapons} \label{ssec::improvisedweapons}
-    Sometimes characters don't have their weapons and have to attack with whatever is at hand.
-    An improvised weapon includes any object you can wield in one or two hands, such as broken glass, a table leg, a frying pan, a wagon wheel, or a dead creature.
-
-    Often, an improvised weapon is similar to an actual weapon and can be treated as such.
-    For example, a table leg is akin to a club.
-    At the DM's option, a character proficient with a weapon can use a similar object as if it were that weapon and use their proficiency bonus with that weapon.
-
-    An object that bears no resemblance to a weapon deals 1d4 damage (the DM assigns a damage type appropriate to the object).
-    If a character uses a ranged weapon to make a melee attack, or throws a melee weapon that does not have the thrown property, it also deals 1d4 damage.
-    An improvised thrown weapon has a normal range of 4 meters and a long range of 12 meters.
