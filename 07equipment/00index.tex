@@ -1,14 +1,46 @@
 % !TEX root = ../main.tex
 \chapter{Equipment} \label{ch::equipment}
-\section{Currency} \label{sec::currency}
-\subparagraph{Fob}
-    Copper coin of little value.
-    Translates to ``common''.
-\subparagraph{Agnoma}
-    Nickel coin worth 100 fobs.
-    Named after Agnomakhos, the original et ruler of Mephetis.
+\section*{Currency} \label{sec::currency}
+    \subparagraph{Fob}
+        Copper coin of little value.
+        Translates to ``common''.
+    \subparagraph{Agnoma}
+        Nickel coin worth 100 fobs.
+        Named after Agnomakhos, the original et ruler of Mephetis.
 
-\section{Materials and Labor} \label{sec::materialsandlabor}
+    In addition to coinage, trade usually occurs in the exchange of trade goods.
+    A comprehensive list of trade goods is given in the Trade Goods table below.
+
+    \begin{table*}[b]%
+        \begin{DndTable}[width=\linewidth, header=Trade Goods]{Xcccc}
+            \textbf{Item} & \textbf{Rarity} & \textbf{Total Cost} & \textbf{Weight} & \textbf{Source} \\
+            Chicken                  & Mundane  &     2 fobs    & ---  & PHB 157 \\
+            Flour                    & Mundane  &     4 fobs    & 1 kg & PHB 157 \\
+            Canvas (1 sq. mt.)       & Mundane  &    10 fobs    & ---  & PHB 157 \\
+            Iron                     & Mundane  &    20 fobs    & 1 kg & PHB 157 \\
+            Cotton Cloth (1 sq. mt.) & Mundane  &    50 fobs    & ---  & PHB 157 \\
+            Salt                     & Mundane  &    10 fobs    & 1 kg & PHB 157 \\
+            Wheat                    & Mundane  &     2 fobs    & 1 kg & PHB 157 \\
+            Cooper                   & Plain    &     1 agnoma  & 1 kg & PHB 157 \\
+            Goat                     & Plain    &     1 agnoma  & ---  & PHB 157 \\
+            Ginger                   & Plain    &     2 agnomas & 1 kg & PHB 157 \\
+            Cinnamon                 & Plain    &     4 agnomas & 1 kg & PHB 157 \\
+            Linen (1 sq. mt.)        & Plain    &     5 agnomas & ---  & PHB 157 \\
+            Cloves                   & Plain    &     6 agnomas & 1 kg & PHB 157 \\
+            Pepper                   & Plain    &     4 agnomas & 1 kg & PHB 157 \\
+            Pig                      & Plain    &     3 agnomas & ---  & PHB 157 \\
+            Sheep                    & Plain    &     2 agnomas & ---  & PHB 157 \\
+            Cow                      & Common   &    10 agnomas & ---  & PHB 157 \\
+            Ox                       & Common   &    15 agnomas & ---  & PHB 157 \\
+            Saffron                  & Common   &    30 agnomas & 1 kg & PHB 157 \\
+            Silk (1 sq. mt.)         & Common   &    10 agnomas & ---  & PHB 157 \\
+            Silver                   & Common   &    10 agnomas & 1 kg & PHB 157 \\
+            Gold                     & Uncommon &   100 agnomas & 1 kg & PHB 157 \\
+            Platinum                 & Rare     & 1,000 agnomas & 1 kg & PHB 157
+        \end{DndTable}
+    \end{table*}
+
+\section*{Materials and Labor} \label{sec::materialsandlabor}
     Any item in Yuadrem that can be bought can be crafted as well by a suficiently skilled artisan.
     Just like items, materials are separated by rarity, with increased rarity having increased cost.
     In addition, the labor required to craft rarer items is naturally harder, and thus is more expensive.
@@ -35,10 +67,10 @@
     \subsection*{Foraging} \label{ssec::foraging}
     % TODO. I should write a bit about foraging and obtaining materials.
 
-\section{Items} \label{sec::items}
+\section*{Items} \label{sec::items}
     Items marked with the $\odot$ symbol require attunement to be used.
 
-    \newpage~\newpage
+    \newpage
 
     % TODO. UPDATE PRICES BASED ON THE LIST.
     \input{07equipment/10ammunition}
@@ -46,7 +78,8 @@
     \input{07equipment/10clothing}
     \input{07equipment/10foodanddrink}
     \input{07equipment/10mountsandvehicles}
-    % \input{07equipment/10suppliesandgear}
-    % \input{07equipment/10toolsandkits}
-    % \input{07equipment/10trinketsandqualars}
+    \input{07equipment/10potionsandpoisons}
+    \input{07equipment/10suppliesandgear}
+    \input{07equipment/10toolsandkits}
     % \input{07equipment/10weapons}
+    \input{07equipment/10wondrousitems}

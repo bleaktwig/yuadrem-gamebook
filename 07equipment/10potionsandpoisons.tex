@@ -1,351 +1,359 @@
 % !TEX root = ../main.tex
-\section*{Potions and Poisons} \label{sec::potionsandpoisons}
-% \section*{Potions and Poison} \label{sec::potionsandpoison}
-%     Potions are small amounts of potent liquid contained in a flask or vial.
-%     A creature can drink a potion using two actions, or it can throw the container up to 4/12 meters as an action.
-%     This is considered a ranged weapon and any feat that applies to thrown weapons applies to it.
-%
-%     A flask can contain the same amount of liquid as 4 vials.
-%
-%     % TODO. Potions require some balancing and to reference the correct sources.
-%     \begin{table*}[t]%
-%         \begin{DndTable}[width=\linewidth, header=Potions]{Xlccccc}
-%             \textbf{Potion} & \textbf{Rarity} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
-%             Flask                              & Mundane   & 1 &      15 fobs    & GLA       & 0.5 kg. & PHB 153 \\
-%             Oil (Flask)                        & Mundane   & 1 &      15 fobs    & ALC       & 0.5 kg. & PHB 152 \\
-%             Soap                               & Mundane   & 1 &      15 fobs    & ALC       & ---     & PHB 150 \\
-%             Perfume (Vial)                     & Plain     & 3 &       5 agnomas & ALC       & ---     & PHB 150 \\
-%             Acid (Vial)                        & Common    & 1 &      30 agnomas & ALC       & ---     & PHB 148 \\
-%             Alchemist's Fire (Flask)           & Common    & 3 &      50 agnomas & ALC       & 0.5 kg. & PHB 148 \\
-%             Antitoxin (Vial)                   & Common    & 3 &      50 agnomas & ALC       & ---     & PHB 151 \\
-%             Caustic Brew (Flask)               & Common    & 3 &      50 agnomas & ALC       & 0.5 kg. & --- \\
-%             Potion of Healing (Flask)          & Common    & 1 &      30 agnomas & ALC       & 0.5 kg. & DMG 187 \\
-%             Potion of Sickness (Flask)         & Common    & 3 &      50 agnomas & ALC       & 0.5 kg. & --- \\
-%             Vial                               & Common    & 1 &       3 agnomas & GLA       & ---     & PHB 153 \\
-%             Bloodwell Vial +1                  & Uncommon  & 8 &     500 agnomas & ALC + GLA & ---     & TCE 122 \\
-%             Bottled Acid Arrow (Flask)         & Uncommon  & 3 &     250 agnomas & ALC       & 0.5 kg. & --- \\
-%             Coldblood (Vial)                   & Uncommon  &$\ast$ & 500 agnomas & ALC       & ---     & --- \\
-%             Oil of Slipperiness (Vial)         & Uncommon  & 3 &     250 agnomas & ALC       & ---     & DMG 184 \\
-%             Potion of Greater Healing (Flask)  & Uncommon  & 1 &     150 agnomas & ALC       & 0.5 kg. & DMG 187 \\
-%             Potion of Resistance (Flask)       & Uncommon  & 3 &     250 agnomas & ALC       & 0.5 kg. & DMG 188 \\
-%             Bloodwell Vial +2                  & Rare      & 8 &   5,000 agnomas & ALC + GLA & ---     & TCE 122 \\
-%             Bottled Fire (Flask)               & Rare      & 3 &   2,500 agnomas & ALC       & 0.5 kg. & --- \\
-%             Elixir of Health (Flask)           & Rare      & 3 &   2,500 agnomas & ALC       & 0.5 kg. & DMG 168 \\
-%             Flask of Mass Healing (Flask)      & Rare      & 3 &   2,500 agnomas & ALC       & 0.5 kg. & --- \\
-%             Oil of Burning (Vial)              & Rare      & 3 &   2,500 agnomas & ALC       & ---     & --- \\
-%             Potion of Aqueous Form (Vial)      & Rare      & 3 &   2,500 agnomas & ALC       & ---     & MOT 197 \\
-%             Potion of Superior Healing (Flask) & Rare      & 1 &   1,500 agnomas & ALC       & 0.5 kg. & DMG 187 \\
-%             Bloodwell Vial +3                  & Very Rare & 8 &  50,000 agnomas & ALC + GLA & ---     & TCE 122 \\
-%             Bottled Blight (Vial)              & Very Rare & 3 &  25,000 agnomas & ALC       & ---     & --- \\
-%             Flask of Weakness (Flask)          & Very Rare & 3 &  25,000 agnomas & ALC       & 0.5 kg. & --- \\
-%             Healing Cloud (Flask)              & Very Rare & 3 &  25,000 agnomas & ALC       & 0.5 kg. & --- \\
-%             Liquid Death (Flask)               & Very Rare & 3 &  25,000 agnomas & ALC       & 0.5 kg. & --- \\
-%             Oil of Immolation (Vial)           & Very Rare & 3 &  25,000 agnomas & ALC       & ---     & --- \\
-%             Oil of Sharpness (Vial)            & Very Rare & 3 &  25,000 agnomas & ALC       & ---     & DMG 184 \\
-%             Oozekiller (Vial)                  & Very Rare & 3 &  25,000 agnomas & ALC       & ---     & --- \\
-%             Potion of Contagion (Flask)        & Very Rare & 3 &  25,000 agnomas & ALC       & 0.5 kg. & --- \\
-%             Potion of Supreme Healing (Flask)  & Very Rare & 1 &  15,000 agnomas & ALC       & 0.5 kg. & DMG 187 \\
-%             Bottled Tizerus (Flask)            & Legendary & 3 & 125,000 agnomas & ALC       & 0.5 kg. & --- \\
-%             Potion of Condensed Life (Flask)   & Legendary & 3 & 125,000 agnomas & ALC       & 0.5 kg. & --- \\
-%             Potion of Regeneration (Vial)      & Legendary & 3 & 125,000 agnomas & ALC       & ---     & --- \\
-%             Vial of Pain (Vial)                & Legendary & 3 & 125,000 agnomas & ALC       & ---     & ---
-%         \end{DndTable}
-%     \end{table*}
-%     $\ast$ Coldblood is not commonly sold, and can only be gathered from a live uman using Alchemist's supplies.
-%
-%     \paragraph{Acid (Vial)}
-%         As an action, you can splash the contents of this vial onto a creature within 1 meter of you or throw the vial up to 4 meters, shattering it on impact.
-%         In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon.
-%         On a hit, the target takes 2d6 acid damage.
-%     \paragraph{Alchemist's Fire (Flask)}
-%         This sticky, adhesive fluid ignites when exposed to air.
-%         As an action, you can throw this flask up to 4 meters, shattering it on impact.
-%         Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon.
-%         On a hit, the target takes 1d4 fire damage at the start of each of its turns.
-%         A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.
-%     \paragraph{Antitoxin (Vial)}
-%         A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour.
-%         It confers no benefit to undead or constructs.
-%     \paragraph{Bloodwell Vial $\odot$}
-%         To attune to this vial, you must fill it with coldblood and add a few drops of your own blood.
-%         As long as this vial is close to your spellcasting focus, you gain a bonus to spell attack rolls and to the saving throw DCs of your spells as specified on the item's name.
-%
-%         This vial has 100 charges.
-%         Every time a spell's effect is improved by this vial, you expend one charge.
-%         When all these charges are expended, your attunement with the item is lost.
-%     \paragraph{Bottled Acid Arrow (Flask)} % Melf's acid arrow.
-%         Upon being opened, a shimmering green arrow streaks from the bottle opening in a line and bursts in a spray of acid.
-%         Make attack against a target within 18 meters.
-%         On a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
-%         On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.
-%     \paragraph{Bottled Blight (Vial)} % 5th-level Blight.
-%         Upon being opened, this bottle releases a sickening gas that drains moistury and vitality.
-%         The gas fills a 1.5-meter square before dispersing.
-%
-%         Any creature standing in this square must make a DC 16 Constitution saving throw.
-%         It takes 9d8 necrotic damage on a failed save, or half as much damage on a successful one.
-%         This potion has no effect on undead or constructs.
-%
-%         If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the potion deals maximum damage to it.
-%
-%         If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw, it simply withers and dies.
-%     \paragraph{Bottled Fire (Flask)} % Fireball.
-%         Upon breaking, a bright spark blossoms with a low roar into an explosion of flame.
-%         Each creature in a 6-meter-radius sphere centered on that point must make a Dexterity saving throw with DC 14.
-%         A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
-%
-%         The fire spreads around corners.
-%         It ignites flammable objects in the area that aren't being worn or carried.
-%     \paragraph{Bottled Tizerus (Flask)} % Delayed Blast Fireball
-%         This flask contains a tiny spark, patiently waiting to be awakened.
-%         You can shake the bottle to activate this spark.
-%         For the following minute, the bead continues to grow ever more violent.
-%         Upon breaking or when the minute passes, it blossoms with a low roar into an explosion of flame that spreads around corners.
-%         Each creature in a 6-meter radius sphere centered on that point must make a DC 18 Dexterity saving throw.
-%         A creature takes fire damage equal to the total accumulated damage on a failed save, or half as much damage on a successful one.
-%
-%         The potions's base damage is 12d6.
-%         If at the end of your turn the bead has not yet detonated, the damage increases by 1d6.
-%
-%         The glowing bead can be taken from the flask without causing it to explode.
-%         The creature touching it must make a DC 12 Dexterity saving throw.
-%         On a failed save, the spark erupts in flame.
-%         On a successful save, the creature can throw the bead up to 8 meters.
-%         When it strikes a creature or a solid object, the bead explodes.
-%
-%         The fire damages objects in the area and ignites flammable objects that aren't being worn or carried.
-%     \paragraph{Caustic Brew (Flask)} % Tasha's Caustic Brew
-%         Upon being shaken and breaking, this flask explodes in a radius 2 meters.
-%         Each creature in the cloud must succeed on a DC 10 Dexterity saving throw or be covered in acid for a minute or until a creature uses two actions to scrape or wash the acid off itself or another creature.
-%         A creature covered in the acid takes 2d4 acid damage at start of each of its turns.
-%     \paragraph{Elixir of Health (Flask)}
-%         When you drink this potion, it cures any disease afflicting you, and it removes the blinded, deafened, paralyzed, and poisoned conditions.
-%         The clear red liquid has tiny bubbles of light in it.
-%     \paragraph{Flask of Mass Healing (Flask)} % Mass healing word.
-%         Upon breaking, all creatures within a 6-meter radius regain hit points equal to 1d4 + 3.
-%         This potion has no effect on undead or constructs.
-%     \paragraph{Flask of Weakness (Flask)} % Elemental Bane.
-%         This flask comes in 5 flavors: acid, cold, fire, lightning, and thunder.
-%         Upon being opened, this flask releases a noxious gas in a 10-meter square.
-%         Any creature who breathes the gas must succeed on a DC 16 Constitution saving throw or be affected by a weakening effect for a minute.
-%         The first time each turn the affected creature takes damage of the potion's type, the target takes an extra 2d6 damage of the type.
-%         Moreover, the target loses any resistance to that damage until the effect ends.
-%     \paragraph{Healing Cloud (Flask)} % Mass Cure Wounds.
-%         Upon being opened, this potion releases a wave of healing energy in the form of a flowery smell.
-%         Any creature standing in a 9-meter radius sphere centered on the potion's location regains hit points equal to 3d8 + 4.
-%         This potion has no effect on undead or constructs.
-%     \paragraph{Liquid Death (Flask)} % Cloudkill.
-%         Upon breaking, this flask releases a 6-meter radius sphere of poisonous, yellow-green fog.
-%         The fog spreads around corners.
-%         It lasts for 10 minutes or until strong wind disperses the fog, ending the effect.
-%         Its area is heavily obscured.
-%
-%         When a creature enters the fog's area for the first time on a turn or starts its turn there, that creature must make a DC 16 Constitution saving throw.
-%         The creature takes 5d8 poison damage on a failed save, or half as much damage on a successful one.
-%         Creatures are affected even if they hold their breath or don't need to breathe.
-%
-%         % The fog moves 3 meters away from you at the start of each of your turns, rolling along the surface of the ground.
-%         % The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings.
-%     \paragraph{Oil (Flask)}
-%         As an action, you can splash the oil in this flask onto a creature within 1 meter of you or throw it up to 4 meters, shattering it on impact.
-%         Make a ranged attack against a target creature or object, treating the oil as an improvised weapon.
-%         On a hit, the target is covered in oil.
-%         The oil dries after one minute, and for this duration the target gains vulnerability to fire damage.
-%         You can also pour a flask of oil on the ground to cover a 1.5-meter-square area, provided that the surface is level.
-%         If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area.
-%         A creature can take this damage only once per turn.
-%     \paragraph{Oil of Burning (Vial)} % Flame arrows.
-%         This brown sticky oil quickly heats up when accelerated.
-%         By drenching an arrow or bolt in the oil as an action, the piece of ammunition gains an additional 1d6 fire damage on hit.
-%         The oil evapores on a piece of ammunition when it hits or misses.
-%         Using two actions, you can pour the liquid into up to twelve pieces of ammunition at once.
-%     \paragraph{Oil of Immolation (Vial)} % Immolation.
-%         Upon being opened, the vial explodes into all consuming flames in a 1.5-meter radius sphere.
-%         Any creature within this sphere is wreathed by flames.
-%         It must make a DC 16 Dexterity saving throw.
-%         It takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
-%         On a failed save, the target also burns for 1 minute.
-%         The burning target sheds bright light in a 9-meter radius and dim light for an additional 6 meters.
-%         At the end of each of its turns, the target repeats the saving throw.
-%         It takes 4d6 fire damage on a failed save, and the effect ends on a successful one.
-%         These flames can't be extinguished by other means.
-%
-%         If damage from this spell kills a target, the target is turned to ash.
-%     \paragraph{Oil of Sharpness (Vial)}
-%         This clear, gelatinous oil sparkles with tiny, ultrathin silver shards.
-%         The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition.
-%         Applying the oil takes 1 minute.
-%         For 1 hour, the coated item has a +3 bonus to attack and damage rolls.
-%     \paragraph{Oil of Slipperiness (Vial)} % Freedom of Movement + Grease
-%         This sticky black unguent is thick and heavy in the container, but it flows quickly when poured.
-%         The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium).
-%         Applying the oil takes 10 minutes.
-%
-%         The affected creature's movement is unaffected by difficult terrain for 8 hours, and spells and other magical effects can neither reduce the target's speed nor cause the target to be paralyzed or restrained for the same duration.
-%         The target can also spend 1 meter of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it grappled.
-%         Finally, being underwater imposes no penalties on the target's movement or attacks.
-%
-%         Alternatively, the oil can be poured on the ground as two actions, where it covers a 3-meter square.
-%         Slick grease covers the ground in the square which is turned into difficult terrain for 8 hours.
-%         Each creature standing in the area when you pour the liquid must succeed on a Dexterity saving throw or fall prone.
-%         A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall prone.
-%     \paragraph{Oozekiller} \label{item::oozekiller}
-%         This potion contains a clear liquid which can clean any surface instantly.
-%         When poured on an ooze, it takes 14d6 necrotic damage.
-%
-%         This potion can be drunk to end attunement with the Erebos' Ooze item (see page \pageref{item::erebosooze}), destroying the ooze in the process.
-%     \paragraph{Potion of Aqueous Form (Vial)}
-%         When you drink this potion, you transform into a pool of water.
-%         You return to your true form after 10 minutes or if you are incapacitated or die.
-%         You're under the following effects while in this form:
-%         \begin{itemize}
-%             \item \textbf{Liquid Movement.} You have a swimming speed of 6 meters.
-%             You can move over or through other liquids.
-%             You can enter and occupy the space of another creature.
-%             You can rise up to your normal height, and you can pass through even Tiny openings.
-%             You extinguish nonmagical flames in any space you enter.
-%             \item \textbf{Watery Resilience.} You have resistance to physical damage.
-%             You also have advantage on Strength, Dexterity, and Constitution saving throws.
-%             \item \textbf{Limitations}. You can't talk, attack, cast spells, or activate magic items.
-%             Any objects you were carrying or wearing meld into your new form and are inaccessible, though you continue to be affected by anything you're wearing, such as armor.
-%         \end{itemize}
-%     \paragraph{Potion of Condensed Life (Flask)} % Heal
-%         Upon drinking, a surge of energy washes through the creature, causing it to regain 80 hit points.
-%         This potion also ends blindness, deafness, and any diseases affecting the target.
-%         This spell has no effect on constructs or undead.
-%     \paragraph{Potion of Contagion (Flask)} % Contagion.
-%         This flask inflicts disease, and comes in 6 flavors, detailed below.
-%         A creature touched by the contents of this flask is poisoned.
-%
-%         At the end of each of the poisoned target's turns, the target must make a DC 16 Constitution saving throw.
-%         If the target succeeds on three of these saves, it is no longer poisoned, and the effect ends.
-%         If the target fails three of these saves, the target is no longer poisoned, but is infected by the potion's disease.
-%         The target is subjected to the disease for the a full week.
-%
-%         Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease's effects apply to it.
-%
-%         \paragraph{Blinding Sickness} Pain grips the creature's mind, and its eyes turn milky white.
-%         The creature has disadvantage on Wisdom checks and Wisdom saving throws and is blinded.
-%         \paragraph{Filth Fever} A raging fever sweeps through the creature's body.
-%         The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength.
-%         \paragraph{Fleshrot} The creature's flesh decays.
-%         The creature has disadvantage on Charisma checks and vulnerability to all damage.
-%         \paragraph{Mindfire} The creature's mind becomes feverish.
-%         The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the confusion spell during combat.
-%         \paragraph{Seizure} The creature is overcome with shaking.
-%         The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity.
-%         \paragraph{Slimy Doom} The creature begins to bleed uncontrollably.
-%         The creature has disadvantage on Constitution checks and Constitution saving throws.
-%         In addition, whenever the creature takes damage, it is stunned until the end of its next turn.
-%     \paragraph{Potion of Greater Healing (Flask)}
-%         You regain 4d4 + 4 hit points when you drink this potion.
-%         The potion's red liquid glimmers when agitated.
-%     \paragraph{Potion of Healing (Flask)}
-%         You regain 2d4 + 2 hit points when you drink this potion.
-%         The potion's red liquid glimmers when agitated.
-%     \paragraph{Potion of Regeneration (Vial)} % Regenerate
-%         This potion's contents stimulate a creature's natural healing ability.
-%         The target regains 4d8 + 15 hit points.
-%         Lasting for an hour, the target regains 1 hit point at the start of each of its turns (10 hit points each minute).
-%
-%         The target's severed body members (fingers, legs, tails, and so on), if any, are restored after 2 minutes.
-%         Any bodypart larger than a finger causes the creature to suffer one level of exhaustion upon regeneration.
-%     \paragraph{Potion of Resistance (Flask)}
-%         This potion comes in 5 flavors.
-%         When you drink this potion, you gain resistance to the potion's damage type for 1 hour.
-%         The damage types available are acid, cold, fire, lightning, or thunder.
-%     \paragraph{Potion of Sickness (Flask)} % Ray of sickness.
-%         Upon breaking, a raw of sickening greenish energy lashes out toward the closest creature within 12 meters.
-%         The target takes 2d8 poison damage and must make a Constitution saving throw with DC 10.
-%         On a failed save, it is also poisoned until the end of your next turn.
-%     \paragraph{Potion of Superior Healing (Flask)}
-%         You regain 8d4 + 8 hit points when you drink this potion. The potion's red liquid glimmers when agitated.
-%     \paragraph{Potion of Supreme Healing (Flask)}
-%         You regain 10d4 + 20 hit points when you drink this potion.
-%         The potion's red liquid glimmers when agitated.
-%     \paragraph{Vial of Pain (Vial)} % Harm
-%         This vial contains a virulent disease which harms any creature who touches its contents.
-%         The target must make a DC 18 Constitution saving throw.
-%         On a failed save, it takes 14d6 necrotic damage, or half as much damage on a successful save.
-%         The damage can't reduce the target's hit points below 1.
-%         If the target fails the saving throw, its hit point maximum is reduced for 1 hour by an amount equal to the necrotic damage it took.
-%         Any effect that removes a disease allows a creature's hit point maximum to return to normal before that time passes.
-% \newpage
-%
-% \subsubsection{Poisons}
-%     % NOTE: Coating a weapon or 3 pieces of ammunition in poison costs two actions.
-%     \begin{table*}[t]%
-%         \begin{DndTable}[width=\linewidth, header=Poisons]{Xlccccc}
-%             \textbf{Poison} & \textbf{Rarity} & \textbf{Method} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
-%             Basic Poison (vial)   & Common   & Injury   &  8 &   100 agnomas & POI & --- & PHB 153 \\
-%             Assassin's Blood      & Uncommon & Ingested &  1 &   150 agnomas & POI & --- & DMG 258 \\
-%             Burnt Othur Fumes     & Uncommon & Inhaled  &  8 &   500 agnomas & POI & --- & DMG 258 \\
-%             Carrion Crawler Mucus & Uncommon & Contact  &  3 &   200 agnomas & POI & --- & DMG 258 \\
-%             Essence of Ether      & Uncommon & Inhaled  &  5 &   300 agnomas & POI & --- & DMG 258 \\
-%             Sprouting Poison      & Uncommon & Injury   &  3 &   200 agnomas & POI & --- & DMG 258 \\
-%             Malice                & Uncommon & Inhaled  &  4 &   250 agnomas & POI & --- & DMG 258 \\
-%             Oil of Taggit         & Uncommon & Contact  &  6 &   400 agnomas & POI & --- & DMG 258 \\
-%             Pale Tincture         & Uncommon & Ingested &  4 &   250 agnomas & POI & --- & DMG 258 \\
-%             Serpent Venom         & Uncommon & Injury   &  3 &   200 agnomas & POI & --- & DMG 258 \\
-%             Torpor                & Uncommon & Ingested & 10 &   600 agnomas & POI & --- & DMG 258 \\
-%             Truth Serum           & Uncommon & Ingested &  1 &   150 agnomas & POI & --- & DMG 258 \\
-%             Midnight Tears        & Rare     & Ingested &  1 & 1,500 agnomas & POI & --- & DMG 258 \\
-%             Nidhogg Poison        & Rare     & Injury   &  2 & 2,000 agnomas & POI & --- & DMG 258 \\
-%             Wyvern Poison         & Rare     & Injury   &  1 & 1,200 agnomas & POI & --- & DMG 258
-%         \end{DndTable}
-%     \end{table*}
-%
-%     \paragraph{Assassin's Poison}
-%         A creature subjected to this poison must make a DC 10 Constitution saving throw.
-%         On a failed save, it takes 6 (1d12) poison damage and is poisoned for 24 hours.
-%         On a successful save, the creature takes half damage and isn't poisoned.
-%     \paragraph{Basic Poison}
-%         You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition.
-%         Applying the poison takes two actions.
-%         A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage.
-%         Once applied, the poison retains potency for 1 minute before drying.
-%     \paragraph{Burnt Othur Fumes}
-%         A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or take 10 (3d6) poison damage, and must repeat the saving throw at the start of each of its turns.
-%         On each successive failed save, the character takes 3 (1d6) poison damage.
-%         After three successful saves, the poison ends.
-%     \paragraph{Carrion Crawler Mucus}
-%         This poison must be harvested from a dead or incapacitated carrion crawler.
-%         A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute.
-%         The poisoned creature is paralyzed.
-%         The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
-%     \paragraph{Essence of Ether}
-%         A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 8 hours.
-%         The poisoned creature is unconscious.
-%         The creature wakes up if it takes damage or if another creature takes two actions to shake it awake.
-%     \paragraph{Sprouting Poison}
-%         This poison is typically made only in a place far removed from sunlight.
-%         A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour.
-%         If the saving throw fails by 5 or more, the creature is also unconscious while poisoned in this way.
-%         The creature wakes up if it takes damage or if another creature takes two actions to shake it awake.
-%     \paragraph{Malice}
-%         A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 1 hour.
-%         The poisoned creature is blinded.
-%     \paragraph{Midnight Tears}
-%         A creature that ingests this poison suffers no effect until the stroke of midnight.
-%         If the poison has not been neutralized before then, the creature must succeed on a DC 17 Constitution saving throw, taking 31 (9d6) poison damage on a failed save, or half as much damage on a successful one.
-%     \paragraph{Oil of Taggit}
-%         A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or become poisoned for 24 hours.
-%         The poisoned creature is unconscious.
-%         The creature wakes up if it takes damage.
-%     \paragraph{Pale Tincture}
-%         A creature subjected to this poison must succeed on a DC 16 Constitution saving throw or take 3 (1d6) poison damage and become poisoned.
-%         The poisoned creature must repeat the saving throw every 24 hours, taking 3 (1d6) poison damage on a failed save.
-%         Until this poison ends, the damage the poison deals can't be healed by any means.
-%         After seven successful saving throws, the effect ends and the creature can heal normally.
-%     \paragraph{Serpent Venom}
-%         This poison must be harvested from a dead or incapacitated poisonous snake.
-%         A creature subjected to this poison must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.
-%     \paragraph{Torpor}
-%         A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 4d6 hours.
-%         The poisoned creature is incapacitated.
-%     \paragraph{Truth Serum}
-%         A creature subjected to this poison must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour.
-%         The poisoned creature can't knowingly speak a lie.
-%     \paragraph{Wyvern Poison}
-%         This poison must be harvested from a dead or incapacitated wyvern.
-%         A creature subjected to this poison must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.
+\section*{Potions} \label{sec::potions}
+    Potions are small amounts of potent liquid contained in a flask or vial.
+    A creature can drink a potion using two actions, or it can throw the container up to 4/12 meters as an action.
+    This is considered a ranged weapon and any feat that applies to thrown weapons applies to it.
+
+    A flask contains the same amount of liquid as 4 vials.
+
+    % TODO. Potions require some balancing and to reference the correct sources.
+    \begin{table*}[b]%
+        \begin{DndTable}[width=\linewidth, header=Potions]{Xlccccc}
+            \textbf{Potion} & \textbf{Rarity} & \textbf{Mats.} & \textbf{Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
+            Flask                              & Mundane   & 1 &      15 fobs    & GLA       & 0.5 kg. & PHB 153 \\
+            Oil (Flask)                        & Mundane   & 1 &      15 fobs    & ALC       & 0.5 kg. & PHB 152 \\
+            Soap                               & Mundane   & 1 &      15 fobs    & ALC       & ---     & PHB 150 \\
+            Perfume (Vial)                     & Plain     & 3 &       5 agnomas & ALC       & ---     & PHB 150 \\
+            Acid (Vial)                        & Common    & 1 &      30 agnomas & ALC       & ---     & PHB 148 \\
+            Alchemist's Fire (Flask)           & Common    & 3 &      50 agnomas & ALC       & 0.5 kg. & PHB 148 \\
+            Antitoxin (Vial)                   & Common    & 3 &      50 agnomas & ALC       & ---     & PHB 151 \\
+            Caustic Brew (Flask)               & Common    & 3 &      50 agnomas & ALC       & 0.5 kg. & --- \\
+            Potion of Healing (Flask)          & Common    & 1 &      30 agnomas & ALC       & 0.5 kg. & DMG 187 \\
+            Potion of Sickness (Flask)         & Common    & 3 &      50 agnomas & ALC       & 0.5 kg. & --- \\
+            Vial                               & Common    & 1 &       3 agnomas & GLA       & ---     & PHB 153 \\
+            Bloodwell Vial +1                  & Uncommon  & 8 &     500 agnomas & ALC + GLA & ---     & TCE 122 \\
+            Bottled Acid Arrow (Flask)         & Uncommon  & 3 &     250 agnomas & ALC       & 0.5 kg. & --- \\
+            Coldblood (Vial)                   & Uncommon  &$\ast$ & 500 agnomas & ALC       & ---     & --- \\
+            Oil of Slipperiness (Vial)         & Uncommon  & 3 &     250 agnomas & ALC       & ---     & DMG 184 \\
+            Potion of Greater Healing (Flask)  & Uncommon  & 1 &     150 agnomas & ALC       & 0.5 kg. & DMG 187 \\
+            Potion of Resistance (Flask)       & Uncommon  & 3 &     250 agnomas & ALC       & 0.5 kg. & DMG 188 \\
+            Bloodwell Vial +2                  & Rare      & 8 &   5,000 agnomas & ALC + GLA & ---     & TCE 122 \\
+            Bottled Fire (Flask)               & Rare      & 3 &   2,500 agnomas & ALC       & 0.5 kg. & --- \\
+            Elixir of Health (Flask)           & Rare      & 3 &   2,500 agnomas & ALC       & 0.5 kg. & DMG 168 \\
+            Flask of Mass Healing (Flask)      & Rare      & 3 &   2,500 agnomas & ALC       & 0.5 kg. & --- \\
+            Oil of Burning (Vial)              & Rare      & 3 &   2,500 agnomas & ALC       & ---     & --- \\
+            Potion of Aqueous Form (Vial)      & Rare      & 3 &   2,500 agnomas & ALC       & ---     & MOT 197 \\
+            Potion of Superior Healing (Flask) & Rare      & 1 &   1,500 agnomas & ALC       & 0.5 kg. & DMG 187 \\
+            Bloodwell Vial +3                  & Very Rare & 8 &  50,000 agnomas & ALC + GLA & ---     & TCE 122 \\
+            Bottled Blight (Vial)              & Very Rare & 3 &  25,000 agnomas & ALC       & ---     & --- \\
+            Flask of Weakness (Flask)          & Very Rare & 3 &  25,000 agnomas & ALC       & 0.5 kg. & --- \\
+            Healing Cloud (Flask)              & Very Rare & 3 &  25,000 agnomas & ALC       & 0.5 kg. & --- \\
+            Liquid Death (Flask)               & Very Rare & 3 &  25,000 agnomas & ALC       & 0.5 kg. & --- \\
+            Oil of Immolation (Vial)           & Very Rare & 3 &  25,000 agnomas & ALC       & ---     & --- \\
+            Oil of Sharpness (Vial)            & Very Rare & 3 &  25,000 agnomas & ALC       & ---     & DMG 184 \\
+            Oozekiller (Vial)                  & Very Rare & 3 &  25,000 agnomas & ALC       & ---     & --- \\
+            Potion of Contagion (Flask)        & Very Rare & 3 &  25,000 agnomas & ALC       & 0.5 kg. & --- \\
+            Potion of Supreme Healing (Flask)  & Very Rare & 1 &  15,000 agnomas & ALC       & 0.5 kg. & DMG 187 \\
+            Bottled Tizerus (Flask)            & Legendary & 3 & 125,000 agnomas & ALC       & 0.5 kg. & --- \\
+            Potion of Condensed Life (Flask)   & Legendary & 3 & 125,000 agnomas & ALC       & 0.5 kg. & --- \\
+            Potion of Regeneration (Vial)      & Legendary & 3 & 125,000 agnomas & ALC       & ---     & --- \\
+            Vial of Pain (Vial)                & Legendary & 3 & 125,000 agnomas & ALC       & ---     & ---
+        \end{DndTable}
+    \end{table*}
+    $\ast$ Coldblood is not commonly sold, and can only be gathered from a live uman using Alchemist's supplies.
+
+    \paragraph{Acid (Vial)}
+        As an action, you can splash the contents of this vial onto a creature within 1 meter of you or throw the vial up to 4 meters, shattering it on impact.
+        In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon.
+        On a hit, the target takes 2d6 acid damage.
+    \paragraph{Alchemist's Fire (Flask)}
+        This sticky, adhesive fluid ignites when exposed to air.
+        As an action, you can throw this flask up to 4 meters, shattering it on impact.
+        Make a ranged attack against a creature or object, treating the alchemist's fire as an improvised weapon.
+        On a hit, the target takes 1d4 fire damage at the start of each of its turns.
+        A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames.
+    \paragraph{Antitoxin (Vial)}
+        A creature that drinks this vial of liquid gains advantage on saving throws against poison for 1 hour.
+        It confers no benefit to undead or constructs.
+    \paragraph{Bloodwell Vial $\odot$}
+        To attune to this vial, you must fill it with coldblood and add a few drops of your own blood.
+        As long as this vial is close to your spellcasting focus, you gain a bonus to spell attack rolls and to the saving throw DCs of your spells as specified on the item's name.
+
+        This vial has 100 charges.
+        Every time a spell's effect is improved by this vial, you expend one charge.
+        When all these charges are expended, your attunement with the item is lost.
+    \paragraph{Bottled Acid Arrow (Flask)} % Melf's acid arrow.
+        Upon being opened, a shimmering green arrow streaks from the bottle opening in a line and bursts in a spray of acid.
+        Make attack against a target within 18 meters.
+        On a hit, the target takes 4d4 acid damage immediately and 2d4 acid damage at the end of its next turn.
+        On a miss, the arrow splashes the target with acid for half as much of the initial damage and no damage at the end of its next turn.
+    \paragraph{Bottled Blight (Vial)} % 5th-level Blight.
+        Upon being opened, this bottle releases a sickening gas that drains moistury and vitality.
+        The gas fills a 1.5-meter square before dispersing.
+
+        Any creature standing in this square must make a DC 16 Constitution saving throw.
+        It takes 9d8 necrotic damage on a failed save, or half as much damage on a successful one.
+        This potion has no effect on undead or constructs.
+
+        If you target a plant creature or a magical plant, it makes the saving throw with disadvantage, and the potion deals maximum damage to it.
+
+        If you target a nonmagical plant that isn't a creature, such as a tree or shrub, it doesn't make a saving throw, it simply withers and dies.
+    \paragraph{Bottled Fire (Flask)} % Fireball.
+        Upon breaking, a bright spark blossoms with a low roar into an explosion of flame.
+        Each creature in a 6-meter-radius sphere centered on that point must make a Dexterity saving throw with DC 14.
+        A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
+
+        The fire spreads around corners.
+        It ignites flammable objects in the area that aren't being worn or carried.
+    \paragraph{Bottled Tizerus (Flask)} % Delayed Blast Fireball
+        This flask contains a tiny spark, patiently waiting to be awakened.
+        You can shake the bottle to activate this spark.
+        For the following minute, the bead continues to grow ever more violent.
+        Upon breaking or when the minute passes, it blossoms with a low roar into an explosion of flame that spreads around corners.
+        Each creature in a 6-meter radius sphere centered on that point must make a DC 18 Dexterity saving throw.
+        A creature takes fire damage equal to the total accumulated damage on a failed save, or half as much damage on a successful one.
+
+        The potions's base damage is 12d6.
+        If at the end of your turn the bead has not yet detonated, the damage increases by 1d6.
+
+        The glowing bead can be taken from the flask without causing it to explode.
+        The creature touching it must make a DC 12 Dexterity saving throw.
+        On a failed save, the spark erupts in flame.
+        On a successful save, the creature can throw the bead up to 8 meters.
+        When it strikes a creature or a solid object, the bead explodes.
+
+        The fire damages objects in the area and ignites flammable objects that aren't being worn or carried.
+    \paragraph{Caustic Brew (Flask)} % Tasha's Caustic Brew
+        Upon being shaken and breaking, this flask explodes in a radius 2 meters.
+        Each creature in the cloud must succeed on a DC 10 Dexterity saving throw or be covered in acid for a minute or until a creature uses two actions to scrape or wash the acid off itself or another creature.
+        A creature covered in the acid takes 2d4 acid damage at start of each of its turns.
+    \paragraph{Elixir of Health (Flask)}
+        When you drink this potion, it cures any disease afflicting you, and it removes the blinded, deafened, paralyzed, and poisoned conditions.
+        The clear red liquid has tiny bubbles of light in it.
+    \paragraph{Flask of Mass Healing (Flask)} % Mass healing word.
+        Upon breaking, all creatures within a 6-meter radius regain hit points equal to 1d4 + 3.
+        This potion has no effect on undead or constructs.
+    \paragraph{Flask of Weakness (Flask)} % Elemental Bane.
+        This flask comes in 5 flavors: acid, cold, fire, lightning, and thunder.
+        Upon being opened, this flask releases a noxious gas in a 10-meter square.
+        Any creature who breathes the gas must succeed on a DC 16 Constitution saving throw or be affected by a weakening effect for a minute.
+        The first time each turn the affected creature takes damage of the potion's type, the target takes an extra 2d6 damage of the type.
+        Moreover, the target loses any resistance to that damage until the effect ends.
+    \paragraph{Healing Cloud (Flask)} % Mass Cure Wounds.
+        Upon being opened, this potion releases a wave of healing energy in the form of a flowery smell.
+        Any creature standing in a 9-meter radius sphere centered on the potion's location regains hit points equal to 3d8 + 4.
+        This potion has no effect on undead or constructs.
+    \paragraph{Liquid Death (Flask)} % Cloudkill.
+        Upon breaking, this flask releases a 6-meter radius sphere of poisonous, yellow-green fog.
+        The fog spreads around corners.
+        It lasts for 10 minutes or until strong wind disperses the fog, ending the effect.
+        Its area is heavily obscured.
+
+        When a creature enters the fog's area for the first time on a turn or starts its turn there, that creature must make a DC 16 Constitution saving throw.
+        The creature takes 5d8 poison damage on a failed save, or half as much damage on a successful one.
+        Creatures are affected even if they hold their breath or don't need to breathe.
+
+        % The fog moves 3 meters away from you at the start of each of your turns, rolling along the surface of the ground.
+        % The vapors, being heavier than air, sink to the lowest level of the land, even pouring down openings.
+    \paragraph{Oil (Flask)}
+        As an action, you can splash the oil in this flask onto a creature within 1 meter of you or throw it up to 4 meters, shattering it on impact.
+        Make a ranged attack against a target creature or object, treating the oil as an improvised weapon.
+        On a hit, the target is covered in oil.
+        The oil dries after one minute, and for this duration the target gains vulnerability to fire damage.
+        You can also pour a flask of oil on the ground to cover a 1.5-meter-square area, provided that the surface is level.
+        If lit, the oil burns for 2 rounds and deals 5 fire damage to any creature that enters the area or ends its turn in the area.
+        A creature can take this damage only once per turn.
+    \paragraph{Oil of Burning (Vial)} % Flame arrows.
+        This brown sticky oil quickly heats up when accelerated.
+        By drenching an arrow or bolt in the oil as an action, the piece of ammunition gains an additional 1d6 fire damage on hit.
+        The oil evapores on a piece of ammunition when it hits or misses.
+        Using two actions, you can pour the liquid into up to twelve pieces of ammunition at once.
+    \paragraph{Oil of Immolation (Vial)} % Immolation.
+        Upon being opened, the vial explodes into all consuming flames in a 1.5-meter radius sphere.
+        Any creature within this sphere is wreathed by flames.
+        It must make a DC 16 Dexterity saving throw.
+        It takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
+        On a failed save, the target also burns for 1 minute.
+        The burning target sheds bright light in a 9-meter radius and dim light for an additional 6 meters.
+        At the end of each of its turns, the target repeats the saving throw.
+        It takes 4d6 fire damage on a failed save, and the effect ends on a successful one.
+        These flames can't be extinguished by other means.
+
+        If damage from this spell kills a target, the target is turned to ash.
+    \paragraph{Oil of Sharpness (Vial)}
+        This clear, gelatinous oil sparkles with tiny, ultrathin silver shards.
+        The oil can coat one slashing or piercing weapon or up to 5 pieces of slashing or piercing ammunition.
+        Applying the oil takes 1 minute.
+        For 1 hour, the coated item has a +3 bonus to attack and damage rolls.
+    \paragraph{Oil of Slipperiness (Vial)} % Freedom of Movement + Grease
+        This sticky black unguent is thick and heavy in the container, but it flows quickly when poured.
+        The oil can cover a Medium or smaller creature, along with the equipment it's wearing and carrying (one additional vial is required for each size category above Medium).
+        Applying the oil takes 10 minutes.
+
+        The affected creature's movement is unaffected by difficult terrain for 8 hours, and spells and other magical effects can neither reduce the target's speed nor cause the target to be paralyzed or restrained for the same duration.
+        The target can also spend 1 meter of movement to automatically escape from nonmagical restraints, such as manacles or a creature that has it grappled.
+        Finally, being underwater imposes no penalties on the target's movement or attacks.
+
+        Alternatively, the oil can be poured on the ground as two actions, where it covers a 3-meter square.
+        Slick grease covers the ground in the square which is turned into difficult terrain for 8 hours.
+        Each creature standing in the area when you pour the liquid must succeed on a Dexterity saving throw or fall prone.
+        A creature that enters the area or ends its turn there must also succeed on a Dexterity saving throw or fall prone.
+    \paragraph{Oozekiller} \label{item::oozekiller}
+        This potion contains a clear liquid which can clean any surface instantly.
+        When poured on an ooze, it takes 14d6 necrotic damage.
+
+        This potion can be drunk to end attunement with the Erebos' Ooze item (see page \pageref{item::erebosooze}), destroying the ooze in the process.
+    \paragraph{Potion of Aqueous Form (Vial)}
+        When you drink this potion, you transform into a pool of water.
+        You return to your true form after 10 minutes or if you are incapacitated or die.
+        You're under the following effects while in this form:
+        \begin{itemize}
+            \item \textbf{Liquid Movement.} You have a swimming speed of 6 meters.
+            You can move over or through other liquids.
+            You can enter and occupy the space of another creature.
+            You can rise up to your normal height, and you can pass through even Tiny openings.
+            You extinguish nonmagical flames in any space you enter.
+            \item \textbf{Watery Resilience.} You have resistance to physical damage.
+            You also have advantage on Strength, Dexterity, and Constitution saving throws.
+            \item \textbf{Limitations}. You can't talk, attack, cast spells, or activate magic items.
+            Any objects you were carrying or wearing meld into your new form and are inaccessible, though you continue to be affected by anything you're wearing, such as armor.
+        \end{itemize}
+    \paragraph{Potion of Condensed Life (Flask)} % Heal
+        Upon drinking, a surge of energy washes through the creature, causing it to regain 80 hit points.
+        This potion also ends blindness, deafness, and any diseases affecting the target.
+        This spell has no effect on constructs or undead.
+    \paragraph{Potion of Contagion (Flask)} % Contagion.
+        This flask inflicts disease, and comes in 6 flavors, detailed below.
+        A creature touched by the contents of this flask is poisoned.
+
+        At the end of each of the poisoned target's turns, the target must make a DC 16 Constitution saving throw.
+        If the target succeeds on three of these saves, it is no longer poisoned, and the effect ends.
+        If the target fails three of these saves, the target is no longer poisoned, but is infected by the potion's disease.
+        The target is subjected to the disease for the a full week.
+
+        Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease's effects apply to it.
+
+        \paragraph{Blinding Sickness} Pain grips the creature's mind, and its eyes turn milky white.
+        The creature has disadvantage on Wisdom checks and Wisdom saving throws and is blinded.
+        \paragraph{Filth Fever} A raging fever sweeps through the creature's body.
+        The creature has disadvantage on Strength checks, Strength saving throws, and attack rolls that use Strength.
+        \paragraph{Fleshrot} The creature's flesh decays.
+        The creature has disadvantage on Charisma checks and vulnerability to all damage.
+        \paragraph{Mindfire} The creature's mind becomes feverish.
+        The creature has disadvantage on Intelligence checks and Intelligence saving throws, and the creature behaves as if under the effects of the confusion spell during combat.
+        \paragraph{Seizure} The creature is overcome with shaking.
+        The creature has disadvantage on Dexterity checks, Dexterity saving throws, and attack rolls that use Dexterity.
+        \paragraph{Slimy Doom} The creature begins to bleed uncontrollably.
+        The creature has disadvantage on Constitution checks and Constitution saving throws.
+        In addition, whenever the creature takes damage, it is stunned until the end of its next turn.
+    \paragraph{Potion of Greater Healing (Flask)}
+        You regain 4d4 + 4 hit points when you drink this potion.
+        The potion's red liquid glimmers when agitated.
+    \paragraph{Potion of Healing (Flask)}
+        You regain 2d4 + 2 hit points when you drink this potion.
+        The potion's red liquid glimmers when agitated.
+    \paragraph{Potion of Regeneration (Vial)} % Regenerate
+        This potion's contents stimulate a creature's natural healing ability.
+        The target regains 4d8 + 15 hit points.
+        Lasting for an hour, the target regains 1 hit point at the start of each of its turns (10 hit points each minute).
+
+        The target's severed body members (fingers, legs, tails, and so on), if any, are restored after 2 minutes.
+        Any bodypart larger than a finger causes the creature to suffer one level of exhaustion upon regeneration.
+    \paragraph{Potion of Resistance (Flask)}
+        This potion comes in 5 flavors.
+        When you drink this potion, you gain resistance to the potion's damage type for 1 hour.
+        The damage types available are acid, cold, fire, lightning, or thunder.
+    \paragraph{Potion of Sickness (Flask)} % Ray of sickness.
+        Upon breaking, a raw of sickening greenish energy lashes out toward the closest creature within 12 meters.
+        The target takes 2d8 poison damage and must make a Constitution saving throw with DC 10.
+        On a failed save, it is also poisoned until the end of your next turn.
+    \paragraph{Potion of Superior Healing (Flask)}
+        You regain 8d4 + 8 hit points when you drink this potion. The potion's red liquid glimmers when agitated.
+    \paragraph{Potion of Supreme Healing (Flask)}
+        You regain 10d4 + 20 hit points when you drink this potion.
+        The potion's red liquid glimmers when agitated.
+    \paragraph{Vial of Pain (Vial)} % Harm
+        This vial contains a virulent disease which harms any creature who touches its contents.
+        The target must make a DC 18 Constitution saving throw.
+        On a failed save, it takes 14d6 necrotic damage, or half as much damage on a successful save.
+        The damage can't reduce the target's hit points below 1.
+        If the target fails the saving throw, its hit point maximum is reduced for 1 hour by an amount equal to the necrotic damage it took.
+        Any effect that removes a disease allows a creature's hit point maximum to return to normal before that time passes.
+\newpage
+
+\section*{Poison}
+    Poisons are small amounts of dangerous liquids contained in a vial.
+    Poisons have varied methods of application, which is the medium needed to administer the poison to a victim.
+
+    Using two actions, you can coat one slashing or piercing weapon or three pieces of ammunition with poison.
+    Poison can remain effective in a weapon for 1 minute after coating or until the weapon strucks a target.
+
+    % TODO. Feat with poisoner's kit: improve basic poison.
+    % TODO. Feat with poisoner's kit: change a poison's method of application.
+    % TODO. Feat with poisoner's kit: three applications of potions on melee weapons before fading instead of one.
+    \begin{table*}[b]%
+        \begin{DndTable}[width=\linewidth, header=Poisons]{Xccccccc}
+            \textbf{Poison} & \textbf{Rarity} & \textbf{Method} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
+            Basic Poison          & Common   & Injury   &  8 &   100 agnomas & POI & --- & PHB 153 \\
+            Assassin's Blood      & Uncommon & Ingested &  1 &   150 agnomas & POI & --- & DMG 258 \\
+            Burnt Othur Fumes     & Uncommon & Inhaled  &  8 &   500 agnomas & POI & --- & DMG 258 \\
+            Carrion Crawler Mucus & Uncommon & Contact  &  3 &   200 agnomas & POI & --- & DMG 258 \\
+            Essence of Ether      & Uncommon & Inhaled  &  5 &   300 agnomas & POI & --- & DMG 258 \\
+            Sprouting Poison      & Uncommon & Injury   &  3 &   200 agnomas & POI & --- & DMG 258 \\
+            Malice                & Uncommon & Inhaled  &  4 &   250 agnomas & POI & --- & DMG 258 \\
+            Oil of Taggit         & Uncommon & Contact  &  6 &   400 agnomas & POI & --- & DMG 258 \\
+            Pale Tincture         & Uncommon & Ingested &  4 &   250 agnomas & POI & --- & DMG 258 \\
+            Serpent Venom         & Uncommon & Injury   &  3 &   200 agnomas & POI & --- & DMG 258 \\
+            Torpor                & Uncommon & Ingested & 10 &   600 agnomas & POI & --- & DMG 258 \\
+            Truth Serum           & Uncommon & Ingested &  1 &   150 agnomas & POI & --- & DMG 258 \\
+            Midnight Tears        & Rare     & Ingested &  1 & 1,500 agnomas & POI & --- & DMG 258 \\
+            Nidhogg Poison        & Rare     & Injury   &  2 & 2,000 agnomas & POI & --- & DMG 258 \\
+            Wyvern Poison         & Rare     & Injury   &  1 & 1,200 agnomas & POI & --- & DMG 258
+        \end{DndTable}
+    \end{table*}
+
+    \paragraph{Assassin's Poison}
+        A creature subjected to this poison must make a DC 10 Constitution saving throw.
+        On a failed save, it takes 6 (1d12) poison damage and is poisoned for 24 hours.
+        On a successful save, the creature takes half damage and isn't poisoned.
+    \paragraph{Basic Poison}
+        You can use the poison in this vial to coat one slashing or piercing weapon or up to three pieces of ammunition.
+        Applying the poison takes two actions.
+        A creature hit by the poisoned weapon or ammunition must make a DC 10 Constitution saving throw or take 1d4 poison damage.
+        Once applied, the poison retains potency for 1 minute before drying.
+    \paragraph{Burnt Othur Fumes}
+        A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or take 10 (3d6) poison damage, and must repeat the saving throw at the start of each of its turns.
+        On each successive failed save, the character takes 3 (1d6) poison damage.
+        After three successful saves, the poison ends.
+    \paragraph{Carrion Crawler Mucus}
+        This poison must be harvested from a dead or incapacitated carrion crawler.
+        A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute.
+        The poisoned creature is paralyzed.
+        The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
+    \paragraph{Essence of Ether}
+        A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 8 hours.
+        The poisoned creature is unconscious.
+        The creature wakes up if it takes damage or if another creature takes two actions to shake it awake.
+    \paragraph{Sprouting Poison}
+        This poison is typically made only in a place far removed from sunlight.
+        A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour.
+        If the saving throw fails by 5 or more, the creature is also unconscious while poisoned in this way.
+        The creature wakes up if it takes damage or if another creature takes two actions to shake it awake.
+    \paragraph{Malice}
+        A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 1 hour.
+        The poisoned creature is blinded.
+    \paragraph{Midnight Tears}
+        A creature that ingests this poison suffers no effect until the stroke of midnight.
+        If the poison has not been neutralized before then, the creature must succeed on a DC 17 Constitution saving throw, taking 31 (9d6) poison damage on a failed save, or half as much damage on a successful one.
+    \paragraph{Oil of Taggit}
+        A creature subjected to this poison must succeed on a DC 13 Constitution saving throw or become poisoned for 24 hours.
+        The poisoned creature is unconscious.
+        The creature wakes up if it takes damage.
+    \paragraph{Pale Tincture}
+        A creature subjected to this poison must succeed on a DC 16 Constitution saving throw or take 3 (1d6) poison damage and become poisoned.
+        The poisoned creature must repeat the saving throw every 24 hours, taking 3 (1d6) poison damage on a failed save.
+        Until this poison ends, the damage the poison deals can't be healed by any means.
+        After seven successful saving throws, the effect ends and the creature can heal normally.
+    \paragraph{Serpent Venom}
+        This poison must be harvested from a dead or incapacitated poisonous snake.
+        A creature subjected to this poison must succeed on a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one.
+    \paragraph{Torpor}
+        A creature subjected to this poison must succeed on a DC 15 Constitution saving throw or become poisoned for 4d6 hours.
+        The poisoned creature is incapacitated.
+    \paragraph{Truth Serum}
+        A creature subjected to this poison must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour.
+        The poisoned creature can't knowingly speak a lie.
+    \paragraph{Wyvern Poison}
+        This poison must be harvested from a dead or incapacitated wyvern.
+        A creature subjected to this poison must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one.
+\newpage~\newpage
