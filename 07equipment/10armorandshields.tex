@@ -1,6 +1,39 @@
 % !TEX root = ../main.tex
-\subsection*{Armor and Shields} \label{ssec::armorandshields}
-\subsubsection{Armor Properties} \label{ssec::armorproperties}
+\section*{Armor and Shields} \label{sec::armorandshields}
+\begin{table*}[b]%
+    \begin{DndTable}[width=\linewidth, header=Armor]{Xccccccccc}
+        \textbf{Armor} & \textbf{Rarity} & \textbf{AC} & \textbf{Properties} & \textbf{Mats.} & \textbf{Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
+        \multicolumn{9}{l}{\hspace{0.5cm}\textit{Light Armor}} \\
+        Padded Armor      & Plain     & 11 & Cloth, Noisy   & 3 &      5 agnomas & LEA       & 4 kg   & PHB 144 \\
+        Leather Armor     & Plain     & 11 & Leather        & 8 &     10 agnomas & LEA       & 5 kg   & PHB 144 \\
+        Studded Armor     & Common    & 12 & Leather        & 3 &     50 agnomas & LEA       & 6.5 kg & PHB 144 \\
+        Glamoured Armor   & Rare      & 13 & Leather        & 8 &  5,000 agnomas & LEA + WEA & 6.5 kg & DMG 172 \\
+        Hunter's Coat     & Very Rare & 12 & Cloth, Leather & 8 & 50,000 agnomas & LEA + WEA & 5 kg   & EGW 267 \\
+        \multicolumn{9}{l}{\hspace{0.5cm}\textit{Medium Armor}} \\
+        Hide Armor        & Plain     & 12 & Leather          &  8 &     10 agnomas & LEA       & 6 kg    & PHB 144 \\
+        Chain Shirt       & Common    & 13 & Chain            &  4 &     50 agnomas & SMI + WEA & 10 kg   & PHB 144 \\
+        Scale Mail        & Common    & 14 & Composite, Noisy &  4 &     50 agnomas & LEA + SMI & 22.5 kg & PHB 144 \\
+        Breastplate       & Uncommon  & 14 & Plate            &  6 &    400 agnomas & LEA + SMI & 10 kg   & PHB 145 \\
+        Half Plate Armor  & Uncommon  & 15 & Plate, Noisy     & 13 &    750 agnomas & LEA + SMI & 20 kg   & PHB 145 \\
+        Laminar Armor     & Uncommon  & 14 & Composite        &  6 &    400 agnomas & CAR + LEA & 30 kg   & --- \\
+        Woven Iron Shirt  & Uncommon  & 13 & Chain            &  8 &    500 agnomas & SMI + WEA & 10 kg   & DMG 182 \\
+        Nidhogg Mantle    & Rare      & 15 & Composite, Noisy &  8 &  5,000 agnomas & LEA + WEA & 20 kg   & VGM  81 \\
+        Woven Steel Shirt & Rare      & 14 & Chain            &  8 &  5,000 agnomas & SMI + WEA & 10 kg   & DMG 168 \\
+        Wyvern Mail       & Very Rare & 15 & Composite, Noisy &  8 & 50,000 agnomas & LEA + WEA & 22.5 kg & DMG 165 \\
+        \multicolumn{9}{l}{\hspace{0.5cm}\textit{Heavy Armor}} \\
+        Ring Mail          & Common    & 14 & Chain, Noisy     & 1 &      30 agnomas & LEA + SMI & 20 kg   & PHB 145 \\
+        Chain Mail         & Common    & 16 & Chain, Noisy     & 6 &      80 agnomas & SMI + WEA & 27.5 kg & PHB 145 \\
+        Splint Armor       & Uncommon  & 17 & Composite, Noisy & 2 &     200 agnomas & LEA + SMI & 30 kg   & PHB 145 \\
+        Plate Armor        & Rare      & 18 & Plate, Noisy     & 1 &   1,500 agnomas & LEA + SMI & 32.5 kg & PHB 145 \\
+        Demon Armor        & Very Rare & 19 & Plate, Noisy     & 8 &  50,000 agnomas & SMI + WEA & 32.5 kg & DMG 165 \\
+        Thulkrakan Plate   & Very Rare & 20 & Plate, Noisy     & 8 &  50,000 agnomas & LEA + SMI & 32.5 kg & DMG 167 \\
+        Invulnerable Armor & Legendary & 18 & Plate, Noisy     & 8 & 250,000 agnomas & LEA + SMI & 32.5 kg & DMG 152 \\
+        Tizerus' Chain     & Legendary & 19 & Chain, Noisy     & 8 & 250,000 agnomas & SMI + WEA & 27.5 kg & DMG 167 \\
+        Obsidian Plate     & Legendary & 20 & Plate, Noisy     & 8 & 250,000 agnomas & LEA + MAS & 32.5 kg & BGDIA 224 \\
+    \end{DndTable}
+\end{table*}
+
+\subsection*{Armor Properties} \label{ssec::armorproperties}
     \subparagraph{Bulwark}
         The armor covers you so completely that your movement is hindered.
         You do not add your Dexterity modifier to Dexterity saving throws.
@@ -21,20 +54,9 @@
     \subparagraph{Plate}
         The sturdy plate provides no purchase for a cutting edge.
         You gain resistance to slashing damage.
-\subsubsection{Light Armor} \label{ssec::lightarmor}
+\subsection*{Light Armor} \label{ssec::lightarmor}
     Made from supple and thin materials, light armor favors agile adventurers since it offers some protection without sacrificing mobility.
     If you wear light armor, you add your Dexterity modifier to the base number from your armor type to determine your Armor Class.
-
-    \begin{table*}[t]%
-        \begin{DndTable}[width=\linewidth, header=Light Armor]{Xlclcccccc}
-            \textbf{Armor} & \textbf{Rarity} & \textbf{AC} & \textbf{Properties} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
-            Padded Armor          & Plain     & 11 & Cloth, Noisy   & 3 &      5 agnomas & LEA       & 4 kg   & PHB 144 \\
-            Leather Armor         & Plain     & 11 & Leather        & 8 &     10 agnomas & LEA       & 5 kg   & PHB 144 \\
-            Studded Leather Armor & Common    & 12 & Leather        & 3 &     50 agnomas & LEA       & 6.5 kg & PHB 144 \\
-            Glamoured Armor       & Rare      & 13 & Leather        & 8 &  5,000 agnomas & LEA + WEA & 6.5 kg & DMG 172 \\
-            Hunter's Coat         & Very Rare & 12 & Cloth, Leather & 8 & 50,000 agnomas & LEA + WEA & 5 kg   & EGW 267
-        \end{DndTable}
-    \end{table*}
 
     \paragraph{Glamoured Studded Leather}
         This armor has the normal appearance of a set of clothing.
@@ -51,28 +73,11 @@
         The rest of the armor is made of softer and more flexible materials.
     \paragraph{Padded Armor}
         Padded armor consists of quilted layers of cloth and batting.
-    \paragraph{Studded Leather Armor}
+    \paragraph{Studded Armor}
         Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.
-\newpage
-\subsubsection{Medium Armor} \label{ssec::mediumarmor}
+\subsection*{Medium Armor} \label{ssec::mediumarmor}
     Medium armor offers more protection than light armor, but it also impairs movement more.
-    If you wear medium armor, you add your Dexterity modifier, to a maximum of +2, to the base number from your armor type to determine your Armor Class.
-
-    \begin{table*}[t]%
-        \begin{DndTable}[width=\linewidth, header=Medium Armor]{Xlclcccccc}
-            \textbf{Armor} & \textbf{Rarity} & \textbf{AC} & \textbf{Properties} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
-            Hide Armor        & Plain     & 12 & Leather                 &  8 &     10 agnomas & LEA       & 6 kg    & PHB 144 \\
-            Chain Shirt       & Common    & 13 & Chain                   &  4 &     50 agnomas & SMI + WEA & 10 kg   & PHB 144 \\
-            Scale Mail        & Common    & 14 & Composite, Noisy        &  4 &     50 agnomas & LEA + SMI & 22.5 kg & PHB 144 \\
-            Breastplate       & Uncommon  & 14 & Plate                   &  6 &    400 agnomas & LEA + SMI & 10 kg   & PHB 145 \\
-            Half Plate Armor  & Uncommon  & 15 & Plate, Noisy            & 13 &    750 agnomas & LEA + SMI & 20 kg   & PHB 145 \\
-            Laminar Armor     & Uncommon  & 14 & Composite               &  6 &    400 agnomas & CAR + LEA & 30 kg   & --- \\
-            Woven Iron Shirt  & Uncommon  & 13 & Chain                   &  8 &    500 agnomas & SMI + WEA & 10 kg   & DMG 182 \\
-            Nidhogg Mantle    & Rare      & 15 & Composite, Noisy        &  8 &  5,000 agnomas & LEA + WEA & 20 kg   & VGM  81 \\
-            Woven Steel Shirt & Rare      & 14 & Chain                   &  8 &  5,000 agnomas & SMI + WEA & 10 kg   & DMG 168 \\
-            Wyvern Mail       & Very Rare & 15 & Composite, Plate, Noisy &  8 & 50,000 agnomas & LEA + WEA & 22.5 kg & DMG 165
-        \end{DndTable}
-    \end{table*}
+    If you wear medium armor, you add your Dexterity modifier, to a maximum of +2, to the base number from your armor to determine your Armor Class.
 
     \paragraph{Breastplate}
         This armor consists of a fitted metal chest piece worn with supple leather.
@@ -102,30 +107,14 @@
         This armor can be worn under normal clothes, becoming effectively invisible.
     \paragraph{Wyvern Mail $\odot$}
         This armor is made from wyvern scales and the carefully skinned hide of a wyvern.
-        While wearing this armor, you have resistance to poison damage.
-\newpage
-\subsubsection{Heavy Armor} \label{ssec::heavyarmor}
+        While wearing this armor, you have resistance to slashing and poison damage.
+\subsection*{Heavy Armor} \label{ssec::heavyarmor}
     Of all the armor categories, heavy armor offers the best protection.
     These suits of armor cover the entire body and are designed to stop a wide range of attacks.
-    Only proficient warriors can manage their weight and bulk.
+    % Only proficient warriors can manage their weight and bulk.
     Heavy armor doesn't let you add your Dexterity modifier to your Armor Class, but it also doesn't penalize you if your Dexterity modifier is negative.
 
-    The armor reduces the wearer's speed by 2 meters unless the wearer has a Strength score equal to or higher than 15.
-
-    \begin{table*}[t]%
-        \begin{DndTable}[width=\linewidth, header=Heavy Armor]{Xlclcccccc}
-            \textbf{Armor} & \textbf{Rarity} & \textbf{AC} & \textbf{Properties} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
-            Ring Mail          & Common    & 14 & Chain, Noisy     & 1 &      30 agnomas & LEA + SMI & 20 kg   & PHB 145 \\
-            Chain Mail         & Common    & 16 & Chain, Noisy     & 6 &      80 agnomas & SMI + WEA & 27.5 kg & PHB 145 \\
-            Splint Armor       & Uncommon  & 17 & Composite, Noisy & 2 &     200 agnomas & LEA + SMI & 30 kg   & PHB 145 \\
-            Plate Armor        & Rare      & 18 & Plate, Noisy     & 1 &   1,500 agnomas & LEA + SMI & 32.5 kg & PHB 145 \\
-            Demon Armor        & Very Rare & 19 & Plate, Noisy     & 8 &  50,000 agnomas & SMI + WEA & 32.5 kg & DMG 165 \\
-            Thulkrakan Plate   & Very Rare & 20 & Plate, Noisy     & 8 &  50,000 agnomas & LEA + SMI & 32.5 kg & DMG 167 \\
-            Invulnerable Armor & Legendary & 18 & Plate, Noisy     & 8 & 250,000 agnomas & LEA + SMI & 32.5 kg & DMG 152 \\
-            Tizerus' Chain     & Legendary & 19 & Chain, Noisy     & 8 & 250,000 agnomas & SMI + WEA & 27.5 kg & DMG 167 \\
-            Obsidian Plate     & Legendary & 20 & Plate, Noisy     & 8 & 250,000 agnomas & LEA + MAS & 32.5 kg & BGDIA 224
-        \end{DndTable}
-    \end{table*}
+    The armor reduces your speed by 2 meters unless you have a Strength score equal to or higher than 15.
 
     \paragraph{Armor of Invulnerability $\odot$}
         You have resistance to physical damage while you wear this armor.
@@ -153,8 +142,29 @@
         While wearing this armor, if an effect moves you against your will along the ground, you can use your reaction to reduce the distance you are moved by up to 2 meters.
     \paragraph{Tizerus' Chain $\odot$}
         While wearing this armor, you are immune to fire damage, and you can stand on and walk across molten rock as if it were solid ground.
-\newpage
-\subsubsection{Shields} \label{ssec::shields}
+\subsection*{Shields} \label{ssec::shields}
+    \begin{table*}[b]%
+        \begin{DndTable}[width=\linewidth, header=Armor]{Xccccccccc}
+            \textbf{Shield} & \textbf{Rarity} & \textbf{AC} & \textbf{Type} & \textbf{Mats.} & \textbf{Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
+            Buckler                   & Plain     & +1     & Light  & 3 &       5 agnomas & LEA + SMI &  1 kg  & --- \\
+            Kite Shield               & Plain     & +2     & Medium & 8 &      10 agnomas & CAR       &  3 kg  & PHB 144 \\
+            Tower Shield              & Common    & +3     & Heavy  & 3 &      50 agnomas & LEA + CAR & 10 kg  & --- \\
+            +1 Shield                 & Uncommon  & $\ast$ & $\ast$ & 8 &     500 agnomas & $\ast$    & $\ast$ & DMG 200 \\
+            Sentinel Shield           & Uncommon  & +1     & Light  & 8 &     500 agnomas & LEA + SMI &  2 kg  & DMG 199 \\
+            +2 Shield                 & Rare      & $\ast$ & $\ast$ & 8 &   5,000 agnomas & $\ast$    & $\ast$ & DMG 200 \\
+            Alert Shield              & Rare      & +4     & Medium & 8 &   5,000 agnomas & CAR + SMI &  3 kg  & CoS 68 \\
+            Arrow Catcher     & Rare      & +3     & Heavy  & 8 &   5,000 agnomas & CAR + TIN & 10 kg  & DMG 152 \\
+            Battering Shield          & Rare      & +4     & Heavy  & 8 &   5,000 agnomas & CAR + SMI & 12 kg  & EGW 266 \\
+            Pariah's Shield           & Rare      & +2     & Medium & 8 &   5,000 agnomas & LEA + SMI &  5 kg  & GGR 180 \\
+            Shield of Attraction      & Rare      & +1     & Light  & 8 &   5,000 agnomas & SMI + TIN &  3 kg  & DMG 200 \\
+            +3 Shield                 & Very Rare & $\ast$ & $\ast$ & 8 &  50,000 agnomas & $\ast$    & $\ast$ & DMG 200 \\
+            Animated Shield           & Very Rare & +2     & Medium & 8 &  50,000 agnomas & SMI + TIN &  3 kg  & DMG 151 \\
+            Spellguard Shield         & Very Rare & +3     & Heavy  & 8 &  50,000 agnomas & CAR + SMI & 10 kg  & DMG 201 \\
+            Uven Shield               & Very Rare & +3     & Heavy  & 8 &  50,000 agnomas & LEA + MAS & 20 kg  & WDMM 299 \\
+            Hidden Lord Shield & Legendary & +5     & Heavy  & 8 & 250,000 agnomas & SMI + TIN & 12 kg  & BGDIA 225
+        \end{DndTable}
+    \end{table*}
+
     A shield is made from wood or metal and is carried in one hand.
     You can benefit from only one shield at a time.
 
@@ -169,29 +179,7 @@
         In addition, they grant you half cover against ranged attacks.
         Due to their size, the wearer's move action requires 2 actions instead of one.
 
-    \begin{table*}[t]%
-        \begin{DndTable}[width=\linewidth, header=Shields]{Xlclcccccc}
-            \textbf{Shield} & \textbf{Rarity} & \textbf{AC} & \textbf{Type} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
-            Buckler                   & Plain     & +1     & Light  & 3 &       5 agnomas & LEA + SMI &  1 kg  & --- \\
-            Kite Shield               & Plain     & +2     & Medium & 8 &      10 agnomas & CAR       &  3 kg  & PHB 144 \\
-            Tower Shield              & Common    & +3     & Heavy  & 3 &      50 agnomas & LEA + CAR & 10 kg  & --- \\
-            +1 Shield                 & Uncommon  & $\ast$ & $\ast$ & 8 &     500 agnomas & $\ast$    & $\ast$ & DMG 200 \\
-            Sentinel Shield           & Uncommon  & +1     & Light  & 8 &     500 agnomas & LEA + SMI &  2 kg  & DMG 199 \\
-            +2 Shield                 & Rare      & $\ast$ & $\ast$ & 8 &   5,000 agnomas & $\ast$    & $\ast$ & DMG 200 \\
-            Alert Shield              & Rare      & +4     & Medium & 8 &   5,000 agnomas & CAR + SMI &  3 kg  & CoS 68 \\
-            Arrow-Catching Shield     & Rare      & +3     & Heavy  & 8 &   5,000 agnomas & CAR + TIN & 10 kg  & DMG 152 \\
-            Battering Shield          & Rare      & +4     & Heavy  & 8 &   5,000 agnomas & CAR + SMI & 12 kg  & EGW 266 \\
-            Pariah's Shield           & Rare      & +2     & Medium & 8 &   5,000 agnomas & LEA + SMI &  5 kg  & GGR 180 \\
-            Shield of Attraction      & Rare      & +1     & Light  & 8 &   5,000 agnomas & SMI + TIN &  3 kg  & DMG 200 \\
-            +3 Shield                 & Very Rare & $\ast$ & $\ast$ & 8 &  50,000 agnomas & $\ast$    & $\ast$ & DMG 200 \\
-            Animated Shield           & Very Rare & +2     & Medium & 8 &  50,000 agnomas & SMI + TIN &  3 kg  & DMG 151 \\
-            Spellguard Shield         & Very Rare & +3     & Heavy  & 8 &  50,000 agnomas & CAR + SMI & 10 kg  & DMG 201 \\
-            Uven Shield               & Very Rare & +3     & Heavy  & 8 &  50,000 agnomas & LEA + MAS & 20 kg  & WDMM 299 \\
-            Shield of the Hidden Lord & Legendary & +5     & Heavy  & 8 & 250,000 agnomas & SMI + TIN & 12 kg  & BGDIA 225
-        \end{DndTable}
-    \end{table*}
-    $\ast$ \textit{AC bonus, type, equired tools and weight all depen on the type of shield.
-    Refer to the plain or common versions of the shields and apply the AC bonus on top.}
+    $\ast$ \textit{AC bonus, type, required tools and weight all depend on the weight class of the shield.}
 
     \paragraph{+1/+2/+3 Shield}
         You have a +1/+2/+3 bonus to AC on top of the normal AC granted by the shield.
@@ -202,7 +190,7 @@
     \paragraph{Alert Shield}
         The shield is emblazoned with a stylized silver dragon.
         The shield grants a +2 bonus to initiative if the bearer isn't incapacitated.
-    \paragraph{Arrow-Catching Shield $\odot$}
+    \paragraph{Arrow Catcher $\odot$}
         You gain a +2 bonus to AC against ranged attacks while you wield this shield.
         This bonus is in addition to the shield's normal bonus to AC.
         In addition, whenever an attacker makes a ranged attack against a target within 1 meter of you, you can use your reaction to become the target of the attack instead.
@@ -211,24 +199,7 @@
         If you are holding the shield and push a creature within your reach at least 1 meter away, you can expend 1 charge to push that creature an additional 2 meters, knock it prone, or both.
     \paragraph{Buckler}
         This small metal shield acts more as a reinforced gauntlet than a shield, but its light weight makes it ideal for mobile combatants.
-    \paragraph{Kite Shield}
-        This wooden shield provides solid defense against most attacks.
-    \paragraph{Pariah's Shield $\odot$}
-        Akhoash Oromai soldiers consider it an honor to bear this shield, even knowing that it might be the last honor they receive.
-        The front of the shield is sculpted to depict a grieving face.
-
-        You gain a +1 bonus to AC for every two allies within 1 meter of you (up to a maximum of +3) while you wield this shield.
-        This bonus is in addition to the shield's normal bonus to AC.
-
-        When a creature you can see within 1 meter of you takes damage, you can use your reaction to take that damage, instead of the creature taking it.
-    \paragraph{Sentinel Shield}
-        While holding this light shield, you have advantage on initiative rolls and Wisdom (Perception) checks.
-        The shield is emblazoned with a symbol of an eye.
-    \paragraph{Shield of Attraction $\odot$}
-        While holding this metal shield, you have resistance to damage from ranged weapon attacks.
-
-        Whenever a ranged weapon attack is made against a target within 2 meters of you, you become the target instead.
-    \paragraph{Shield of the Hidden Lord}
+    \paragraph{Hidden Lord Shield $\odot$}
         This hellish shield is twisted into a fiendish face that resembles a devil of some sort.
         The shield has the following properties:
         \begin{itemize}
@@ -246,6 +217,23 @@
             On a successful save, the creature is immune to this power of the shield for the next 24 hours.
             Once you use this power, you can't use it again until the next dawn.
         \end{itemize}
+    \paragraph{Kite Shield}
+        This wooden shield provides solid defense against most attacks.
+    \paragraph{Pariah's Shield $\odot$}
+        Akhoash Oromai soldiers consider it an honor to bear this shield, even knowing that it might be the last honor they receive.
+        The front of the shield is sculpted to depict a grieving face.
+
+        You gain a +1 bonus to AC for every two allies within 1 meter of you (up to a maximum of +3) while you wield this shield.
+        This bonus is in addition to the shield's normal bonus to AC.
+
+        When a creature you can see within 1 meter of you takes damage, you can use your reaction to take that damage, instead of the creature taking it.
+    \paragraph{Sentinel Shield}
+        While holding this light shield, you have advantage on initiative rolls and Wisdom (Perception) checks.
+        The shield is emblazoned with a symbol of an eye.
+    \paragraph{Shield of Attraction $\odot$}
+        While holding this metal shield, you have resistance to damage from ranged weapon attacks.
+
+        Whenever a ranged weapon attack is made against a target within 2 meters of you, you become the target instead.
     \paragraph{Spellguard Shield $\odot$}
         While holding this shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you.
     \paragraph{Tower Shield}
