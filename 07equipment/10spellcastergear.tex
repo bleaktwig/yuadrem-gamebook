@@ -6,17 +6,27 @@
         \begin{DndTable}[width=\linewidth, header=Spellcasting Foci]{Xlccccc}
             \textbf{Item} & \textbf{Rarity} & \textbf{Mats.} & \textbf{Total Cost} & \textbf{Tools} & \textbf{Weight} & \textbf{Source} \\
             \multicolumn{7}{l}{\hspace{0.5cm}\textit{Spellcasting Foci}} \\
-            Rod                   & Plain     & 8 &      10 agnomas & WOO & 1 kg   & PHB 151 \\
-            Blowpipe              & Common    & 1 &      20 agnomas & SMI & 1 kg   & --- \\
-            Rod of Leadership     & Rare      & 8 &   5,000 agnomas & GLA & 1 kg   & DMG 197 \\
-            Rod of Alertness      & Very Rare & 8 &  50,000 agnomas & GLA & 1 kg   & DMG 196 \\
-            Rod of Might          & Legendary & 8 & 250,000 agnomas & GLA & 1.5 kg & DMG 196 \\
+            Rod                      & Plain     & 8 &      10 agnomas & WOO & 1 kg   & PHB 151 \\
+            Blowpipe                 & Common    & 1 &      20 agnomas & SMI & 1 kg   & --- \\
+            Rod of Leadership        & Rare      & 8 &   5,000 agnomas & GLA & 1 kg   & DMG 197 \\
+            Rod of Alertness         & Very Rare & 8 &  50,000 agnomas & GLA & 1 kg   & DMG 196 \\
+            Rod of Might             & Legendary & 8 & 250,000 agnomas & GLA & 1.5 kg & DMG 196 \\
             \multicolumn{7}{l}{\hspace{0.5cm}\textit{Utilities}} \\
-            Component Pouch       & Common    & 1 &      25 agnomas & LEA & 1 kg   & PHB 151 \\
-            Spellbook             & Common    & 3 &      50 agnomas & CAL & 1.5 kg & PHB 153 \\
-            Firetrap              & Uncommon  & 4 &     250 agnomas & GLA & 1 kg   & --- \\
-            Crystal of Absorption & Very Rare & 8 &  50,000 agnomas & GLA & 1 kg.  & DMG 195 \\
-            Crystalline Chronicle & Very Rare & 8 &  50,000 agnomas & GLA & 1.5 kg & TCE 124
+            Component Pouch          & Common    & 1 &      25 agnomas & LEA & 1 kg   & PHB 151 \\
+            Spell Scroll (Cantrip)   & Common    & 1 &      20 agnomas & CAL & ---    & DMG 199 \\
+            Spell Scroll (1st-level) & Common    & 2 &      30 agnomas & CAL & ---    & DMG 200 \\
+            Spellbook                & Common    & 3 &      50 agnomas & CAL & 1.5 kg & PHB 153 \\
+            Spell Scroll (2nd-level) & Uncommon  & 1 &     150 agnomas & CAL & ---    & DMG 201 \\
+            Spell Scroll (3rd-level) & Uncommon  & 2 &     200 agnomas & CAL & ---    & DMG 202 \\
+            Firetrap                 & Uncommon  & 4 &     250 agnomas & GLA & 1 kg   & --- \\
+            Spell Scroll (4th-level) & Rare      & 1 &   1,500 agnomas & CAL & ---    & DMG 203 \\
+            Spell Scroll (5th-level) & Rare      & 2 &   2,000 agnomas & CAL & ---    & DMG 204 \\
+            Crystal of Absorption    & Very Rare & 8 &  50,000 agnomas & GLA & 1 kg.  & DMG 195 \\
+            Crystalline Chronicle    & Very Rare & 8 &  50,000 agnomas & GLA & 1.5 kg & TCE 124 \\
+            Spell Scroll (6th-level) & Very Rare & 1 &  15,000 agnomas & CAL & ---    & DMG 205 \\
+            Spell Scroll (7th-level) & Very Rare & 2 &  20,000 agnomas & CAL & ---    & DMG 206 \\
+            Spell Scroll (8th-level) & Very Rare & 4 &  30,000 agnomas & CAL & ---    & DMG 207 \\
+            Spell Scroll (9th-level) & Legendary & 1 &  75,000 agnomas & CAL & ---    & DMG 208
         \end{DndTable}
     \end{table*}
 
@@ -104,8 +114,46 @@
             A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.
             This property can't be used again until the next dawn.
         \end{itemize}
+    \paragraph{Spell Scroll} \label{item::spellscroll}
+        A spell scroll bears the words of a single spell, written as a cipher.
+        You can read the scroll and cast its spell without providing any material components.
+        Casting the spell by reading the scroll requires the spell's normal casting time.
+        Once the spell is cast, the words on the scroll fade, and it crumbles to dust.
+        If the casting is interrupted, the scroll is not lost.
+
+        To cast the spell, you must make an ability check using your spellcasting ability to determine whether you cast it successfully.
+        The DC depends on the scroll rarity.
+        If you already know the spell, you don't need to succeed on this DC.
+        On a failed check, the spell disappears from the scroll with no other effect.
+
+        Once the spell is cast, the words on the scroll fade, and the scroll itself crumbles to dust.
+
+        The DC and attack bonus from spell scrolls are specified in the spell scroll table.
+
+        A spell on a spell scroll can be copied just as spells in spellbooks can be copied.
+        A creature proficient with calligrapher's supplies can copy a spell from a spell scroll.
+        The copier must succeed on an Intelligence (Arcana) check with a DC equal to the Casting DC of the scroll.
+        If the check succeeds, the spell is successfully copied.
+        Whether the check succeeds or fails, the spell scroll is destroyed.
+
+        \begin{DndTable}[width=\linewidth, header=Spell Scrolls]{Xccc}
+            \textbf{Level} & \textbf{Casting DC} & \textbf{Spell Save DC} & \textbf{Attack Bonus} \\
+            Cantrip & 10 & 13 &  +5 \\
+            1       & 11 & 13 &  +5 \\
+            2       & 12 & 13 &  +5 \\
+            3       & 13 & 15 &  +7 \\
+            4       & 14 & 15 &  +7 \\
+            5       & 15 & 17 &  +9 \\
+            6       & 16 & 17 &  +9 \\
+            7       & 17 & 18 & +10 \\
+            8       & 18 & 18 & +10 \\
+            9       & 19 & 19 & +11
+        \end{DndTable}
     \paragraph{Spellbook} \label{item::spellbook}
-        \textbf{TODO}.
-        % Store unlimited number of spells.
-        % Change prepared spells after a short rest.
+        A spellbook is a leather-bound tome with 100 blank vellum pages suitable for recording spell.
+        A creature capable of spellcasting can store any spell they know in the book.
+        As part of a long rest, the creature can change its known spells with any set of spells written on the book, as long as they fulfill all the requirements to cast the spell.
+
+        As part of a short rest, a creature proficient with calligrapher's supplies can attempt to copy a spell from one spellbook to another, or from a spell scroll to a spellbook.
+        The Intelligence (Arcana) DC requiredto do this is the same as the Casting DC specified in the spell scrolls table.
 \newpage

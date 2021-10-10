@@ -11,7 +11,7 @@
 
     The DC of an item depends on its rarity and its associated proficiency.
     They are listed in the tools' proficiency feat.
-    % Common items have a DC of 6, Uncommon items have a DC of 9, Rare items a DC of 12, Very Rare a DC of 15, and legendary a DC of 20.
+    Common items have a DC of 6, Uncommon items have a DC of 9, Rare items a DC of 12, Very Rare a DC of 15, and legendary a DC of 20.
 
     After you finish the list, make an ability check with the relevant toolset.
     The number you roll determines how far down the list you are able to craft, and the cost you need to pay for components.
@@ -23,10 +23,6 @@
 
     You add your Intelligence modifier to checks with Alchemists' Supplies.
 
-    From mastery with these tools, you have access to all items in the Potions section (see page \pageref{ssec::potions}).
-    The cost associated to each item only accounts for the required reagents, not the vial or flask used to contain it.
-
-    Common potions have a DC of 6 to make, Uncommon potions a DC of 9, Rare potions a DC of 12, Very Rare a DC of 15, and Legendary a DC of 18.
     The cost and DC of potions relates to one vial or flask of the substance, as is detailed in the corresponding section.
 \subsubsection{Potion Peruser} \label{feat::potionperuser}
     Using two actions, you can identify one potion within 1 meters of you, as if you had tasted it.
@@ -76,10 +72,7 @@
 
     You add your Constitution modifier to checks with Brewer's Supplies.
 
-    From mastery with these tools, you have access to all items in the Brews sections (see page \pageref{ssec::brews}).
     The cost associated to each item only accounts for the required reagents, not the barrels used to contain the liquid or the tankard used to drink it.
-
-    Common brews have a DC of 6 to make, Uncommon brews a DC of 9, Rare brews a DC of 12, Very Rare a DC of 15, and Legendary a DC of 18.
     Unless specified otherwise in the item's name, the DC of a brew relates to one small keg of the stuff, which fills 8 tankards before being drained.
 \subsubsection{Purify} \label{feat::purify}
     Using brewing techniques you can purify dirty water with your Brewer's Supplies.
@@ -114,28 +107,78 @@
     On a successful check you combine the brews' effects, and are left with an amount of the combined brew equal to half the sum of the two brews --- the remainder is lost in the mixing process.
     \paragraph{Requirements} Expert proficiency with Brewer's Supplies.
 
-% CALLIGRAPHER'S SUPPLIES
+% CALLIGRAPHER'S SUPPLIES calligrapher bookminded encriptedwriting guentsuetattoos forger
 %   - DEXTERITY : SCROLLS
-% \subsubsection{Calligrapher} \label{feat::calligrapher}
-%     Increase your level of proficiency with Calligrapher's Supplies.
-%     This feat can be re-taken until you are an expert with the toolset.
-% \subsubsection{NAME} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Competent proficiency with Calligrapher's Supplies.
-% \subsubsection{NAME} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Skilled proficiency with Calligrapher's Supplies.
-% \subsubsection{Forger} \label{feat::forger}
-%     You gain proficiency with a Forgery kit, using your proficiency bonus with Calligrapher's Supplies for checks using it.
-%     You can take this feat two additional times, gaining different effects each time:
-%     \begin{itemize}
-%         \item The second, ...
-%         \item The third, ...
-%     \end{itemize}
-%     \paragraph{Requirements} Skilled proficiency with Calligrapher's Supplies.
-% \subsubsection{NAME (2 FP)} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Expert proficiency with Calligrapher's Supplies.
+\subsubsection{Calligrapher} \label{feat::calligrapher}
+    Increase your level of proficiency with calligrapher's supplies.
+    This feat can be re-taken until you are an expert with the toolset.
+
+    You add your Dexterity modifier to checks with calligrapher's supplies.
+\subsubsection{Book-Minded} \label{feat::bookminded}
+    You have advantage on any check made to identify someone's handwriting or the source of a document, paper, or ink.
+    \paragraph{Requirements} Competent proficiency with Calligrapher's Supplies.
+\subsubsection{Encripted Writing} \label{feat::encriptedwriting}
+    A master of codes, you are able to create written ciphers.
+    Other can't decipher a code you create unless you teach them, they succeed on an Intelligence check (DC equal to 8 + your proficiency bonus with Calligrapher's Supplies), or they use magic to decipher it.
+
+    If you already have the ability to create ciphers from another feat, add a +2 to the DC required to decipher your codes.
+    \paragraph{Requirements} Skilled proficiency with Calligrapher's Supplies.
+\subsubsection{Forger} \label{feat::forger}
+    You gain proficiency with a Forgery kit, using your proficiency bonus with Calligrapher's Supplies for checks using it.
+    You can take this feat two additional times, gaining different effects each time:
+    \begin{itemize}
+        \item The second, you learn to protect yourself with multiple layers of identities and misdirection.
+        When you forge a document, you can leave behind false clues that suggest a different person was the forger.
+        When a reader spots that the document is forged, it also discovers these clues.
+        Identifying that these clues are false requires an additional Intelligence (Investigation) check against the same DC used to identify the original forgery.
+        \item The third, you can permanently commit a person's handwriting to memory if you spend a long rest studying it.
+        You can imitate this handwriting to perfection, and it is impossible to discern it from the original.
+        You can only have one handwriting commited to memory in this way.
+    \end{itemize}
+    \paragraph{Requirements} Skilled proficiency with Calligrapher's Supplies.
+\subsubsection{Guen Tsue Tattoos (2 FP)} \label{feat::guentsuetattoos}
+    Using your calligrapher's supplies, you are able to inscribe tattoos into a creature as part of a long rest.
+    The tattoos are based on runes from the Guen Tsue school of magic, and contain awesome effects for the tattooed creature to invoke.
+    A Guen Tsue tattoo requires attunement from the tattooed creature.
+
+    The effects available to you creature:
+    \begin{itemize}
+        \item \textbf{Absorbing Tattoo}.
+        This colored tattoo grants you resistance to one damage type between acid, cold, fire, force, lightning, necrotic, poison, psychic, radiant, and thunder.
+        The damage type is chosen by the tattoo artist while applying it.
+        When you take damage of the chosen type, you can use your reaction to gain immunity against that instance of the damage, and you regain a number of hit points equal to half the damage you would have taken.
+        Once this reaction is used, it can't be used again until the next dawn.
+        \item \textbf{Barrier Tattoo}.
+        While you aren't wearing armor, this tattoo depicting liquid metal grants you an Armor Class of 12 + your dexterity bonus.
+        You can use a shield and still gain this benefit.
+        \item \textbf{Blood Fury Tattoo}.
+        This tattoo evokes fury in its shape and color.
+        The tattoo has 5 charges, and it regains all expended charges daily at dawn.
+        When you hit a creature with a weapon attack, you can expend a charge to deal an extra 4d6 necrotic damage to the target, and you regain a number of hit points equal to half the necrotic damage dealt.
+
+        In addition, When a creature you can see damages you, you can expend a charge and use your reaction to make a melee attack against that creature, with advantage on your attack roll.
+        \item \textbf{Coiling Grasp Tattoo}.
+        While this intertwining tattoo is on your skin, you can, as an action, cause the tattoo to extrude into inky tendrils, which reach for a creature you can see within 3 meters of you.
+        The creature must succeed on a DC 14 Strength saving throw or take 3d6 force damage and be grappled by you.
+        As an action, the creature can escape the grapple by succeeding on a DC 14 Strength (Athletics) or Dexterity (Acrobatics) check.
+        The grapple also ends if you halt it (no action required), if the creature is ever more than 3 meters away from you, or if you use this tattoo on a different creature.
+        \item \textbf{Eldritch Claw Tattoo}.
+        While this jagged tattoo is on your skin, you gain a +1 bonus to attack and damage rolls with unarmed strikes.
+        In addition, you can use an action to empower the tattoo for 1 minute.
+        For the duration, each of your melee attacks with a weapon or an unarmed strike can reach a target up to 3 meters away from you, as inky tendrils launch toward the target.
+        In addition, your melee attacks deal an extra 1d6 force damage on a hit.
+        Once used, this action can't be used again until the next dawn.
+        \item \textbf{Lifewell Tattoo}.
+        When you would be reduced to 0 hit points, you drop to 1 hit point instead.
+        Once used, this property can't be used again until the next dawn.
+        \item \textbf{Spellwrought Tattoo}.
+        This coin-sized tattoo contains a single cantrip, chosen by the tattoo artist while applying it.
+        You can cast this cantrip requiring no material components.
+        The ability modifier for this spell is +3, the save DC is 13 and the attack bonus is +5.
+    \end{itemize}
+
+    A creature can remove a tattoo from its body as part of a long rest, ending its attunement to it.
+    \paragraph{Requirements} Expert proficiency with Calligrapher's Supplies.
 
 % CARPENTER'S TOOLS
 %   - Strength : Wooden Weapons and Staves
@@ -167,10 +210,7 @@
 
     You add your Constitution modifier to checks with cooking utensils.
 
-    From mastery with these tools, you have access to all items in the Food section (see page \pageref{ssec::food}).
     The cost associated to each item only accounts for the required reagents.
-
-    Common foods have a DC of 6 to make, Uncommon foods a DC of 9, Rare a DC of 12, Very Rare a DC of 15, and Legendary a DC of 18.
     Unless specified otherwise in the item's name, the DC of food relates to 8 rations worth of the stuff.
 \subsubsection{Warm Meal} \label{feat::warmmeal}
     By cooking them, you can make rations more effective.
@@ -206,7 +246,7 @@
 %     DESCRIPTION
 %     \paragraph{Requirements} Expert proficiency with Gaming kit.
 
-% GLASSBLOWER'S TOOLS fineflask glassblower glassenhancement glassgrenade
+% GLASSBLOWER'S TOOLS glassblower fineflask glassenhancement glassgrenade
 \subsubsection{Glassblower} \label{feat::glassblower}
     Increase your level of proficiency with Glassblower's Tools.
     This feat can be re-taken until you are an expert with the toolset.
@@ -215,8 +255,6 @@
 
     From mastery with these tools, you have access to any item made with glass, like vials, cups, and flasks.
     The cost associated to each item only accounts for the required glass.
-
-    Common glass items have a DC of 8 to make, Uncommon items a DC of 12, Rare items a DC of 16, Very Rare a DC of 20, and Legendary a DC of 24.
 
     % To work with your glassblowers tools you need access to a furnace capable of reaching temperatures of more than 1,500$\degree$ Celcius.
 \subsubsection{Glass Grenade} \label{feat::glassgrenade}
@@ -238,7 +276,7 @@
 \subsubsection{Glass Enhancements (2 FP)} \label{feat::glassenhancement}
     You can enhance a weapon's effect by adding glass into the mix.
     As part of a long rest, you can work with a weaponsmith to add one of the following effects to a slashing or piercing weapon:
-    \subparagraph{Hollowed Weapon} When a poison is applied to the weapon, the time it remains applied is doubled, and any roll related to it is made with advantage.
+    \subparagraph{Hollowed Weapon} When a poison is applied to the weapon, the time it remains applied is doubled, and it can apply one additional dose of the poison before being drained.
     \subparagraph{Grainy Edge} By adding glass grain to a weapons edge it becomes more effective.
     The weapon gains a +1 bonus to attack and damage rolls.
     \subparagraph{Glass Shards} This weapon contains loosely glued shards of glass on its faces.
@@ -249,7 +287,7 @@
     A weapon can only have one of these effects applied at the same time.
     \paragraph{Requirements} Expert proficiency with Glassblower's Tools.
 
-% HEALER'S KIT combatmedic healer physician quickmender travellingdoctor
+% HEALER'S KIT healer combatmedic physician quickmender travellingdoctor
 \subsubsection{Healer} \label{feat::healer}
     Increase your level of proficiency with the healer's kit.
     This feat can be re-taken until you are an expert with the kit.
@@ -557,8 +595,6 @@
 
     From mastery with these tools, you have access to small items made with wood and to apply engravings on wooden items and surfaces.
     These items include arrows, bolts, rods, etc.
-
-    Common wooden items have a DC of 8 to make, Uncommon items a DC of 12, Rare items a DC of 16, Very Rare a DC of 20, and Legendary a DC of 24.
 \subsubsection{Ad-hoc Weaponry} \label{feat::adhocweaponry}
     Taking an hour of work, you can create a number of improvised weapons equal to your proficiency bonus with woodcarver's tools.
     The weapons available to you are clubs, daggers, greatclubs, javelins, light hammers, maces, quarterstaves, and spears.
