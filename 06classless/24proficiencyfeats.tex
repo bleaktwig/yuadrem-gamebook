@@ -108,12 +108,11 @@
     \paragraph{Requirements} Expert proficiency with Brewer's Supplies.
 
 % CALLIGRAPHER'S SUPPLIES calligrapher bookminded encriptedwriting guentsuetattoos forger
-%   - DEXTERITY : SCROLLS
 \subsubsection{Calligrapher} \label{feat::calligrapher}
     Increase your level of proficiency with calligrapher's supplies.
     This feat can be re-taken until you are an expert with the toolset.
 
-    You add your Dexterity modifier to checks with calligrapher's supplies.
+    You add your Intelligence modifier to checks with calligrapher's supplies.
 \subsubsection{Book-Minded} \label{feat::bookminded}
     You have advantage on any check made to identify someone's handwriting or the source of a document, paper, or ink.
     \paragraph{Requirements} Competent proficiency with Calligrapher's Supplies.
@@ -180,8 +179,7 @@
     A creature can remove a tattoo from its body as part of a long rest, ending its attunement to it.
     \paragraph{Requirements} Expert proficiency with Calligrapher's Supplies.
 
-% CARPENTER'S TOOLS
-%   - Strength : Wooden Weapons and Staves
+% CARPENTER'S TOOLS carpenter fortify instantfortress laminararmor
 \subsubsection{Carpenter} \label{feat::carpenter}
     Increase your level of proficiency with Carpenter's Tools.
     This feat can be re-taken until you are an expert with the toolset.
@@ -190,20 +188,27 @@
 
     From mastery with these tools, you have access to large items made of wood, like barrels, battering rams, boats, etc.
     The cost associated to each item only accounts for the required wood.
-
-    Common wooden items have a DC of 8 to make, Uncommon items a DC of 12, Rare items a DC of 16, Very Rare a DC of 20, and Legendary a DC of 24.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Fortify} \label{feat::fortify}
+    You can temporarily fortify a door, wall, or window using two actions.
+    The DC needed to open or damage it in any way increases by 5.
+    An object can be fortified in this way only once, and the fortifications fall apart 8 hours after being applied.
     \paragraph{Requirements} Competent proficiency with Carpenter's Tools.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Instant Fortress} \label{feat::instantfortress}
+    With one minute of work and raw materials, you can create a wooden barrier no more than 2 meters in any dimension.
+    The barrier has an AC equal to your proficiency with carpenter's tools and an HP equal to three times that.
+    It is immune to poison and psychic damage, and is vulnerable to fire damage.
+    The barrier works as full cover against projectiles, and if it measures less than 1 by 1 meters, it can be used as a tower shield.
+
+    The barrier collapses 8 hours after being assembled.
     \paragraph{Requirements} Skilled proficiency with Carpenter's Tools.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
+\subsubsection{Laminar Armor (2 FP)} \label{feat::laminararmor}
+    You gain access to craft all heavy armor and shields by yourself --- even if they would normally require other toolsets.
+    All items you craft in this way are made of wood, and weigh twice their normal weight.
+
+    In addition, all armor crafted in this way has the Composite and Noisy properties, overriding the properties they would normally have.
     \paragraph{Requirements} Expert proficiency with Carpenter's Tools.
 
 % COOKING UTENSILS chef cook sweettreat warmmeal
-%   - Constitution : Food
 \subsubsection{Cook} \label{feat::cook}
     Increase your level of proficiency with cooking utensils.
     This feat can be re-taken until you are an expert with the toolset.
@@ -227,6 +232,27 @@
     You can prepare enough of this food for a number of creatures equal to 4 + your proficiency bonus with Cooking Utensils.
     At the end of the short rest, any creature who eats the food and spends one or more Hit Dice to regain hit points regains extra hit points equal to 2d8 + their Constitution modifier.
     \paragraph{Requirements} Expert proficiency with Cooking Utensils.
+
+% CARTOGRAPHER'S SUPPLIES cartographer copyist everpresent proliferator
+\subsubsection{Cartographer} \label{feat::cartographer}
+    Increase your level of proficiency with cartographer's supplies.
+    This feat can be re-taken until you are an expert with the toolset.
+
+    You add your Intelligence modifier to checks with cartographer's supplies.
+
+    While you travel, you can draw a map as you go in addition engaging in other activity.
+\subsubsection{Copyist} \label{feat::copyist}
+    You gain the ability to copy another map as part of a long rest.
+    To do this, you consume materials that cost half the cost of the map you're copying, and must succeed on an ability check using the Cartographer's Kit with a DC proportional to the scale and the level of detail of the map, at the DM's discretion.
+    If you have spent a month of more exploring the region in the map, you make this ability check with advantage.
+    \paragraph{Requirements} Competent proficiency with cartographer's supplies.
+\subsubsection{Proliferator} \label{feat::proliferator}
+    While drawing a map you can simultaneously draw a second copy of it without spending any additional time.
+    \paragraph{Requirements} Skilled proficiency with cartographer's supplies.
+\subsubsection{Ever-Present (2 FP)} \label{feat::everpresent}
+    Your time studying maps has given you the ability to understand vantage points and points of interest even without having seen them before.
+    You cannot become lost by any means, and you can always accurately tell where you are in the world as part of a short rest.
+    \paragraph{Requirements} Expert proficiency with cartographer's supplies.
 
 % GAMING KIT
 %   - Intelligence?
@@ -333,7 +359,7 @@
 %     \begin{itemize}
 %         \item The second, your poisons ignore resistance to poison damage.
 %         Additionally, you can coat a weapon in poison using one action instead of two.
-%         \item The third, the Constitution saving throws of the poisons you make are increased by your proficiency bonus with the Herbalism Kit.
+%         \item The third, the Constitution saving throws of the poisons you make are increased by half proficiency bonus with the Herbalism Kit.
 %     \end{itemize}
 %     \paragraph{Requirements} Skilled proficiency with Herbalism Kit.
 % \subsubsection{NAME (2 FP)} \label{feat::name}
@@ -449,18 +475,6 @@
 % \subsubsection{NAME (2 FP)} \label{feat::name}
 %     DESCRIPTION
 %     \paragraph{Requirements} Expert proficiency with Painter's Supplies.
-% \subsubsection{Cartographer} \label{feat::cartographer}
-%     You gain proficiency with a Cartographer's Kit, using your proficiency bonus with Painter's Supplies for checks using it.
-%     You can take this feat two additional times, gaining different effects each time:
-%     \begin{itemize}
-%         \item The second, you gain the ability to map the region you've traveled during the day with perfect accuracy as part of a short rest.
-%         These maps allow you to retrace your steps without rolling any check, and give you advantage on any ability check to avoid getting lost.
-%         Additionally, maping unexplored or uncharted regions can fetch high prices with the right buyer.
-%         \item The third, you gain the ability to copy another map as part of a long rest.
-%         To do this, you consume materials that cost half the cost of the map you're copying, and must succeed on an ability check using the Cartographer's Kit with a DC proportional to the scale and the level of detail of the map, at the DM's discretion.
-%         If you have spent a month of more exploring the region in the map, you make this ability check with advantage.
-%     \end{itemize}
-%     \paragraph{Requirements} Skilled proficiency with Painter's Supplies.
 
 % POTTER'S TOOLS
 %   - Dexterity : ...?
