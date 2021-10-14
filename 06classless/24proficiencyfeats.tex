@@ -1,7 +1,6 @@
 % !TEX root = ../main.tex
 \addcontentsline{toc}{section}{Proficiency Feats}
 \subsection*{Proficiency Feats}
-% NOTE: DIVIDED INTO THRRE, TOOL PROFICIENCIES, LAND VEHICLES, AND KITS.
 
 \subsection*{Tool Proficiencies}
     You can use a set of Artisan's Tools to craft items as part of a long rest.
@@ -229,22 +228,31 @@
     You cannot become lost by any means, and you can always accurately tell where you are in the world as part of a short rest.
     \paragraph{Requirements} Expert proficiency with cartographer's supplies.
 
-% COBBLER'S TOOLS cobbler
-%   - Dexterity : Shoes and boots
+% COBBLER'S TOOLS cobbler bootenhancements reinforcedsole travellingshoes
 \subsubsection{Cobbler} \label{feat::cobbler}
     Increase your level of proficiency with cobbler's tools.
     This feat can be re-taken until you are an expert with the toolset.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
-    \paragraph{Requirements} Competent proficiency with cobbler's tools.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
-    \paragraph{Requirements} Skilled proficiency with cobbler's tools.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
-    \paragraph{Requirements} Expert proficiency with cobbler's tools.
 
-Whenever a cobbler spends a long rest repairing and preparing the party’s footwear for the journey ahead, they are granted a bonus to their travel pace. Using the RAW travel pace table below, the party can move at a travel pace that is one level higher, while retaining their normal benefits. For example a party travelling at a fast pace is not subjected to the penalty of -5 to passive perception. This bonus lasts for one week of travel.
+    You add your Dexterity modifier to checks with cobbler's tools.
+\subsubsection{Travelling Shoes} \label{feat::travellingshoes}
+    You can repair and prepare the party's footwear as part of a short rest.
+    When you do so, the party is granted a bonus to their travel pace.
+    They are able to use stealth while travelling at normal pace, and don't take a -5 penalty to passive perception when travelling at a fast pace.
+
+    This bonus lasts for one week of travel.
+    \paragraph{Requirements} Competent proficiency with cobbler's tools.
+\subsubsection{Reinforced Sole} \label{feat::reinforcedsole}
+    Any creature that wears shoes you have worked on take half damage (rounded down) from items and effect that specifically target their feet, such as the grease spell or a spread bag of caltrops.
+    \paragraph{Requirements} Skilled proficiency with cobbler's tools.
+\subsubsection{Boot Enhancements (2 FP)} \label{feat::bootenhancements}
+    As part of a long rest, you can work on a pair of boots or shoes to add the following effects to them:
+    \subparagraph{Comfortable Soles} If the creature travels for more than 8 hours in one day, they roll the Constitution saving throw against exhaustion with advantage.
+    \subparagraph{Padded Soles} The creature's steps don't produce any sound, and they cannot be found from the sounds of their walking alone.
+    In addition, rolls to identify tracks left by these shoes are made with disadvantage.
+    \subparagraph{Spiked Soles} The creature has advantage on any saving throw made to avoid being pushed or being knocked prone.
+
+    A weapon can only have one of these effects applied at the same time.
+    \paragraph{Requirements} Expert proficiency with cobbler's tools.
 
 % COOKING UTENSILS chef cook sweettreat warmmeal
 \subsubsection{Cook} \label{feat::cook}
@@ -321,7 +329,7 @@ Whenever a cobbler spends a long rest repairing and preparing the party’s foot
     As part of a long rest, you can work with a weaponsmith to add one of the following effects to a slashing or piercing weapon:
     \subparagraph{Hollowed Weapon} When a poison is applied to the weapon, the time it remains applied is doubled, and it can apply one additional dose of the poison before being drained.
     \subparagraph{Grainy Edge} By adding glass grain to a weapons edge it becomes more effective.
-    The weapon gains a +1 bonus to attack and damage rolls.
+    The weapon gains a +1 bonus to attack and damage rolls if it didn't already have a bonus.
     \subparagraph{Glass Shards} This weapon contains loosely glued shards of glass on its faces.
     On a successful hit, the target takes 1d4 damage on the beginning of each of its turns.
     Any creature can take two actions to staunch the wound with a successful DC 12 Wisdom (Medicine) check.
@@ -360,7 +368,6 @@ Whenever a cobbler spends a long rest repairing and preparing the party’s foot
     \paragraph{Requirements} Expert proficiency with Healer's kit.
 
 % HERBALISM KIT herbalist adeptpoisoner healingoinments naturalremedies
-%   - Wisdom : Reagents, this includes stuff for alchemy, brewing, cooking, and poisonmaking.
 \subsubsection{Herbalist} \label{feat::herbalist}
     Increase your level of proficiency with herbalism kit.
     This feat can be re-taken until you are an expert with the toolset.
@@ -398,35 +405,66 @@ Whenever a cobbler spends a long rest repairing and preparing the party’s foot
     The creature gains advantage on saving throws against poison and disease for the next day.
     \paragraph{Requirements} Expert proficiency with Herbalism Kit.
 
-% JEWELER'S TOOLS
-%   - Dexterity : Wondrous items
-% \subsubsection{Jeweler} \label{feat::jeweler}
-%     Increase your level of proficiency with Jeweler's Tools.
-%     This feat can be re-taken until you are an expert with the toolset.
-% \subsubsection{NAME} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Competent proficiency with Jeweler's Tools.
-% \subsubsection{NAME} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Skilled proficiency with Jeweler's Tools.
-% \subsubsection{NAME (2 FP)} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Expert proficiency with Jeweler's Tools.
+% JEWELER'S TOOLS jeweler adornedgarments fakejewels shatterpoint
+\subsubsection{Jeweler} \label{feat::jeweler}
+    Increase your level of proficiency with jeweler's tools.
+    This feat can be re-taken until you are an expert with the toolset.
 
-% LEATHERWORKER'S TOOLS
-%   - Dexterity : Light armour, hide armour?
-% \subsubsection{Leatherworker} \label{feat::leatherworker}
-%     Increase your level of proficiency with Leatherworker's Tools.
-%     This feat can be re-taken until you are an expert with the toolset.
-% \subsubsection{NAME} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Competent proficiency with Leatherworker's Tools.
-% \subsubsection{NAME} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Skilled proficiency with Leatherworker's Tools.
-% \subsubsection{NAME (2 FP)} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Expert proficiency with Leatherworker's Tools.
+    You add your Dexterity modifier to checks with a jeweler's tools.
+\subsubsection{Adorned Garments} \label{feat::adornedgarments}
+    As part of a long rest, you can use one material worth of jewels to adorn an item of your choice.
+    The jewels' rarity must be of at least the same rarity as the item.
+    The value of the item is increased by the double of the cost of the added jewels.
+    \paragraph{Requirements} Competent proficiency with jeweler's tools.
+\subsubsection{Shatter Point} \label{feat::shatterpoint}
+    Your knowledge of gems and gem-based objects allows you to quickly identify their shatter points.
+    You deal double damage to such objects and gem-based creatures with weapon attacks.
+    \paragraph{Requirements} Skilled proficiency with jeweler's tools.
+\subsubsection{Fake Jewels (2 FP)} \label{feat::fakejewels}
+    As part of a long rest, you can create one or more fake gemstones.
+    When you create them, you can set a gold value for them to appear to have; this value can't be more than your proficiency bonus with jeweler's tools times 100 (minimum of 300 agnomas).
+    In addition, make an ability check using your jeweler's tools; the total of your check becomes the DC for someone else's attempt to identify the fake gems for what they are.
+    \paragraph{Requirements} Expert proficiency with jeweler's tools.
+
+% LEATHERWORKER'S TOOLS leatherworker patchworker silencedjoints slayandskin
+\subsubsection{Leatherworker} \label{feat::leatherworker}
+    Increase your level of proficiency with leatherworker's tools.
+    This feat can be re-taken until you are an expert with the toolset.
+
+    You add your Dexterity modifier to checks with a leatherworker's tools.
+\subsubsection{Slay \& Skin} \label{feat::slayandskin}
+    You are particularly proficient at scavenging leather off a dead creature.
+    No more than one minute after slaying a creature with the beast type, you can roll with your leatherworker's tools to skin it.
+    With a minute of work, you produce a number of leatherworking materials equal to the roll divided by 10 (rounded down).
+    You may obtain less or more based on the creature's size at the DMs discretion.
+
+    The rarity of the materials gathered depend on the CR of the creature, as is given in the Leather Rarity table below.
+
+    \begin{DndTable}[width=\linewidth, header=Leather Rarity]{lX}
+        \textbf{CR} & \textbf{Rarity} \\
+        < 1         & Plain           \\
+         1          & Common          \\
+         2 -  7     & Uncommon        \\
+         8 - 13     & Rare            \\
+        14 - 20     & Very Rare       \\
+        21+         & Legendary
+    \end{DndTable}
+    \paragraph{Requirements} Competent proficiency with leatherworker's tools.
+\subsubsection{Silenced Joints} \label{feat::silencedjoints}
+    As part of a short rest, you can add small leather pieces to the joints of medium or heavy armor.
+    This armor loses the Noisy property until the end of the following day.
+    \paragraph{Requirements} Skilled proficiency with leatherworker's tools.
+\subsubsection{Patch Worker (2 FP)} \label{feat::patchworker}
+    As part of a short rest, you can craft three patches and apply them to up to three armors with the Leather property.
+    Patches retain potency during the day after they are applied or until their number of uses is exhausted.
+    You can choose to apply multiple patches to one armor.
+    \subparagraph{Padded Patch} This patch has three uses.
+    When the wearer of this armor takes fall damage, that damage is calculated as if they fell 4 less meters (2 less dice) and it loses a use.
+    \subparagraph{Slippery Patch} This patch has one use.
+    When the wearer of this armor becomes grappled or restrained, the effect immediately ends.
+    \subparagraph{Impact Patch} This patch has two uses.
+    When the wearer takes bludgeoning damage from a weapon attack, the damage is reduced to 0.
+    \paragraph{Requirements} Expert proficiency with leatherworker's tools.
 
 % MASON'S TOOLS
 %   - Strength : Weapons and armour made of stone (e.g. obsidian)
