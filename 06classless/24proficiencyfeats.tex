@@ -384,8 +384,9 @@
     If you gather the reagents yourself, you only need half the normal amount of materials to make the poison, and can make it as part of the long rest you used to gather them.
     \paragraph{Requirements} Competent proficiency with herbalism kit.
 \subsubsection{Healing Ointments} \label{feat::healingoinments}
-    As part of a short rest, you can use gathered reagents to cure one or more creatures' wounds.
+    As part of a short rest, you can use one material worth of gathered reagents to cure one or more creatures' wounds.
     The amount healed depends on the rarity of the reagents, and is specified in the Healing Ointment table below.
+    You add your Wisdom modifier to the healing applied.
 
     \begin{DndTable}[width=\linewidth, header=Healing Oinment]{lX}
         \textbf{Rarity} & \textbf{Healing} \\
@@ -466,20 +467,28 @@
     When the wearer takes bludgeoning damage from a weapon attack, the damage is reduced to 0.
     \paragraph{Requirements} Expert proficiency with leatherworker's tools.
 
-% MASON'S TOOLS
-%   - Strength : Weapons and armour made of stone (e.g. obsidian)
-% \subsubsection{Mason} \label{feat::mason}
-%     Increase your level of proficiency with Mason's Tools.
-%     This feat can be re-taken until you are an expert with the toolset.
-% \subsubsection{NAME} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Competent proficiency with Mason's Tools.
-% \subsubsection{NAME} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Skilled proficiency with Mason's Tools.
-% \subsubsection{NAME (2 FP)} \label{feat::name}
-%     DESCRIPTION
-%     \paragraph{Requirements} Expert proficiency with Mason's Tools.
+% MASON'S TOOLS mason breakingpoint miner reinforcedequipment
+\subsubsection{Mason} \label{feat::mason}
+    Increase your level of proficiency with mason's tools.
+    This feat can be re-taken until you are an expert with the toolset.
+
+    You add your Strength modifier to checks with mason's tools.
+\subsubsection{Miner} \label{feat::miner}
+    You can use your proficiency with this kit to mine from a cliff face, mountain, or cavern as part of a long rest.
+    Make a list with the rarity of reagents you want to find during the short rest, then roll a skill check using the mason's tools.
+    The DC of one material is the same as the one for crafting an object of the same rarity.
+
+    Materials gathered in this way can be used by jewelers, masons, and smiths.
+    \paragraph{Requirements} Competent proficiency with mason's tools.
+\subsubsection{Breaking Point} \label{feat::breakingpoint}
+    Your knowledge of masonry allows you to spot weak points in any stone construction, rather than just brick walls.
+    You deal double damage to objects and structures made from brick or stone and creatures made from these materials.
+    \paragraph{Requirements} Skilled proficiency with mason's tools.
+\subsubsection{Reinforced Equipment (2 FP)} \label{feat::reinforcedequipment}
+    You can reinforce a heavy armor or bludgeoning weapon as part of a long rest.
+    When you do so, you increase the AC of the piece of armor or the damage of the bludgeoning weapon by +1.
+    A piece of equipment can be reinforced only once with this effect, and its weight is doubled.
+    \paragraph{Requirements} Expert proficiency with mason's tools.
 
 % MUSICAL INSTRUMENTS
 %   - ???
