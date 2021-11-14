@@ -1,5 +1,82 @@
 % !TEX root = ../main.tex
 \section{Sympathy}
+\subsection*{Mediums}
+    \DndSpellHeader{Heat Link: Ember \label{spell::ember}}
+        {Sympathy medium}
+        {2 actions}
+        {12 mt.}
+        {S}
+        {Up to an hour}
+        You produce a lingering ember that tethers to a point of your choice within range.
+        The ember can lie on a point ocuppied by another creature, stays in position for the spell's duration, and is visible.
+        Other creatures can snuff out the flame by covering it in water or by enclosing it on a closed volume of medium or lesser size.
+        You can have at most three active embers at one time.
+
+        As an action on your subsequent turns, you can affect an ember in one of the following ways:
+        \begin{itemize}
+            \item \textbf{Move}.
+            You move the ember up to 6 meters to a point within range.
+            \item \textbf{Snuff Out}.
+            You harmlessly snuff out the ember.
+            \item \textbf{Explode}.
+            The ember explodes, harming any creature(s) in the same space that the ember is.
+            The creature(s) must succeed on a Dexterity saving throw or take 1d8 fire damage.
+            This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
+        \end{itemize}
+
+\subsection*{Spells}
+    \DndSpellHeader{Condense \label{spell::condense}}
+        {Sympathy spell}
+        {1/2 actions}
+        {24 meters}
+        {V, S}
+        {up to 1 hour}
+        \subparagraph{Fog Cloud}
+            Using one action and consuming 2 spell points, you create a 2-meter-radius sphere of fog centered on an ember within range.
+            The sphere spreads around corners, and its area is heavily obscured.
+            It lasts for the duration, until a wind of moderate or greater speed disperses it, or until you choose to end the effect as a free action.
+
+            You can consume additional spell points to increase the range of this spell by 1 meter for each spell point beyond 2.
+            In addition, you can consume two additional spell points to heat the fog.
+            When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature takes 1d8 fire damage.
+        \subparagraph{Steam Burst}
+            Using two actions and consuming 3 spell points, you burst an eruption of steam from an ember.
+            Every creature within 2 meters of the ember must make a Strength saving throw.
+            A target takes 4d6 fire damage and be pushed 2 meters away from the ember on a failed save.
+            On a successful save, the creature takes half damage and isn't pushed.
+
+            You can consume up to 7 additional spell points to increase the damage by 1d6 for each point used.
+            In addition, you can consume two additional spell points to increase the number of meters a creature is pushed by 2.
+    \DndSpellHeader{Drain \label{spell::drain}}
+        {Sympathy spell}
+        {2 actions}
+        {24 meters}
+        {V, S}
+        {up to 1 hour}
+        \subparagraph{Frostbite}
+            Using two actions and consuming 2 spells points, you drain heat out of one creature within a meter of one ember.
+            The target must make a Constitution saving throw.
+            On a failed save, the target takes 2d8 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.
+
+            You can consume up to 8 additional spell points to increase the damage by 1d8 for each point used.
+            In addition, you can consume two additional spell points to prevent the creature from healing until the start of your next turn.
+        \subparagraph{Freezing Sphere}
+            Using two actions and consuming 9 spell points, you turn an ember into a stone about the size of a sling stone, which is cool to the touch.
+            The stone shatters when it hits a surface, exploding into a 12-meter-radius sphere.
+            Each creature in the area must make a Constitution saving throw.
+            On a failed save, a creature takes 10d6 cold damage.
+            On a successful save, it takes half as much damage.
+
+            If the globe strikes a body of water or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 15 cm over an area 6 meters square.
+            This ice lasts for 1 minute.
+            Creatures that were swimming on the surface of frozen water are trapped in the ice.
+            A trapped creature can use an action to make a Strength check against your spell save DC to break free.
+
+            You can consume up to 3 additional spell points to increase the damage by 1d6 for each spell point.
+            In addition, you can consume three additional spell points to cause any creature that fails the saving throw to be slowed.
+            Slowed creatures can only take 2 actions during their next turn.
+
+% OLD
 \subsection*{Signature Cantrips}
     \DndSpellHeader{Control Flames \label{spell::controlflames}}
         {Sympathy cantrip}
@@ -34,7 +111,7 @@
         If you hurl it towards a creature, make a ranged spell attack against its AC.
         On a hit, the target takes 1d8 fire damage.
 
-        If you casted the spell using two actions, the flame remains in the place where it landed for up to one minute (requires concentration).
+        If you casted the spell using two actions, the flame remains in the place where it landed for up to one minute, requiring concentration.
         Any creature that moves to the flame's space for the first time on a turn or ends its turn there must succeed on a Dexterity saving throw or take 1d8 fire damage.
 
         The flame ignites flammable objects in its area that aren't being worn or carried.
