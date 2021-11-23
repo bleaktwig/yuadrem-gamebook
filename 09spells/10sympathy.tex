@@ -10,7 +10,7 @@
         You produce a lingering ember that tethers to a point of your choice within range.
         The ember can lie on a point ocuppied by another creature, stays in position for the spell's duration, and is visible.
         Other creatures can snuff out the flame by covering it in water or by enclosing it on a closed volume of medium or lesser size.
-        You can have at most three active embers at one time.
+        You can have a number of embers active at the same time equal to your spellcasting ability modifier.
 
         As an action on your subsequent turns, you can affect an ember in one of the following ways:
         \begin{itemize}
@@ -23,108 +23,211 @@
             The creature(s) must succeed on a Dexterity saving throw or take 1d8 fire damage.
             This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
         \end{itemize}
+    \DndSpellHeader{Heat Link: Firetrap \label{spell:firetrap}}
+        {Flamespeaker medium}
+        {2 actions}
+        {Self}
+        {S}
+        {Up to an hour}
+        You produce a lingering ember inside a firetrap you are carrying.
+        This flame can be used to cast any sympathy spell as if it were a normal ember, doesn't count towards your total number of embers, but explodes one round after being displaced from the firetrap.
+
+% Level | Spell points
+%   1st |  2
+%   2nd |  3
+%   3rd |  5
+%   4th |  6
+%   5th |  7
+%   6th |  9
+%   7th | 10
+%   8th | 11
+%   9th | 13
 
 \subsection*{Spells}
-    \DndSpellHeader{Condense \label{spell::condense}}
+    \DndSpellHeader{Condense I: Fog Cloud \label{spell::fogcloud}}
+        {Sympathy spell}
+        {1/2 actions}
+        {24 meters}
+        {S, M (a drop of water)}
+        {up to 1 hour}
+        Using an action and consuming 2 spell points, you create a 2-meter-radius sphere of fog centered on an ember within range.
+        The sphere spreads around corners, and its area is heavily obscured.
+        It lasts for the duration, until a wind of moderate or greater speed disperses it, or until you choose to end the effect as a free action.
+
+        You can consume up to 8 additional spell points to increase the range of this spell by 1 meter for each spell point beyond 2.
+        In addition, you can use another action and consume 2 additional spell points to heat the fog.
+        When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature takes 1d8 fire damage.
+    \DndSpellHeader{Condense II: Steam Burst \label{spell::steamburst}}
+        {Sympathy spell}
+        {2/3 actions}
+        {30 meters}
+        {S, M (a pint of water)}
+        {Instantaneous}
+        Using two actions and consuming 3 spell points, you burst an eruption of steam from an ember.
+        Every creature within 2 meters of the ember must make a Strength saving throw.
+        A target takes 4d6 fire damage and is pushed 2 meters away from the ember on a failed save.
+        On a successful save, the creature takes half damage and isn't pushed.
+
+        You can consume up to 7 additional spell points to increase the damage by 1d6 for each point used.
+        In addition, you can consume another action and 2 additional spell points to increase the number of meters a creature is pushed by 2.
+    \DndSpellHeader{Drain I: Frostbite \label{spell::frostbite}}
+        {Sympathy spell}
+        {2/3 actions}
+        {24 meters}
+        {S, M (a snowflake)}
+        {Instantaneous}
+        Using two actions and consuming 2 spells points, you drain heat out of one creature within a meter of one ember.
+        The target must make a Constitution saving throw.
+        On a failed save, the target takes 2d8 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.
+
+        You can consume up to 8 additional spell points to increase the damage by 1d8 for each point used.
+        In addition, you can use another action and consume 2 additional spell points to prevent the creature from healing until the start of your next turn.
+    \DndSpellHeader{Drain II: Freezing Sphere \label{spell::freezingsphere}}
+        {Sympathy spell}
+        {2 actions}
+        {30 meters}
+        {S, M (a fistfull of snow)}
+        {Instantaneous}
+        Using two actions and consuming 9 spell points, you turn an ember into an icy kernel about the size of a sling stone, which is cool to the touch.
+        The kernel shatters when it hits a surface, exploding into a 6-meter-radius sphere.
+        Each creature in the area must make a Constitution saving throw.
+        On a failed save, a creature takes 10d6 cold damage.
+        On a successful save, it takes half as much damage.
+
+        If the globe strikes a body of water or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 15 cm over an area 6 meters square.
+        This ice lasts for 1 minute.
+        Creatures that were swimming on the surface of frozen water are trapped in the ice.
+        A trapped creature can use an action to make a Strength check against your spell save DC to break free.
+
+        You can consume up to 3 additional spell points to increase the damage by 1d6 for each spell point.
+        In addition, you can consume another action and 3 additional spell points to cause any creature that fails the saving throw to be slowed.
+        Slowed creatures can only take 2 actions during their next turn.
+    \DndSpellHeader{Explode I: Fireball \label{spell::fireball}}
         {Sympathy spell}
         {1/2 actions}
         {24 meters}
         {V, S}
-        {up to 1 hour}
-        \subparagraph{Fog Cloud}
-            Using one action and consuming 2 spell points, you create a 2-meter-radius sphere of fog centered on an ember within range.
-            The sphere spreads around corners, and its area is heavily obscured.
-            It lasts for the duration, until a wind of moderate or greater speed disperses it, or until you choose to end the effect as a free action.
+        {Instantaneous}
+        Using two actions and 5 spell points, you cause a bright streak to flash from an ember you choose within range and then blossoms with a low roar into an explosion of flame.
+        Each creature in a 4-meter-radius sphere centered on that point must make a Dexterity saving throw.
+        A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
 
-            You can consume additional spell points to increase the range of this spell by 1 meter for each spell point beyond 2.
-            In addition, you can consume two additional spell points to heat the fog.
-            When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature takes 1d8 fire damage.
-        \subparagraph{Steam Burst}
-            Using two actions and consuming 3 spell points, you burst an eruption of steam from an ember.
-            Every creature within 2 meters of the ember must make a Strength saving throw.
-            A target takes 4d6 fire damage and be pushed 2 meters away from the ember on a failed save.
-            On a successful save, the creature takes half damage and isn't pushed.
+        The fire spreads around corners.
+        It ignites flammable objects in the area that aren't being worn or carried.
 
-            You can consume up to 7 additional spell points to increase the damage by 1d6 for each point used.
-            In addition, you can consume two additional spell points to increase the number of meters a creature is pushed by 2.
-    \DndSpellHeader{Drain \label{spell::drain}}
+        You can consume up to 6 additional spell points to increase the damage by 1d6 for each spell point used.
+        In addition, you can consume another action and 3 additional spell points to cause all creatures that failed the saving throw to be pulled 2 meters towards the center of the fireball.
+    \DndSpellHeader{Explode II: Fire Storm \label{spell::firestorm}}
         {Sympathy spell}
-        {2 actions}
+        {2/3 actions}
+        {30 meters}
+        {V, S}
+        {Instantaneous}
+        Using three actions and 10 spell points, you manifest a storm made up of sheets of roaring flame to appear in all embers within range.
+        The area of each storm consists of 3-meter cubes.
+        A creature in an area overlaping two cubes is subjected to the effect only once.
+
+        Each creature in the area must make a Dexterity saving throw.
+        It takes 7d10 fire damage on a failed save, or half as much damage on a successful one.
+
+        The fire damages objects in the area and ignites flammable objects that aren't being worn or carried.
+
+        You can use another action and consume 3 additional spell points to cause the storms to linger until the start of your next turn.
+        When a creature enters the spell's area for the first time on a turn or starts its turn there, that creature takes 2d10 fire damage.
+    \DndSpellHeader{Heat I: Heat Metal \label{spell::heatmetal}}
+        {Sympathy spell}
+        {2/3 actions}
+        {24 meters}
+        {S, M (a piece of metal)}
+        {Concentration, up to 1 minute}
+        Using two actions and 3 spell points, you cause a metal object within range to glow red-hot.
+        You cause the object to glow red-hot.
+        You or the targetted object must be within 3 meters of an ember.
+        Any creature in physical contact with the object takes 2d8 fire damage when you cast the spell.
+        Until the spell ends, you can use another action on each of your subsequent turns to cause this damage again.
+
+        If a creature is holding or wearing the object and takes the damage from it, the creature must succeed on a Constitution saving throw or drop the object if it can.
+        If it doesn't drop the object, it has disadvantage on attack rolls and ability checks until the start of your next turn.
+
+        You can consume up to 7 spell points to increase the damage by 1d8 for each additional spell point consume.
+        Additionally, you can use another action and consume 3 additional spell points to target a non-metallic object with this spell.
+    \DndSpellHeader{Heat II: Immolation \label{spell::immolation}}
+        {Sympathy spell}
+        {2/3 actions}
+        {30 meters}
+        {S, M (an piece taken from the target creature)}
+        {Concentration, up to 1 minute}
+        Using two actions and 7 spell points, you cause flames to wreathe one creature you can see within range.
+        You or the creature must be standing within 3 meters of an ember.
+
+        The target must make a Constitution saving throw.
+        It takes 8d6 fire damage on a failed save, or half as much damage on a successful one.
+        The target also burns for the spell's duration.
+        The burning target sheds bright light in a 6-meter radius and dim light for an additional 6 meters.
+        At the end of each of its turns, the target repeats the saving throw.
+        It takes 4d6 fire damage on a failed save.
+
+        You can consume up to 4 spell points to increase the initial damage by 1d6 for each additional spell point consumed.
+    \DndSpellHeader{Radiance I: Light \label{spell::light}}
+        {Sympathy spell}
+        {1 action}
         {24 meters}
         {V, S}
-        {up to 1 hour}
-        \subparagraph{Frostbite}
-            Using two actions and consuming 2 spells points, you drain heat out of one creature within a meter of one ember.
-            The target must make a Constitution saving throw.
-            On a failed save, the target takes 2d8 cold damage, and it has disadvantage on the next weapon attack roll it makes before the end of its next turn.
-
-            You can consume up to 8 additional spell points to increase the damage by 1d8 for each point used.
-            In addition, you can consume two additional spell points to prevent the creature from healing until the start of your next turn.
-        \subparagraph{Freezing Sphere}
-            Using two actions and consuming 9 spell points, you turn an ember into a stone about the size of a sling stone, which is cool to the touch.
-            The stone shatters when it hits a surface, exploding into a 12-meter-radius sphere.
-            Each creature in the area must make a Constitution saving throw.
-            On a failed save, a creature takes 10d6 cold damage.
-            On a successful save, it takes half as much damage.
-
-            If the globe strikes a body of water or a liquid that is principally water (not including water-based creatures), it freezes the liquid to a depth of 15 cm over an area 6 meters square.
-            This ice lasts for 1 minute.
-            Creatures that were swimming on the surface of frozen water are trapped in the ice.
-            A trapped creature can use an action to make a Strength check against your spell save DC to break free.
-
-            You can consume up to 3 additional spell points to increase the damage by 1d6 for each spell point.
-            In addition, you can consume three additional spell points to cause any creature that fails the saving throw to be slowed.
-            Slowed creatures can only take 2 actions during their next turn.
-
-% OLD
-\subsection*{Signature Cantrips}
-    \DndSpellHeader{Control Flames \label{spell::controlflames}}
-        {Sympathy cantrip}
-        {2 actions}
-        {12 mt.}
-        {S}
-        {Instantaneous or 1 hour (see below)}
-        You choose flame that you can see within range and that fits within a 1-meter cube.
-        You affect it in one of the following ways:
-        \begin{itemize}
-            \item You instantaneously expand the flame 1 meter in one direction, provided that wood or other fuel is present in the new location.
-            \item You instantaneously extinguish the flames within the cube.
-            \item You double or halve the area of bright light and dim light cast by the flame, change its color, or both.
-            The change lasts for 1 hour.
-            \item You cause simple shapes---such as the vague form of a creature, an inanimate object, or a location---to appear within the flames and animate as you like.
-            The shapes last for 1 hour.
-        \end{itemize}
-        If you cast this spell multiple times, you can have up to three non-instantaneous effects created by it active at a time, and you can dismiss such an effect as an action.
-    \DndSpellHeader{Produce Flame \label{spell::produceflame}}
-        {Flamespeaker cantrip}
+        {1 hour}
+        Using an action, you cause an ember within range to shed a warm, bright light in a 4-meter radius and dim light for an additional 4 meters.
+        Completely covering the ember with something opaque blocks the light.
+        The spell ends if you cast it again or dismiss it as an action.
+    \DndSpellHeader{Radiance II: Brilliance \label{spell::brilliance}}
+        {Sympathy spell}
         {1/2 actions}
+        {30 meters}
+        {V, S}
+        {1 hour}
+        Using an action and 5 spell points, you cause an ember affected by the Light spell to quickly increase in brightness.
+        It emits a bright light in a 12-meter radius and sheds dim light for an additional 12 meters.
+
+        Completely covering the ember with an opaque object, such as a bowl or a helm, blocks the light.
+
+        When you cast this spell, you can use another action and consume 2 additional spell points to cause the light to spark fiercely upon being cast.
+        Any creature (excluding you) in a 12-meter radius of the ember must roll a Constitution saving throw.
+        On a failed save, a creature becomes blinded until the end of your next turn.
+    \DndSpellHeader{Rebuke I: Scold \label{spell::scold}}
+        {Sympathy spell}
+        {1 reaction, which you take in response to being damage by a creature within 24 meters of you that you can see}
+        {24 meters}
+        {V, S}
+        {Instantaneous}
+        Using a reaction and consuming 2 spell points, you cause an ember to dart towards the creature that damaged you, surrounding it by hellish flames.
+        The creature must make a Dexterity saving throw.
+        It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.
+
+        You can consume up to 8 spell points to increase the damage dealth by 1d10 for each additional spell point consumed.
+    \DndSpellHeader{Rebuke II: Fire Shield \label{spell::fireshield}}
+        {Sympathy spell}
+        {2/3 actions}
         {Self}
         {V, S}
         {10 minutes}
-        A flickering flame appears in your hand, the tip of a blowpipe you're holding, or the inside of a firetrap you carry (your choice).
-        The flame remains there for the duration and harms neither you nor your equipment.
-        The flame sheds bright light in a 2-meter radius and dim light for an additional 2 meters.
-        The spell ends if you dismiss it as an action or if you cast it again.
+        Using two actions and consuming 6 spell points, you cause an ember to dart towards you, wreathing your body in thin and wispy flames.
+        The flames shed a bright light in a 2-meter radius and dim light for an additional 2 meters.
+        You can end the spell early by using an action to return the ember to its normal form.
 
-        You can also attack with the flame, although doing so ends the spell.
-        As an action, you can hurl the flame within 6/18 meters of you.
-        If you hurl it towards a creature, make a ranged spell attack against its AC.
-        On a hit, the target takes 1d8 fire damage.
+        The flames provide you with a warm shield or a chill shield, as you choose.
+        The warm shield grants you resistance to cold damage, and the chill shield grants you resistance to fire damage.
 
-        If you casted the spell using two actions, the flame remains in the place where it landed for up to one minute, requiring concentration.
-        Any creature that moves to the flame's space for the first time on a turn or ends its turn there must succeed on a Dexterity saving throw or take 1d8 fire damage.
+        You cannot use the ember to cast other spells while it acts as a shield.
 
-        The flame ignites flammable objects in its area that aren't being worn or carried.
+        In addition, whenever a creature within a meter of you hits you with a melee attack, the shield erupts with flame.
+        The attacker takes 2d8 fire damage from a warm shield, or 2d8 cold damage from a cold shield.
 
-        This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
-\subsection*{Signature Spells}
-    \DndSpellHeader{Whispering Ember \label{spell::whisperingember}}
+        By using another action and consuming 3 additional spell points, you can cause an ember to target another creature within 24 meters of you, causing this same effect on it instead of you.
+    \DndSpellHeader{Screaming Bead \label{spell::screamingbead}}
         {Flamespeaker signature spell}
         {2 actions}
-        {Self}
-        {V, M (a firetrap)}
-        {Up until the caster detonates it}
-        At the end of your turn, a glowing yellow bead appears inside a firetrap you're carrying.
+        {30 meters}
+        {S, M (a firetrap)}
+        {Up to 24 hours}
+        Using two actions, you cause an ember within range to turn into a glowing yellow bead.
         When you end the spell, the bead blossoms with a low roar into an explosion of flame that spreads around corners.
         Each creature in a 4-meter-radius sphere centered on that point must make a Dexterity saving throw.
         A creature takes fire damage equal to the total accumulated damage on a failed save, or half as much damage on a successful one.
@@ -134,229 +237,57 @@
         The maximum number of damage dice of this spell is equal to your level.
         When the spell reaches this damage, the bead stops growing.
 
-        The bead sheds a bright light up to a radius equal to 1/4ths of its number of damage dice in meters and dim light up to double that distance.
+        The bead sheds a bright light up to a radius equal to 1/4ths its number of damage dice in meters and dim light up to double that distance.
 
-        As an action, you can throw the bead to a distance equal to 6/18 mt.
         The fire damages objects in the area and ignites flammable objects that aren't being worn or carried.
 
         This spell consumes one spell point when you cast it, and one additional spell point for each two damage dice added to it (one point at 3d6, another at 5d6, etc).
-\subsection*{Cantrips}
-    \DndSpellHeader{Dancing Lights \label{spell::dancinglights}}
-        {Sympathy cantrip}
-        {2 actions}
-        {24 mt.}
-        {V, S, M (a bit of phosphorus)}
-        {Concentration, up to 1 minute}
-        You create up to four torch-sized lights within range that hover in the air for the duration.
-        You can also combine the four lights into one glowing vague form of Medium size.
-        Whichever form you choose, each light sheds dim light in a 2-meter radius.
-
-        As an action on your turn, you can move the lights up to 12 meters to a new spot within range. A light must be within 4 meters of another light created by this spell, and a light winks out if it exceeds the spell's range.
-
-        As an action during your turn, you can momentarily heat up the lights.
-        Any creature standing in the same spot as a light rolls a Dexterity saving throw.
-        On a failure, it takes 1d4 fire damage.
-        You can heat up the lights only once per turn.
-    \DndSpellHeader{Fire Bolt \label{spell::firebolt}}
-        {Sympathy cantrip}
-        {2/3 actions}
-        {24 mt.}
-        {V, S}
-        {Instantaneous}
-        You hurl a mote of fire at a creature or object within range.
-        Make a ranged spell attack against the target.
-        On a hit, the target takes 1d10 fire damage.
-        A flammable object hit by this spell ignites if it isn't being worn or carried.
-
-        If you cast this spell using 3 actions, you can hurl two motes instead of one, targetting two different creatures.
-
-        This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).
-    \DndSpellHeader{Flaming Blade \label{spell::flamingblade}}
-        {Sympathy cantrip}
-        {1 action}
-        {Self (1-meter radius)}
-        {S, M (a melee weapon)}
-        {Instantaneous}
-        You empower the weapon used in the spell's casting with fire until the end of your turn.
-        When you make a melee attack with the weapon, you can cause a fire to leap from the target to a different creature of your choice that is within 1 meter of it.
-        The second creature takes fire damage equal to your spellcasting ability modifier.
-
-        This spell's damage increases when you reach certain levels.
-        At 5th level, the melee attack deals an extra 1d8 fire damage to the target on a hit, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier.
-        Both damage rolls increase by 1d8 at 11th level (2d8 and 2d8) and 17th level (3d8 and 3d8).
-    \DndSpellHeader{Mind Sliver \label{spell::mindsliver}}
-        {Sympathy cantrip}
-        {2/3 actions}
-        {12 meters}
-        {V}
-        {1 round}
-        You drive a heat directly into the mind of one creature you can see within range.
-        The target must succeed on an Intelligence saving throw or take 1d6 psychic damage and subtract 1d4 from the next saving throw it makes before the end of your next turn.
-
-        If you casted this spell using 3 actions, the creature substracts 2d4 from the saving throw.
-
-        This spell's damage increases by 1d6 when you reach certain levels: 5th level (2d6), 11th level (3d6), and 17th level (4d6).
-\subsection*{1st-level Spells}
-    \DndSpellHeader{Burning Hands \label{spell::burninghands}}
-        {1st-level sympathy}
-        {2/3 actions}
-        {Self (3-meter cone)}
-        {V, S}
-        {Instantaneous}
-        As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips.
-        Each creature in a 3-meter cone must make a Dexterity saving throw.
-        A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.
-
-        The fire ignites any flammable objects in the area that aren't being worn or carried.
-
-        If you used 3 actions to cast the spell, the ground under the cone lights up in fire.
-        Until the end of your next turn, any creature that moves to the area on a turn or ends its turn there must succeed a Dexterity saving throw or take 1d6 fire damage.
-
-        \paragraph{At Higher Levels} When you cast this spell using a spell slot of 2nd level or higher, both damages increase by 1d6 for each slot level above 1st.
-    \DndSpellHeader{Chaos Bolt \label{spell::chaosbolt}}
-        {1st-level sympathy}
-        {2/3 actions}
-        {24 meters}
-        {V, S}
-        {Instantaneous}
-        You hurl an undulating, warbling mass of chaotic energy at one creature in range.
-        Make a ranged spell attack against the target.
-        On a hit, the target takes 2d8 + 1d6 damage.
-        Choose one of the d8s.
-        The number rolled on that die determines the attack's damage type, as shown below.
-
-        \begin{DndTable}[width=\linewidth, header=Chaos Bolt]{ll}
-            \textbf{d8} & \textbf{Damage Type} \\
-                     1  & Acid      \\
-                     2  & Cold      \\
-                     3  & Fire      \\
-                     4  & Force     \\
-                     5  & Lightning \\
-                     6  & Poison    \\
-                     7  & Psychic   \\
-                     8  & Thunder
-        \end{DndTable}
-        If you roll the same number on both d8s, the chaotic energy leaps from the target to a different creature of your choice within 6 meters of it.
-        Make a new attack roll against the new target, and make a new damage roll, which could cause the chaotic energy to leap again.
-
-        A creature can be targeted only once by each casting of this spell.
-
-        If you cast the spell with three actions, you can make the blast explode on the targets face before hiting it.
-        In addition to taking damage, the target rolls a Constitution saving throw.
-        On a failed save, the target is blinded until the end of your next turn.
-        This effects carries over to potential subsequent bolts.
-
-        \paragraph{At Higher Levels}
-        When you cast this spell using a spell slot of 2nd level or higher, each target takes 1d6 extra damage of the type rolled for each slot level above 1st.
-    \DndSpellHeader{Color Spray \label{spell::colorspray}}
-        {1st-level Sympathy}
-        {1/2/3 actions}
-        {Self (3-meter cone)}
-        {V, S, M (a pinch of powder or sand that is colored red, yellow, and blue)}
-        {1 round}
-        A dazzling array of flashing, colored light springs from your hand.
-        Roll 4d10; the total is how many hit points of creatures this spell can effect.
-        Creatures in a 3-meter cone originating from you are affected in ascending order of their current hit points (ignoring unconscious creatures and creatures that can't see).
-
-        Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the end of your next turn.
-        Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points.
-        A creature's hit points must be equal to or less than the remaining total for that creature to be affected.
-
-        If you cast this spell with 2 or 3 actions, you increase the dice rolled to 6d10 and 8d10 respectively.
-
-        \paragraph{At Higher Levels}
-        When you cast this spell using a spell slot of 2nd level or higher, roll an additional 2d10 for each slot level above 1st.
-    \DndSpellHeader{Faerie Fire \label{spell::faeriefire}}
-        {1st-level sympathy}
-        {2 actions}
-        {12 meters}
-        {V}
-        {Concentration, up to 1 minute}
-        Each object in a 4-meter cube within range is outlined in blue, green, or violet light (your choice).
-        Any creature in the area when the spell is cast is also outlined in light if it fails a Dexterity saving throw.
-        For the duration, objects and affected creatures shed dim light in a 2-meter radius.
-
-        Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.
-    \DndSpellHeader{Fog Cloud \label{spell::fogcloud}}
-        {1st-level sympathy}
-        {1/2/3 actions}
-        {24 meters}
-        {V, S}
-        {Concentration, up to 1 hour}
-        You create a 2-meter-radius sphere of fog centered on a point within range.
-        The sphere spreads around corners, and its area is heavily obscured.
-        It lasts for the duration or until a wind of moderate or greater speed disperses it.
-
-        If you cast this spell using more than 1 action, you can create a number of spheres within range equal to the number of actions used.
-
-        \paragraph{At Higher Levels}
-        When you cast this spell using a spell slot of 2nd level or higher, the radius of the fog increases by 2 meters for each slot level above 1st.
-    \DndSpellHeader{Guiding Bolt \label{spell::guidingbolt}}
-        {1st-level sympathy}
-        {2/3 actions}
-        {24 meters}
-        {V, S}
-        {1 round}
-        A flash of light streaks toward a creature of your choice within range.
-        Make a ranged spell attack against the target.
-        On a hit, the target takes 4d6 radiant damage, and the next attack roll made against this target before the end of your next turn has advantage, thanks to the dim light glittering on the target until then.
-
-        If you cast this spell using 3 actions, the advantage granted lasts for two attacks instead of one.
-
-        \paragraph{At Higher Levels}
-        When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st.
-    \DndSpellHeader{Hellish Rebuke \label{spell::hellishrebuke}}
-        {1st level sympathy}
-        {1 reaction, which you take in respose the being damage by a creature within 12 meters that you can see}
-        {12 meters}
-        {V, S}
-        {Instantaneous}
-        You point your finger, and the creature that damaged you is momentarily surrounded by hellish flames.
-        The creature must make a Dexterity saving throw.
-        It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.
-
-        \paragraph{At Higher Levels}
-        When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st.
-    \DndSpellHeader{Radiant Weapon \label{spell::radiantweapon}}
-        {1st-level sympathy}
+    \DndSpellHeader{Sear I: Searing Smite \label{spell::searingsmite}}
+        {Sympathy spell}
         {1 action}
         {Self}
-        {V, S}
-        {Concentration, up to 1 minute}
-        Your magic empowers you with intense radiance.
-        Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit.
-    \DndSpellHeader{Searing Smite \label{spell::searingsmite}}
-        {1st-level sympathy}
-        {1/2 actions}
-        {Self}
         {V}
         {Concentration, up to 1 minute}
-        The next time you hit a creature with a melee weapon attack during the spell's duration, your weapon flares with white-hot intensity, and the attack deals an extra 1d6 fire damage to the target and causes the target to ignite in flames.
+        Using an action and consuming 2 spell points, you cause an ember within 3 meters of you to infuse your weapon.
+        The next time you hit a creature with a weapon attack during the spell's duration, your weapon flares with white-hot intensity, and the attack deals an extra 1d6 fire damage to the target and causes the target to ignite in flames.
         At the start of each of its turns until the spell ends, the target must make a Constitution saving throw.
         On a failed save, it takes 1d6 fire damage.
         On a successful save, the spell ends.
-        If the target or a creature within 1 meter of it uses an action to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the spell ends.
+        If the target or a creature within a meter of it uses two actions to put out the flames, or if some other effect douses the flames (such as the target being submerged in water), the spell ends.
 
-        If you cast this spell using two actions, you extend its range to 6 meters, allowing you to use it on another creature's melee weapon.
-
-        \paragraph{At Higher Levels}
-        When you cast this spell using a spell slot of 2nd level or higher, the initial extra damage dealt by the attack increases by 1d6 for each slot level above 1st.
-    \DndSpellHeader{Warmth \label{spell::warmth}}
-        {1st-level sympathy}
+        You can consume up to 8 spell points with when you cast this spell, increasing the initial extra damage by 1d6 for each additional spell point consumed.
+        In addition, you can consume a spell point each time the target rolls the Constitution saving throw to force it to roll with disadvantage.
+    \DndSpellHeader{Sear II: Flame Arrows \label{spell::flamearrows}}
+        {Sympathy spell}
         {2 actions}
-        {Touch}
-        {V, S}
-        {Instantaneous}
-        A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier.
-        This spell has no effect on undead or constructs.
+        {24 meters}
+        {S, M (An arrow or bolt)}
+        {Concentration, up to 1 hour}
+        Using two actions and 5 spell points, you infuse a container containing ammunition with an ember within 3 meters of you.
+        When a target is hit by a ranged weapon attack using a piece of ammunition drawn from the container, the target takes an extra 1d6 fire damage.
+        The spell ends on a piece of ammunition when it hits or misses, and the spell ends when twelve pieces of ammunition have been drawn from the container.
 
-        \paragraph{At Higher Levels}
-        When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st.
-\subsection*{2nd-level Spells}
-\subsection*{3rd-level Spells}
-\subsection*{4th-level Spells}
-\subsection*{5th-level Spells}
-\subsection*{6th-level Spells}
-\subsection*{7th-level Spells}
-\subsection*{8th-level Spells}
-\subsection*{9th-level Spells}
+        You can consume up to 6 additional spell points to increase the number of pieces of ammunition infused by two for each point.
+        When an infused arrow or bolt is shot, you can use your reaction and one spell point to move an ember to the location where the munition hits, dealing 2d6 additional fire damage to the target.
+    \DndSpellHeader{Warmth I: Burn Wounds \label{spell::burnwounds}}
+        {Sympathy spell}
+        {2/3 actions}
+        {24 meters}
+        {S, M (a piece of cloth)}
+        {Instantaneous}
+        Using two actions and consuming 2 spell points, you heal a creature within 3 meters of an ember.
+        The creature regains a number of hit points equal to 1d8 + your spellcasting ability modifier.
+
+        You can consume up to 8 additional spell points when you cast this spell, healing the target 1d8 hit points for each spell point consumed.
+        In addition, you can use another action and consume 1 spell point to end the frightened condition on the target.
+    \DndSpellHeader{Warmth II: Aura of Vitality \label{spell::auraofvitality}}
+        {Sympathy spell}
+        {2 actions}
+        {30 meters}
+        {V, S}
+        {Concentration, up to 1 minute}
+        Using two actions and 5 spell points, you cause healing energy to radiate from an ember within range with a 6-meter radius.
+        Until the spell ends, you can use an action to cause one creature in the aura (including you) to regain 2d6 hit points.
+        You can heal a creature using this effect only once during your turn.
+
+        When you heal a creature with this spell, you can choose to consume 1 spell point to give the creature resistance against fire or cold damage (your choice) until the start of your next turn.
