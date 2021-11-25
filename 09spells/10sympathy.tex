@@ -61,33 +61,25 @@
         \end{itemize}
     \DndSpellHeader{Similarity Link: Tether \label{spell::tether}}
         {Sympathy medium}
-        {COST}
+        {2 actions}
         {12 mt.}
         {S}
         {Up to an hour}
-        DESCRIPTION
+        You create a sympathetic link to a creature or object within range, linking it to all other creatures and objects already affected by this spell.
+        You can maintain a link between a number of creatures and objects equal to your spellcasting ability modifier (minimum of 2).
+        When a creature dies, its link is automatically broken.
 
-        CANTRIPS
+        Using two actions, you can affect all linked creatures and objects in one of the following ways:
         \begin{itemize}
-            \item \textbf{NAME 1}.
-            DESCRIPTION
-            \item \textbf{NAME 2}.
-            DESCRIPTION
-            \item \textbf{NAME 3}.
-            DESCRIPTION
+            \item \textbf{Disconnect}.
+            You break the link, freeing all affected creatures.
+            \item \textbf{Harm}.
+            You trace a sigil of harming.
+            Any time one of the linked creatures takes damage, all other creatures take 1d4 force damage (roll once for all creatures).
+            \item \textbf{Ward}.
+            You trace a sigil of warding.
+            All creatures can roll a d4 and add the number rolled to one saving throw of their choice before the end of your next turn.
         \end{itemize}
-
-% Level | Spell points
-%   1st |  2
-%   2nd |  3
-%   3rd |  5
-%   4th |  6
-%   5th |  7
-%   6th |  9
-%   7th | 10
-%   8th | 11
-%   9th | 13
-
 \subsection*{Spells}
 \subsubsection{Heat Link}
     \DndSpellHeader{Condense I: Fog Cloud \label{spell::fogcloud}}
@@ -567,6 +559,56 @@
 
         You can consume up to 6 additional spell points when you cast this spell, increasing the damage dealt by 1d10 for each point.
 \subsubsection{Similarity Link}
+    \DndSpellHeader{Compress I: Sinkhole \label{spell::sinkhole}}
+        {Sympathy spell - 6 spell points}
+        {2 actions}
+        {24 meters}
+        {S, M (a piece of rock)}
+        {Instantaneous}
+        All linked creatures are pushed by a tremendous force towards the middle point between all of them.
+        Each creature must make a Strength saving throw.
+        On a failed save, the creature takes 5d10 force damage and is pulled up to 4 meters in a straight line toward this point (even if that point is in the air).
+        On a successful save, the creature takes half as much damage and isn't pulled.
+
+        You can consume up to 5 additional spell points when you cast this spell, increasing the damage dealt by 1d10 per spell point.
+        In addition, you can use another action and consume 2 spell points to move the middle point to the location of one of the linked creatures.
+    \DndSpellHeader{Compress II: Ravenous Void \label{spell::ravenousvoid}}
+        {Sympathy spell - 13 spell points}
+        {3 actions}
+        {50 meters}
+        {S, M (a chunk of iron)}
+        {Concentration, up to 1 minute}
+        You create a 4-meter-radius sphere of destructive force at the middle point between all linked creatures.
+        For the spell's duration, the sphere and any space within 20 meters of it is difficult terrain to all linked creatures.
+
+        A linked creature that starts its turn within 20 meters of the sphere must succeed on a Strength saving throw or be pulled straight toward the sphere's center, ending in an unoccupied space as close to the center as possible.
+        A creature that enters the sphere for the first time on a turn or starts its turn there takes 5d10 force damage and is restrained until it is no longer in the sphere.
+        If the sphere is in the air, the restrained creature hovers inside the sphere.
+        A creature can use two actions to make a Strength check against your spell save DC, ending this restrained condition on itself or another creature in the sphere that it can reach.
+    \DndSpellHeader{Transference I: Shared Essence \label{spell::sharedessence}}
+        {Sympathy spell - 6 spell points}
+        {2 actions}
+        {24 meters}
+        {V, S}
+        {Concentration, up to 1 hour}
+        All linked creatures must make a Constitution saving throw, with disadvantage if they are within 6 meters of any other linked creature.
+        Any creature can willingly fail the save.
+        If a creature succeeds on the save, it is unaffected by the spell, but remains linked for all other purposes.
+
+        When damage or healing is dealt to one of the creatures tethered by this spell, it is instead divided between all of them.
+        If one of the creatures dies, the other creatures remain affected.
+    \DndSpellHeader{Transference II: Life Ceding \label{spell::lifeceding}}
+        {Sympathy spell - 6 spell points}
+        {2 actions}
+        {30 meters}
+        {S, M (a drop of blood)}
+        {Instantaneous}
+        You transfer life from one tethered creature to mend another's injuries.
+        A linked creature of your choice takes 4d8 necrotic damage, and another linked creature of your choice regains a number of hit points equal to the damage taken.
+
+        You can consume up to 5 additional spell points, increasing the damage and healing dealt by 1d8 for each spell point used.
+        In addition, you can consume another action and 2 spell points to transfer the hit points between all other linked creatures.
+        You choose how many hit points are transfered to each.
     \DndSpellHeader{NAME I: NAME \label{spell::name}}
         {Sympathy spell - x spell points}
         {n actions}
@@ -687,43 +729,14 @@
 
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell - x spell points}
-        {n actions}
-        {24 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
 
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell - x spell points}
-        {n actions}
-        {30 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
-
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell - x spell points}
-        {n actions}
-        {24 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
-
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell - x spell points}
-        {n actions}
-        {30 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
-
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
+    % Level | Spell points
+    %   1st |  2
+    %   2nd |  3
+    %   3rd |  5
+    %   4th |  6
+    %   5th |  7
+    %   6th |  9
+    %   7th | 10
+    %   8th | 11
+    %   9th | 13
