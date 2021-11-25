@@ -20,8 +20,8 @@
             You harmlessly snuff out the ember.
             \item \textbf{Explode}.
             The ember explodes, harming any creature(s) in the same space that the ember is.
-            The creature(s) must succeed on a Dexterity saving throw or take 1d8 fire damage.
-            This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
+            The creature(s) must succeed on a Dexterity saving throw or take 1d10 fire damage.
+            This damage increases by 1d8 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).
         \end{itemize}
     \DndSpellHeader{Heat Link: Firetrap \label{spell:firetrap}}
         {Flamespeaker medium}
@@ -39,8 +39,8 @@
         {S}
         {Up to an hour}
         You add a charge to a creature or object within range.
-        A creature or object can have a total number of charges lesser or equal to your spellcasting ability modifier, but an arbitrary number of creatures can have charges at the same time.
-        A creature can lose its charges only by being discharged by a sympathy spellcaster or by being affected by certain sympathy spells, as specified in the spells' descriptions.
+        A creature or object can have a total number of charges lesser or equal to your spellcasting ability modifier + your spellcasting proficiency bonus, but an arbitrary number of creatures can have charges at the same time.
+        A creature can lose its charges only by being affected by certain sympathy spells, as specified in the spells' descriptions.
 
         Using two actions, you can affect a charged creature or object in one of the following ways:
         \begin{itemize}
@@ -247,7 +247,7 @@
         The creature must make a Dexterity saving throw.
         It takes 2d10 fire damage on a failed save, or half as much damage on a successful one.
 
-        You can consume up to 8 spell points to increase the damage dealth by 1d10 for each additional spell point consumed.
+        You can consume up to 8 spell points to increase the damage dealt by 1d10 for each additional spell point consumed.
     \DndSpellHeader{Rebuke II: Fire Shield \label{spell::fireshield}}
         {Sympathy spell - 6 spell points}
         {2 actions}
@@ -339,174 +339,237 @@
 
         When you heal a creature with this spell, you can choose to consume 1 spell point to give the creature resistance against fire or cold damage (your choice) until the start of your next turn.
 \subsubsection{Electric Link}
-    \DndSpellHeader{Alacrity I: Strider \label{spell::strider}}
+    \DndSpellHeader{Alacrity I: Stride \label{spell::stride}}
         {Sympathy spell - 2 spell points}
         {1 action}
         {24 meters}
         {V, S}
         {1 hour}
         Choose a charged creature within range.
-        The creature's movement speed is increased by one meter for each charge it has.
+        The creature's movement speed is increased by one meter for each charge it has for the duration of the spell.
+        In addition, the creature's jump distance is tripled for the duration.
 
-        A charged creature of your choice
-        You touch a creature. The target's speed increases by 10 feet until the spell ends.
+        If the creature is lifted off the ground via any method, it loses this benefit.
 
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
+        You can use up to 8 additional spell points, increasing the number of creatures affected by the spell by 1 for each spell points consumed.
     \DndSpellHeader{Alacrity II: Haste \label{spell::haste}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - 5 spell points}
+        {2 actions}
         {30 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
+        {V, S}
+        {Up to 1 minute}
+        Choose a charged creature within range.
+        That creature gains a +2 bonus to AC, advantage on Dexterity saving throws, gains an additional action on each of its turns, and its multiple attack penalty is reduced by 1.
 
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        Every turn the target is affected by this spell it loses one charge.
+        The spell ends when the creature drops to zero charges.
+
+        When the spell ends, the target can't move or take actions until after its next turn, as a wave of lethargy sweeps over it.
+    \DndSpellHeader{Bolt I: Lightning \label{spell::lightning}}
+        {Sympathy spell - 5 spell points}
+        {2 actions}
+        {20-meter line}
+        {V, S}
+        {Instantaneous}
+        A stroke of lightning forming a line 20 meters long and 1 meter wide blasts out from you, aiming a charged creature of your choice.
+        Each creature in the line must make a Dexterity saving throw.
+        A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.
+
+        The lightning ignites flammable objects in the area that aren't being worn or carried.
+
+        You can consume up to 6 additional spell points when you cast this spell, increasing the damage by 1d6 for each additional point.
+        In addition, you can use another action and spend 2 additional spell points to discharge all affected creature, dealing an additional 1d6 lightning damage for each lost charge.
+    \DndSpellHeader{Bolt II: Chain Lightning \label{spell::chainlightning}}
+        {Sympathy spell - 9 spell points}
+        {2 actions}
+        {30 meters}
+        {V, S}
+        {Instantaneous}
+        You create a bolt of lightning that arcs toward a target of your choice that you can see within range.
+        Bolts then leap from that target to all creatures with at least one charge within 6 meters of the first target.
+        A target can be a creature or an object and can be targeted by only one of the bolts.
+
+        A target must make a Dexterity saving throw.
+        The target takes 10d8 lightning damage on a failed save, or half as much damage on a successful one.
+
+        You can consume up to 3 spell points to increase the range of the leaping bolts by 3 meters for each additional spell point consumed.
+        In addition, you can use another action and spend 3 spell points to discharge all affected creatures, dealing an additional 1d8 lightning damage for each lost charge.
+    \DndSpellHeader{Deviate I: Deflect \label{spell::deflect}}
+        {Sympathy spell - 2 spell points}
+        {1 reaction, which you take in response to being attacked}
+        {Self}
+        {V}
+        {Instantaneous}
+        You impose disadvantage on an attack made against you using a weapon made of metal, like an arrow or a sword.
+
+        You can consume 1 additional spell point to use this spell against an attack made with a non-metallic weapon.
+    \DndSpellHeader{Deviate II: Eject \label{spell::eject}}
+        {Sympathy spell - 5 spell points}
+        {2 actions}
+        {Self (15-meter sphere)}
+        {V}
+        {Concentration, up to 1 minute}
+        You cause a strong magnetic push or pull (your choice) to emanate from you.
+        Each creature with at least one charge that starts its turn inside a 15-meter sphere centered on you must succeed on a Strength saving throw or be pushed or pulled 3 meters from you in a straight line pointed towards you.
+        Creatures with 3 or more charges make this roll with disadvantage.
+
+        In addition, moving through the charged sphere is hard, and any charged creature inside it has its movement speed halved.
+
+        As an action on each of your turns before the spell ends, you can change the direction of the force.
+    \DndSpellHeader{Field I: Call Lightning \label{spell::calllightning}}
+        {Sympathy spell - 5 spell points}
+        {2 actions}
         {24 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
+        {V, S}
+        {Concentration, up to 10 minutes}
+        You charge an circular area of ground with a 12-meter radius.
+        The spell fails if there is no direct access to the sky above the area.
 
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        On each of your turns until the spell ends, you can use an action to call down lightning towards a creature or object with at least one charge.
+        Each creature within 1 meter of the targetted point must make a Dexterity saving throw.
+        A creature takes 3d10 lightning damage on a failed save, or half as much damage on a successful one.
+        You can call down lightning in this way only once per turn.
+
+        If you are outdoors in stormy conditions when you cast this spell, the spell's damage increases by 1d10.
+
+        You can consume up to 12 additional spell points when casting this spell, increasing the damage done by each lightning strike by 1d10 for each 2 extra spell points used in this way.
+        In addition, by consuming 2 spell points, you can use another action to call down one subsequent lightning strike during your turn.
+    \DndSpellHeader{Field II: Storm Sphere \label{spell::stormsphere}}
+        {Sympathy spell - 6 spell points}
+        {2 actions}
         {30 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
+        {V, S}
+        {Concentration, up to 1 minute}
+        A 4-meter-radius sphere of whirling air springs into existence, centered on a point you choose within range.
+        The sphere remains for the spell's duration.
+        Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take 2d6 bludgeoning damage.
+        The sphere's space is difficult terrain.
 
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
-        {24 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
+        Until the spell ends, you can use an action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one charged creature you choose within 12 meters of the center.
+        Make a ranged spell attack.
+        You have advantage on the attack roll if the target is in the sphere.
+        On a hit, the target takes 4d6 lightning damage.
+        You can use this effect only once per turn.
+        When using this attack, you can consume 3 spell points to cause the attack to target all charged creatures within range.
 
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        Creatures within 6 meters of the sphere have disadvantage on Wisdom (Perception) checks made to listen.
+
+        You can consume up to 5 additional spell points when casting the spell, increasing the damage for each of its effects by 1d6 for each spell point consumed.
+    \DndSpellHeader{Jolt I: Thunderwave \label{spell::thunderwave}}
+        {Sympathy spell - 2 spell points}
+        {2 actions}
+        {24 meters (3-meter cube)}
+        {V, S}
+        {Instantaneous}
+        A wave of thunderous force sweeps out from you or a charged creature of your choice within range.
+        Each creature in a 3-meter cube originating from the target (excluding the target) must make a Constitution saving throw.
+        On a failed save, a creature takes 2d8 thunder damage and is pushed 2 meters away from the target.
+        On a successful save, the creature takes half as much damage and isn't pushed.
+
+        In addition, unsecured objects that are completely within the area of effect are automatically pushed 2 meters away from you by the spell's effect, and the spell emits a thunderous boom audible out to 60 meters.
+
+        You can consume up to 8 additional spell points, increasing the damage by 1d8 for each spell point used.
+        In addition, you can use another action and consume 3 additional spell points to cause all creatures that fail the saving throw to lose their movement speed until the start of your next turn.
+    \DndSpellHeader{Jolt II: Lightning Arrow \label{spell::lightningarrow}}
+        {Sympathy spell - 5 spell points}
+        {1 action}
+        {12 meters}
+        {V, S}
+        {Concentration, up to 1 minute}
+        You apply a charge on a piece of ammunition or thrown weapon.
+        The next time this object is used to make a ranged weapon attack during the spell's duration, it transforms into a bolt of lightning.
+        The attack roll is made as normal.
+        The target takes 4d8 lightning damage on a hit, or half as much damage on a miss, instead of the weapon's normal damage.
+
+        Whether the attack hits or misses, each creature within 2 meters of the target must make a Dexterity saving throw.
+        Each of these creatures takes 2d8 lightning damage on a failed save, or half as much damage on a successful one.
+
+        The piece of ammunition or weapon then returns to its normal form.
+
+        You can consume up to 6 additional spell points, increasing the damage for both effects by 1d8 for each spell point consumed.
+        In addition, you can use another action and consume 4 additional spell points to cause all creatures that fail the save to be paralyzed until the start of the attacker's next turn.
+    \DndSpellHeader{Overload I: Spray \label{spell::spray}}
+        {Sympathy spell - 2 spell points}
+        {2 actions}
+        {Self (3-meter cone)}
+        {V, S}
+        {1 round}
+        You overcharge all charged creatures in a 3-meter cone in front of you.
+        All creatures affected by this spell are blinded until the end of your next turn.
+        Creatures with 3 or more charges must succeed on a Constitution saving throw.
+        On a failed save, they are also paralyzed for the duration.
+    \DndSpellHeader{Overload II: Hold \label{spell::hold}}
+        {Sympathy spell - 7 spell points}
+        {2 actions}
         {30 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
+        {V, S}
+        {Concentration, up to 1 minute}
+        Choose a charged creature that you can see within range.
+        The target must succeed on a Constitution saving throw or be paralyzed for the duration.
+        At the end of each of its turns, the target can make another Constitution saving throw.
+        On a success, the spell ends on the target.
 
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
-        {24 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
+        You can use up to 12 additional spell points when you cast this spell, affecting another charged creature within range for each 3 additional spell points.
+    \DndSpellHeader{Spark I: Booming Blade \label{spell::boomingblade}}
+        {Sympathy spell - 0 spell points}
+        {1 action}
+        {12 meters}
+        {V}
+        {1 round}
+        You apply one charge on a metallic weapon or piece of ammunition.
+        The weapon discharges on a successful attack against a target, adding a charge to it.
 
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
-        {30 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
+        In addition to the attack's normal effects, the attack deals an extra 1d8 thunder damage on a hit.
+        This damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
-        {24 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
+        If the attacked creature moves before the start of your next turn, you can use your reaction to cause it to violently discharge.
+        The creature takes 1d8 lightning damage plus an extra 1d8 lightning damage for each charge lost in this way.
+        This effect's base damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
 
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
-        {30 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
+        Additionally, you can
+    \DndSpellHeader{Spark II: Electric Arc \label{spell::electricarc}}
+        {Sympathy spell - 0 spell points}
+        {2 actions}
+        {3 meters}
+        {V, S}
+        {Instantaneous}
+        You create an arc of lightning that strikes one creature of your choice that you can see within 3 meters of you.
+        The target must succeed on a Dexterity saving throw, taking 1d10 lightning damage on a failed save.
+        This damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).
+        In addition, this attack applies a charge on the target.
 
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
-        {24 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
+        If the creature moves before the start of your next turn, you can use your reaction to cause the creature to violently discharge.
+        The creature takes 1d8 lightning damage plus an extra 1d8 lightning damage for each charge lost in this way.
+        This effect's base damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
+    \DndSpellHeader{Stride I: Misty Step \label{spell::mistystep}}
+        {Sympathy spell - 3 spell points}
+        {1 actions}
+        {Self meters}
+        {V}
+        {Instantaneous}
+        You teleport up to 6 meters to an unoccupied space that you can see.
+        You must have at least one charge to use this spell.
+    \DndSpellHeader{Stride II: Thunder Step \label{spell::thunderstep}}
+        {Sympathy spell - 5 spell points}
+        {2 actions}
+        {18 meters}
+        {V}
+        {Instantaneous}
+        You teleport yourself to an unoccupied space you can see within range.
+        Immediately after you disappear, a thunderous boom sounds, and each creature within 2 meters of the space you left must make a Constitution saving throw, taking 3d10 thunder damage on a failed save, or half as much damage on a successful one.
+        The thunder can be heard from up to 60 meters away.
 
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
-        {30 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
+        You can bring along objects as long as their weight doesn't exceed what you can carry.
+        You can also teleport one willing creature of your size or smaller who is carrying gear up to its carrying capacity.
+        The creature must be within 1 meter of you when you cast this spell, and there must be an unoccupied space within 1 meter of your destination space for the creature to appear in; otherwise, the creature is left behind.
 
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
-        {24 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
+        You must have at least 3 charges to use this spell.
 
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
-        {30 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
-
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
-        {24 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
-
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
-    \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
-        {30 meters}
-        {COMPONENTS}
-        {DURATION}
-        DESCRIPTION
-
-        EXTRA EFFECT 1
-        EXTRA EFFECT 2 (+1 ACTION)
+        You can consume up to 6 additional spell points when you cast this spell, increasing the damage dealt by 1d10 for each point.
 \subsubsection{Similarity Link}
     \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {24 meters}
         {COMPONENTS}
         {DURATION}
@@ -515,8 +578,8 @@
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
     \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {30 meters}
         {COMPONENTS}
         {DURATION}
@@ -525,8 +588,8 @@
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
     \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {24 meters}
         {COMPONENTS}
         {DURATION}
@@ -535,8 +598,8 @@
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
     \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {30 meters}
         {COMPONENTS}
         {DURATION}
@@ -545,8 +608,8 @@
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
     \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {24 meters}
         {COMPONENTS}
         {DURATION}
@@ -555,8 +618,8 @@
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
     \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {30 meters}
         {COMPONENTS}
         {DURATION}
@@ -565,8 +628,8 @@
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
     \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {24 meters}
         {COMPONENTS}
         {DURATION}
@@ -575,8 +638,8 @@
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
     \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {30 meters}
         {COMPONENTS}
         {DURATION}
@@ -585,8 +648,8 @@
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
     \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {24 meters}
         {COMPONENTS}
         {DURATION}
@@ -595,8 +658,8 @@
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
     \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {30 meters}
         {COMPONENTS}
         {DURATION}
@@ -605,8 +668,8 @@
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
     \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {24 meters}
         {COMPONENTS}
         {DURATION}
@@ -615,8 +678,8 @@
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
     \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {30 meters}
         {COMPONENTS}
         {DURATION}
@@ -625,8 +688,8 @@
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
     \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {24 meters}
         {COMPONENTS}
         {DURATION}
@@ -635,8 +698,8 @@
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
     \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {30 meters}
         {COMPONENTS}
         {DURATION}
@@ -645,8 +708,8 @@
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
     \DndSpellHeader{NAME I: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {24 meters}
         {COMPONENTS}
         {DURATION}
@@ -655,8 +718,8 @@
         EXTRA EFFECT 1
         EXTRA EFFECT 2 (+1 ACTION)
     \DndSpellHeader{NAME II: NAME \label{spell::name}}
-        {Sympathy spell}
-        {n/m actions}
+        {Sympathy spell - x spell points}
+        {n actions}
         {30 meters}
         {COMPONENTS}
         {DURATION}
