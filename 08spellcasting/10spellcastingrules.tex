@@ -1,7 +1,10 @@
 % !TEX root = ../main.tex
 \section{Spellcasting Rules} \label{sec::spellcastingrules}
-\subsection*{Casting Styles}
-    In general, casting a spell requires certain conditions to be cast.
+\subsection*{Spellcasting Doctrines}
+    There exist five spellcasting doctrines in Yuadrem, each related to a tide.
+    Many schools belong to each doctrine, but all are related at heart.
+
+    In general, casting a spell requires certain conditions to be met.
     These conditions depend on the spell itself, but can be categorized by the spellcasting doctrine to which they belong.
     Each doctrine and its method for casting spells is detailed in this section.
 
@@ -39,6 +42,9 @@
     % \subsubsection{Thaumaturgy}
         % \textbf{TODO}.
 
+    % \subsubsection{Eldremry}
+        % \textbf{TODO}.
+
 \subsection*{Spellcasting Ability}
     When you take the spellcaster feat, you decide a spellcasting ability, which can be Intelligence, Wisdom, or Charisma.
     This choice reflects your medium for casting spells: Conceptualization for Intelligence, volition for Wisdom, and empathy for Charisma.
@@ -60,7 +66,8 @@
     To keep these spells available, you can use a spellbook (see page \pageref{item::spellbook}).
 
     When you take the \textbf{Spellcaster} feat (page \pageref{feat::spellcaster}), you gain access to three mediums and two spells.
-    The two mediums and spells are of your choice within your chosen doctrine, and the other medium comes from the spellcasting school of your choice.
+    Two of the mediums and one spell are of your choice within your chosen doctrine, and the other medium and spell comes from the spellcasting school of your choice.
+    The spell associated to your school does not count towards your number of known spells.
 
     All spells come in two levels.
     When you take the \textbf{Spellcaster} feat you only gain access to the first level of these spells.
@@ -69,7 +76,6 @@
     You can learn one new spell as part of a long rest.
     This spell must belong to a spellcasting doctrine available to you.
 
-\pagebreak
 \subsection*{Spell Points}
     Your character uses spell points to fuel spells.
     Each spell has a point cost based on its strength, which is detailed in the spell's description.
@@ -78,11 +84,6 @@
 
     The number of spell points you have to spend is based on your level, as shown in the spellcasting ability table.
     In addition, you can gain access to more spell points by taking the \textbf{Upgraded Spellcasting} major character advancement.
-
-    \thispagestyle{empty} % Remove footer so that it doesn't clash with the image.
-    \begin{tikzpicture}[remember picture,overlay]
-        \node[anchor=south, yshift=-0.10cm] at (current page.south) {\includegraphics[width=\pdfpagewidth]{08spellcasting/img/10erebos.png}};
-    \end{tikzpicture}
 
     \begin{DndTable}[width=\linewidth, header=Spellcasting Ability]{lllll}
         \textbf{Level} &  \textbf{Spell Points} & \hspace{0.5cm} & \textbf{Level} & \textbf{Spell Points} \\
@@ -97,6 +98,11 @@
          9th &    28 &  & 19th &    61 \\
         10th &    32 &  & 20th &    66
     \end{DndTable}
+
+    \thispagestyle{empty} % Remove footer so that it doesn't clash with the image.
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[anchor=south, yshift=-0.10cm] at (current page.south) {\includegraphics[width=\pdfpagewidth]{08spellcasting/img/10erebos.png}};
+    \end{tikzpicture}
 
 \newpage
 % NOTE. I will probably end up filling this space (and more!) when I add descriptions for the other spellcasting doctrines.
