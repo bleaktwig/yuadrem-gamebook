@@ -1,6 +1,6 @@
 % !TEX root = ../main.tex
 \section{Sympathy}
-\subsection*{Mediums}
+\subsection*{Heat Link}
     \DndSpellHeader{Heat Link: Ember \label{medium::ember}}
         {Sympathy medium}
         {2 actions}
@@ -32,55 +32,6 @@
         You produce a lingering ember inside a firetrap you are carrying.
         This flame can be used to cast any sympathy spell as if it were a normal ember, but it doesn't count towards your total number of embers.
         You can move the ember outside the firetrap as if it were a normal ember, but it explodes at the end of your turn without requiring an action from you.
-    \DndSpellHeader{Electric Link: Charge \label{medium::charge}}
-        {Sympathy medium}
-        {1 action}
-        {12 mt.}
-        {S}
-        {Up to an hour}
-        You add a charge to a creature or object within range.
-        A creature or object can have a total number of charges lesser or equal to your spellcasting ability modifier + your spellcasting proficiency bonus, but an arbitrary number of creatures can have charges at the same time.
-        A creature can lose its charges only by being affected by certain sympathy spells, as specified in the spells' descriptions.
-
-        Using two actions, you can affect a charged creature or object in one of the following ways:
-        \begin{itemize}
-            \item \textbf{Attract}.
-            You cause the creature or object to be attracted to the closest metal object it is not wearing or carrying.
-            The creature must succeed on a Strength saving throw or be moved a number of meters equal to the number of charges it has towards the object.
-            Creatures of size Large or larger make this roll with advantage.
-            Objects automatically roll a number equal to their weight (in kg) divided by 5.
-            \item \textbf{Discharge}.
-            You cause the creature to violently discharge, causing it to lose all charges.
-            The creature must roll a Constitution saving throw.
-            A creature takes 1d6 thunder damage plus 1d6 lightning damage for each charge it loses in this way on a failed save, taking half damage on a successful one.
-            This spell's base damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).
-            \item \textbf{Repel}.
-            You cause two charged creatures or objects to be repelled from each other.
-            Creatures must succeed on a Strength saving throw or be moved a number of meters equal to half the sum of the number of charges the two creatures have (rounded down).
-            Creatures of size Large or larger make this roll with advantage.
-            Objects automatically roll a number equal to their weight (in kg) divided by 5.
-        \end{itemize}
-    \DndSpellHeader{Similarity Link: Tether \label{medium::tether}}
-        {Sympathy medium}
-        {1 action}
-        {12 mt.}
-        {S}
-        {Up to an hour}
-        You create a sympathetic link to a creature or object within range, linking it to all other creatures and objects already affected by this spell.
-        You can maintain a link between a number of creatures and objects equal to your spellcasting ability modifier (minimum of 2).
-        When a creature dies, its link is automatically broken.
-
-        Using two actions, you can affect all linked creatures and objects in one of the following ways:
-        \begin{itemize}
-            \item \textbf{Disconnect}.
-            You break the link, freeing all affected creatures.
-            \item \textbf{Harm}.
-            Any time one of the linked creatures takes damage until the end of your next turn, all other creatures take 1d4 force damage (roll once for all creatures).
-            \item \textbf{Ward}.
-            All creatures can roll a d4 and add the number rolled to one saving throw of their choice before the end of your next turn.
-        \end{itemize}
-\subsection*{Spells}
-\subsubsection{Heat Link}
     \DndSpellHeader{Condense I: Fog Cloud \label{spell::fogcloud}}
         {Sympathy spell - 2 spell points}
         {1 action}
@@ -329,7 +280,36 @@
         You can heal a creature using this effect only once during your turn.
 
         When you heal a creature with this spell, you can choose to consume 1 spell point to give the creature resistance against fire or cold damage (your choice) until the start of your next turn.
-\subsubsection{Electric Link}
+
+\subsection*{Electric Link}
+    \DndSpellHeader{Electric Link: Charge \label{medium::charge}}
+        {Sympathy medium}
+        {1 action}
+        {12 mt.}
+        {S}
+        {Up to an hour}
+        You add a charge to a creature or object within range.
+        A creature or object can have a total number of charges lesser or equal to your spellcasting ability modifier + your spellcasting proficiency bonus, but an arbitrary number of creatures can have charges at the same time.
+        A creature can lose its charges only by being affected by certain sympathy spells, as specified in the spells' descriptions.
+
+        Using two actions, you can affect a charged creature or object in one of the following ways:
+        \begin{itemize}
+            \item \textbf{Attract}.
+            You cause the creature or object to be attracted to the closest metal object it is not wearing or carrying.
+            The creature must succeed on a Strength saving throw or be moved a number of meters equal to the number of charges it has towards the object.
+            Creatures of size Large or larger make this roll with advantage.
+            Objects automatically roll a number equal to their weight (in kg) divided by 5.
+            \item \textbf{Discharge}.
+            You cause the creature to violently discharge, causing it to lose all charges.
+            The creature must roll a Constitution saving throw.
+            A creature takes 1d6 thunder damage plus 1d6 lightning damage for each charge it loses in this way on a failed save, taking half damage on a successful one.
+            This spell's base damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).
+            \item \textbf{Repel}.
+            You cause two charged creatures or objects to be repelled from each other.
+            Creatures must succeed on a Strength saving throw or be moved a number of meters equal to half the sum of the number of charges the two creatures have (rounded down).
+            Creatures of size Large or larger make this roll with advantage.
+            Objects automatically roll a number equal to their weight (in kg) divided by 5.
+        \end{itemize}
     \DndSpellHeader{Alacrity I: Stride \label{spell::stride}}
         {Sympathy spell - 2 spell points}
         {1 action}
@@ -353,7 +333,7 @@
         That creature gains a +2 bonus to AC, advantage on Dexterity saving throws, gains an additional action on each of its turns, and its multiple attack penalty is reduced by 1.
 
         Every turn the target is affected by this spell it loses one charge.
-        The spell ends when the creature drops to zero charges.
+        The spell ends when the creature drops to zero charges, drops to 0 hit points, or a minute passes since this spell was casted.
 
         When the spell ends, the target can't move or take actions until after its next turn, as a wave of lethargy sweeps over it.
     \DndSpellHeader{Bolt I: Lightning \label{spell::lightning}}
@@ -516,8 +496,6 @@
         If the attacked creature moves before the start of your next turn, you can use your reaction to cause it to violently discharge.
         The creature takes 1d8 lightning damage plus an extra 1d8 lightning damage for each charge lost in this way.
         This effect's base damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).
-
-        Additionally, you can
     \DndSpellHeader{Spark II: Electric Arc \label{spell::electricarc}}
         {Sympathy spell - 0 spell points}
         {2 actions}
@@ -557,7 +535,7 @@
         You must have at least 3 charges to use this spell.
 
         You can consume up to 6 additional spell points when you cast this spell, increasing the damage dealt by 1d10 for each point.
-\subsubsection{Similarity Link}
+\subsection*{Similarity Link}
     \DndSpellHeader{Compress I: Sinkhole \label{spell::sinkhole}}
         {Sympathy spell - 6 spell points}
         {2 actions}
