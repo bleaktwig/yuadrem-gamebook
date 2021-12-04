@@ -320,7 +320,7 @@
         The creature's movement speed is increased by one meter for each charge it has for the duration of the spell.
         In addition, the creature's jump distance is tripled for the duration.
 
-        If the creature is lifted off the ground via any method, it loses this benefit.
+        If the creature loses all charges or is lifted off the ground via any method, it loses this benefit.
 
         You can use up to 8 additional spell points, increasing the number of creatures affected by the spell by 1 for each spell points consumed.
     \DndSpellHeader{Alacrity II: Haste \label{spell::haste}}
@@ -387,13 +387,15 @@
         In addition, moving through the charged sphere is hard, and any charged creature inside it has its movement speed halved.
 
         As an action on each of your turns before the spell ends, you can change the direction of the force.
+
+        Using another action and consuming 3 additional spell points when casting this spell, you can target any creature within 30 meters of you instead of yourself.
     \DndSpellHeader{Field I: Call Lightning \label{spell::calllightning}}
         {Sympathy spell - 5 spell points}
         {2 actions}
         {24 meters}
         {V, S}
         {Concentration, up to 10 minutes}
-        You charge an circular area of ground with a 12-meter radius.
+        You charge a circular area of ground with a 12-meter radius.
         The spell fails if there is no direct access to the sky above the area.
 
         On each of your turns until the spell ends, you can use an action to call down lightning towards a creature or object with at least one charge.
@@ -402,6 +404,8 @@
         You can call down lightning in this way only once per turn.
 
         If you are outdoors in stormy conditions when you cast this spell, the spell's damage increases by 1d10.
+
+        Upon being hit by lightning, a creature loses one charge.
 
         You can consume up to 12 additional spell points when casting this spell, increasing the damage done by each lightning strike by 1d10 for each 2 extra spell points used in this way.
         In addition, by consuming 2 spell points, you can use another action to call down one subsequent lightning strike during your turn.
@@ -423,6 +427,8 @@
         You can use this effect only once per turn.
         When using this attack, you can consume 3 spell points to cause the attack to target all charged creatures within range.
 
+        Upon being hit by this lightning, a creature loses one charge.
+
         Creatures within 6 meters of the sphere have disadvantage on Wisdom (Perception) checks made to listen.
 
         You can consume up to 5 additional spell points when casting the spell, increasing the damage for each of its effects by 1d6 for each spell point consumed.
@@ -435,7 +441,9 @@
         A wave of thunderous force sweeps out from you or a charged creature of your choice within range.
         Each creature in a 3-meter cube originating from the target (excluding the target) must make a Constitution saving throw.
         On a failed save, a creature takes 2d8 thunder damage and is pushed 2 meters away from the target.
-        On a successful save, the creature takes half as much damage and isn't pushed.
+        On a successful save, a creature takes half as much damage and isn't pushed.
+
+        The targetted creature loses all charges when it is affected by this spell.
 
         In addition, unsecured objects that are completely within the area of effect are automatically pushed 2 meters away from you by the spell's effect, and the spell emits a thunderous boom audible out to 60 meters.
 
@@ -453,7 +461,7 @@
         The target takes 4d8 lightning damage on a hit, or half as much damage on a miss, instead of the weapon's normal damage.
 
         Whether the attack hits or misses, each creature within 2 meters of the target must make a Dexterity saving throw.
-        Each of these creatures takes 2d8 lightning damage on a failed save, or half as much damage on a successful one.
+        Each of these creatures takes 2d8 thunder damage on a failed save, or half as much damage on a successful one.
 
         The piece of ammunition or weapon then returns to its normal form.
 
@@ -469,6 +477,8 @@
         All creatures affected by this spell are blinded until the end of your next turn.
         Creatures with 3 or more charges must succeed on a Constitution saving throw.
         On a failed save, they are also paralyzed for the duration.
+
+        Upon being affected by this spell, a creature loses one charge.
     \DndSpellHeader{Overload II: Hold \label{spell::hold}}
         {Sympathy spell - 7 spell points}
         {2 actions}
@@ -479,6 +489,8 @@
         The target must succeed on a Constitution saving throw or be paralyzed for the duration.
         At the end of each of its turns, the target can make another Constitution saving throw.
         On a success, the spell ends on the target.
+
+        At the start of each of its turn while affected by this spell, the creature loses one charge.
 
         You can use up to 12 additional spell points when you cast this spell, affecting another charged creature within range for each 3 additional spell points.
     \DndSpellHeader{Spark I: Booming Blade \label{spell::boomingblade}}
@@ -537,6 +549,25 @@
         You can consume up to 6 additional spell points when you cast this spell, increasing the damage dealt by 1d10 for each point.
 
 \subsection*{Similarity Link}
+    \DndSpellHeader{Similarity Link: Tether \label{medium::tether}}
+        {Sympathy medium}
+        {1 action}
+        {12 mt.}
+        {S}
+        {Up to an hour}
+        You create a sympathetic link to a creature or object within range, linking it to all other creatures and objects already affected by this spell.
+        You can maintain a link between a number of creatures and objects equal to your spellcasting ability modifier (minimum of 2).
+        When a creature dies, its link is automatically broken.
+
+        Using two actions, you can affect all linked creatures and objects in one of the following ways:
+        \begin{itemize}
+            \item \textbf{Disconnect}.
+            You break the link, freeing all affected creatures.
+            \item \textbf{Harm}.
+            Any time one of the linked creatures takes damage until the end of your next turn, all other creatures take 1d4 force damage (roll once for all creatures).
+            \item \textbf{Ward}.
+            All creatures can roll a d4 and add the number rolled to one saving throw of their choice before the end of your next turn.
+        \end{itemize}
     \DndSpellHeader{Compress I: Sinkhole \label{spell::sinkhole}}
         {Sympathy spell - 6 spell points}
         {2 actions}
