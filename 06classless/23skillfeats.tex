@@ -4,16 +4,16 @@
 \begin{DndTable}[width=\linewidth, header=Skill Feat List 1/2]{ll}
     \textbf{Ability Score or Skill} & \textbf{Feat}                                               \\
     Strength & \textbf{Brute} (page \pageref{feat::brute})                                        \\
+    Strength & \textbf{Chair Juggler} (page \pageref{feat::chairjuggler})                         \\
     Strength & \textbf{Feeble} (page \pageref{feat::feeble})                                      \\
     Strength & \textbf{Powerful Build} (page \pageref{feat::powerfulbuild_skill})                 \\
     Strength & \textbf{Powerhouse} (page \pageref{feat::powerhouse})                              \\
-    Strength & \textbf{Throwing Arm} (page \pageref{feat::throwingarm})                           \\
 
     Dexterity & \textbf{Clumsy Reflex} (page \pageref{feat::clumsyreflex}                         \\
     Dexterity & \textbf{Evasion} (page \pageref{feat::evasion}                                    \\
     Dexterity & \textbf{Nimble} (page \pageref{feat::nimble}                                      \\
     Dexterity & \textbf{Otherwordly Agility} (page \pageref{feat::otherwordlyagility}             \\
-    Dexterity & \textbf{Uncanny Dodge} (page \pageref{feat::uncannydodge}                         \\
+    Dexterity & \textbf{Quick Dodge} (page \pageref{feat::quickdodge}                             \\
 
     Constitution & \textbf{Brawny Defense} (page \pageref{feat::brawnydefense})                   \\
     Constitution & \textbf{Cling to Life} (page \pageref{feat::clingtolife})                      \\
@@ -109,7 +109,7 @@
 
     \textbf{Perception} & \textbf{Perceptive} (page \pageref{feat::perceptive})                   \\
     Perception & \textbf{Blindsense} (page \pageref{feat::blindsense})                            \\
-    Perception & \textbf{Observant} (page \pageref{feat::observant})                              \\
+    Perception & \textbf{Hawk-eyed} (page \pageref{feat::hawkeyed})                               \\
     Perception & \textbf{Refined Sight} (page \pageref{feat::refinedsight})                       \\
     Perception & \textbf{Reliable Sight} (page \pageref{feat::reliablesight})                     \\
 
@@ -135,7 +135,7 @@
     Sleight of Hand & \textbf{Fast Hands} (page \pageref{feat::fasthands})                        \\
     Sleight of Hand & \textbf{Phantom} (page \pageref{feat::phantom})                             \\
     Sleight of Hand & \textbf{Pickpocket} (page \pageref{feat::pickpocket})                       \\
-    Sleight of Hand & \textbf{Thief} (page \pageref{feat::thief})                                 \\
+    Sleight of Hand & \textbf{Poacher} (page \pageref{feat::poacher})                             \\
 
     \textbf{Stealth} & \textbf{Sneak} (page \pageref{feat::sneak})                                \\
     Stealth & \textbf{Ghost} (page \pageref{feat::ghost})                                         \\
@@ -355,7 +355,8 @@
 \subsubsection{Eye for the Opportunity (2 FP)} \label{feat::eyefortheopportunity}
     Always attentive of your surroundings, you can use your reaction to make opportunity attacks against creatures when they enter your reach.
     In addition, you score critical hits with opportunity attacks on a roll of 19 or 20 on the d20.
-    If you have the Champion feat (see page \pageref{feat::champion}), this range is extended to rolls between 18 to 20 on the d20.
+    If you have the Improved Critical feat (see page \pageref{feat::improvedcritical}), this range is extended to rolls between 18 and 20 on the d20.
+    Additionally, if you have that feat and the Superior Critical feat (see page \pageref{feat::superiorcritical}), this range is further extended to rolls between 17 and 20.
     \paragraph{Requirements} Wisdom 21.
 \subsubsection{Eye for Weakness (2 FP)} \label{feat::eyeforweakness}
     You learn to exploit a creature's weaknesses by carefully studying its tactics and movement.
@@ -424,7 +425,7 @@
     You can tell whether a creature is suffering from a wound or injury, where this injury is located, and how severe it is without rolling an ability check.
     \paragraph{Requirements} Skilled proficiency in the Medicine skill.
 \subsubsection{Hidden Striker} \label{feat::hiddenstriker}
-    You learn or improve the Sneak Attack action (see page \pageref{act:sneakattack}).
+    You learn or improve the Sneak Attack action (see page \pageref{act::sneakattack}).
     You can take this feat three times, adding a d6 to the action's damage each time.
     \paragraph{Requirements} Skilled proficiency in the Stealth skill.
 \subsubsection{Hide in Plain Sight (2 FP)} \label{feat::hideinplainsight}
@@ -525,7 +526,7 @@
 % K
 \subsubsection{Keen Mind} \label{feat::keenmind}
     You always know which way is north, and you always know the number of hours left before the next sunrise or sunset.
-    \paragraph{Requirements} Competent proficiency in the Insight skill.
+    \paragraph{Requirements} Competent proficiency in the Insight skill or Oth kin.
 \subsubsection{Knowledgeable Craft} \label{feat::knowledgeablecraft}
     You can add half your Intelligence modifier (rounded down) to any ability check that involves instruments, kits, and tools.
     \paragraph{Requirements} Intelligence 18.
@@ -552,8 +553,7 @@
     People are naturally more careful around you, and you can get away with petty crimes without repercussion from the law.
     \paragraph{Requirements} Competent proficiency in the Intimidation skill.
 \subsubsection{Metamagic Initiate} \label{feat::metamagicinitiate}
-    You learn one metamagic option from the metamagic table (see page \pageref{ssec::metamagic}).
-    You can use only one metamagic option on a spell when you cast it, unless the option says otherwise.
+    You learn one spellcasting feat that requires an ability modifier different to your spellcasting ability modifier.
     \paragraph{Requirements} Skilled proficiency in the Arcana skill.
 \subsubsection{Mobile} \label{feat::mobile}
     Your movement speed is increased by 1 meter.
@@ -575,7 +575,7 @@
     You can take the Tumble action (see page \pageref{act::tumble}) as part of your movement.
     \paragraph{Requirements} Dexterity 12.
 % O
-\subsubsection{Observant} \label{feat::observant}
+\subsubsection{Hawk-eyed} \label{feat::hawkeyed}
     Based on memory or description alone, you can easily spot a person in a crowd or an object among many.
     \paragraph{Requirements} Skilled proficiency in the Perception skill.
 \subsubsection{Otherworldly Agility (2 FP)} \label{feat::otherwordlyagility}
@@ -681,7 +681,9 @@
     \paragraph{Requirements} Charisma 12
 \subsubsection{Second Wind} \label{feat::secondwind}
     You have a limited well of stamina that you can draw on to protect yourself from harm.
-    On your turn, you can use an action to regain hit points equal to 1d8 + your Constitution modifier.
+    On your turn, you can use an action to regain hit points equal to 1d10 + your Constitution modifier.
+
+    Once you use this ability, you must finish a short rest before you can use it again.
     \paragraph{Requirements} Constitution 12.
 \subsubsection{Sharpened Mind} \label{feat::sharpenedmind}
     You can accurately recall anything you have seen or heard within the past month.
@@ -757,13 +759,12 @@
 
     Upon losing an insanity, the creature becomes stalwart, giving them advantage on attack rolls and saving throws until they take a short rest.
     \paragraph{Requirements} Expert proficiency in the Persuasion skill.
-\subsubsection{Thief} \label{feat::thief}
+\subsubsection{Poacher} \label{feat::poacher}
     While they've given you problems in the past, your quick and sticky fingers have awarded you with many a treasure thorough your life.
     You learn the Steal action (see page \pageref{act::steal}).
     \paragraph{Requirements} Skilled proficiency in the Sleight of Hand skill.
-\subsubsection{Throwing Arm} \label{feat::throwingarm}
-    Attacking at long range doesn't impose disadvantage on your thrown weapon attack rolls.
-    In addition, all weapons and object that weigh less than you have the thrown property for you, and you can throw them up to a range equal to your Strength ability score.
+\subsubsection{Chair Juggler} \label{feat::chairjuggler}
+    In addition, all weapons and objects that weigh less than you have the thrown property for you, and you can throw them up to a range equal to your Strength modifier in meters and double that distance with disadvantage.
     \paragraph{Requirements} Strength 18.
 \subsubsection{Tracker} \label{feat::tracker}
     You have spent enough time hunting to hone your skill to a venerable level.
@@ -780,8 +781,8 @@
     When you forage, you find twice as much food as you normally would, and you are always able to find a shelter to rest protected from the elements.
     \paragraph{Requirements} Skilled proficiency in the Survival skill.
 % U
-\subsubsection{Uncanny Dodge} \label{feat::uncannydodge}
-    When an attacker that you can see hits you with an attack, you can use your reaction to halve the attack's damage against you.
+\subsubsection{Quick Dodge} \label{feat::quickdodge}
+    The action cost of the Dodge action (see page \pageref{act::dodge}) is reduced to 1 action for you.
     \paragraph{Requirements} Dexterity 15.
 \subsubsection{Uncanny Understanding} \label{feat::uncannyinsight}
     You can use one action to try to get uncanny insight about one humanoid you can see within 6 meters of you.

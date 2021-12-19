@@ -149,11 +149,54 @@ They're a solitary yet intimate creature with a penchant for nature and ritual.
 
     \subparagraph{Lunar Studies} You are competent in the Religion and History skills.
 
-    \subparagraph{Moon Magic} You know the Light cantrip (page \pageref{spell::light}).
-    When you gain your third hit die, you learn the Faerie Fire spell (page \pageref{spell::faeriefire}), which you can cast once per day.
-    When you get your fifth hit die, you learn the Glitterdust spell (page \pageref{spell::glitterdust}), which you can cast once per day.
+    \subparagraph{Moon Magic} You know the Light spell, which you can freely cast.
+    When you reach third level, you learn the \textbf{Faerie Fire} spell, which you can cast once per day.
+    When you reach fifth level, you learn the \textbf{Glitterdust} spell, which you can cast once per day.
 
     Intelligence is your spellcasting modifier for these spells.
+
+    \DndSpellHeader{Light \label{spell::light}}
+        {Moonborn spell}
+        {2 actions}
+        {Touch}
+        {M (a firefly or a gram of silver moss)}
+        {1 hour}
+        You touch one object that is no larger than 2 meters in any dimension.
+        Until the spell ends, the object sheds bright light in a 6-meter radius and dim light for an additional 6 meters.
+        The light is of a pale blue color.
+        Completely covering the object with something opaque blocks the light.
+        The spell ends if you cast it again or dismiss it as an action.
+
+        If you target an object held or worn by a hostile creature, that creature must succeed on a Dexterity saving throw to avoid the spell.
+    \DndSpellHeader{Faerie Fire \label{spell::faeriefire}}
+        {Moonborn spell}
+        {2 actions}
+        {Self}
+        {S (forewings)}
+        {1 minute}
+        You flutter your forewings, spreading a blue dust into the air.
+        Each object in a 9-meter radius around you is outlined in a pale blue light.
+        Any creature in the area when the spell is cast is also outlined in the light.
+        For the duration, objects and affected creatures shed dim light in a 6-meter radius.
+
+        Any attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.
+
+        A creature can try to shake off the dust as an action by succeeding on a Dexterity saving throw.
+        The dust stops glowing after a minute.
+    \DndSpellHeader{Glitterdust \label{spell::glitterdust}}
+        {Moonborn spell}
+        {2 action}
+        {Self}
+        {S (hindwings)}
+        {1 minute}
+        You flutter your hindwings, spreading a white dust into the air.
+        A cloud of golden particles covers everyone and everything within a 3-meter radius around you.
+        All creatures and objects within the area are covered by the dust, which cannot be removed and continues to sparkle until it fades.
+
+        For the duration, any target covered by the dust has disadvantage on Dexterity (Stealth) checks, and gains no benefit from being invisible.
+
+        Each creature affected by the spell must succeed on a Wisdom saving throw or become blinded for the duration.
+        The creature can repeat its saving throw at the end of each of its turns, ending the blindness on a success.
 
 \subsubsection{Chu'ash Kin}
     The chu'ash oths are a subculture that differentiate from the rest by their curious and reckless nature.
@@ -171,11 +214,47 @@ They're a solitary yet intimate creature with a penchant for nature and ritual.
     Once per day you can choose to reroll an attack, skill check, or saving throw.
     You can decide to do this after the roll, but before the outcome of the roll has been determined.
 
-    \subparagraph{Touched} You know the Dancing Lights cantrip (page \pageref{spell::dancinglights}).
-    When you gain your third hit die, you learn the Color Spray spell (page \pageref{spell::colorspray}), which you can cast once per day.
-    When you get your fifth hit die, you learn the Blur spell (page \pageref{spell::blur}), which you can cast once per day.
+    \subparagraph{Touched} You know the \textbf{Dancing Lights} spell, which you can freely cast.
+    When you reach third level, you learn the \textbf{Color Spray} spell, which you can cast once per day.
+    When you reach fifth level, you learn the \textbf{Blur} spell, which you can cast once per day.
 
     Charisma is your spellcasting modifier for these spells.
+
+    \DndSpellHeader{Dancing Lights \label{spell::dancinglights}}
+        {Chu'ash spell}
+        {2 actions}
+        {24 meters}
+        {M (a firefly or a gram of silver moss)}
+        {1 hour}
+        You create up to four torch-sized pale blue orbs within range that hover in the air for the duration.
+        You can also combine the four lights into one glowing object vaguely resembling a creature of Medium size.
+        Each light sheds dim light in a 6-meter radius.
+
+        As a bonus action on your turn, you can move the lights up to 12 meters to a new spot within range.
+        A light must be within 4 meters of another light created by this spell, and a light winks out if it exceeds the spell's range.
+    \DndSpellHeader{Color Spray \label{spell::colorspray}}
+        {Chu'ash spell}
+        {2 actions}
+        {Self (9-meter cone)}
+        {S (hindwings)}
+        {1 round}
+        A dazzling array of flashing, pale-colored light springs from your hindwings.
+        Roll a number of d10s equal to double your level; the total is how many hit points of creatures this spell can effect.
+        Creatures in a 9-meter cone originating from you are affected in a ascending order of their current hit points (ignoring unconscious creatures and creatures that can't see).
+
+        Starting with the creature that has the lowest current hit points, each creature affected by this spell is blinded until the end of your next turn.
+        Subtract each creature's hit points from the total before moving on to the creature with the next lowest hit points.
+        A creature's hit points must be equal to or less than the remaining total for that creature to be affected.
+    \DndSpellHeader{Blur \label{spell::blur}}
+        {Chu'ash spell}
+        {2 action}
+        {Self}
+        {S (forewings)}
+        {Concentration, up to 1 minute}
+        You flutter your forewings in a frantic manner, lifting a refracting golden dust around you.
+        Your body becomes blurred, shifting and wavering to all who can see you.
+        For the duration, any creature has disadvantage on attack rolls against you.
+        An attacker is immune to this effect if it doesn't rely on sight, as with blindsight, or can see through illusions, as with truesight.
 
 \subsubsection{Sunstruck Oth}
     While most oths follow the circle of resurrection to the letter, there are a few who choose to ignore it.
