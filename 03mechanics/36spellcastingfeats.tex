@@ -36,7 +36,7 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
     Charisma                      & \textbf{Subtle Spell}           (page \pageref{feat::subtlespell})
 \end{DndTable}
 
-\begin{DndTable}[width=\linewidth, header=School Spellcasting Feat List 1/1]{ll}
+\begin{DndTable}[width=\linewidth, header=School Spellcasting Feat List]{ll}
     \textbf{Doctrine or School} & \textbf{Feat}                                                                \\
     Sympathy 1                  & \textbf{Comforting Flame}       (page \pageref{feat::comfortingflame})       \\
     Sympathy 1                  & \textbf{Emboldening Connection} (page \pageref{feat::emboldeningconnection}) \\
@@ -56,7 +56,7 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
     Flamespeaking               & \textbf{Vigorous Scream}        (page \pageref{feat::vigorousscream})
 \end{DndTable}
 
-\subsubsection{Avid Caster (2 FP)} \label{feat::avidcaster}
+\subsubsection{Avid Caster (3 FP)} \label{feat::avidcaster}
     You increase your spellcasting ability bonus by 2.
     You can take this feat two times.
 \subsubsection{Careful Spell} \label{feat::carefulspell}
@@ -197,5 +197,96 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
 \subsubsection{Violent Discharge} \label{feat::violentdischarge}
     When a creature loses a charge via any means, it takes 1d6 thunder damage.
     \paragraph{Requirements} Doctrine: Sympathy.
+
+\subsubsection{Quenching Smoke} \label{feat::quenchingsmoke}
+    As an action, you can choose to consume a number of blue alignment points of your choice to emit thick smoke from your zuan.
+    The smoke spreads out to a range equal to 2 times the number of points consumed, spreading around corners.
+    It remains in position until the start of your next turn or until a strong wind disperses it.
+    The smoke's area is heavily obscured for the duration, and all fires and flames inside it subside, even those created by spells.
+    \paragraph{Requirements} Doctrine: Alchemy.
+\subsubsection{Fogs of Nuagal} \label{feat::fogsofnuagal}
+    Whenever you consume a blue alignment point, you can cause zuan to emit harmless steam out to a range of a meter.
+    All creatures in range must succeed on a Dexterity saving throw or they use their reactions to cover from the steam.
+    \paragraph{Requirements} Doctrine: Alchemy.
+\subsubsection{Slippery Surface} \label{feat::slipperysurface}
+    As an action, you can choose to consume a number of indigo alignment points of your choice to exhude a slippery liquid from your zuan.
+    The liquid extends out to a circle with a radius equal to twice the number of points consumed, and evaporates at the start of your next turn.
+
+    Any creature that is standing in the liquid when you cast the spell, starts their turn there, or enters the area must succeed on a Dexterity saving throw or fall prone.
+    If a creature tries to stand up, it must succeed on another Dexterity saving throw or fall prone again.
+    \paragraph{Requirements} Doctrine: Alchemy.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION - Kegal alignment, effect when using indigo alignment points.
+    \paragraph{Requirements} Doctrine: Alchemy.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION - Fagal alignment, extra damage to random creature
+    \paragraph{Requirements} Doctrine: Alchemy.
+\subsubsection{Magic Surge} \label{feat::magicsurge}
+    Your spellcasting can unleash surges of untamed magic.
+    Immediately after your zuan loses any amount of silver alignment points, roll a d100.
+    If the roll is equal or less than the amount of points lost, roll on the Magic Surge table to create a random effect.
+
+    If a Wild Magic effect is a spell, you cannot control it in any way.
+    If it normally requires concentration, it doesn't require concentration in this case; the spell lasts for its full duration.
+
+    \begin{DndTable}[width=\linewidth, header=Magic Surge]{ll}
+        \textbf{d20}     & \textbf{Effect} \\
+        01 & You gain vulnerability to all damage for the next minute. \\
+        02 & All creatures within 6 meters of your zuan gain vulnerability to piercing damage for the next minute. \\
+        03 & The creature closest to your zuan levitates for a minute.
+        While levitating, it can move up to 4 meters in any direction when it uses the move action.
+        When the minute ends, the creature falls to the ground. \\
+        04 & Each creature within 6 meters of your zuan takes 1d10 necrotic damage.
+        You regain hit points equal to the sum of the necrotic damage dealt. \\
+        05 & You teleport up to 12 meters to an unoccupied space of your choice that you can see. \\
+        06 & You regain a number of spell points equal to half your level (rounded down). \\
+        07 & You regain 2d10 hit points. \\
+        08 & A protective barrier appears around you for the next minute, granting you a +2 bonus to AC. \\
+        09 & Creatures have disadvantage on saving throws against the next spell you cast in the next minute that involves a saving throw. \\
+        10 & Maximize the damage of the next damaging spell you cast within the next minute. \\
+        11 & You can take one additional action immediately. \\
+        12 & If you die within the next minute, you immediately come back to life with 1 hit point. \\
+        13 & A random creature within 12 meters of your zuan becomes poisoned for 1d4 hours. \\
+        14 & You cast \textbf{Fireball} (see page \pageref{spell::fireball}) centered on your zuan. \\
+        15 & You cast \textbf{Grease} (see page \pageref{spell::grease}) centered on your zuan. \\
+        16 & You cast \textbf{Fog Cloud} (see page \pageref{spell::fogcloud}) centered on your zuan. \\
+        17 & Your zuan glows with bright light in a 6-meter radius for the next minute.
+        Any creature that ends its turn within a meter of it is blinded until the end of its next turn. \\
+        18 & Up to three creatures you choose within 6 meters of your zuan take 4d10 lightning damage. \\
+        19 & A confused frithling is teleported a meter from your zuan. \\
+        20 & You cast \textbf{Freezing Sphere} (see page \pageref{spell::spell::freezingsphere}) centered on your zuan.
+    \end{DndTable}
+    \paragraph{Requirements} Doctrine: Alchemy.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Doctrine: Alchemy, MCA: Upgraded Spellcasting.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION - UPGRADABLE
+    \paragraph{Requirements} Doctrine: Alchemy, MCA: Upgraded Spellcasting.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION - ACTION
+    \paragraph{Requirements} Doctrine: Alchemy, MCA: Upgraded Spellcasting.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} Doctrine: Alchemy, MCA: Upgraded Spellcasting.
+
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} School: Warchanting, Competent proficiency with Brewer's Supplies.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} School: Warchanting, Competent proficiency with Brewer's Supplies.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION - UPGRADABLE
+    \paragraph{Requirements} School: Warchanting, Skilled proficiency with Brewer's Supplies.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} School: Warchanting, Skilled proficiency with Brewer's Supplies.
+\subsubsection{NAME} \label{feat::name}
+    DESCRIPTION - SIGNATURE SPELL UPGRADE
+    \paragraph{Requirements} School: Warchanting, Expert proficiency with Brewer's Supplies.
+\subsubsection{NAME (2 FP)} \label{feat::name}
+    DESCRIPTION
+    \paragraph{Requirements} School: Warchanting, Expert proficiency with Brewer's Supplies.
 
 \newpage
