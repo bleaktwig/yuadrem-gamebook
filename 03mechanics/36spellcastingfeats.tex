@@ -3,18 +3,6 @@
 \subsection*{Spellcasting Feats}
 All feats in this section require the \textbf{Spellcaster} feat (see page \pageref{feat::spellcaster}), except naturally for the feat itself.
 
-% === MAGIC SCHOOLS ============================================================ %
-% All schools of magic require at least one rank in SPELLCASTING and one rank in a skill or tool (depends on the school).
-% Spellcasting
-% Bonereading (bonecarving tools)
-% Wordbinding (two ranks in standard language - second is basic true speech)
-% Windherding (acrobatics)
-% Sigaldry (two ranks in naenk tongue - first to learn language, second to learn shinerunes)
-% Psionics (two ranks in mind speech - first is listening to zaloths that don't necessarily want to be heard, second is feelspeech, and third is actual mind speech)
-% Thaumaturgy (science)
-% Tidal Manipulation (religion)
-% Fleshshaping (nature)
-
 \begin{DndTable}[width=\linewidth, header=General Spellcasting Feat List]{ll}
     \textbf{Spellcasting Ability} & \textbf{Feat}                                                                \\
     \textbf{---}                  & \textbf{Spellcaster}            (page \pageref{feat::spellcaster})           \\
@@ -38,6 +26,16 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
 
 \begin{DndTable}[width=\linewidth, header=School Spellcasting Feat List]{ll}
     \textbf{Doctrine or School} & \textbf{Feat}                                                                \\
+    Alchemy 1                   & \textbf{Acidic Discharge} (page \pageref{feat::acidicdischarge})             \\
+    Alchemy 1                   & \textbf{Fogs of Nuagal} (page \pageref{feat::fogsofnuagal})                  \\
+    Alchemy 1                   & \textbf{Quenching Smoke} (page \pageref{feat::quenchingsmoke})               \\
+    Alchemy 1                   & \textbf{Magic Surge} (page \pageref{feat::magicsurge})                       \\
+    Alchemy 1                   & \textbf{Slippery Surface} (page \pageref{feat::slipperysurface})             \\
+    Alchemy 1                   & \textbf{Unstable Air} (page \pageref{feat::unstableair})                     \\
+    Alchemy 2                   & \textbf{Alchemical Crafting} (page \pageref{feat::alchemicalcrafting})       \\
+    Alchemy 2                   & \textbf{Altered Air} (page \pageref{feat::alteredair})                       \\
+    Alchemy 2                   & \textbf{Infused Vials} (page \pageref{feat::infusedvials})                   \\
+    Alchemy 2                   & \textbf{Mutable Spells} (page \pageref{feat::mutablespells})                 \\
     Sympathy 1                  & \textbf{Comforting Flame}       (page \pageref{feat::comfortingflame})       \\
     Sympathy 1                  & \textbf{Emboldening Connection} (page \pageref{feat::emboldeningconnection}) \\
     Sympathy 1                  & \textbf{Forced Disattachment}   (page \pageref{feat::forceddisattachment})   \\
@@ -53,12 +51,60 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
     Flamespeaking               & \textbf{Prophetic Smoke}        (page \pageref{feat::propheticsmoke})        \\
     Flamespeaking               & \textbf{Stored Fuel}            (page \pageref{feat::storedfuel})            \\
     Flamespeaking               & \textbf{Twist the Lines}        (page \pageref{feat::twistthelines})         \\
-    Flamespeaking               & \textbf{Vigorous Scream}        (page \pageref{feat::vigorousscream})
+    Flamespeaking               & \textbf{Vigorous Scream}        (page \pageref{feat::vigorousscream})        \\
+    Warchanting                 & \textbf{Bloodshot}              (page \pageref{feat::bloodshot})             \\
+    Warchanting                 & \textbf{Brutal Critical}        (page \pageref{feat::brutalcritical})        \\
+    Warchanting                 & \textbf{Cosmic Savaregy}        (page \pageref{feat::cosmicsavaregy})        \\
+    Warchanting                 & \textbf{Rage Beyond Death}      (page \pageref{feat::ragebeyonddeath})       \\
+    Warchanting                 & \textbf{Strong Liquor}          (page \pageref{feat::strongliquor})          \\
+    Warchanting                 & \textbf{Unending Fury}          (page \pageref{feat::unendingfury})
 \end{DndTable}
 
+% A
+\subsubsection{Acidic Discharge} \label{feat::acidicdischarge}
+    Whenever you consume an indigo alignment point, you can cause your zuan to discharge a small amount of acid.
+    The acid extends out to a range of a meter, and is difficult terrain.
+    In addition, any creature that steps on the acid takes 1d6 acid damage.
+    \paragraph{Requirements} Doctrine: Alchemy.
+\subsubsection{Alchemical Crafting (2 FP)} \label{feat::alchemicalcrafting}
+    As part of a long rest, you can aid a creature in the creation of an item, halving its material cost.
+    You can only use this feat to aid an item created through Alchemist's Supplies, Brewer's Supplies, Cook's Utensils, or a Poisoner's Kit.
+    \paragraph{Requirements} Doctrine: Alchemy, MCA: Upgraded Spellcasting.
+\subsubsection{Altered Air (2 FP)} \label{feat::alteredair}
+    Using two actions, you can cause your zuan to emit an aura of your choice:
+    \begin{itemize}
+        \item \textbf{Noxious Gas}.
+        The air around your zuan becomes heavy.
+        All creatures within 3 meters of it have a -1 penalty to their AC and have disadvantage on Dexterity saving throws.
+        Constructs are unaffected by this effect.
+        \item \textbf{Scalding Steam}.
+        Your zuan emits steam out to a range of a meter.
+        The area becomes heavily obscured, and any creature that starts its turn in or enters the area takes 2d6 fire damage.
+        \item \textbf{Emboldening Aura}.
+        A stimulating aura radiates from your zuan out to a range of 3 meters.
+        All creatures in this range receive a +1 bonus to their AC and have advantage on Strength saving throws.
+        Constructs are unaffected by this effect.
+    \end{itemize}
+
+    The aura remains in effect until you dismiss it as an action on your turn.
+    \paragraph{Requirements} Doctrine: Alchemy, MCA: Upgraded Spellcasting.
 \subsubsection{Avid Caster (3 FP)} \label{feat::avidcaster}
     You increase your spellcasting ability bonus by 2.
     You can take this feat two times.
+% B
+\subsubsection{Bloodshot} \label{feat::bloodshot}
+    As part of a short rest, you can brew one vial worth of Bloodshot.
+    A creature can drink the liquid using two actions.
+    Alternatively, you can force a willing creature to drink it using two actions.
+
+    Until the end of its next turn, the creature's multiple attack penalty is reduced to 0, and it gains a bonus to damage rolls equal to your spellcasting ability modifier.
+    \paragraph{Requirements} School: Warchanting, Competent proficiency with Brewer's Supplies.
+\subsubsection{Brutal Critical} \label{feat::brutalcritical}
+    While raging, a creature can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack.
+
+    You can take this feat two additional times, increasing the damage dice rolled by one each time.
+    \paragraph{Requirements} School: Warchanting, Skilled proficiency with Brewer's Supplies.
+% C
 \subsubsection{Careful Spell} \label{feat::carefulspell}
     When you cast a spell that forces other creatures to make a saving throw, you can protect one of those creatures from the spell's full force.
 
@@ -69,10 +115,22 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
 \subsubsection{Comforting Flame} \label{feat::comfortingflame}
     All allied creatures within 3 meters of at least one ember gain a +1 bonus to their AC.
     \paragraph{Requirements} Doctrine: Sympathy.
+\subsubsection{Cosmic Savagery} \label{feat::cosmicsavaregy}
+    While under the effect of the \textbf{Rhelath's Dance} spell, the raging creature gains an additional benefit when you use the extra effects of the \textbf{Rage} spell:
+
+    \subparagraph{Primal Frenzy}
+    The creature makes attack rolls with advantage during its next turn.
+    \subparagraph{Feral Instinct}
+    The creature gains advantage on Constitution and Dexterity saving throws until the start of your next turn.
+    \subparagraph{Instinctive Pounce}
+    The creature's speed is increase by 2 meters until the start of your next turn.
+    \paragraph{Requirements} School: Warchanting, Expert proficiency with Brewer's Supplies.
+% D
 \subsubsection{Durable Magic} \label{feat::durablemagic}
     When you cast a spell that requires concentration, you can spend an additional action to still yourself while casting.
     While you maintain concentration on the spell, you have a +2 bonus to AC and all saving throws.
     \paragraph{Requirements} Ability Modifier: Wisdom.
+% E
 \subsubsection{Emboldening Connection} \label{feat::emboldeningconnection}
     All creatures connected via a similarity link gain a +1 bonus to all saving throws for each other creature attached through the link.
     \paragraph{Requirements} Doctrine: Sympathy.
@@ -83,144 +141,46 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
 \subsubsection{Extended Spell} \label{feat::extendedspell}
     When you cast a spell that has a duration of 1 minute or longer, you can spend a spell point to double its duration, to a maximum of 24 hours.
     \paragraph{Requirements} Ability Modifier: Wisdom.
+% F
 \subsubsection{Focused Casting (2FP)} \label{feat::focusedcasting}
     You gain a bonus to any Constitution saving throws you make to maintain concentration on a spell.
     The bonus equals your Wisdom modifier (minimum of +1).
     \paragraph{Requirements} Ability Modifier: Wisdom.
+\subsubsection{Fogs of Nuagal} \label{feat::fogsofnuagal}
+    Whenever you consume a blue alignment point, you can cause zuan to emit harmless steam out to a range of a meter.
+    All creatures in range must succeed on a Dexterity saving throw or they use their reactions to cover from the steam.
+    \paragraph{Requirements} Doctrine: Alchemy.
 \subsubsection{Forced Disattachment} \label{feat::forceddisattachment}
     Whenever a sympathetic link is broken, all linked creatures are affected by a wave of lethargy.
     Until the end of your next turn, they can only take 2 actions per turn, their movement speed is reduced by 2 meters, and their AC is reduced by 2.
     \paragraph{Requirements} Doctrine: Sympathy.
+% G
 \subsubsection{Guiding Spark} \label{feat::guidingspark}
     When you cast a spell that deals fire damage, you can expend one spell point to look into the trail of sparks and predict the creature's movements.
     Any ally that attacks the creature before the start of your next turn can roll a d4 and add the number rolled to the attack roll.
     \paragraph{Requirements} School: Flamespeaking, Competent proficiency with Glassblower's Tools.
+% H
 \subsubsection{Heedful Aim (2FP)} \label{feat::heedfulaim}
     Your ranged spell attacks ignore half cover and three-quarters cover.
     \paragraph{Requirements} Ability Modifier: Intelligence.
 \subsubsection{Heightened Spell} \label{feat::heightenedspell}
     When you cast a spell that forces a creature to make a saving throw to resist its effects, you can spend 3 spell points to give one target of the spell disadvantage
     \paragraph{Requirements} Ability Modifier: Charisma.
-\subsubsection{Message in the Ash (2 FP)} \label{feat::messageintheash}
-    You can call on Purphoros to intervene on your behalf when your need is great.
+% I
+\subsubsection{Infused Vials} \label{feat::infusedvials}
+    As a ritual, you can infuse a vial of water with a spell.
+    The ritual takes a minute to be finished and consumes the number of spell points that casting the spell normally would have.
+    The water is transformed by the spell, changing in appearance to something to resembles to stored spell.
+    Whenever the vial is opened by any means, the spell is cast on it as if you had casted it.
 
-    Describe the assistance you seek, and roll percentile dice.
-    If you roll a number equal to or lower than your level, Purphoros intervenes.
-    The DM chooses the nature of the intervention.
-    If the deity intervenes, you can't use this feat again for a week.
-    Otherwise, you can use it again after you finish a short rest.
+    You can keep only one vial infused in this way at a time.
 
-    At 20th level, your call for intervention succeeds automatically, no roll required.
-    \paragraph{Requirements} School: Flamespeaking, Expert proficiency with Glassblower's Tools.
-\subsubsection{Numerous Mediums} \label{feat::numerousmediums}
-    The maximum number of mediums of the same type you can maintain is increased by one.
-
-    You can take this feat two additional times, increasing the maximum number of mediums by one each time.
-    \paragraph{Requirements} Ability Modifier: Wisdom.
-\subsubsection{Overexertion (2FP)} \label{feat::overexertion}
-    As a free action, you can choose to gain a number of spell points equal to a third of your total spell points.
-    When you do this, you gain one level of exhaustion, and gain vulnerability to cold damage until you take a short rest.
-    \paragraph{Requirements} Doctrine: Sympathy, MCA: Upgraded Spellcasting.
-\subsubsection{Prophetic Smoke} \label{feat::propheticsmoke}
-    When you deal fire damage to a creature, you can expend one spell point to look into the pattern of smoke and foresee the creature's movements.
-    The next attack the creature does against you is made with disadvantage.
-    \paragraph{Requirements} School: Flamespeaking, Competent proficiency with Glassblower's Tools.
-\subsubsection{Quick Casting (2FP)} \label{feat::quickcasting}
-    When you cast a spell that has a casting time of 2 or more actions, you can spend 3 spell points to reduce the casting time by 1 action for this casting.
-    \paragraph{Requirements} Ability Modifier: Charisma.
-\subsubsection{Scalding Ember} \label{feat::scaldingember}
-    Upon starting its turn within a meter of at least one ember, a creature takes 1d6 fire damage.
-    \paragraph{Requirements} Doctrine: Sympathy.
-\subsubsection{Seeking Spell} \label{feat::seekingspell}
-    If you make an attack roll for a spell and miss, you can spend 2 spell points to reroll the d20, and you must use the new roll.
-    \paragraph{Requirements} Ability Modifier: Intelligence.
-\subsubsection{Spell Sniper (2FP)} \label{feat::spellsniper}
-    When you cast a spell hat has a range of 1 meter or greater, you can spend one spell point to double the range of the spell.
-
-    When you cast a spell that has a range of touch, you can spend 1 spell point to make the range of the spell 6 meters.
-    \paragraph{Requirements} Ability Modifier: Intelligence.
-\subsubsection{Spellcaster (2 FP)} \label{feat::spellcaster}
-    By joining one spellcasting school of your choice, you learn how to cast spells.
-    Pick a spellcasting school from the Spellcasting chapter (page \pageref{ch::spellcasting}).
-    The benefits associated to each school are denoted on their respective sections.
-    For the rules of spellcasting, see page \pageref{sec::spellcastingrules}.
-\subsubsection{Spontaneous Deflection} \label{feat::spontaneousdeflection}
-    You can weave your magic to fortify yourself against harm.
-    When you are hit by an attack or you fail a saving throw, you can consume one spell point and use your reaction to gain a +2 bonus to your AC against that attack or a +4 bonus to that saving throw.
-    \paragraph{Requirements} Ability Modifier: Charisma.
-\subsubsection{Stored Energy (2FP)} \label{feat::storedenergy}
-    Whenever one of your embers fades, a creature is completely discharged, or a similarity link is broken, you feel a surge in energy.
-    Once when you deal damage to a creature through any mean before the end of your next turn, it takes an additional 1d6 force damage.
-    This damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).
-    \paragraph{Requirements} Doctrine: Sympathy, MCA: Upgraded Spellcasting.
-\subsubsection{Stored Fuel} \label{feat::storedfuel}
-    As part of a short rest, you can store a number of unspent spell points equal to your spellcasting ability modifier in a firetrap you are carrying.
-    You can recover any number of these spell points at any point as a free action as long as you carry the firetrap.
-
-    The maximum number of spell points that a firetrap can carry is equal to your spellcasting ability modifier.
-
-    You can take this feat two additional times, multiplying the maximum number of points stored per short rest and the maximum number of spell points a firetrap can carry by two each time.
-    \paragraph{Requirements} School: Flamespeaking, Skilled proficiency with Glassblower's Tools.
-\subsubsection{Storm Arteries} \label{feat::stormarteries}
-    Whenever you take fire or lightning damage, you gain one spell point.
-
-    You can take this feat two additional times, increasing the number of spell points gained in this way by one for each time.
-    \paragraph{Requirements} Doctrine: Sympathy, MCA: Upgraded Spellcasting.
-\subsubsection{Subtle Spell} \label{feat::subtlespell}
-    When you cast a spell, you can spend 1 additional spell point to cast it without any somatic or verbal components.
-    \paragraph{Requirements} Ability Modifier: Charisma.
-\subsubsection{Sympathist's Fuel} \label{feat::sympathistsfuel}
-    When you make a Constitution saving throw to stave off the effects of extreme cold, you can choose to spend one spell point and automatically succeed.
-
-    In addition, when you take cold damage, you can spend a number of spell points equal to half the number of damage dice of the attack (rounded down) to reduce the damage dealt by half.
-    \paragraph{Requirements} Doctrine: Sympathy, MCA: Upgraded Spellcasting.
-\subsubsection{Tactical Wit} \label{feat::tacticalwit}
-    You gain a bonus to your initiative rolls equal to your Intelligence modifier.
-    In addition, you can spend two spell points at the beginning of combat to roll initiative with advantage.
-    \paragraph{Requirements} Ability Modifier: Intelligence.
-\subsubsection{Tamed Lightning} \label{feat::tamedlightning}
-    All creatures charged by you deal thunder damage equal to half the number of charges they have (rounded down) on all melee attacks.
-    \paragraph{Requirements} Doctrine: Sympathy.
-\subsubsection{Twinned Spell (2FP)} \label{feat::twinnedspell}
-    When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of spell points equal to half the total cost of the spell (rounded up) to target a second creature in range with the same spell (1 spell point if the spell has a cost of 0).
-
-    To be eligible, a spell must be incapable of targeting more than one creature.
-    \paragraph{Requirements} Ability Modifier: Wisdom.
-\subsubsection{Twist the Lines (2FP)} \label{feat::twistthelines}
-    As a reaction, you can expend two spell points to force a creature to reroll an attack roll.
-    \paragraph{Requirements} School: Flamespeaking, Skilled proficiency with Glassblower's Tools.
-\subsubsection{Vigorous Scream} \label{feat::vigorousscream}
-    The radius of the \textbf{Screaming Bead} spell (see page \pageref{spell::screamingbead}) is extended to 6 meters.
-
-    In addition, its range is extended to 12/18 mt.
-    \paragraph{Requirements} School: Flamespeaking, Expert proficiency with Glassblower's Tools.
-\subsubsection{Violent Discharge} \label{feat::violentdischarge}
-    When a creature loses a charge via any means, it takes 1d6 thunder damage.
-    \paragraph{Requirements} Doctrine: Sympathy.
-
-\subsubsection{Quenching Smoke} \label{feat::quenchingsmoke}
-    As an action, you can choose to consume a number of blue alignment points of your choice to emit thick smoke from your zuan.
-    The smoke spreads out to a range equal to 2 times the number of points consumed, spreading around corners.
-    It remains in position until the start of your next turn or until a strong wind disperses it.
-    The smoke's area is heavily obscured for the duration, and all fires and flames inside it subside, even those created by spells.
-    \paragraph{Requirements} Doctrine: Alchemy.
-\subsubsection{Fogs of Nuagal} \label{feat::fogsofnuagal}
-    Whenever you consume a blue alignment point, you can cause zuan to emit harmless steam out to a range of a meter.
-    All creatures in range must succeed on a Dexterity saving throw or they use their reactions to cover from the steam.
-    \paragraph{Requirements} Doctrine: Alchemy.
-\subsubsection{Slippery Surface} \label{feat::slipperysurface}
-    As an action, you can choose to consume a number of indigo alignment points of your choice to exhude a slippery liquid from your zuan.
-    The liquid extends out to a circle with a radius equal to twice the number of points consumed, and evaporates at the start of your next turn.
-
-    Any creature that is standing in the liquid when you cast the spell, starts their turn there, or enters the area must succeed on a Dexterity saving throw or fall prone.
-    If a creature tries to stand up, it must succeed on another Dexterity saving throw or fall prone again.
-    \paragraph{Requirements} Doctrine: Alchemy.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - Kegal alignment, effect when using indigo alignment points.
-    \paragraph{Requirements} Doctrine: Alchemy.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - Fagal alignment, extra damage to random creature
-    \paragraph{Requirements} Doctrine: Alchemy.
+    You can take this feat two more times, increasing the number of vials that can be infused at the same time by one each time.
+    \paragraph{Requirements} Doctrine: Alchemy, MCA: Upgraded Spellcasting.
+% J
+% K
+% L
+% M
 \subsubsection{Magic Surge} \label{feat::magicsurge}
     Your spellcasting can unleash surges of untamed magic.
     Immediately after your zuan loses any amount of silver alignment points, roll a d100.
@@ -253,40 +213,156 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
         17 & Your zuan glows with bright light in a 6-meter radius for the next minute.
         Any creature that ends its turn within a meter of it is blinded until the end of its next turn. \\
         18 & Up to three creatures you choose within 6 meters of your zuan take 4d10 lightning damage. \\
-        19 & A confused frithling is teleported a meter from your zuan. \\
-        20 & You cast \textbf{Freezing Sphere} (see page \pageref{spell::spell::freezingsphere}) centered on your zuan.
+        19 & You cast \textbf{Freezing Sphere} (see page \pageref{spell::spell::freezingsphere}) centered on your zuan. \\
+        20 & A confused frithling is teleported a meter from your zuan.
     \end{DndTable}
     \paragraph{Requirements} Doctrine: Alchemy.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
-    \paragraph{Requirements} Doctrine: Alchemy, MCA: Upgraded Spellcasting.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
-    \paragraph{Requirements} Doctrine: Alchemy, MCA: Upgraded Spellcasting.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION - ACTION
-    \paragraph{Requirements} Doctrine: Alchemy, MCA: Upgraded Spellcasting.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
-    \paragraph{Requirements} Doctrine: Alchemy, MCA: Upgraded Spellcasting.
+\subsubsection{Message in the Ash (2 FP)} \label{feat::messageintheash}
+    You can call on Purphoros to intervene on your behalf when your need is great.
 
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
-    \paragraph{Requirements} School: Warchanting, Competent proficiency with Brewer's Supplies.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION
-    \paragraph{Requirements} School: Warchanting, Competent proficiency with Brewer's Supplies.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - UPGRADABLE
-    \paragraph{Requirements} School: Warchanting, Skilled proficiency with Brewer's Supplies.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
-    \paragraph{Requirements} School: Warchanting, Skilled proficiency with Brewer's Supplies.
-\subsubsection{NAME} \label{feat::name}
-    DESCRIPTION - SIGNATURE SPELL UPGRADE
+    Describe the assistance you seek, and roll percentile dice.
+    If you roll a number equal to or lower than your level, Purphoros intervenes.
+    The DM chooses the nature of the intervention.
+    If the deity intervenes, you can't use this feat again for a week.
+    Otherwise, you can use it again after you finish a short rest.
+
+    At 20th level, your call for intervention succeeds automatically, no roll required.
+    \paragraph{Requirements} School: Flamespeaking, Expert proficiency with Glassblower's Tools.
+\subsubsection{Mutable Spells} \label{feat::mutablespells}
+    Whenever you deal acid of fire damage to a creature, you can use one spell point to change to damage type to fire or acid respectively.
+    \paragraph{Requirements} Doctrine: Alchemy, MCA: Upgraded Spellcasting.
+% N
+\subsubsection{Numerous Mediums} \label{feat::numerousmediums}
+    The maximum number of mediums of the same type you can maintain is increased by one.
+
+    You can take this feat two additional times, increasing the maximum number of mediums by one each time.
+    \paragraph{Requirements} Ability Modifier: Wisdom.
+% O
+\subsubsection{Overexertion (2FP)} \label{feat::overexertion}
+    As a free action, you can choose to gain a number of spell points equal to a third of your total spell points.
+    When you do this, you gain one level of exhaustion, and gain vulnerability to cold damage until you take a short rest.
+    \paragraph{Requirements} Doctrine: Sympathy, MCA: Upgraded Spellcasting.
+% P
+\subsubsection{Prophetic Smoke} \label{feat::propheticsmoke}
+    When you deal fire damage to a creature, you can expend one spell point to look into the pattern of smoke and foresee the creature's movements.
+    The next attack the creature does against you is made with disadvantage.
+    \paragraph{Requirements} School: Flamespeaking, Competent proficiency with Glassblower's Tools.
+% Q
+\subsubsection{Quenching Smoke} \label{feat::quenchingsmoke}
+    As an action, you can choose to consume a number of blue alignment points of your choice to emit thick smoke from your zuan.
+    The smoke spreads out to a range equal to 2 times the number of points consumed, spreading around corners.
+    It remains in position until the start of your next turn or until a strong wind disperses it.
+    The smoke's area is heavily obscured for the duration, and all fires and flames inside it subside, even those created by spells.
+    \paragraph{Requirements} Doctrine: Alchemy.
+\subsubsection{Quick Casting (2FP)} \label{feat::quickcasting}
+    When you cast a spell that has a casting time of 2 or more actions, you can spend 3 spell points to reduce the casting time by 1 action for this casting.
+    \paragraph{Requirements} Ability Modifier: Charisma.
+% R
+\subsubsection{Rage Beyond Death (2 FP)} \label{feat::ragebeyonddeath}
+    The power that fuels a creature's rage allows it to shrug off fatal blows.
+
+    While a creature is raging, having 0 hit points doesn't knock it unconscious.
+    It still must make death saving throws, and it suffers the normal effects of taking damage while at 0 hit points.
+    However, if it would die due to failing death saving throws, it doesn't die until the rage ends, and it dies then only if it still has 0 hit points.
     \paragraph{Requirements} School: Warchanting, Expert proficiency with Brewer's Supplies.
-\subsubsection{NAME (2 FP)} \label{feat::name}
-    DESCRIPTION
-    \paragraph{Requirements} School: Warchanting, Expert proficiency with Brewer's Supplies.
+% S
+\subsubsection{Scalding Ember} \label{feat::scaldingember}
+    Upon starting its turn within a meter of at least one ember, a creature takes 1d6 fire damage.
+    \paragraph{Requirements} Doctrine: Sympathy.
+\subsubsection{Seeking Spell} \label{feat::seekingspell}
+    If you make an attack roll for a spell and miss, you can spend 2 spell points to reroll the d20, and you must use the new roll.
+    \paragraph{Requirements} Ability Modifier: Intelligence.
+\subsubsection{Slippery Surface} \label{feat::slipperysurface}
+    As an action, you can choose to consume a number of indigo alignment points of your choice to exhude a slippery liquid from your zuan.
+    The liquid extends out to a circle with a radius equal to twice the number of points consumed, and evaporates at the start of your next turn.
+
+    Any creature that is standing in the liquid when you cast the spell, starts their turn there, or enters the area must succeed on a Dexterity saving throw or fall prone.
+    If a creature tries to stand up, it must succeed on another Dexterity saving throw or fall prone again.
+    \paragraph{Requirements} Doctrine: Alchemy.
+\subsubsection{Spell Sniper (2FP)} \label{feat::spellsniper}
+    When you cast a spell hat has a range of 1 meter or greater, you can spend one spell point to double the range of the spell.
+
+    When you cast a spell that has a range of touch, you can spend 1 spell point to make the range of the spell 6 meters.
+    \paragraph{Requirements} Ability Modifier: Intelligence.
+\subsubsection{Spellcaster (2 FP)} \label{feat::spellcaster}
+    By joining one spellcasting school of your choice, you learn how to cast spells.
+    Pick a spellcasting school from the Spellcasting chapter (page \pageref{ch::spellcasting}).
+    The benefits associated to each school are denoted on their respective sections.
+    For the rules of spellcasting, see page \pageref{sec::spellcastingrules}.
+\subsubsection{Spontaneous Deflection} \label{feat::spontaneousdeflection}
+    You can weave your magic to fortify yourself against harm.
+    When you are hit by an attack or you fail a saving throw, you can consume one spell point and use your reaction to gain a +2 bonus to your AC against that attack or a +4 bonus to that saving throw.
+    \paragraph{Requirements} Ability Modifier: Charisma.
+\subsubsection{Stored Energy (2FP)} \label{feat::storedenergy}
+    Whenever one of your embers fades, a creature is completely discharged, or a similarity link is broken, you feel a surge in energy.
+    Once when you deal damage to a creature through any mean before the end of your next turn, it takes an additional 1d6 force damage.
+    This damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).
+    \paragraph{Requirements} Doctrine: Sympathy, MCA: Upgraded Spellcasting.
+\subsubsection{Stored Fuel} \label{feat::storedfuel}
+    As part of a short rest, you can store a number of unspent spell points equal to your spellcasting ability modifier in a firetrap you are carrying.
+    You can recover any number of these spell points at any point as a free action as long as you carry the firetrap.
+
+    The maximum number of spell points that a firetrap can carry is equal to your spellcasting ability modifier.
+
+    You can take this feat two additional times, multiplying the maximum number of points stored per short rest and the maximum number of spell points a firetrap can carry by two each time.
+    \paragraph{Requirements} School: Flamespeaking, Skilled proficiency with Glassblower's Tools.
+\subsubsection{Storm Arteries} \label{feat::stormarteries}
+    Whenever you take fire or lightning damage, you gain one spell point.
+
+    You can take this feat two additional times, increasing the number of spell points gained in this way by one for each time.
+    \paragraph{Requirements} Doctrine: Sympathy, MCA: Upgraded Spellcasting.
+\subsubsection{Strong Liquor (2 FP)} \label{feat::strongliquor}
+    Whenever a creature drinks a brew prepared by you, it gains advantage on all Constitution and Strength saving throws for an hour.
+    \paragraph{Requirements} School: Warchanting, Skilled proficiency with Brewer's Supplies.
+\subsubsection{Subtle Spell} \label{feat::subtlespell}
+    When you cast a spell, you can spend 1 additional spell point to cast it without any somatic or verbal components.
+    \paragraph{Requirements} Ability Modifier: Charisma.
+\subsubsection{Sympathist's Fuel} \label{feat::sympathistsfuel}
+    When you make a Constitution saving throw to stave off the effects of extreme cold, you can choose to spend one spell point and automatically succeed.
+
+    In addition, when you take cold damage, you can spend a number of spell points equal to half the number of damage dice of the attack (rounded down) to reduce the damage dealt by half.
+    \paragraph{Requirements} Doctrine: Sympathy, MCA: Upgraded Spellcasting.
+% T
+\subsubsection{Tactical Wit} \label{feat::tacticalwit}
+    You gain a bonus to your initiative rolls equal to your Intelligence modifier.
+    In addition, you can spend two spell points at the beginning of combat to roll initiative with advantage.
+    \paragraph{Requirements} Ability Modifier: Intelligence.
+\subsubsection{Tamed Lightning} \label{feat::tamedlightning}
+    All creatures charged by you deal thunder damage equal to half the number of charges they have (rounded down) on all melee attacks.
+    \paragraph{Requirements} Doctrine: Sympathy.
+\subsubsection{Twinned Spell (2FP)} \label{feat::twinnedspell}
+    When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of spell points equal to half the total cost of the spell (rounded up) to target a second creature in range with the same spell (1 spell point if the spell has a cost of 0).
+
+    To be eligible, a spell must be incapable of targeting more than one creature.
+    \paragraph{Requirements} Ability Modifier: Wisdom.
+\subsubsection{Twist the Lines (2FP)} \label{feat::twistthelines}
+    As a reaction, you can expend two spell points to force a creature to reroll an attack roll.
+    \paragraph{Requirements} School: Flamespeaking, Skilled proficiency with Glassblower's Tools.
+% U
+\subsubsection{Unending Fury} \label{feat::unendingfury}
+    After you end the spell, the effects of \textbf{Rage} remain for an additional round.
+    \paragraph{Requirements} School: Warchanting, Competent proficiency with Brewer's Supplies.
+\subsubsection{Unstable Air} \label{feat::unstableair}
+    As an action, you can choose to consume a number of silver alignment points of your choice, infusing the air around your zuan in volatility.
+    This aura extends out to a range with a radius equal to the number of points consumed in meters.
+
+    Select a damage type between acid, cold, fire, lightning, or thunder.
+    Until the start of your next turn, all creatures in the aura gain vulnerability to the chosen damage type.
+    If they are resistant, they lose that resistance but don't gain vulnerability.
+    If they are immune, they lose the immunity but become resistant.
+    \paragraph{Requirements} Doctrine: Alchemy.
+% V
+\subsubsection{Vigorous Scream} \label{feat::vigorousscream}
+    The radius of the \textbf{Screaming Bead} spell (see page \pageref{spell::screamingbead}) is extended to 6 meters.
+
+    In addition, its range is extended to 12/18 mt.
+    \paragraph{Requirements} School: Flamespeaking, Expert proficiency with Glassblower's Tools.
+\subsubsection{Violent Discharge} \label{feat::violentdischarge}
+    When a creature loses a charge via any means, it takes 1d6 thunder damage.
+    \paragraph{Requirements} Doctrine: Sympathy.
+% W
+% X
+% Y
+% Z
 
 \newpage
