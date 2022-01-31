@@ -52,6 +52,12 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
     Flamespeaking               & \textbf{Stored Fuel}            (page \pageref{feat::storedfuel})            \\
     Flamespeaking               & \textbf{Twist the Lines}        (page \pageref{feat::twistthelines})         \\
     Flamespeaking               & \textbf{Vigorous Scream}        (page \pageref{feat::vigorousscream})        \\
+    Skycalling                  & \textbf{Biting Lightning}       (page \pageref{feat::bitinglightning})       \\
+    Skycalling                  & \textbf{Exploding Aragonite}    (page \pageref{feat::explodingaragonite})    \\
+    Skycalling                  & \textbf{Javelin of Keranos}     (page \pageref{feat::javelinofkeranos})      \\
+    Skycalling                  & \textbf{Protective Field}       (page \pageref{feat::protectivefield})       \\
+    Skycalling                  & \textbf{Thunder Gems}           (page \pageref{feat::thundergems})           \\
+    Skycalling                  & \textbf{Unbound Storm}          (page \pageref{feat::unboundstorm})          \\
     Warchanting                 & \textbf{Bloodshot}              (page \pageref{feat::bloodshot})             \\
     Warchanting                 & \textbf{Brutal Critical}        (page \pageref{feat::brutalcritical})        \\
     Warchanting                 & \textbf{Cosmic Savaregy}        (page \pageref{feat::cosmicsavaregy})        \\
@@ -92,6 +98,10 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
     You increase your spellcasting ability bonus by 2.
     You can take this feat two times.
 % B
+\subsubsection{Biting Lightning} \label{feat::bitinglightning}
+    The area created by the \textbf{Dry Air} medium (page \pageref{medium::dryair}) is considered difficult terrain.
+    In addition, any creature inside the area takes 1d4 thunder damage for each charge it receives while inside it.
+    \paragraph{Requirements} School: Skycalling, Competent proficiency with Jeweler's Tools.
 \subsubsection{Bloodshot} \label{feat::bloodshot}
     As part of a short rest, you can brew one vial worth of Bloodshot.
     A creature can drink the liquid using two actions.
@@ -138,6 +148,15 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
     When you roll damage for a spell, you can spend a spell point to reroll a number of the damage dice up to your Charisma modifier (minimum of one).
     You must use the new rolls.
     \paragraph{Requirements} Ability Modifier: Charisma.
+\subsubsection{Exploding Aragonite} \label{feat::explodingaragonite}
+    As part of a short rest, you can imbue lightning onto a piece of aragonite.
+    You consume a number of spell points lesser or equal to your spellcasting ability modifier when you do this.
+    The next time the aragonite hits a hard surface, it shatters, releasing lightning bolts towards all creatures in a 4-meter-radius from it.
+    All creatures affected must make a Dexterity saving throw.
+    A creature takes a number of d6s equal to the number of spell points consumed by this ability in thunder damage on a failed save and is pushed 2 meters away from the aragonite.
+
+    You can take this feat two additional times, increasing the maximum number of spell points that can be stored by the aragonite by an amount equal to your spellcasting ability modifier each time.
+    \paragraph{Requirements} School: Skycalling, Skilled proficiency with Jeweler's Tools.
 \subsubsection{Extended Spell} \label{feat::extendedspell}
     When you cast a spell that has a duration of 1 minute or longer, you can spend a spell point to double its duration, to a maximum of 24 hours.
     \paragraph{Requirements} Ability Modifier: Wisdom.
@@ -178,6 +197,10 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
     You can take this feat two more times, increasing the number of vials that can be infused at the same time by one each time.
     \paragraph{Requirements} Doctrine: Alchemy, MCA: Upgraded Spellcasting.
 % J
+\subsubsection{Javelin of Keranos (2 FP)} \label{feat::javelinofkeranos}
+    While under a storm, you can call on Keranos to imbue your attacks with electricity.
+    Any time you deal damage through any means to another creature, that attack bonus thunder damage equal to twice your spellcasting ability modifier.
+    \paragraph{Requirements} School: Skycalling, Expert proficiency with Jeweler's Tools.
 % K
 % L
 % M
@@ -247,6 +270,10 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
     When you deal fire damage to a creature, you can expend one spell point to look into the pattern of smoke and foresee the creature's movements.
     The next attack the creature does against you is made with disadvantage.
     \paragraph{Requirements} School: Flamespeaking, Competent proficiency with Glassblower's Tools.
+\subsubsection{Protective Field} \label{feat::protectivefield}
+    Any creature standing inside the area created by the \textbf{Dry Air} medium (page \pageref{medium::dryair}) gains resistance against lightning damage.
+    If they leave this area, they retain this resistance until the start of their next turn.
+    \paragraph{Requirements} School: Skycalling, Competent proficiency with Jeweler's Tools.
 % Q
 \subsubsection{Quenching Smoke} \label{feat::quenchingsmoke}
     As an action, you can choose to consume a number of blue alignment points of your choice to emit thick smoke from your zuan.
@@ -330,6 +357,12 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
 \subsubsection{Tamed Lightning} \label{feat::tamedlightning}
     All creatures charged by you deal thunder damage equal to half the number of charges they have (rounded down) on all melee attacks.
     \paragraph{Requirements} Doctrine: Sympathy.
+\subsubsection{Thunder Gems (2 FP)} \label{feat::thundergems}
+    Any time you craft an object using your set of Jeweler's Tools, you can imbue lightning into any gemstone that is part of the produced item.
+    The DC to craft the item is increased by 5, but its total selling value is multiplied by $1.5$, as the gemstone gains an otherworldly shine.
+
+    In addition, if the item can be equipped, you can work with your DM to add a lightning-related property to the item.
+    \paragraph{Requirements} School: Skycalling, Skilled proficiency with Jeweler's Tools.
 \subsubsection{Twinned Spell (2FP)} \label{feat::twinnedspell}
     When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of spell points equal to half the total cost of the spell (rounded up) to target a second creature in range with the same spell (1 spell point if the spell has a cost of 0).
 
@@ -339,6 +372,9 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
     As a reaction, you can expend two spell points to force a creature to reroll an attack roll.
     \paragraph{Requirements} School: Flamespeaking, Skilled proficiency with Glassblower's Tools.
 % U
+\subsubsection{Unbound Storm} \label{feat::unboundstorm}
+    When you cast the \textbf{Skycall} spell (page \pageref{spell::skycall}), you can target any point within range, instead of only the middle of the area affected by the \textbf{Dry Air} medium.
+    \paragraph{Requirements} School: Skycalling, Expert proficiency with Jeweler's Tools.
 \subsubsection{Unending Fury} \label{feat::unendingfury}
     After you end the spell, the effects of \textbf{Rage} remain for an additional round.
     \paragraph{Requirements} School: Warchanting, Competent proficiency with Brewer's Supplies.
