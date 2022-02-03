@@ -1,0 +1,50 @@
+% !TEX root = ../main.tex
+\section{Bestiary}
+
+\begin{DndMonster}[float*=b,width=\textwidth + 8pt]{Frithling}
+\begin{multicols}{2}
+    \DndMonsterType{Tiny elemental, unaligned}
+
+    \DndMonsterBasics[
+        armor-class = {15},
+        hit-points  = {\DndDice{2d4}},
+        speed       = {4 mt., climb 4 mt., swim 4 mt.},
+    ]
+
+    \DndMonsterAbilityScores[
+        str = 1,
+        dex = 20,
+        con = 10,
+        int = 14,
+        wis = 16,
+        cha = 16,
+    ]
+
+    \DndMonsterDetails[
+        skills = {Acrobatics +7, Perception +7, Stealth +7},
+        senses = {blindsight 12 mt., passive Perception 17},
+        languages = {---},
+        challenge = 0,
+    ]
+
+    % Traits
+    \DndMonsterAction{Evasion}
+        When the frithling is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.
+
+    \DndMonsterAction{Unusual Nature}
+        The frithling doesn't require air, food, or drink.
+        When it dies, it turns into a handful of flower petals, a cloud of pollen, a stone statuette resembling its former self, a tiny sphere of smooth stone, or a puddle of fresh water.
+
+    \DndMonsterSection{Actions}
+        \DndMonsterAction{Gift (1/Day)}
+        The frithling targets a humanoid it can see within 1 meter of it.
+        The target gains a trinket or charm of the DM's choice.
+        See chapter 7 of the Dungeon Masters Guide for more information on trinkets and supernatural charms.
+
+        \DndMonsterAction{Shelter}
+        The frithling takes shelter inside an object in its space.
+        The frithling can't be targeted by any attack, spell, or other effect while inside this shelter, and the shelter doesn't impair the frithling's blindsight.
+        The frithling can use it's action to emerge from a shelter.
+        If its shelter is destroyed, the frithling is forced out and appears in the shelter's space, but is otherwise unharmed.
+\end{multicols}
+\end{DndMonster}
