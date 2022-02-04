@@ -46,6 +46,12 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
     Sympathy 2                  & \textbf{Stored Energy}          (page \pageref{feat::storedenergy})          \\
     Sympathy 2                  & \textbf{Storm Arteries}         (page \pageref{feat::stormarteries})         \\
     Sympathy 2                  & \textbf{Sympathist's Fuel}      (page \pageref{feat::sympathistsfuel})       \\
+    Deathtouching               & \textbf{Arsenic Infusion}       (page \pageref{feat::arsenicinfusion})       \\
+    Deathtouching               & \textbf{Baneful Poison}         (page \pageref{feat::banefulpoison})         \\
+    Deathtouching               & \textbf{Deep Toxicity}          (page \pageref{feat::deeptoxicity})          \\
+    Deathtouching               & \textbf{Inherited Curse}        (page \pageref{feat::inheritedcurse})        \\
+    Deathtouching               & \textbf{Stinging Toxin}         (page \pageref{feat::stingingtoxin})         \\
+    Deathtouching               & \textbf{Weakened Body}          (page \pageref{feat::weakenedbody})          \\
     Frithbinding                & \textbf{Frithling Posse}        (page \pageref{feat::frithlingposse})        \\
     Frithbinding                & \textbf{Frithling Spellcasting} (page \pageref{feat::frithlingspellcasting}) \\
     Frithbinding                & \textbf{Frith's Light}          (page \pageref{feat::frithslight})           \\
@@ -106,10 +112,19 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
 
     The aura remains in effect until you dismiss it as an action on your turn.
     \paragraph{Requirements} Doctrine: Alchemy, MCA: Upgraded Spellcasting.
+\subsubsection{Arsenic Infusion} \label{feat::arsenicinfusion}
+    While you have the \textbf{Toxify} effect from the \textbf{Toxic Cuts} medium (page \pageref{medium::toxiccuts}) active, your own body becomes a medium for arsenic.
+    At the start of each of your turns, you emit a gas in a 1-meter radius, increasing the toxicity level of all creatures within a meter of you by 1.
+    \paragraph{Requirements} School: Deathtouching, Competent proficiency with Poisoner's Supplies.
 \subsubsection{Avid Caster (3 FP)} \label{feat::avidcaster}
     You increase your spellcasting ability bonus by 2.
     You can take this feat two times.
 % B
+\subsubsection{Baneful Poison} \label{feat::banefulpoison}
+    While you have the \textbf{Bane} effect from the \textbf{Toxic Cuts} medium (page \pageref{medium::toxiccuts}) active, you can choose to deal extra damage on an attack, but to force the target to roll a Constitution saving throw against your spell save DC.
+    On a failed save, the creature is poisoned.
+    A creature repeats this saving throw at the end of each of its turns.
+    \paragraph{Requirements} School: Deathtouching, Competent proficiency with Poisoner's Supplies.
 \subsubsection{Biting Lightning} \label{feat::bitinglightning}
     The area created by the \textbf{Dry Air} medium (page \pageref{medium::dryair}) is considered difficult terrain.
     In addition, any creature inside the area takes 1d4 thunder damage for each charge it receives while inside it.
@@ -157,6 +172,11 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
     The creature's speed is increase by 2 meters until the start of your next turn.
     \paragraph{Requirements} School: Warchanting, Expert proficiency with Brewer's Supplies.
 % D
+\subsubsection{Deep Toxicity} \label{feat::deeptoxicity}
+    The maximum level of toxicity you can give a creature is increased by one.
+
+    You can take this feat two additional times, increasing this number by 1 each time.
+    \paragraph{Requirements} School: Deathtouching, Skilled proficiency with Poisoner's Supplies.
 \subsubsection{Durable Magic} \label{feat::durablemagic}
     When you cast a spell that requires concentration, you can spend an additional action to still yourself while casting.
     While you maintain concentration on the spell, you have a +2 bonus to AC and all saving throws.
@@ -289,6 +309,9 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
 
     You can take this feat two more times, increasing the number of vials that can be infused at the same time by one each time.
     \paragraph{Requirements} Doctrine: Alchemy, MCA: Upgraded Spellcasting.
+\subsubsection{Inherited Curse} \label{feat::inheritedcurse}
+    If a creature falls unconscious or dies as a result of you using the \textbf{Pharika's Execution} spell (page \pageref{spell::pharikasexecution}), a creature of your choice within 3 meters of it gains a toxicity level equal to the one of the former.
+    \paragraph{Requirements} School: Deathtouching, Expert proficiency with Poisoner's Supplies.
 % J
 \subsubsection{Javelin of Keranos (2 FP)} \label{feat::javelinofkeranos}
     While under a storm, you can call on Keranos to imbue your attacks with electricity.
@@ -436,6 +459,11 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
     You can weave your magic to fortify yourself against harm.
     When you are hit by an attack or you fail a saving throw, you can consume one spell point and use your reaction to gain a +2 bonus to your AC against that attack or a +4 bonus to that saving throw.
     \paragraph{Requirements} Ability Modifier: Charisma.
+\subsubsection{Stinging Toxin (2 FP)} \label{feat::stingingtoxin}
+    Creatures with a level of toxicity greater or equal than 3 roll saving throws against being poisoned with disadvantage.
+
+    In addition, if a creature is immune to poison damage, it loses this immunity and gains resistance to poison damage when their level of toxicity is greater or equal than 3.
+    \paragraph{Requirements} School: Deathtouching, Skilled proficiency with Poisoner's Supplies.
 \subsubsection{Stored Energy (2FP)} \label{feat::storedenergy}
     Whenever one of your embers fades, a creature is completely discharged, or a similarity link is broken, you feel a surge in energy.
     Once when you deal damage to a creature through any mean before the end of your next turn, it takes an additional 1d6 force damage.
@@ -518,6 +546,10 @@ All feats in this section require the \textbf{Spellcaster} feat (see page \pager
     Each time a creature takes damage while under this effect, another willing creature takes the same damage.
     If no bound creature is willing, you take the damage.
     \paragraph{Requirements} School: Shellpoaching, Expert proficiency with Cook's Utensils.
+\subsubsection{Weakened Body (2 FP)} \label{feat::weakenedbody}
+    Whenever a creature takes poison damage as a result of failing a saving throw against poison, it also takes necrotic damage equal to the number of toxicity levels it has plus your spellcasting ability modifier.
+    A creature can only take this extra damage once per round.
+    \paragraph{Requirements} School: Deathtouching, Expert proficiency with Poisoner's Supplies.
 % X
 % Y
 % Z
